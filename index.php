@@ -320,7 +320,7 @@ echo '
                   </div>
               </div>
               <div class="about_us">
-              <a href="sedfed.com/about">
+              <a href="SedFed_Crew.html">
                   <div class="au_col_itm" id="about_us_link" >
                     about us
                   </div>
