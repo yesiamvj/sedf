@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title> </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="onlines.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="onlines.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div id="content-full">
+          <div id="SedFed_Online_People">
+              <div class="Online_Tab_Hold">
+                          <div class="Online_Tab_Itm" id="CurOnlineTab" >
+                              People
+                          </div>
+                          <div class="Online_Tab_Itm"  >
+                              Groups
+                          </div>
+                          <div class="Online_Tab_Itm">
+                              Teams
+                          </div>
+                      </div>
+              <div class="Online_Ppl_Out">
+                  <div class="Online_Ppl_In">
+                      
+                      <div class="Online_Ppl_Ttl" id="OnTopStatus" >Online  </div> 
+                   <!--   <div class="OLV_Type" title="Type of view" >
+                          <div class="OLV_Circle" title="Only faces" ></div> <div class="OLV_Sqre" title="Name & Face" ></div> <div class="OLV_Nme" title="Name & Face"></div>
+                      </div> -->
+                   <div class="Online_Tool_Hold">
+                       <div class="Online_Tool_Itm" title="Search" onclick="$('#OTEH_Search').slideToggle();" >
+                           <img class="Online_Tool_Img" src="icons/chatwin/search.png" alt="search" />
+                       </div>
+                       <div class="Online_Tool_Itm" title="Types of View" onclick="$('#OTEH_ViewType').slideToggle();" >
+                           <img class="Online_Tool_Img" src="icons/chatwin/view_type.png" alt="View Type" />
+                       </div>
+                       <div class="Online_Tool_Itm" title="More" onclick="$('#OTEH_More').slideToggle();">
+                           <img class="Online_Tool_Img" src="icons/chatwin/moreItms.png" alt="More" />
+                       </div>
+                       
+                       <div class="Online_Tool_Itm" title="I'm online" onclick="$('#OTEH_OnlineState').slideToggle();" >
+                           <div id="Online_Status"  > 
+                           </div>
+                       </div>
+                   </div>
+                  <div class="Online_Tool_Expnd" >
+                       <div class="OTE_In">
+                           <div class="OTE_OState" id="ON_Txt" style="cursor: pointer;" onclick="changeCurOnlineSts()" >I'm Online</div>
+                          
+                       </div>
+                   </div>
+                   <div class="Online_Tool_Expnd" id="OTEH_Search" style="display: none">
+                       <div class="OTE_In">
+                           <div class="OTE_Itm">
+                               <input type="text" placeholder="Name of person" />
+                           </div>
+                       </div>
+                   </div>
+                   
+                      <div class="Online_Tool_Expnd" id="OTEH_ViewType" style="display: none">
+                       <div class="OTE_In">
+                           <div class="OTE_Itm">
+                               <div class="OTE_View_Itm" onclick="$('#Online_NameFace').fadeOut();$('#Online_Faces').fadeIn();" >
+                                   <div class="OLV_Circle" title="Only faces"  ></div> Faces
+                               </div>
+                               <div class="OTE_View_Itm" onclick="$('#Online_Faces').fadeOut();$('#Online_NameFace').fadeIn();" >
+                                
+                                 <div class="OLV_Sqre" title="Name & Face" ></div> <div class="OLV_Nme" title="Name & Face"></div> Name & Faces
+                                 </div>
+                               </div>
+                       </div>
+                   </div>
+                   <div class="Online_Tool_Expnd" id="OTEH_More" style="display: none">
+                       <div class="OTE_In">
+                           <div class="OTE_Itm">
+                               <div class="OTE_moreItm" onclick="showOnlinePpl()">
+                                   Online 
+                               </div>
+                               <div class="OTE_moreItm" onclick="showOfflinePpl()">
+                                   Offline 
+                               </div>
+                               <div class="OTE_moreItm" onclick="showAllPpl()">
+                                   All People
+                               </div>
+                               </div>
+                       </div>
+                   </div>
+                   
+                   <div class="Online_Tool_Expnd" id="OTEH_OnlineState" style="display: none">
+                       <div class="OTE_In">
+                           
+                           <div style="cursor: pointer;" onclick="changeCurOnlineSts()">
+                                <div class="OTE_OSChnge"   >Change
+                               <span class="OTE_Nxt_OS" id="ON_Nxt"  >to Offline</span>
+                           </div>
+                               
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <!-- here is online people  name & face -->
+                   <div class="RightBarHoldr" id="Online_People" style="//display: none;" >
+                   <div class="Online_Live_Ppl" id="Online_NameFace" style="//display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName">
+                                      Yogeshwaran
+                                      <div class="OLPN_ItmDets" title="Online from 1 Jan 2013,10:30pm">
+                                          from 10:30 pm
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName">
+                                      Yogeshwaran
+                                      <div class="OLPN_ItmDets" title=" Online from 1 Jan 2013,10:30pm">
+                                          from 10:30 pm
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                   <div class="Online_Live_Ppl" id="Online_Faces" style="display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm" >
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                      </div>
+                   <div class="RightBarHoldr" id="Offline_People" style="display: none;" >
+                   <div class="Online_Live_Ppl" id="Offline_NameFace" style="//display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName">
+                                      Yogeshwaran
+                                      <div class="OLPN_ItmDets" title="1 Jan 2013,10:30pm">
+                                          Last Online 10:20pm
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName">
+                                      Yogeshwaran
+                                      <div class="OLPN_ItmDets" title="1 Jan 2013,10:30pm">
+                                          Last Online 10:20pm
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                
+                      </div>
+                   <div class="RightBarHoldr" id="AllPpl_People" style="display: none;" >
+                   <div class="Online_Live_Ppl" id="AllPpl_NameFace" style="//display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <!-- for online people class is On like down here -->
+                                  <div class="OLPN_ItmNameOn">
+                                      Yogeshwaran
+                                      <div class="OLPN_ItmDets" title="1 Jan 2013,10:30pm">
+                                          Online from 10:20pm
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <!-- for offline people class is Off like down here -->
+                                  <div class="OLPN_ItmNameOff">
+                                      Yogeshwaran
+                                      <div class="OLPN_ItmDets" title="1 Jan 2013,10:30pm">
+                                          Last Online 10:20pm
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                  
+                      </div>
+                   <div class="Online_Active_Chat" id="Online_Active_Chat_Hold" >
+                       <div class="OAC_Out" id="OAC_ContHolder" >
+                           <div class="OAC_In">
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                          </div>
+                       </div>
+                          
+                       <div id="OAC_Minimized" onclick="$('#OAC_ContHolder').slideToggle()" >Active Chats <div class="OAC_Minimize"> - </div></div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>

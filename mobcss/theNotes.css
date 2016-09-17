@@ -1,0 +1,205 @@
+/* 
+    Created on : Aug 3, 2015, 9:57:25 PM
+    Author     : Vijayakumar M
+*/
+body{
+    margin: 0px;font-family: Segoe UI;
+    font-size: 14px;
+}
+.TtlBar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: darkcyan;
+    padding: 10px;
+    color: white;
+    text-indent: 10%;
+    z-index:100;
+    box-shadow:0px 0px 5px grey;
+}
+.SubTtl{
+     position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:white;
+    padding: 10px;
+      padding-top: 50px;
+    color:black;
+    text-align: center;
+    box-shadow: 0px 0px 4px grey;
+}
+.nocla{
+    margin-top: 100px;
+}
+.NotificationBarHold{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 40px;
+    background-color: rgba(256,256,256,0.75);
+     box-shadow: 0px 0px 15px -5px grey;
+    margin: 0px 5%;
+}
+.NotifBarItm{
+    padding: 7px 25px;
+    margin: 7px 15%;
+    margin: 7px 0%;
+     background-color: rgba(256,256,256,0.75);
+  
+}
+.NotifBarItm:not(:last-child){
+      border-bottom: 1px solid silver;
+}
+.NotifierName{
+    display: inline-block;
+    color: darkcyan;
+    font-size: 18px;
+}
+.NotifingTime{
+    display: inline-block;
+    float: right;
+    color: grey;
+    font-size: 13px;
+}
+.NotifingCont{
+    margin: 7px 50px;
+    color: navy;
+    font-size: 14px;
+}
+.notifingPostId{
+    color: crimson;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+.notifierFace{
+    max-height:25px;
+    float: left;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+.NotifSign{
+    color: silver;
+    font-size: 13px;
+    margin-left: 25px;
+}
+.floatingNotifCloudOut{
+    position: fixed;
+    bottom: 15%;
+    padding:0px 25px;
+    left:0px;
+    background-color: rgba(250,250,250,0.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    width:4500px;
+}
+.floatNotifName{
+    font-size: 20px;
+    color: darkcyan;
+    display: inline-block;
+}
+.floatNotifTime{
+    display: inline-block;
+    color: grey;
+    font-size: 13px;
+    margin-left: 15px;
+}
+.floatNotifCont{
+    font-size: 14px;
+    color:darkorange;
+    margin: 7px 0px;
+}
+.floatPostId{
+    color: white;
+    background-color: darkcyan;
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 20px 0px;
+    margin-left: 20px;
+}
+.img_floatNoteFace{
+    max-height: 75px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    margin-left: 20px;
+}
+.floatNotifItm{
+    background-color:whitesmoke;
+    display: inline-block;
+      padding: 15px;
+    padding-right: 25px;
+    padding-left: 115px;
+    margin-left: 3000px;
+}
+.floatSmallPostCaption{
+    font-size: 14px;
+}
+.img_botDocMsgFace{
+    max-height: 50px;
+    float: left;
+    position: absolute;
+    top: 20px;
+    bottom: 0px;
+   // margin: auto;
+     left: 2%;
+    border-radius: 100px;
+}
+.bottomDockOnMessage{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    padding: 0px 15%;
+    box-shadow: 0px 0px 5px grey;
+   
+}
+.bottomMsgerName{
+    font-size: 18px;
+    color: darkcyan;
+    margin-top: -10px;
+    
+}
+.botDocMsgTime{
+    color:grey;
+    font-size: 13px;
+    margin-left: 25px;
+}
+.bottomDockMsgItm{
+    padding: 25px;
+}
+.bottomMsgTxt{
+    margin: 10px 25px;
+    color: navy;
+    max-width: 80%;
+}
+
+.bottomMsgInp input{
+    padding: 7px 15px;
+    width: 100%;
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+.bottomMsgSubmit{
+    display: inline-block;
+    background-color: grey;
+    padding: 7px 35px;
+    color: white;
+}
+.bottomMsgSubmit:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.closeDockMsg{
+    float: right;
+    color: crimson;
+    padding: 15px 0px;
+}
+.closeDockMsg:hover{
+    cursor: pointer;
+    color: red;
+}

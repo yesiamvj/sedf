@@ -1,0 +1,206 @@
+/* 
+    Created on : Jun 7, 2015, 12:46:36 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.sf_tradeMark{
+    position: fixed;
+    margin: 17% 45%;
+    font-size:55px;
+    color: crimson;
+    opacity: 0.2;
+    display: none;
+}
+
+
+.msgTab{
+    padding: 0px 5%;
+    padding-top: 50px;
+    
+    top: 105px;
+   // padding: 10px;
+    box-shadow: 0px 0px 5px grey;
+    margin: 0px 2%;
+    padding-bottom: 50px;
+}
+
+
+
+.msgTabIn{
+    background-color: white;
+    width: inherit;
+   
+    z-index: 15;
+   
+}
+.tabControl{
+   margin:20px 0px 15px 0px;
+}
+.tabContItm{
+    padding: 2px 5px;
+    color: grey;
+    display: inline-block;
+    margin-left: 15px;
+}
+.tabContItm input[type='text']{
+    padding: 5px 15px;
+     font-family: "Times New Roman";
+    color:navy;
+    margin-left: 10px;
+    width: 200px;
+}
+.tabContItm option{
+    padding:4px 15px;
+    font-family: "Times New Roman";
+}
+.tabContItm select{
+    margin:0px 20px;
+    padding-left: 15px;
+    font-family: "Times New Roman";
+}
+.filtrMsgs{
+    margin-bottom: 80px;
+   // background-color: whitesmoke;
+}
+.filtrMItm{
+   // float: left;
+    margin:15px;
+    display: inline-block;
+}
+.filtrMItm input[type='text']{
+    width: 100px;
+    padding:5px 10px;
+}
+.filtrMItm option{
+    padding: 3px 15px;
+}
+.tabContTtl{
+    background-color: whitesmoke;
+    padding: 7px 5%;
+  //  text-align: center;
+    margin: 100px 0px 50px 0px;
+    font-size: 16px;
+    color: black;
+    box-shadow: 0px 3px 5px -5px;
+}
+.tabCount{
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    color: grey;
+}
+.MsgHolder{
+    background-color: whitesmoke;
+    margin:5px 0px;
+    padding: 5px;
+}
+.MsgHoldin{
+    background-color: white;
+}
+.msgSender{
+    color:darkcyan;
+    font-size: 16px;
+    padding:5px 25px;
+}
+.msgDets{
+  //   display: inline-block;
+    margin-top: 5px;
+    //margin-right: 30px;
+   // float: right;
+    color: grey;
+   
+}
+.msgHeaders div{
+  //  display: inline-block;
+}
+.msgContent{
+    padding: 7px 5px 10px 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.pplTheme{
+    position: absolute;
+    color: transparent;
+    height:65px;
+    width: 7px;
+    display: none;
+}
+.msgCheck{
+    margin-top: -1px;
+    margin-left: -3px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+#moreMsgControls{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+.msgControlItm{
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.divider{
+    margin: 10px;
+}
+.msgSenderDets{
+    color: grey;
+}
+.filtrMItm{
+    display: inline-block;
+    margin:5px 20px;
+}
+#filtrs{
+    margin-left: 20px; 
+}
+.arrows{
+    margin-right: 7px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+    cursor: pointer;
+    display: none;
+}
+#asc{
+    border-top: 7px solid crimson;
+}
+#desc{
+    border-bottom: 7px solid navy;
+}
+.msgFaceHold{
+    float: left;
+}
+.msgFace{
+    max-height: 60x;
+    max-width: 60px;
+    margin: 5px -12px 7px 5px;
+}
+.msgContHold{
+    display: inline-block;
+    width: 90%;
+}
+.msgTabsTtls{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 47px;
+    z-index: 100;
+    box-shadow: 0px 0px 5px grey;
+}
+.masgTabItm{
+    padding: 10px 5px;
+    display: inline-block;
+    
+}
+.masgTabItm:hover{
+    background-color: white;
+    cursor: pointer;
+}
+#MsgViews{
+    display: none;
+}

@@ -1,0 +1,424 @@
+
+/* 
+    Created on : Mar 3, 2015, 10:24:03 PM
+    Author     : Sakthikanth J
+*/
+
+#spn{
+    color: red;
+}
+font{
+    color: navy;
+    font-size: 18px;
+}
+#title_bar{
+    top: 0px;
+    position: fixed;
+   border: solid #ef0000;
+    border-width: 2px 2px 2px 2px;
+    background-color:#ef0000;
+    padding: 6px;
+    width: 100%;
+    text-indent: 35%;
+    z-index: 100;
+     -moz-animation: 1.5s title-bar;
+    -webkit-animation: 1.5s title-bar;
+}
+#sedfed{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+#about_us,a[href="aboutus.html"]{
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    padding:10px 10px 10px 10px;
+    color: grey;
+}
+#footr{
+    -moz-animation: expndfoot 1.5s;
+    -webkit-animation: expndfoot 1.5s;
+   position: fixed;
+   bottom: -40px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 90;
+}
+#fotr{
+    margin-left: 35%;
+    color: grey;
+}
+#fot{
+    margin-left: 30%;
+    color: grey;
+}
+#vrs{
+    border: solid gray;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+#rwlcmemsg{
+    position: absolute;
+    //padding: 15px 20px 5px 40px;
+    color: darkblue;
+   // background-color: whitesmoke;
+    font-size:13px;
+}
+#r-inps{
+   
+    width: 75%;
+    color: darkblue;
+}
+input#adn
+{
+   
+    float: right;
+}
+#tx1:enabled,#tx3:enabled,#tx2:enabled,#tx4:enabled,#tx5:enabled,#tx6:enabled,#tx7:enabled,#tx8:enabled,#tx9:enabled,#txw:enabled{
+    
+    padding-left: 10px;
+    width: 350px;
+    height: 30px;
+    border: solid blue;
+    color: navy;
+    font-size: 18px;
+    border-width: 0px 0px 1px 0px;
+    
+}
+#tx1,#tx3,#tx2,#tx4,#tx5,#tx6,#tx7,#tx8,#tx9{
+    font-size: 18px;
+    height: 30px;
+    border: solid red;
+    color: red;
+    border-width: 0px 0px 1px 5px;
+    
+}
+#tx1:focus,#tx2:focus,#tx3:focus,#tx4:focus,#tx5:focus,#tx6:focus,#tx7:focus,#tx8:focus,#tx9:focus,#txw:focus{
+     
+    height: 30px;
+    border: solid crimson;
+    color: crimson;
+    border-width: 1px 1px 1px 5px;
+    font-size: 18px;
+    
+}
+
+#r-itbls{
+    float: left;
+    padding-left: 35px; 
+    margin-top: 90px;
+    margin-left:175px;
+    border: solid crimson;
+    border-width:0px 0px 0px 5px; 
+}
+#r-ins{
+    margin-right: 20px;
+    
+}
+
+td{
+     padding: 17px;
+}
+#r-submit{
+    width: 50%;
+    padding: 7px 17px 7px 17px;
+    padding-left: 17px;
+    background-color: navy;
+    border-color: navy navy navy #0000ff;
+    border-width:1px 1px 1px 7px; 
+    color: white;
+    cursor: pointer;
+}
+#r-submit:hover{
+   
+    background-color: crimson;
+    border-color: crimson crimson crimson navy;
+    border-width:1px 1px 1px 7px; 
+    color: white;
+    cursor: pointer;
+}
+#helps{
+    -webkit-animation-name: expnd;
+    -moz-animation: expnd 2s;
+    -webkit-animation-duration: 2s;
+    position: fixed;
+    padding:0px 0px 50px 0px; 
+    
+    margin:-25px 0px 0px 220px;
+    height: 100%;
+    display: inline-block;
+  
+    width: 325px;
+   z-index: 50;
+    background-color: whitesmoke;
+    border-width: 0px 0px 0px 1px ; 
+    border: solid 1px  crimson;
+}
+@-moz-keyframes expnd{
+    from{top: -800px;}
+    to{top:40px ;}
+}
+@-webkit-keyframes expnd{
+    from{top: -800px;}
+    to{top:40px ;}
+}
+@-moz-keyframes title-bar{
+     0%{width: 0%;background-color: red;border:solid;border-color: red red red navy;border-width: 2px 2px 2px 10px;}
+     75%{border-color: red red red navy;border-width: 2px 2px 2px 10px;}
+     100%{width:100% ;background-color: #ef0000;}
+}
+@-webkit-keyframes title-bar{
+     0%{width: 0%;background-color: red;border:solid;border-color: red red red navy;border-width: 2px 2px 2px 10px;}
+     75%{border-color: red red red navy;border-width: 2px 2px 2px 10px;}
+     100%{width:100% ;background-color: #ef0000;}
+}
+#forusrnme{
+    line-height: 2;
+    font-size: 16px;
+    color: grey;
+}
+input:disabled{
+    color: grey;
+    width: 250px;
+    padding: 3px 10px 3px 10px;
+    border:solid 1px navy;
+    border-width: 0px 0px 1px 0px;
+    background-color: whitesmoke;
+}
+button:disabled{
+    border: solid grey;
+    border-width: 2px 2px 2px 2px;
+    padding: 1px 10px 1px 10px;
+    color: white;
+    background-color: grey;
+}
+#heads,#mheads{
+    margin-top: 5px;
+    padding: 2px 10px 2px 10px;
+     background-color: white;
+    
+}
+#mheads{
+    background-color: navy;
+    color: white;
+}
+#content-hlp{
+    margin-left:15px;
+}
+#steps{
+    -moz-animation: 2s expndsteps;
+    -webkit-animation: 2s expndsteps;
+    position:absolute;
+    margin-top:5px; 
+    background-color: whitesmoke;
+    width: 130%;
+    
+}
+@-moz-keyframes expndsteps{
+    from{left:-1500px;}
+    to{left:0px;}
+}
+@-webkit-keyframes expndsteps{
+   from{left:-1500px;}
+    to{left:0px;}
+}
+@-moz-keyframes expndfoot{
+    from{left:1500px;}
+    to{left:0px;}
+}
+@-webkit-keyframes expndfoot{
+   from{left:1500px;}
+    to{left:0px;}
+}
+
+#lststep{
+     border-width: 1px 1px 1px 5px;
+}
+ul{
+   // margin-top: 15px;
+    list-style: none;
+}
+ul#stps>li{
+    border: solid grey;
+    padding: 2px 20px 2px 20px;
+    border-width: 1px 0px 1px 5px;
+    display: inline;
+}
+ul#stps>li#curstep{
+    border-color: crimson navy crimson crimson;
+      padding: 4px 25px 4px 25px;
+    font-size: 15px;
+      border-width: 1px 5px 1px 5px;
+    color: navy;
+    background-color: white;
+    
+}
+#chkbx{
+    color:red;
+    width:20px;
+    height: 20px;
+}
+.r-error{
+    position: absolute;
+    margin-left: 20px;
+    color:red;
+    padding-left: 10px;
+}
+#ok{
+    color:blue;
+}
+#tipmail,#tipmob,#tippass1,#tippass2{
+    position: absolute;
+    display: none;
+    margin-left: 5px;
+    border: solid;
+    border-color: white white white navy;
+    line-height: 1.5;
+    border-width: 2px 2px 2px 7px;
+    color: navy;
+    padding: 0px 10px 5px 10px;
+    font-size: 17px;
+    background-color:whitesmoke; 
+    z-index: 200;
+}
+#tipmail:hover,#tipmob:hover,#tippass1:hover,#tippass2:hover{
+     position: absolute;
+    display: none;
+    margin-left: 5px;
+    border: solid;
+    border-color: white white white crimson;
+    line-height: 1.5;
+    border-width: 2px 2px 2px 7px;
+    color: white;
+    padding: 0px 10px 5px 10px;
+    font-size: 17px;
+    background-color:navy; 
+    z-index: 200;
+}
+#tipbox{
+    list-style: square;
+    padding-left:25px;
+}
+#rd{
+    width: 15px;
+    height: 15px;
+}
+select
+{
+    width: 100px;
+    color: navy;
+    height:30px;
+    font-weight: bold;
+    
+}
+option{
+    height: 30px;
+}
+select:focus
+{
+    background-color: white;
+    color: navy;
+}
+select#st
+{
+    width: 150px;
+   
+    
+}
+#rh-srch{
+    color: crimson;
+}
+#next{
+    background-color:red;
+    
+    color:white;
+border-color:red;
+    width:150px;
+    height:30px;
+    border-left-width: 10px;
+    border-left-color: navy;
+    border-width: 0px 0px 0px 5px;
+    border-radius: 0px 0px 0px 0px;
+    font-weight: bold;
+    margin-left: 100px;
+    font-family: Microsoft Sans Serif;
+}
+#next:hover{
+    background-color:white;
+    color:red;
+    border-left-width: 10px;
+    border-width: 1px 1px 1px 5px;
+    
+    width:150px;
+    height:30px;
+    border-radius: 0px 0px 0px 0px;
+    border-color:navy;
+    font-weight: bold;
+    cursor:pointer;
+}
+#addn{
+    background-color: navy;
+    color: white;
+    border-width: 0px 0px 0px 5px;
+    border-color: #ef0000;
+    width: 150px;
+    height: 30px;
+    float: right;
+}
+select#lap
+{
+    width: 150px;
+    
+}
+select#districtlist
+{
+    width: 150px;
+    
+}
+select#districtlist
+{
+    width: 150px;
+    
+}
+body{
+    font-size: 14px;
+}
+#ct:enabled
+{    padding-left: 10px;
+    width: 130px;
+    height: 30px;
+    border: solid blue;
+    color: navy;
+    font-size: 15px;
+    border-width: 0px 0px 1px 0px;
+}
+#ct
+{
+     font-size: 15px;
+    height: 30px;
+    border: solid red;
+    color: red;
+    border-width: 0px 0px 1px 5px;
+    
+}
+#ct:focus{
+         
+    height: 30px;
+    border: solid crimson;
+    color: crimson;
+    border-width: 1px 1px 1px 5px;
+    font-size: 15px;
+    
+}

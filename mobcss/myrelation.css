@@ -1,0 +1,15 @@
+/* 
+    Created on : Jun 7, 2015, 11:46:52 AM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.toolItm{
+   margin-bottom: 10px;
+    margin-top: 5px;
+}
+.toolItm select{
+    margin-left: 25px;
+    padding-left: 10px;
+}
+.toolItm option{
+    padding: 5px 15px;
+}

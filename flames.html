@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+        <meta http-equiv="Author" content="Vijayakumar for SedFed" />
+        <script src="flames.js" type="text/javascript"></script>
+        <script src="jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="flames.css" />
+        <title>Flames</title>
+    </head>
+    <body onload="ini()">
+        <div id="til">Flames
+            <hr/>
+            
+        </div> <span id="thisisf"></span>
+
+        <div id="decor"></div>
+        <div id="controlPanel">
+             <h4 id="title">Flames</h4>
+
+            <input id="name1" oninput="changet('#name1')" type="text" placeholder="First Person Name" autofocus />&nbsp;&nbsp;
+            <input type="checkbox" id="chk1" onclick="hidet('chk1','#name1')" />&nbsp;&nbsp;hide <span id="imgs"></span>
+            <br/>
+            <input type="text" oninput="changet('#name2')" id="name2" placeholder="Second Person Name" />&nbsp;&nbsp;
+            <input type="checkbox" id="chk2" onchange="hidet('chk2','#name2')" />&nbsp;&nbsp;hide <span id="imgs2"></span>
+            <br/>
+            <input type="button" value="Find Relation" onclick="dothis()" />
+            <input id="rst" type="button" value="Reset" onclick="resett()" />
+            <br/>
+            <br/>
+            <br/> <span id="result"><br/></span><span id="wht"><img style="width:40px;height:40px" src="icons/flam/what.png"/></span>
+
+        </div>
+        <div id="main"></div>
+        <div id="au">Created by Vijayakumar</div>
+    </body>
+</html>

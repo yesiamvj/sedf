@@ -1,0 +1,223 @@
+/* 
+    Created on : Mar 9, 2015, 9:43:50 PM
+    Author     : Vijayakumar M <vijayakumar for www.sedfed.com>
+*/
+body{
+    margin-top: 0px;
+    margin-left: 0%;
+    margin-top: 0px;
+    font-family:slabo;
+     background-image: url('backs.png');
+    background-size: 7px;
+    background-attachment: fixed;
+}
+#title_bar{
+    margin-top: 0px;
+    position: fixed;
+    border: solid #ef0000;
+    border-width: 2px 2px 2px 2px;
+    background-color:#ef0000;
+    padding: 6px;
+    width: 100%;
+    text-indent: 35%;
+    z-index: 100;
+}
+#sedfed{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+#sed,#fed{
+    color: crimson;
+    font-size: 20px;
+}
+
+#ed{
+    color: navy;
+    font-size: 20px;
+}
+#wlcmemsg{
+    margin-left: 30px;
+    padding:7px;
+    border: solid;
+    border-width: 0px 5px 0px 5px;
+    border-color: #ef0000 navy #ef0000 #ef0000;
+    color: grey;
+}
+#searchbar{
+    width: 75%;
+    float: left;
+   
+}
+#searchmain{
+    text-align: center;
+}
+#txtsearch,#txtsearch:hover{
+    margin-top:17%;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color:grey;
+    width: 40%;
+    background-color: transparent;
+    color: darkblue;
+    padding: 10px;
+}
+#prcdbtn{
+    cursor: pointer;
+    padding: 3px 14px 3px 14px;
+    height: 27px;
+    background-color: navy;
+    color: white;
+    border: solid blue;
+    border-width: 0px 0px 0px 5px;
+}
+#prcdbtn:hover{
+    background-color: white;
+    color: navy;
+    border:solid #ef0000; 
+    border-width: 1px 1px 1px 5px;
+}
+#logins{
+    position: absolute;
+    width: 25%;
+    bottom: 0px;
+    right: -1px;
+    top: 44px;
+    height:100%;
+    background-color: navy;
+    box-shadow: 0px 0px 25px -5px;
+}
+#lgin{
+    margin-top: 33px;
+    background-color: white;
+    padding: 7px 45px 7px 50px;
+    border: solid blue;
+    border-width: 0px 5px 0px 0px;
+    color: darkblue;
+}
+#bs{
+    text-align: right;
+}
+#content-start{
+     position: absolute;
+    top: 70px;
+    left: 50px;
+    color: darkblue;
+}
+#regs
+{
+    margin-top: 48px;
+    margin-right: -10px;
+    background-color: darkblue;
+    padding: 5px 15px 5px 10px;
+    border: solid;
+    border-color: darkblue darkblue darkblue blue;
+    border-width: 2px 2px 2px 5px;
+    color: white;
+    cursor: pointer;
+}
+#regs:hover{
+   background-color: whitesmoke;
+    border: solid ;
+    border-color:whitesmoke whitesmoke  whitesmoke crimson;
+    border-width: 2px 2px 2px 5px;
+    color: navy;
+    cursor: pointer;
+    box-shadow: -5px 3px 5px -4px black;
+}
+
+#usrnme,#pswd{
+    margin-top: 20px;
+    background-color: whitesmoke;
+    width:92%;
+    padding: 10px;
+    color: darkblue;
+    border: solid blue;
+    border-width: 0px 0px 0px 7px;
+}
+#usrnme:focus,#pswd:focus{
+    color: crimson;
+    background-color: white;
+    width: 92%;
+    padding: 10px;
+    border: solid crimson;
+    border-width: 0px 0px 0px 7px;
+}
+#usrnme:hover,#pswd:hover{
+    color: red;
+    background-color: white;
+    width: 92%;
+    padding: 10px;
+    border: solid red;
+    border-width: 0px 0px 0px 7px;
+}
+
+#cption{
+   margin-left: 10px;
+    color: white;
+    font-size: 17px;
+}
+#cption2{
+   
+   margin-left: 10px;
+    color: blue;
+    font-size: 17px;
+}
+
+#lbtn{
+    margin-top: 30px;
+    border: solid blue;
+    border-width: 0px 0px 0px 7px;
+    padding: 7px 30px 7px 30px;
+    color: navy;
+    background-color: whitesmoke;
+    cursor: pointer;
+    
+}
+#lbtn:hover{
+    margin-top: 30px;
+    border: solid crimson;
+    border-width: 0px 0px 0px 7px;
+    padding: 8px 31px 8px 31px;
+    color: navy;
+    background-color: white;
+    cursor: pointer;
+    
+}
+#lgn{
+    text-align: center;
+}
+#footr{
+  position: absolute;
+    bottom: -50px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+#about_us,a[href="aboutus.html"]{
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    padding:10px 10px 10px 10px;
+    color: grey;
+}
+#fotr{
+    margin-left: 35%;
+    color: grey;
+}
+#fot{
+    margin-left: 30%;
+    color: grey;
+}
+#vrs{
+    border: solid gray;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}

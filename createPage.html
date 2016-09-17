@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title>Create New Page - SedFed</title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="createPage.css"/>
+   
+   <script src="jquery.min.js" type="text/javascript"></script>
+  
+  </head>
+    <body>
+        <div id="content-full">
+            <div class="pageSubTtl" id="pageSubTtlBar" >
+                <span id="pageSubName">Create New Page</span>
+            </div>
+            <div class="pageInnerCont">
+                
+                <div class="pageWallPic" style="display: none;" >
+                  <img src="testw.jpg" alt="testw"/> 
+
+                </div>
+                <div class="pageProfPic" style="display: none" >
+                    <img src="profileimg.PNG" /> 
+                </div>
+                <div class="emptyPageWallPic">
+                    <span class="empHint"> Upload a WallPaper</span>  
+                </div>
+                <div class="emptyPageProfPic">
+                   
+                </div>
+                <div class="pageNewFrom">
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                             Page  Name
+                         </div>
+                         <div class="newPageAns">
+                             <input type="text" id="pageName" oninput="fillTtlBar()"  placeholder="Your new page name" />
+                             <script>
+                                 function fillTtlBar(){
+                                     if($('#pageName').val()===''){
+                                         $('#pageSubName').text('Create New Page');
+                                     }
+                                     else{
+                                         $('#pageSubName').text($('#pageName').val());
+                                     }
+                                 }
+                             </script>
+                         </div>
+                    </div>
+                     <div class="newPagePicSlct">
+                        Upload Wallpaper
+                    </div>
+                    <div class="newPagePicSlct">
+                        Upload Profile Picture
+                    </div>
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                             Page / Organization Theme Color
+                         </div>
+                      
+                        <div class="newPageAns" >
+                            Title Bar Color
+                            <button class="colorInpBtns" id="ttlBarClr" onclick="$('#myOrgThme').click();"  >
+                                Choose color
+                            </button>
+                            Title Color
+                            <button class="colorInpBtns" id="ttlTextClr" onclick="$('#myTextClr').click();" >
+                                Choose Title Color
+                            </button>
+                         </div>
+                        
+                        <input type="color" id="myOrgThme" oninput="$('#pageSubTtlBar').css({'background-color':$('#myOrgThme').val()});" onchange="$('#pageSubTtlBar').css({'background-color':$('#myOrgThme').val()});" style="display: none" />
+                        <input type="color" id="myTextClr" oninput="$('#pageSubName').css({'color':$('#myTextClr').val()});" onchange="$('#pageSubName').css({'color':$('#myTextClr').val()});" style="display: none" />
+                    </div>
+                   
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                            About
+                         </div>
+                         <div class="newPageAns">
+                             <textarea  placeholder="About your page / Organisation" >
+                                 
+                             </textarea>
+                         </div>
+                    </div><br/>
+                     <div class="newPageFormItm">
+                         <div class="newPageQue" style="display: inline" >
+                             Who can post in your page ?
+                         </div>
+                         <div class="newPageAns" style="display: inline"  >
+                             <select>
+                                 <option>Anyone</option>
+                                
+                                 <option>Followers</option>
+                                
+                                 <option>Only me</option>
+                             </select>
+                         </div>
+                    </div>
+                    <br/><br/>
+                    <div class="newPageFormItm">
+                         <div class="newPageQue" style="display: inline">
+                             Admin name in  page
+                         </div>
+                         <div class="newPageAns" style="display: inline">
+                             <select>
+                                 <option>Show</option>
+                                
+                                 <option>Hide</option>
+                                
+                                 
+                             </select>
+                         </div>
+                    </div>
+                    <div class="showMoreOptions" onclick="$('#morePageOptions').slideToggle();" >
+                        More Options &nbsp;&nbsp;&nbsp;( &nbsp; Optional &nbsp; )
+                    </div>
+                    <div id="morePageOptions" style="display: none;" >
+                        
+                    
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                             Website related to this Page
+                         </div>
+                         <div class="newPageAns">
+                             <input type="text" placeholder="Your new page name" />
+                         </div>
+                    </div>
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                            Slogan of your page / Company
+                         </div>
+                         <div class="newPageAns">
+                             <input type="text" placeholder="Your organisation's Slogan" />
+                         </div>
+                    </div>
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                            Aim of your page  
+                         </div>
+                         <div class="newPageAns">
+                             <input type="text" placeholder="Your organisation's Aim" />
+                         </div>
+                    </div>
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                            Your page is for
+                         </div>
+                         <div class="newPageAns">
+                             <input type="text" placeholder="This page is Exclusively for" />
+                         </div>
+                    </div>
+                    <div class="newPageFormItm">
+                         <div class="newPageQue">
+                            Page Appearance Style
+                         </div>
+                         <div class="newPageAns">
+                             <select>
+                                 <option>
+                                     Wide
+                                 </option>
+                                 <option>
+                                     Compact
+                                 </option>
+                             </select>
+                         </div>
+                    </div>
+                        </div>
+                   
+                    <div id="newPageSubmit">
+                        Create Page
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

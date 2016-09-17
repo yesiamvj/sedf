@@ -1,0 +1,1176 @@
+/* 
+    Created on : Aug 1, 2015, 9:39:59 PM
+    Author     : Vijayakumar M
+*/
+body{
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}
+#PageSubTtl{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align:center;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 0px 5px -2px grey;
+    display: block !important;
+}
+.PageSubTtlItm{
+    display: inline-block;
+    padding: 10px 25px;
+}
+.TheWhatsUp{
+    margin-left:100px;
+    
+    top: 40px;
+    width:620px !important;
+   position:absolute;
+   z-index: 100;
+}
+.img_PosterFace{
+    max-height:70px;
+    max-width: 70px;
+    float:left;
+    border-radius: 100px;
+    margin-right: 45px;
+    margin-top: -20px;
+    min-height: 70px;
+  
+}
+.ThePostHolder{
+   // border-left: 5px solid navy;
+    //box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    margin-bottom: 70px;
+}
+.ThePostToppper{
+    background-color: white;
+    padding:12px 0px 10px 0px;
+   // border: 1px solid silver;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+   
+}
+.PosterProfPic{
+    margin-left: -80px;
+    
+}
+.PosterName{
+    font-size: 18px;
+    color: darkcyan;
+}
+.PosterSignature{
+    display: inline-block;
+    color:silver;
+    margin-left: 20px;
+    font-size: 14px;
+    
+}
+.sf_TmDoller{
+    font-family:"Times New Roman";
+    font-size: 14px;
+    margin: 0px 2px;
+    font-family: cursive;
+}
+.PosterTime{
+    color: darkgray;
+    text-align: right;
+    font-size: 11px;
+    padding-right: 25px;
+}
+.ThePostId{
+    display: inline-block;
+    color: crimson;
+    font-size: 13px;
+    margin:0px 2px;
+}
+.ThePostCaption{
+    color: navy;
+    font-size: 14px;
+    padding:5px 15px;
+    margin-left: 15px;
+  // text-align: justify;
+    line-height: 1.5;
+}
+.ThePostMediaHolder{
+   
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    
+}
+.img_ThePost{
+    max-height: 100%;
+    max-width: 100%;
+   
+    
+}
+.ThePostStatusHolder{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    //border:1px solid silver;
+   box-shadow: 3px 0px 3px rgba(0,0,0,0.1);
+   
+    
+}
+.TPSH_Itm{
+    display: inline-block;
+    margin-left:25px;
+}
+.TPSH_Itm img{
+    max-height: 20px;
+}
+.TheWhatsUp{
+    top: 0px;
+    
+    border-left: 1.5px solid darkcyan;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    margin-top: 75px;
+}
+
+.ThePostArrow{
+    width: 0px;
+    height: 0px;
+    border-top:0px solid transparent;
+   // float: right;
+    border-right: 25px solid white;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin-left: -20px;
+   // margin-top: 1px;
+}
+
+/* added for comments */
+.forComment{
+    margin-left: 10px;
+}
+.toolTipCmntAdd{
+    position: absolute;
+    display: inline-block;
+    background-color:whitesmoke;
+    opacity: 0.9;
+    padding:5px 15px 7px 15px;
+   
+    font-size: 15px;
+    width:120%;
+    top: 5px;
+    left: 114%;
+    z-index: 50;
+    color: black;
+    border: 1px solid silver;
+}
+.commentContentFull{
+    padding: 5px 15px;
+    display: none;
+    background-color: white;
+     text-align: left;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.commentTitle{
+   padding: 10px;
+    font-size: 15.5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sf-commentInput{
+   
+    padding: 5px 10px 5px 25px;
+    font-size: 14px;
+   border: 1px solid silver;
+    font-family: cursive;
+    width:95%;
+    margin: 15px 0px 10px 15px;
+    border-color: white white silver white;
+    
+}
+.sf-commentInput:hover{
+    border: 1px solid silver;
+}
+.submitCmnt{
+    width: 100px;
+    height: 30px;
+    background-color:navy;
+    border: 1px outset navy;
+    color: white;
+}
+.submitCmnt:hover{
+    cursor: pointer;
+    background-color:rgb(0,0,100);
+    border:1px navy inset;
+    
+}
+.forCmntArrow{
+    display: block;
+    position: absolute;
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+border-right: 12px solid transparent;
+border-top: 15px solid silver;
+}
+.forShare{
+    float: right;
+    padding-right:25px;
+}
+
+.forCmntTtArrow{
+     display:inline-block;
+    position: absolute;
+    opacity: 0.9;
+    left: 104%;
+    top: 12px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+border-right: 15px solid silver;
+}
+.cmntAtachIcon{
+    width:30px;
+    height:30px;
+}
+.sf-CommentIcon{
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+}
+.attachCmntIcon{
+    width: 30px;
+    height:25px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+    background-image: url('icons/post-cmnt-attach.png');
+    background-size: 25px;
+    color: transparent;
+    cursor: pointer;
+}
+.colorComment{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    visibility: hidden;
+}
+.colorCmntIcon{
+    width: 30px;
+    height:25px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+    background-image: url('icons/chooseColor.png');
+    background-size: 25px;
+    margin-left:5px;
+    margin-right: 5px;
+    color: transparent;
+    cursor: pointer;
+    margin-left:85%;
+}
+.commentContentFull{
+   
+    border-top: 1px solid whitesmoke;
+    margin:12px -10px -10px -10px;
+    padding-top: 10px;
+}
+.sf-shareIcon{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 25px;
+    height:25px;
+}
+.previousComments{
+    display: none;
+    margin:5px;
+   padding: 10px;
+  //  background-color: whitesmoke;
+}
+.commentUser{
+    padding: 15px;
+    color: crimson;
+    font-size: 16px;
+}
+.hisComment{
+    margin:7px 5px 7px 10px;
+   margin: 10px;
+    padding: 5px;
+    background-color: white;
+}
+.commentText{
+    padding: 15px;
+    margin: 10px;
+}
+.userCmntFull{
+   padding: 5px;
+   background-color: whitesmoke;
+    margin-bottom: 2px;
+}
+.spaceBetween{
+    color: transparent;
+    font-size: 10px;
+}
+.commentImage,.commentVideo{
+    //margin-top: 10px;
+    padding: 5px;
+    display:inherit;
+    text-align: center;
+}
+.commentImage>img{
+    max-height:200px;
+    max-width:200px;
+}
+.commentVideo>video{
+    max-height: 250px;
+    max-width:90%;
+}
+.commentVideo>audio{
+    width: 90%;
+}
+.forCommentAdds{
+    background-color: whitesmoke;
+   display: none;
+    position: absolute;
+    margin-top:-55px;
+    margin-left: -47px;
+    border-color: white;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+.toolTipCmntUtils{
+    background-color:whitesmoke;
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -30px;
+    opacity: 0.9;
+    padding: 5px 20px;
+    color:black;
+    border: 1px solid silver;
+}
+.forCmntTtArrowUtil{
+     display:none;
+    position: absolute;
+    opacity: 0.8;
+    width: 0px;
+    height: 0px;
+    margin-left:8px;
+    border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom: 15px solid whitesmoke;
+    
+}
+ol{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+ol>li{
+    padding:5px 15px 2px 15px;
+    margin: 0px;
+    text-indent: 0px;
+   display: inline-block;
+}
+.smileyHead{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+}
+.forCommentStatus>img{
+    width: 20px;
+    height: 20px;
+}
+.aboutThisComment img{
+    height: 20px;
+}
+
+/* again for post */
+.TPSH_Itm img:hover{
+    cursor: pointer;
+}
+
+
+
+/* for post response left panel */
+.ThePostRespDetHold{
+   
+   margin-top: -65px;
+    left: 0px;
+    background-color: rgba(250,250,250,0.95);
+    display: inline-flex;
+   
+    justify-content: space-around;
+    bottom: 0px;
+  //  box-shadow: 0px 0px 7px -2px grey;
+    padding:1px;
+    z-index: 1000;
+  //  margin-bottom: 75px;
+    width: 100%;
+   
+}
+.ThePostRespDetHold  div{
+    display: inline-block ;
+}
+.TPRD_Ttl{
+    font-size: 14px;
+   color: silver;
+    box-shadow: 0px 5px 5px -5px grey;
+    padding:5px 25px;
+    background-color: white;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    display: none !important;;
+    height: 0px;
+    width: 0px;
+}
+.TPRD_PID{
+    color: crimson;
+    /* background-color:darkcyan;
+    color: white;
+    padding: 0px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 10px 0px;
+    */
+    
+}
+.TPRD_Itm{
+    text-align: center;
+    padding:2px 0px 7px 0px;
+    border-radius: 25px 0px;
+}
+.TPRD_ItmInner{
+   
+}
+.TPRD_ItmInner:hover{
+    cursor: pointer;
+    // box-shadow: 3px 3px 5px -5px grey;
+   //  animation: rota 5s;
+    font-size: 15px;
+  
+}
+@-moz-keyframes rota{
+    0%{transform: rotate(-10deg); box-shadow: 3px 3px 5px -5px grey;}
+    100%{transform: rotate(0deg); box-shadow: 0px 0px 5px -5px grey;}
+}
+@-webkit-keyframes rota{
+    0%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+@-keyframes rota{
+    0%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+.TPRD_RespCount{
+    
+    
+}
+.TPRD_RespItmName{
+    color: grey;
+   margin-top: 5px;
+    font-size: 13px;
+}
+#ThePostLikes{
+    color: blue;
+   
+}
+#ThePostUnlikes{
+    color: crimson;
+}
+.TPRD_RatedIcon{
+    max-height: 15px;
+}
+#ThePostComments{
+    color:darkgreen;
+}
+#ThePostShares{
+    color: orange;
+}
+#ThePostViews{
+    color: darkcyan;
+}
+.ThePostPreviousResponders{
+   display: none;
+    background-color: rgba(256,256,256,0.5);
+  position: static !important;
+   
+    max-height: 250px;
+    margin-bottom:5px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.TPPR_Ttl{
+    
+    
+    padding: 10px 25px;
+   
+}
+.TPPR_InnerTitle{
+    color: black;
+    font-size: 15px;
+   margin: 5px;
+    background-color: whitesmoke;
+    padding: 5px 20px;;
+}
+.TPPR_InnerCont{
+    padding:0px 15px 0px 15px;
+    line-height: 2;
+     
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+.RespPeopleName{
+    color: darkcyan !important;
+    margin: 2px 1px;
+    display: inline-block;
+    background-color: whitesmoke;
+    padding:2px 15px;
+}
+.RespPeopleName a{
+    color: darkcyan;
+}
+.RespPeopleName a:hover{
+    cursor: pointer;
+    color: blue !important;;
+}
+.TPPR_ShowMoreBtn{
+    background-color: whitesmoke;
+    color: black;
+    padding:2px 10px;
+    text-align: center;
+    margin: 10px;
+}
+.TPPR_ShowMoreBtn:hover{
+    cursor: pointer;
+    color: navy;
+}
+.ThePostExtra{
+    float: right;
+    margin-right: 20px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.TPE_Dots{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:"Times New Roman";
+    color: blue;
+}
+.TPE_Dots:first-child{
+    color: crimson;
+}
+.TPE_Dots:last-child{
+    color:orange;
+}
+.ThePostExtraBench{
+    display: inline-flex;
+    justify-content:center;
+    //width: 100%;
+    
+    background-color: white;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.3);
+    border-radius: 0px 10px;
+    width: 100%;
+}
+.TPEB_Itm img{
+    max-height: 17px;
+    margin-top: 1px;
+}
+.TPEB_Itm{
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 7%;
+}
+.TPEB_Itm:hover{
+    cursor: pointer;
+    
+}
+.nextDriver{
+    width: 0px;
+    height: 0px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 15px solid silver;
+   // margin-top: 1px;
+}
+.prevDriver{
+    width: 0px;
+    height: 0px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 15px solid silver;
+   // margin-top: 1px;
+}
+.nextDriver:hover{
+    cursor: pointer;
+    border-left-color: darkcyan;
+}
+.prevDriver:hover{
+    cursor: pointer;
+    border-right-color: darkcyan;
+}
+.PosterName a{
+    color: darkcyan;
+}
+.PosterName a:hover{
+    color: blue;
+}
+.PosterSignature{
+  margin-right: 25px;
+}
+.PosterFeeling{
+    font-size: 13px;
+    color:green;
+    font-family: cursive;
+}
+
+.PF_and{
+    font-size: 12px;
+    color:silver;
+}
+.postFeelType{
+    color: silver;
+    font-family: Segoe UI;
+    font-size: 12px;
+    display: none;
+}
+.PosterUserLink{
+    margin-right: 15px;
+}
+.PosterFeeling:hover{
+    cursor: pointer;
+}
+.PosterFeeling:hover .postFeelType{
+    display: inline-block;
+}
+.PosterLocation,.PosterLocation a{
+    font-size: 12px;
+    color:brown; 
+}
+.PosterLocation a:hover{
+    color:black;
+}
+.PostedWith{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.PWI_name{
+    display: inline-block;
+    margin: 0px 1px;
+    padding: 0px 2px;
+}
+.PWI_more{
+    display: inline-block;
+    color: blue;
+}
+.PWI_more{
+    cursor: pointer;
+}
+.ThePostPreviousResponders{
+  
+  
+  
+    background-color: rgba(256,256,256,0.75);
+  
+}
+.ThePostPreviousResponders:hover{
+    background-color: rgba(256,256,256,0.95);
+}
+.ThePostSafetyLayerForResponders{
+   // position: absolute;
+  //  top: 0px;
+  //  left: -1000px;
+  //  width: 15%;
+  //bottom: 0px;
+  //  background-color:rgba(256,256,256,0.25);
+    height: 0px;
+    width: 0px;
+}
+.PosterSignature a{
+    color: silver;
+}
+.PosterSignature a:hover{
+    color:black;
+}
+.PagePinnedTtl{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 40px;
+    background-color: whitesmoke;
+    z-index: 1;
+    box-shadow: 0px 0px 2px grey;
+    text-align: center;
+    display: none;
+}
+#pagepinnerid{
+    display: inline-block;
+}
+.PagePinItm{
+    display: inline-block;
+    padding: 5px 6px;
+    background-color: darkcyan;
+    border-radius: 15px 0px;
+    margin: 5px 7px;
+    color: white;
+   
+}
+.closePinnedTab{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: crimson;
+}
+.OfficialCaption{
+    display: inline-block;
+    font-size: 13px;
+    color:rgb(0,0,225);
+}
+.OfficialCaptionTime{
+    color:grey;
+    margin-left: 15px;
+}
+.OfficialPostCaption{
+    background-color:whitesmoke;
+    
+    padding: 3px 10px 5px 10px;
+    color: darkcyan;
+    margin-top: 5px;
+    background-size: 100%;
+    background-attachment: absolute;
+}
+.OPC_Signature a{
+    color: grey;
+}
+.OPC_Response{
+   text-align: center;
+    margin: 5px 0px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    justify-content:  center;
+}
+
+.OPCR_Itm,.OPCR_ItmPrim{
+    display: inline-block;
+    background-color: silver;
+    padding: 5px 35px;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 0px 0px 1px grey;
+   // box-shadow: 1px 1px 1px  rgba(0,0,0,0.1);
+    border: 1px solid silver;
+}
+.OPCR_ItmPrim{
+    background-color: navy;
+    border: 1px solid darkblue;
+}
+.ODC_Ttl{
+    background-color: crimson;
+    color: white;
+    padding:4px 25px;
+    box-shadow: 0px 5px 5px -5px grey;
+    
+}
+.OPC_Signature{
+    text-align: center;
+    margin: 10px 0px;
+}
+.OPC_User_Id{
+    text-align: center;
+    margin: 0px 0px;
+}
+.OPC_Details{
+    background-color: rgba(256,256,2560,0.75);
+    padding: 10px 0px;
+    padding-top: 20px;
+    
+}
+.OPCR_Itm:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+.OPCR_ItmPrim:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+}
+.ThePostSharedBy{
+    padding: 10px;
+    color: white;
+    border-radius: 0px 10px;
+    text-align: center;
+    background-color:rgba(256,256,256,0.75);
+    margin-bottom: 10px;
+}
+.ThePostSharerName{
+    color: darkcyan;
+    font-size: 16px;
+   
+}
+.TPShare_Desc{
+    font-size: 13px;
+    color:navy;
+    margin: 0px 10px;
+}
+.TPShare_Time{
+    color: silver;
+    font-size: 12px;
+}
+.floatMediaCont{
+    position: absolute;
+    width:50%;
+   // background-color: rgba(256,256,256,0.2);
+    padding: 10px;
+    right: 0px;
+}
+.floatMediaCont img{
+    max-width: 50%;
+    margin: 5px 0px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid black;
+   
+}
+.floatMediaCont img:hover{
+     background-color: rgba(256,256,256,0.2);
+}
+.ThePostMediaMoreImage{
+    padding:7px;
+    margin: 10px;
+    text-align: center;
+    background-color: grey;
+    background-color:rgba(256,256,256,0.75);
+    color:grey;
+   // color:darkcyan;
+}
+.ThePostMediaMoreImage:hover{
+    background-color:white;
+    cursor: pointer;
+}
+.postAlbumTtl{
+    color: darkcyan;
+    margin: 10px;
+}
+.floatMediaCont img:hover{
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+.ThePostCaption{
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height:250px;
+    line-height: 1.75;
+}
+.TPPR_Ttl{
+    display: none;
+}
+.doubleImgeHolder{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.doubleImgeHolder div{
+    width: 49.5%;
+    justify-content: space-between;
+    height: 400px;
+    background-size:auto 100%;
+    background-position: center center;
+    background-attachment: absolute;
+    
+}
+.tripleImgeHolder{
+    display: inline-flex;
+    width: 100%;
+     justify-content: space-around;   
+}
+.tripleImgeHolder div:first-child{
+    width: 49.5%;
+    height: 400px;
+     background-size:auto 100%;
+    background-position: center center;
+    background-attachment: absolute;
+}
+.tripleImgeHolder div:first-child:hover{
+     -moz-animation: playImgtwo 3s alternate;
+    -webkit-animation: playImgtwo 3s alternate;
+    animation-iteration-count: infinite;
+    background-attachment: unset;
+    
+}
+.tripleImgeHolder .TPMH_TIH_Holder{
+    width:49.5%;
+    display: inline-flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+  
+}
+
+.TPMH_TIH_Holder div{
+   height:198.5px !important;
+    width: 100% !important;
+      background-size:100% !important;
+    background-attachment:unset !important;
+   
+}
+.TPMH_TIH_Holder div:hover{
+      background-size:150% !important; -moz-animation: playImgtwo 3s alternate;
+    -webkit-animation: playImgtwo 3s alternate;
+    animation-iteration-count: infinite;
+}
+.doubleImgeHolder div:hover{
+    background-attachment: unset;
+    -moz-animation: playImgtwo 3s alternate;
+    -webkit-animation: playImgtwo 3s alternate;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes playImgtwo{
+    0%{background-position: 0% 0%;}
+    100%{background-position:100% 100%;}
+}
+@-webkit-keyframes playImgtwo{
+    0%{background-position: 0% 0%;}
+    100%{background-position:100% 100%;}
+}
+.fourseImgeHolder{
+   // display: inline-flex;
+    width: 100%;
+}
+.fourseImgeHolder div:first-child{
+    width: 100%;
+    height: 400px;
+    background-size: auto 100%;
+   
+}
+.fourseImgeHolder div:first-child:hover{
+    background-size:150%;
+    background-position: center center;
+     animation: none !important;
+}
+.fourseImgeHolder div:hover{
+     -moz-animation: playImgtwo 3s alternate;
+    -webkit-animation: playImgtwo 3s alternate;
+    animation-iteration-count: infinite;
+}
+.fourseImgeHolder .TPMH_TIH_Thrice_Holder{
+    margin-top: 2px;
+    display: inline-flex;
+    width: 100%;
+     justify-content: space-between;
+    
+}
+.fourseImgeHolder .TPMH_TIH_Thrice_Holder div{
+    height: 200px;
+    width: 33%;
+    background-size: auto 100%;
+}
+.ThePostPdfsFileObjects{
+    height:575px;
+    width: 100%;
+}
+.ThePostPdfFileNameHolder{
+    background-color:white;
+    padding:5px 5px;
+     text-align: left;
+    display: inline-flex;
+}
+.TP_PDF_Logo{
+   display: inline-block;
+    background-color: whitesmoke;
+    font-size: 25px;
+    color:grey;
+    padding: 25px;
+}
+.TP_PDF_Dets{
+    display: inline-block;
+    padding:0px 15px;
+    line-height: 2;
+}
+.TP_PDF_Name{
+    font-size: 14px;
+    font-family:cursive;
+    color:black;
+    margin-top: 10px;
+}
+.TP_PDF_size{
+    color:grey;
+}
+.TP_PDF_size div{
+    display: inline-block;
+}
+.TP_PDF_Preview{
+    margin-left:20%;
+   padding:6px 15px;
+  line-height: 1;
+    background-color: blue;
+    color: white;
+}
+.TP_PDF_download{
+   
+    background-color: navy;
+    color: white;
+    padding: 6px 15px;
+    line-height: 1;
+    margin-left: -5px;
+    margin-top: 9px;
+}
+.TP_PDF_download:hover{
+    background-color: rgb(0,0,100);
+    cursor: pointer;
+}
+.TP_PDF_Preview{
+    background-color: royalblue;
+    cursor: pointer;
+}
+.pstop_meme{
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.psbtm_meme{
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.TPSH_Itm span{
+    color:darkcyan;
+    margin: 0px 0px 0px 10px;
+}
+#norm .ThePostHolder{
+    background-color: white;
+    border: 1px solid silver;
+   
+}
+#norm .ThePostToppper{
+    box-shadow: none;
+}
+#norm .ThePostStatusHolder{
+    border-top: 1px solid silver;
+   margin-top: 10px;
+    box-shadow: none;
+    margin:10px 10px 0px 10px;
+}
+#norm .ThePostMediaHolder{
+    margin-top: 0px;
+}
+#norm .ThePostArrow{
+    display: none;
+}
+#norm .ThePostDetails div{
+    text-align:left;
+   
+}
+#norm .ThePostDetails{
+    margin: 10px 0px;
+}
+#norm .ThePostMediaHolder{
+    margin: 0px !important;;
+}
+#norm .ThePostCaption{
+    margin: 0px 10px; 
+    padding-bottom: 0px;
+}
+#norm .PosterSignature{
+    margin-left: 0px;
+    
+}
+#norm .img_PosterFace{
+    margin-left:95px;
+    margin-right: 15px;
+    min-height: 25px;
+    max-height: 50px;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+.newPostTxtx{
+    
+    max-width: 97%;
+    border: 1px solid silver;
+    font-size: 14px;
+    font-family: segoe ui;
+    padding: 7px 15px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 10px 0px;
+}
+.newPostSubmitter{
+    text-align: right;
+}
+.newPostedNext{
+    background-color:navy;
+    color: white;
+    padding: 6px 50px 6px 25px;
+    display: inline-block;
+    background-color:navy;
+    font-size: 14px;
+}
+.newPostedNext:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+}
+#newPostOnTL{
+    margin-bottom: 50px;
+}
+.img_PosterFace{
+    min-height: 40px;
+    max-height: 60px;
+}
+#norm.TheWhatsUp{
+    border: none;
+    margin-left: 50px;
+}
+
+.WUW_wallPic{
+    height: 250px;
+    background-size: 100%;
+    margin-left: -52px;
+     background-color:aliceblue;
+    
+}
+.WUW_ImpLinks{
+    background-color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.WUW_LinkItm{
+    padding: 10px 25px;
+    display: inline-block;
+    
+}
+.WUW_LinkItm:hover{
+    cursor: pointer;
+    color: black;
+}
+.WUW_ProfPic{
+    max-height: 125px;
+   margin-top: 65px;
+    margin-left: 100px;
+    border-radius: 150px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+.WUW_signature{
+    position: absolute;
+    top: 105px;
+    left: 225px;
+    right: 0px;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 30px;;
+    font-size: 16px;
+    font-family: cursive;
+}

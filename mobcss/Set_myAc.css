@@ -1,0 +1,97 @@
+/* 
+    Created on : Jun 25, 2015, 4:32:05 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.SAC_CurItm{
+    background-color: white;
+    padding: 7px 0px;
+    text-align: center;
+   box-shadow: 0px 0px 5px -2px grey;
+    margin: 10px 0px;
+}
+.SAC_ChngeBtn{
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: 5px 25px;
+}
+.SAC_ChngeBtn:hover{
+    background-color: navy;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px grey;
+}
+.SAC_ChngePassBtn{
+    margin: 20px;
+    padding: 7px 35px;
+    background-color:royalblue;
+    color: white;
+    display: inline-block;
+}
+.SAC_ChngePassBtn:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.PageInnerContent{
+    padding-left:2%;
+    padding-right:2%;
+}
+.Theater_Window_SetOut{
+    position: fixed;
+    top: 35%;
+    left: 0px;
+    right: 0px;
+    padding: 7px 0px;
+    background-color: rgba(250,250,250,0.95);
+    box-shadow: 0px 0px 5px -2px grey;
+    display: none;
+}
+.ThWin_Set_In{
+    padding:5px 10px;
+}
+.ThWinSetTtl{
+    margin: 2% 2%;
+    font-size: 20px;
+}
+.closeThWin{
+    display: inline-block;
+    float: right;
+    color: crimson;
+    font-size: 14px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+.ThWinSetCont{
+    text-align: center;
+    margin: 20px 0px;
+    color: grey;
+}
+.ThWinSetCont input{
+    padding: 7px 10px;
+   width: 85%;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.ThWinPrcdBtn{
+    background-color:navy;
+    float:right;
+    padding: 7px 55px;
+    font-family: "Segoe UI";
+    margin:5px 55px;
+    color: white;
+}
+.ThWinPrcdBtn:hover{
+    background-color:rgb(0,0,100);
+    cursor: pointer;
+}
+.SAC_AvailSts{
+    color: green;
+    font-family: cursive;
+}
+.passEye{
+    position: absolute;
+    max-height: 25px;
+   display: none;
+    margin-top: 5px;
+    cursor: pointer;
+}

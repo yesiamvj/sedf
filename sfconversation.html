@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title>Conversation </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="messages.css"/>
+    <link rel="stylesheet" href="conversation.css"/>
+    <link rel="stylesheet" href="inbox.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="conversation.js" type="text/javascript"></script>
+   <script src="newmsg.js" type="text/javascript"></script>
+  </head>
+  
+  <body  >
+      <div class="sf_tradeMark" >
+          SedFed
+      </div>
+      <div id="content-full">
+          <div id="pageLoadStatus"></div>
+            <div id="Topest">
+                
+                <div id="title_bar"  onmouseover="mouseOntitleBar(1)" onmouseout="mouseOntitleBar(0)">
+                
+                    <font id="sedfed" onclick="myNameClicked()">Vijayakumar</font>
+              <div id="searchbar" >
+                  <form>
+                      <input id="srchbar" type="text" autofocus/>
+                      <input id="proceedsrch" type="submit" value="Search"/>
+                  </form>
+              </div>
+              <div id="notes" style="display:inline-block;">
+                  
+                  
+              </div>
+              <div id="logout">
+                  <button id="logoutbtn">Logout</button>
+              </div>
+              
+            </div>
+      </div>
+            <div id="innerPageCont">
+                <div id="pageTitle">Messages</div>
+                <div class="msgTab">
+                    <div class="msgTabsTtls">
+                         <div class="nonFocTabTtl" id="msgTabTtl" style="margin-left: 0px;" > All Messages </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 130px;" > Inbox </div>
+                        
+                         <div class="nonFocTabTtl"  style="margin-left: 210px;//z-index: 13;" > Sent </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 290px;" > Group </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 380px;//z-index: 13;" > Important </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 500px;//z-index: 13;" > Hidden </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 600px;//z-index: 13;" > Secret </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 700px;//z-index: 13;" > Deleted </div>
+                       
+                    </div>
+                   
+                    
+                        <div class="msgTabIn">
+                            
+                            <div class="tabControl">
+                                <div  class="tabContItm" style="cursor: pointer" onclick="$('#MsgViews').slideToggle()" >
+                                    View as
+                                </div>
+                                <div  class="tabContItm">
+                                    Sort by
+                                    <select>
+                                        <option> Time </option>
+                                        <option> Sender Name </option>
+                                        <option> Messages Count </option>
+                                        
+                                    </select>
+                                    <div id="desc" class="arrows" title="decending"></div>
+                                    <div id="asc" class="arrows" title="ascending"></div>
+                                </div>
+                                <div  class="tabContItm" style="cursor: pointer" onclick="$('#filtrs').slideToggle()" >
+                                    Filters
+                                </div>
+                                <div  class="tabContItm" style="cursor: pointer" onclick="$('#moreMsgControls').slideToggle()" >
+                                    More
+                                </div>
+                                <div  class="tabContItm" style="float: right;">
+                                    Search
+                                    
+                                    <input type="text" placeholder="Search messages" />
+                                   
+                                </div>
+                                
+                            </div>
+                            <div id="filtrs" style="display: none;" >
+                                   
+                                    <div class="filtrMItm">
+                                        <input type="checkbox" /> Has Attachment 
+                                        <select>
+                                            <option>Image</option>
+                                            <option>Audio</option>
+                                            <option>Video</option>
+                                            <option>PDF Docs</option>
+                                            <option>Other Files</option>
+                                        </select>
+                                        <input type="text" placeholder="File Name" style="width: 200px;" />
+                                    </div>
+                                   
+                                    <div class="filtrMItm">
+                                        <input type="checkbox" /> Date
+                                        <input type="text" placeholder="dd/mm/yyyy"/>
+                                    </div>
+                                <button>Filter</button>
+                                    </div>
+                            <div id="moreMsgControls" style="display: none;" >
+                                <div class="msgControlItm" >
+                                    <input type="checkbox" /> Select all
+                                </div>
+                                <div class="msgControlItm">
+                                    <input type="checkbox" /> Invert Selection
+                                </div>
+                                <div class="msgControlItm">
+                                   Delete
+                                </div>
+                                <div class="msgControlItm">
+                                    Mark as Important
+                                </div>
+                                <div class="msgControlItm">
+                                    Mark as Read
+                                </div>
+                                
+                            </div>
+                            <div id="MsgViews" style="display: none;" >
+                                <div class="msgControlItm" >
+                                    Conversation
+                                </div>
+                                <div class="msgControlItm" >
+                                    Text List
+                                </div>
+                                <div class="msgControlItm" >
+                                    With faces
+                                </div>
+                               <br/> <br/>
+                                
+                            </div>
+                            <div class="tabContHold">
+                                <div class="tabContTtl">
+                                    <img class="msgSendrThumb" src="profileimg.PNG" /> <div class="msgSendrNme"> Yogeshwaran </div>  
+                                    <div class="msgReceivr">
+                                        <img class="msgSendrThumb" src="profileimg.PNG" /> <div class="msgRecveName"> Vijayakumar </div>
+                                    </div>
+                                </div>
+                                <div class="convHolder">
+                                    <div class="newMsgHold" >
+                                        <div class="newMsgDecors">
+                                            <div class="msgDecorItm">
+                                                <img class="ico_msgDecor" onclick="$('#newMsgClrinp').click()" src="icons/chooseColor.png" title="Choose a color for your message" />
+                                                <input type="color" id="newMsgClrinp" style="display: none;" value="#000077" onchange="newMsgClr()" />
+                                            </div>
+                                            <div class="msgDecorItm" onclick="$('#newMsgBGClrinp').click()" id="newMsgBG" title="Background color for your message"  ></div>
+                                            <input type="color" id="newMsgBGClrinp" style="display: none;" onchange="newMsgClr()" value="#ffffff" />
+                                        </div>
+                                        <textarea id="newMsgInp" rows="1" class="newMsgInp" placeholder="Type your message ..." oninput="newMsgInput()" onclick="newMsgInput()" onblur="newMsgInpBlur()" ></textarea>
+                                        <div class="msgAttachHold">
+                                            <div class="msgAtchItmHold">
+                                                <div class="msgAtchItm" onclick="showSmiley()" >
+                                                <img class="ico_msgAtch" src="icons/test-smiley.png" alt="smiley" />
+                                            </div>
+                                            <div class="msgAtchItm">
+                                                <img class="ico_msgAtch" src="icons/msg_atch.png" style="margin-bottom:3px;height: 20px;" alt="file" />
+                                            </div>
+                                            <div class="msgAtchItm"></div>
+                                            </div>
+                                            
+                                            <div class="sendNewMsgBtn">
+                                                Send
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                     <div class="smileyHold" id="smileyWindow"  style="display: none" >
+                                            <div class="smileyArr"></div>
+                                            <div class="smileyContOut">
+                                                <div class="smileyContIn">
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Smile Face.png','Cute')" >
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Smile Face.png" alt="Cute" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Cute
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Smile.png','Smile')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Smile.png" alt="Smile" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Smile
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Happy.png','Happy')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Happy.png" alt="Happy" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                           Happy
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Laughing.png','Laughing')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Laughing.png" alt="Laughing" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Laughing
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Cool.png','Cool')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/cutey/Cool.png" alt="Cool" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Cool
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Nerd.png','Nerd')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Nerd.png" alt="Nerd" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Nerd
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Winking.png','Winking')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Winking.png" alt="Winking" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Winking
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Blushing.png','Blushing')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Blushing.png" alt="Blushing" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Blushing
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Surprised.png','Surprised')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Surprised.png" alt="Surprised" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Surprised
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Angry.png','Angry')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Angry.png" alt="Angry" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Angry
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/tongue.png','Tongue')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/tongue.png" alt="Tongue" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Tongue
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Sick.png','Sick')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/cutey/Sick.png" alt="Sick" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Sick
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Sad.png','Sad')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Sad.png" alt="Sad" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Sad
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('cutey/Crying.png','Crying')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Crying.png" alt="Cry" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Crying
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="$('#smile_blacks').slideToggle()" >
+                                                        <div class="moreSmiley">
+                                                            +
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            More
+                                                        </div>
+                                                    </div>
+                                                    <div class="blackSmiley"  id="smile_blacks" style="display: none;" >
+                                                         <div class="smileyItm" onclick="addSmiley('blacks/amazing.png','amazing')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/amazing.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Amazing
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/anger.png','anger')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/anger.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Anger
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/bad_egg.png','bad_egg')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/bad_egg.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Bad Egg
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/bad_smile.png','bad_smile')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/bad_smile.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Bad Smile
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/beaten.png','beaten')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/beaten.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Beaten
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/big_smile.png','big_smile')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/big_smile.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                             Smile
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/black_heart.png','black heart')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/black_heart.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                             Heart
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('blacks/electric_shock.png','electric shock')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/electric_shock.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                             Shock
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- conversation msg items starts-->
+                                    <div class="OutGoMsgItm" id="newMsgPreview" style="display: none;" >
+                                         <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="OutConvMsgArrow" id="newMsgArw" ></div>
+                                        <div class="OutconvMsgHoldr" id="newMsgBGhold" >
+                                           
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" id="newMsgCurTxt" >
+                                                    
+                                                </span>
+                                                <div id="newMsgMedia" class="msgMedia"  >
+                                                        
+                                                </div>
+                                                <div class="msgFile" style="display: none" >
+                                                        
+                                                </div>
+                                            </div> 
+                                            <div class="msgStatus">
+                                                
+                                                <img src="icons/msg_seen.png" alt="seen" /><span class="msg_seenTime"> looking... </span> 
+                                                
+                                            
+                                                
+                                            </div>
+                                        </div>   
+                                    </div>
+                                      <div class="OutGoMsgItm">
+                                         <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="OutConvMsgArrow"></div>
+                                        <div class="OutconvMsgHoldr">
+                                           
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" >
+                                                    This is the msg 
+                                                </span>
+                                                <div class="msgMedia"  >
+                                                    <img class="sf_msg_smiley" id="jjj" onmouseover="smiley()" src="icons/test-smiley.png" alt="happy" />
+                                                </div>
+                                                <div class="msgFile" style="display: none" >
+                                                        
+                                                </div>
+                                            </div> 
+                                            <div class="msgStatus">
+                                                <div class="delMsg">
+                                                    <img class="img_del" src="icons/msg_del.png" alt="seen" /><span class="msg_delTxt"> Delete </span> 
+                                                    <div class="msgNotSeen">
+                                                        <img src="icons/msg_notseen.png" alt="Not Seen" />
+                                                        <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool2" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool2').fadeToggle()" >...</span>
+                                            </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="InComMsgItm">
+                                        <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="InConvMsgArrow" style="border-right-color: white;//user choice" ></div>
+                                        <div class="convMsgHoldr" style="background-color: white;" >
+                                            
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" >
+                                                    This is the msg  very big thing this is 
+                                                </span>
+                                                <div class="msgMedia" style="display: none;//if no file" >
+                                                    
+                                                    <!-- message media (image or video or pdf) here -->
+                                                </div>
+                                                <div class="msgFile" style="display: none;//if no file" >
+                                                    <!-- other file names here when click download . if no file put display none--> 
+                                                </div>
+                                            </div>
+                                            <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool1" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool1').fadeToggle()" >...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="InComMsgItm">
+                                        <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="InConvMsgArrow" style="border-right-color: white;//user choice" ></div>
+                                        <div class="convMsgHoldr" style="background-color: white;" >
+                                            
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" >
+                                                    This is the msg  very big thing this is 
+                                                </span>
+                                                <div class="msgMedia" style="//display: none;//if no file" >
+                                                    <video src="icons/test.mp4" controls ></video>
+                                                </div>
+                                                <div class="msgFile" style="display: none;//if no file" >
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool2" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool2').fadeToggle()" >...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    
+                                    <div class="OutGoMsgItm">
+                                        <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profilemg.PNG" />
+                                        </div>
+                                        <div class="OutConvMsgArrow" style="border-left-color:white;//user choise" ></div>
+                                        <div class="OutconvMsgHoldr" style="background-color: white;//user choise" >
+                                           
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" >
+                                                    This is the msg 
+                                                </span>
+                                                <div class="msgMedia"  >
+                                                        <video src="icons/test.mp4" controls></video>
+                                                </div>
+                                                <div class="msgFile" >
+                                                        Sedfedopen.php
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="msgStatus">
+                                                <img src="icons/msg_seen.png" alt="seen" /><span class="msg_seenTime"> 10:40 pm </span> 
+                                                 <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool2" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool2').fadeToggle()" >...</span>
+                                            </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="OutGoMsgItm">
+                                        <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="OutConvMsgArrow"></div>
+                                        <div class="OutconvMsgHoldr">
+                                            
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" >
+                                                    This is the msg 
+                                                </span>
+                                                <div class="msgMedia"  >
+                                                        
+                                                </div>
+                                                <div class="msgFile" style="display: none" >
+                                                        
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="msgStatus">
+                                                <img src="icons/msg_seen.png" alt="seen" /><span class="msg_seenTime"> 10:40 pm </span>
+                                                <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool2" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool2').fadeToggle()" >...</span>
+                                            </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="OutGoMsgItm">
+                                         <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="OutConvMsgArrow"></div>
+                                        <div class="OutconvMsgHoldr">
+                                         
+                                            <div class="convMsgCont">
+                                                <div class="hiddenMsg">
+                                                        Hidden
+                                                </div>
+                                            </div> 
+                                            <div class="msgStatus">
+                                                <img src="icons/msg_seen.png" alt="seen" /><span class="msg_seenTime"> 10:40 pm </span> 
+                                                <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool2" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool2').fadeToggle()" >...</span>
+                                            </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="InComMsgItm">
+                                        <div class="msgOwner">
+                                            <img class="msgSendrFace" src="profileimg.PNG" />
+                                        </div>
+                                        <div class="InConvMsgArrow" style="border-right-color: white;//user choice" ></div>
+                                        <div class="convMsgHoldr" style="background-color: white;" >
+                                            
+                                            <div class="convMsgCont">
+                                                <span class="messageTxt" style="color:navy;//color by user" >
+                                                    This is the msg  very big thing this is 
+                                                </span>
+                                                <div class="msgMedia" style="//display: none;//if no file" >
+                                                    
+                                                </div>
+                                                <div class="msgFile" style="display: none;//if no file" >
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="convMsgSender">
+                                                <div class="msgTime" title="1 Jun 2015 , 10:30 pm" > <span class="time"> 10:30 pm </span>
+                                                    <div class="convMsgTlHold" id="msgTool2" style="display: none;" >
+                                                        <div class="convMsgTools">
+                                                            <div class="convMsgTlItm" onclick="$('#forwardMsg').fadeIn()" >
+                                                                Forward
+                                                            </div>
+                                                            <div class="convMsgTlItm">
+                                                                Download
+                                                            </div> 
+                                                            <div class="convMsgTlItm">
+                                                                Important
+                                                            </div> 
+                                                        </div> 
+                                                        <div class="convToolArw"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="moreAct"  onmouseover="$('#msgTool2').fadeToggle()" >...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  
+                                    
+                                    <!-- conversation msg items ends--> 
+                                </div>         
+                            </div>
+                                 
+                        </div>
+                   
+                </div>
+                <div class="theaterTextsOut" id="forwardMsg" style="display: none;" >
+                    <div class="theaterTextsIn">
+                        <div class="closeTheater" onclick="$('#forwardMsg').fadeOut()" >
+                            X
+                        </div>
+                        <div class="th_Ttl">Forward Message</div>
+                        <div class="th_Cont">
+                            Forward this message to <input class="th_inp" type="text" placeholder="Name of the Person" />
+                        </div>
+                        <div class="th_proceed">
+                            <div class="th_prcdbtn">
+                                forward
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="ExtCopyright" style="display: none;" id="CopyRSmiley" >
+              Smileys from Bruno Maia, IconTexto http://www.icontexto.com
+          </div>
+      </div>
+       
+  </body>
+</html>

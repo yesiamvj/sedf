@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+       <title>Vijayakumar\'s Blog </title>
+    <link rel="stylesheet" href="myBlog.css"/>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="myBlog.js" type="text/javascript"></script>
+  </head>
+  <body  style="background-image: url(\'icons/post-testimg.jpg\');" >
+       <div class="myBlogTtl">
+                <div class="myBlogPrfPic">
+                    <img src="profileimg.PNG" />
+                </div>
+           Vijayakumar\'s Blog 
+           <div class="sedfed_signature">
+               $username
+           </div>
+            </div>
+        <div class="contentFull">
+            <div class="contentFocusCenter">
+                <div class="newBlogUpdateHolder">
+                    <div class="NBU_Ttl">
+                        Write a new update
+                    </div>
+                    <div class="NPU_Cont">
+                        <textarea id="newBlogUpdateInp" placeholder="What\'s happening?" oninput="newBlogInp()" ></textarea>
+                        <div style="color: silver"> &nbsp;&nbsp;&nbsp;You can use HTML too.</div>
+                    </div>
+                    <script>
+                        function newBlogInp(){
+                          
+                            if($(\'#newBlogUpdateInp\').val()===\'\'){
+                                $(\'#newBlogPreHold\').slideUp();
+                            }
+                            else{
+                                 $(\'#newBlogPreHold\').slideDown();
+                            }
+                            $(\'#newBlogPreCont\').html($(\'#newBlogUpdateInp\').val());
+                        }
+                        function newBlogClrInp(){
+                            $(\'#newBlogPreCont\').css({\'background-color\':$(\'#NB_BGC\').val(),\'color\':$(\'#NB_C\').val()})
+                        }
+                    </script>
+                    <div class="NPU_Tools">
+                        <div class="NPU_ToolItm" onclick="$(\'#NB_C\').click();" >
+                            Color
+                        </div>
+                        <input type="color" oninput="newBlogClrInp()" id="NB_C" value="#0000ff" onchange="newBlogClrInp()"  style="display: none;" />
+                        <input type="color"  oninput="newBlogClrInp()" id="NB_BGC" value="#ffffff"  onchange="newBlogClrInp()" style="display: none;" />
+                        <div class="NPU_ToolItm" onclick="$(\'#NB_BGC\').click();">
+                            Background color
+                        </div>
+                    </div>
+                    <div class="NPU_PostSub">
+                        Post
+                    </div>
+                </div>
+                <div class="myBlogPervHisto">
+                    <div class="MPPH_Ttl"> History </div>
+                    <div class="myBlog_ItmHold" id="newBlogPreHold" style="display: none;" >
+                        <div class="myBlogPrevItm" id="newBlogPreCont" style="background-color: white;color: navy" >
+                    
+                </div>
+                        </div>
+                    <div class="myBlog_ItmHold">
+                    <div class="MPPH_time">
+                        1 Jan , 10:23pm
+                    </div>
+                    <div class="myBlogPrevItm" style="background-color:blue;color: white" >
+                    Start the music
+                </div>
+                        </div>
+                    <div class="myBlog_ItmHold">
+                    <div class="MPPH_time">
+                        1 Jan , 10:23pm
+                    </div>
+                    <div class="myBlogPrevItm" style="background-color:darkorange;color: white" >
+                    Start the music
+                </div>
+                        </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

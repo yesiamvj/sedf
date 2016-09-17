@@ -1,0 +1,25 @@
+/* 
+    Created on : Mar 15, 2015, 9:53:11 PM
+    Author     : Vijayakumar M <vijayakumar for www.sedfed.com>
+*/
+body{
+    margin-top: 43px;
+    margin-left: 0%;
+   //font-family:Arial, Helvetica, sans-serif;
+   font-family:Segoe UI;
+   font-size: 14px;
+    color:navy;
+  
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+

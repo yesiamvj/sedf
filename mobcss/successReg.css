@@ -1,0 +1,126 @@
+/* 
+    Created on : Jul 30, 2015, 4:24:07 PM
+    Author     : Vijayakumar M
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+.TtlBar{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    padding: 10px;
+    text-indent: 15%;
+    font-size: 16px;
+    color: navy;
+    text-shadow: 0px 0px 1px white;
+    z-index:100;
+    box-shadow:0px 0px 5px grey;
+}
+.SubTtl{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 0px 5px grey;
+    
+}
+.contentHolder{
+     padding: 25px;
+    padding-top: 100px;
+    margin: 0px 2%;
+    box-shadow: 0px 0px 5px grey;
+    text-align: center;
+   
+}
+.WelcomeMsg{
+    font-size: 20px;
+    font-family: cursive;
+    color:darkcyan;
+    margin-bottom: 10px;
+}
+.WelcomeMsgSc{
+    color: darkcyan;
+    text-align: center;
+    margin: 25px 0px;
+}
+.userIdDets{
+    color:navy;
+    font-size: 15px;
+}
+.userIdNum{
+    font-family: Segoe UI;
+    font-size:60px;
+    color:blue;
+   display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    margin: 25px 0px;
+    margin-top: 35px;
+    border-radius: 55px 0px;
+    padding: 20px 25px;
+    border: 1px solid darkcyan;
+   // box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.1);
+}
+.addressDets{
+    background-color: whitesmoke;
+    padding:25px 0px;
+}
+.acTt{
+     background-color: whitesmoke;
+    color: navy;
+    margin: 25px 0px 0px 0px;
+    padding-top: 20px;
+    color: grey;
+}
+.ADItm{
+    padding:10px 25px;
+    background-color:darkgreen;
+    color: white;
+    border: 1px solid silver;
+    display: inline-block;
+    margin: 15px 0px;
+    
+}
+
+.addressDets{
+    margin-bottom: 25px;
+}
+.peopleSearchTip{
+    color: grey;
+    margin: 0px 25px;
+    line-height: 2.5;
+}
+.proceedToProf{
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    margin: 25px 0px;
+}
+.proceedToProf:hover{
+    background-color: rgb(0,0,100);
+    cursor: pointer;
+}
+.bottomSedFed_Tm{
+    background-color: whitesmoke;
+   
+    padding:10px;
+    left: 0px;
+    right: 0px;
+    bottom: -50px;
+    text-align: center;
+    box-shadow: 0px 0px 5px grey;
+}
+.spAd{
+   // color: navy;
+    font-size: 15px;
+}

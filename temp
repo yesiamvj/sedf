@@ -1,0 +1,53 @@
+
+if(!empty($name))
+{
+	$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE `first_name` REGEXP '$name' ";
+
+	if(!empty($male))
+	{
+		$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE `first_name` REGEXP '$name'  and sex='boy' ";
+
+	}
+	if(!empty($female))
+	{
+		$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE sex='girl' and`first_name` REGEXP '$name' ";
+
+	}
+	if(!empty($female) && !empty($male))
+	{
+		$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE `first_name` REGEXP '$name' ";
+
+					if(!empty($agefrm) || !empty($ageto))
+					{
+						$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE `first_name` REGEXP '$name' and age='$agefrm' or age='$ageto'";
+
+					}
+					if(!empty($agefrm) && !empty($ageto))
+					{
+						$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  `first_name` REGEXP '$name' and age='$agefrm' and age<='$ageto'";
+
+					}
+
+
+
+	}//END OF IF(ML &FL)
+}
+else
+{
+	if(!empty($male))
+	{
+		$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE sex='boy'";
+
+	}else
+	{
+		if(!empty($female))
+		{
+			$main="SELECT first_name as fn,user_id as uid,nativeplace as np ,sex as s,age as ag FROM `basic`  WHERE sex='girl'";
+
+		}else
+		{
+			$main="";
+		}
+	}
+}
+

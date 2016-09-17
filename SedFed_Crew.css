@@ -1,0 +1,258 @@
+/* 
+    Created on : Jun 25, 2015, 9:28:21 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    overflow-x: hidden;
+}
+.SedFedLogo{
+    position: absolute;
+    top: 27%;
+    left: 43%;
+}
+.SedFedLogoHead{
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid navy;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent
+}
+#crewLogo .SedFedLogoHead{
+    border-top-color: whitesmoke;
+}
+#crewLogo .SedFedLogoBody{
+    border-top-color: white;
+}
+.SedFedLogoBody{
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid navy;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    margin-left: -9px;
+    margin-top: -2px;
+ -moz-animation: sedfedlogo 10s infinite;
+    -webkit-animation: sedfedlogo 3s infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes sedfedlogo{
+     0%{transform: rotateX(0deg)}
+     20%{transform: rotateX(360deg)}
+     25%{transform: rotateY(0deg)}
+     45%{transform: rotateY(360deg)}
+     50%{transform: rotateZ(0deg)}
+     75%{transform: rotateZ(360deg)}
+    // 50%{transform: rotate(180deg);}
+     //100%{transform: rotateX(360deg)}
+}
+@-webkit-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+}
+.SedFedSiteName{
+   
+    font-size: 27px;
+    color: crimson;
+    text-shadow:0.5px 0.5px 0.5px grey;
+}
+.SedFed_TitleBar{
+    background-color: whitesmoke;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+   padding: 40px 0px;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 100;
+}
+.SedFedSubTtl{
+    position: absolute;
+    background-color: white;
+    color: navy;
+    top: 110px;
+    width: 100%;
+    padding:10px 0px;
+    text-indent: 50px;
+    font-family: cursive;
+    z-index: 10;
+    box-shadow: 0px 0px 5px grey;
+}
+body{
+    background: whitesmoke;
+}
+.SedFed_about_content{
+   margin-top: 185px;
+   margin-left: 50px;
+}
+.SF_about_Ttl{
+    color:grey;
+    font-size: 16px;
+    font-family: cursive;
+}
+.SedFedVersionDets{
+    position: absolute;
+    right: 0px;
+    background-color:white;
+    padding:10px;
+    margin-top: -40px;
+    text-align:center;
+    box-shadow: -5px 5px 5px -5px grey;
+}
+.SedFedVersionDets div{
+    margin:7px;
+     font-family: Segoe UI;
+    font-size: 14px;
+}
+.SedFedVersionDets .SedFedNme{
+    color: crimson;
+    font-size: 15px;
+    border-left: 5px solid navy;
+    display: inline-block;
+    padding-left: 10px;
+}
+.VrsQue{
+    float: left;
+    margin-right: 40px;
+    color: grey;
+}
+.SedFedVersion{
+    font-family: Segoe UI;
+}
+.SF_Dev_Itm{
+    margin: 30px;
+    font-family: cursive;
+}
+.SF_Dev_VolunteerBtn{
+    
+    margin-left: 250px;
+    margin-top:60px;
+    width: 100%;
+    background-color:indigo;
+    color: white;
+  
+    padding:8px 25px;
+    cursor: pointer;
+}
+#SF_Dev_Vol_Hold{
+  //  display: inline-block;
+}
+.SF_Dev_Que_Itm{
+    display: inline-block;
+   margin-left: 300px;
+    margin-top: 35px;
+}
+.SF_Dev_Que_Itm input{
+    padding: 7px 25px;
+    width: 375px;
+     font-family:"Segoe UI";
+  
+}
+.SF_Dev_Que_Submit{
+    background-color: grey;
+    color: white;
+    padding: 7px 25px;
+    display: inline-block;
+    font-family:"Segoe UI";
+}
+.SF_Dev_Que_Submit:hover{
+    background-color:royalblue;
+    cursor: pointer;
+}
+.SF_Dev_Description{
+    margin-top: 30px;
+    margin-left: 250px;
+    font-family: cursive;
+    line-height: 2.5;
+}
+.SF_OurAim{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    color:silver;
+    bottom: 0px;
+    padding-bottom: 25px;
+    box-shadow: 0px 5px 5px -3px black;
+    z-index: 50;
+}
+.SedFed_Crew_Holder{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0px;
+}
+.SedFed_Crew_Ttl{
+    position: absolute;
+    width: 100%;
+    background-color:whitesmoke;
+    text-align: center;
+    font-family:cursive;
+    font-size: 15px;
+    box-shadow: 0px 5px 5px -2px grey;
+    padding: 10px 0px;
+    padding-top: 15px;
+    margin:-1px 0px;
+    z-index: 9;
+}
+.SedFed_Crew_Inr{
+    margin-top: 125px;
+}
+.SedFed_Crew_Cont_Ttl{
+    padding: 10px;
+    background-color: white;
+    text-indent: 50px;
+    font-family: Segoe UI;
+    box-shadow: 0px 5px 5px -4px grey;
+}
+.SFCM_ImgHold{
+    display: inline-block;
+    float: left;
+    margin-top:5px;
+}
+.SedFed_Crew_Member_Holder{
+    background-color: white;
+    margin: 15px;
+    padding: 10px 20px;
+    padding-left: 100px;
+    color: grey;
+}
+#SF_Partners .SedFed_Crew_Member_Holder{
+    float: left;
+     margin-left: 80px;
+    padding:10px 20px;
+    box-shadow: 5px 5px 5px -5px grey;
+}
+#SF_Partners .SedFed_Crew_Member_Holder:nth-child(2n){
+    text-align: right;
+    float: right;
+    margin-right: 80px;
+     padding:10px 20px;
+     box-shadow: -5px 5px 5px -5px grey;
+}
+.SF_MemberName{
+    font-size: 16px;
+    color:blue;
+    cursor: pointer;
+}
+.SFCM_Details{
+    display: inline-block;
+    line-height: 2.5;
+    margin:0px 20px;
+    font-family: Segoe UI;
+}
+.img_SFCrewMmbr{
+    max-height: 100px;
+}
+.SFCM_SFPos{
+    margin-left: 50px;
+    display: inline-block;
+    color: silver;
+    line-height: 2.5;
+    font-family: cursive;
+}
+.SedFed_Crew_Inr{
+    padding-bottom: 20px;
+    
+}

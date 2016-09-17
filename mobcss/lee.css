@@ -1,0 +1,43 @@
+/* 
+    Created on : May 30, 2015, 1:47:12 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    margin: 0px;
+}
+#editor{
+    margin: 10px;
+    height: 98%;
+    width: 48%;
+    float: left;
+     border: 1px solid green;
+}
+#preview{
+    margin: 10px;
+    display: inline-block;
+   float: right;
+    height: 98%;
+    width: 48%;
+    border: 1px solid green;
+}
+.title{
+    background-color:black;
+    padding: 5px 10px;
+    color: white;
+}
+#htmlinp{
+    margin: 0px;
+    width: 100%;
+    height: 95%;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 10px;
+    color: navy;
+    border: none;
+}
+#previi{
+    background-color: green;
+}
+#previewHere{
+     
+}

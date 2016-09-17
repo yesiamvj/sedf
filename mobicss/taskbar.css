@@ -1,0 +1,977 @@
+/* 
+    Created on : Jun 13, 2015, 10:18:24 AM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.taskbarHold{
+    position: absolute;
+    background-color: white;
+    
+    top:50px;
+   left:800px;
+    bottom: 0%;
+    box-shadow:0px 0px 5px -3px grey;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 35px;
+}
+.toolTaskbr{
+    left: 850px;
+    display: none;
+}
+.taskbarIn{
+    width: 50px;
+}
+.tb_notifItm{
+   margin-left:10px;
+}
+#Notif_PplHead{
+    width: 11px;
+    height: 11px;
+    border-radius:15px;
+    background-color:#008b8b;
+    margin-left:8px;
+   
+}
+#Notif_PplBody{
+    min-width: 27px;
+    padding: 0px 0px;
+    background-color:darkcyan;
+    border-radius:10px 10px 0px 0px;
+   // margin-top: -1px;
+    display: inline-block;
+    text-align: center;
+   // padding: 0px 5px;
+     color: white;
+    font-weight: bold;
+  
+}
+#CustmNotifMsg{
+    margin-top: 1px;
+}
+#Notif_MsgArr,#new_Notif_MsgArr{
+    width: 0px;
+    height: 0px;
+    border-right:8px solid navy;
+    border-top: 5px solid transparent;
+    border-bottom:5px solid transparent;
+    float: left;
+    margin-left: -7px;
+    
+    
+  
+}
+#new_Notif_MsgArr{
+    float: right;
+    border-right:none;
+    border-left:7px solid black;
+   //position: absolute;
+    display: inline-block;
+    margin-right:8px;
+    margin-top: 1px;
+}
+
+#Notif_MsgCont{
+   min-width:30px;
+   padding: 4px 1px;
+    font-weight: bold;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    border-radius:0px 15px;
+   
+   
+}
+#new_Notif_MsgArr{
+    border-left-color: silver;
+}
+#new_Notif_MsgCont{
+   background-color:silver;
+    padding: 0px;
+  
+    margin-left: 3px;
+    padding: 1px 0px;
+}
+#new_Notif_MsgCont{
+    color: white;
+    display: inline-block;
+    padding: 0px 7px 1px;
+}
+.tb_Notif_Count{
+    color: white;
+    font-weight: bold;
+}
+#Notif_MsgCount{
+    margin-top: 3.5px;
+   // margin-left:11px;
+   
+    position: absolute;
+    padding-left: 2px;
+    width:25px;
+    text-align:center;
+    background-color: navy;
+}
+#CustmNotifBulb{
+    margin-left: 1.5px;
+}
+#Notif_BulbGlass{
+    width: 25px;
+    height: 27px;
+    background-color:white;
+    //box-shadow: 0px -1px 10px -1px green;
+    border-radius: 30px 30px 15px 35px;
+    border:1px solid darkgray;
+    transform: rotate(40deg);
+    margin-top: -4px;
+   
+}
+#Notif_BulbHoldr{
+    width: 10px;
+    height: 10px;
+    background-color:darkgreen;
+    margin-left: 7.5px;
+    background-color: whitesmoke;
+    border: 1px solid darkgrey;
+    border-top: 0px;
+    
+}
+#CustmNotifBulb:hover #Notif_BulbGlass{
+    border-color: green;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px -2px green;
+}
+#CustmNotifBulb:hover #Notif_BulbHoldr{
+    border-color: green;
+    cursor: pointer;
+    background-color: darkgreen;
+}
+#Notif_BulbCount{
+   // background-color: white;
+    color:green;
+   // margin-left: 10px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 6px;
+    padding-right: 5px;
+    text-align: center;
+    width: 30px;
+    margin-left: -1px;
+}
+#Notif_GiftLid{
+    background-color:brown;
+    height: 3px;
+    width: 30px;
+}
+#Notif_GiftHold{
+    margin-top: 0.75px;
+    background-color:crimson;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 1px 0px 4px 0px;
+}
+.ico_tb_notif{
+    max-height: 40px;
+}
+#notif_love{
+    max-height: 37px;
+    margin-top:-10px;
+    margin-left: -5px;
+}
+.tb_ico_Count{
+   // background-color:white;
+    padding: 1px 3px;
+    display: inline-block;
+    position: absolute;
+   margin-left:-2px;
+    font-weight: bold;
+   color: crimson;
+}
+.tb_newIcos{
+    max-height: 27px;
+    margin-left: 12px;
+}
+.tb_n_plus{
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 9px;
+    color: white;
+    font-weight: bold;
+}
+.tb_notifItm{
+    margin-top: 25px;
+}
+.tb_TbItm{
+    margin-top: 20px;
+}
+.tb_TbItm:hover,.tb_notifItm{
+    cursor: pointer;
+}
+.toolTaskbr{
+    position: absolute;
+   margin-left: 40px;
+}
+.toolTaskbr div{
+    display: inline-block;
+}
+.tT_Tb_Arr{
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid whitesmoke;
+}
+.tT_Tb_Cont{
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px 15px;
+ //  min-width: 60px;
+     margin-left: -3px;   
+}
+.Main_Notif_Float_Out{
+    position: absolute;
+    margin-right: 130px;
+}
+.NotifStatus{
+    float: right;
+    margin-right: 30px;
+}
+.MNF_Arr{
+    width: 0px;
+    height: 0px;
+    border-bottom: 15px solid whitesmoke;
+    border-left: 10px solid transparent !important;;
+    border-right: 10px solid transparent !important;;
+ 
+    display: none;
+  
+   
+}
+.MNF_In{
+    background-color: whitesmoke;
+    width:550px;
+    padding:1px 0px;
+    box-shadow: -2px 2px 5px -3px grey;
+}
+.MNF_Ttl{
+    position: absolute;
+    background-color:crimson;
+    color: white;
+    width:550px;
+    padding: 4px 0px;
+    text-indent: 15px;
+    font-size: 15px;
+    box-shadow: 0px 3px 5px -5px black;
+    
+}
+.MNF_Cont{
+    background-color: white;
+    min-height: 250px;
+    max-height:75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding:5px 15px;
+}
+.RelReqFace{
+    float: left;
+    margin-right: 15px;
+}
+.img_relreq{
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 75px;
+}
+.MNF_Rel_Req_Itm:first-child{
+    margin-top: 25px;
+    
+}
+.RelReqDets{
+    padding: 3px;
+}
+.RelReqNme{
+    color:darkcyan;
+    font-size: 16px;
+}
+.RelReqMyDet{
+    color: grey;
+    font-size:12px;
+}
+.divider{
+    margin:0px 5px;
+   border: none;
+}
+.RelReqAccpt{
+    background-color:navy;
+    display: inline-block;
+    padding:3px 15px;
+    color: black;
+    color: white;
+    border-radius: 10px 0px;
+}
+.RelReqAccpt:hover{
+    background-color:rgb(0,0,100);
+    color: white;
+    cursor: pointer;
+}
+.RelReqExt{
+    margin-top: 10px;
+}
+.RelReqExt div{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.reqTime{
+    float: right;
+    margin-right: 10px;
+    color: grey;
+    font-size: 12px;
+    margin-top: 2px;
+    color: silver;
+}
+.RelReqPplThme{
+    width:5px;
+    height: 60px;
+    float: left;
+    margin-right:5px;
+    display: none;
+}
+.MNF_Rel_Req_Itm{
+    margin-bottom: 5px;
+    padding:10px 5px;
+    border-bottom: 1px dotted silver;
+   // background-color: rgba(0,0,0,0.03);
+}
+.MNF_Msg_Itm{
+    margin-bottom:-5px;
+    padding: 10px 5px;
+}
+.MNF_Msg_Itm:first-child{
+    margin-top: 25px;
+}
+.NotifMsgCont{
+   margin-top: 10px;
+   text-indent: 10px;
+}
+#Main_Notif_Msgs .MNF_Cont{
+    padding: 5px 10px;
+}
+.Notif_MsgArw{
+    height: 0px;
+    width: 0px;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid navy;
+    float: left;
+}
+#Notif_Msg_Cont{
+    background-color:whitesmoke;
+}
+#Main_Notif_Msgs .MNF_In{
+    background-color: white;
+}
+.NotifMsgPpl{
+    float: left;
+}
+.NotifMsgPpl_Out{
+    float: right;
+}
+.NotifMsgPpl div{
+    display: inline-block;
+}
+.Notif_Msg_Pplthme{
+    background-color: crimson;
+    width: 5px;
+    height: 55px;
+    display: none !important;
+}
+.img-Notif_Msg_Face{
+    max-height: 55px;
+    border-radius: 50px;
+}
+.Notif_Msg_Arr,.Notif_Msg_Arr_Out{
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid white;
+    float: left;
+}
+.Notif_Msg_Arr_Out{
+    float: right;
+     border-right:none;
+    border-left: 10px solid white;
+    
+}
+.NotifMsgContHold{
+    margin-left: 57px;
+   
+}
+.Notif_Msg_Cont,.Notif_Msg_Cont_full{
+    background-color: white;
+    display: inline-block;
+    margin-left: 0px;
+    padding:5px 15px;
+    box-shadow: 2px 2px 3px -3px grey;  
+    max-width:90%;
+    text-align: left;
+}
+.Notif_Msg_Cont_full{
+    max-width: 475px;
+    width:475px;
+    display: inherit;
+}
+.Notif_Bulb_Cont{
+     background-color: white;
+    display: inline-block;
+    margin-left: 0px;
+    padding:7px 15px;
+    box-shadow: 2px 2px 3px -3px grey;  
+    max-width: 325px;
+    text-align: left;
+}
+.Ntf_Msg_Sendr{
+    color: crimson;
+    font-size: 15px;
+}
+.Ntf_Msg_Txt{
+    display: inline-block;
+    margin:5px 10px;
+   background-color: white;
+    cursor: pointer;
+    line-height:1.775;
+}
+.Notif_MsgDets{
+    color:silver;
+    font-size: 12px;
+}
+.Notif_Msg_Time{
+    margin-left: 25px;
+    color: gray;
+    float: right;
+    font-size: 11px;
+    margin-top: 3.5px;
+    cursor: pointer;
+}
+.Notif_To{
+    color: silver;
+    font-size: 10px; 
+}
+.Notif_Msg_In_Out{
+    text-align: right;
+}
+.Notif_Msg_In_Out .Notif_Msg_Cont{
+      box-shadow: -2px 2px 3px -3px grey;  
+}
+.Notif_ShowMore{
+    background-color: silver;
+    color: white;
+    padding:5px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width:92%;
+    cursor: pointer;
+}
+.Notif_Empty{
+    color:silver;
+    font-size: 16px;
+    text-align: center;
+    margin: 50px 0px;
+}
+.Notif_End{
+    color:silver;
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 0px;
+    margin-top: 25%;
+}
+.MNF_Bulb_Itm{
+    padding: 5px 5px;
+}
+.MNF_Bulb_Itm:first-child{
+    margin-top:0px;
+    padding-top: 10px;
+}
+#Main_Notif_Msgs .Notif_Msg_Cont{
+   // height: 45px;
+}
+#Main_Notif_Bulbs .MNF_In{
+    width: 620px;
+}
+#Main_Notif_Bulbs .MNF_Ttl{
+    width: 620px;
+}
+#Main_Notif_Bulbs .Notif_Msg_Cont{
+    line-height: 1.5;
+    max-width: 410px;
+}
+#Main_Notif_Bulbs .MNF_Cont{
+    padding: 7px;
+}
+.MNF_innrCont{
+    background-color: whitesmoke;
+    padding: 5px 2px;
+}
+.Notif_Acts:hover{
+    cursor: pointer;
+    color:green;
+}
+.Notif_Gft_TypOut{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -50px;
+   
+}
+.Notif_Gift_Arr{
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid whitesmoke;
+   margin-left:65px;
+}
+.Notif_Gift_Cont{
+    background-color: white;
+    padding: 5px 0px;
+}
+.Notif__Gft_Typin{
+   
+   text-align: right;
+   
+    box-shadow: 0px 0px 5px -3px grey;
+    width: 150px;
+}
+.Notif_Gft_Itm{
+    padding:7px;
+  
+}
+.Notif_Gft_Itm:hover{
+    background-color:azure;
+    cursor: pointer;
+}
+.Notif_Gft_Count{
+    display: inline-block;
+   
+    background-color:silver;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 3px;
+    font-weight: bold;
+    margin-top: -2px;
+    text-align: center;
+    min-width: 15px;
+    margin-left: 15px;
+}
+#Main_Notif_Post_Gift_Like{
+    margin-right: 250px;
+}
+#Main_Notif_Post_Gift_Unlike{
+    margin-right: 250px;
+}
+.MNF_like_itm:first-child{
+    margin-top: 25px;
+    
+}
+.MNF_like_itm{
+   // background-color:whitesmoke;
+    padding:7px 10px;
+    border-bottom: 1px dotted silver;
+    margin-left: -10px;
+}
+.Notif_Liker{
+    color: crimson;
+    font-size: 15px;
+}
+.Notif_Time{
+    color: green;
+    float: right;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.Notif_Gft_Post_No{
+    display: inline-block;
+    margin-right: 30px;
+    color: grey;
+    cursor: pointer;
+    
+}
+.Notif_Just_Tip{
+    color: silver;
+    display: inline-block;
+    font-size:13px;
+    margin-left: 10px;
+}
+.Notif_Post_CapPre{
+    margin:5px 10px 2px 20px;
+    min-height:18px;
+}
+.MNF_Post_Lik_Img{
+    max-height: 40px;
+    float: right;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+.Notif_Gift_Rateimg{
+    width: 10px;
+}
+.Notif_Rated_hold{
+     margin-left: 10px;
+    display: inline-block;
+}
+.MNF_Gift_CmntArr{
+    margin-left: 10px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid silver;
+    
+}
+.Notif_Gft_Cmnt_Media{
+    max-height:100px;
+}
+.MNF_OA_itmOut:first-child{
+    margin-top: 30px;
+}
+.MNF_OA_itmOut{
+    //background-color: whitesmoke;
+    padding: 7px;
+    margin: 0px -7px;
+}
+.MNF_OA_Img{
+    max-height:50px;
+    float: left;
+    margin-right: 10px;
+}
+.MNF_OA_PostCap{
+    display: inline-block;
+    margin-top: 2px;
+}
+.MNF_OA_Time{
+    float: right;
+    margin-right: 10px;
+    color: green;
+    font-size: 12px;
+}
+.MNF_OA_postno{
+    display: inline-block;
+    margin-right: 10px;
+    color:grey;
+}
+.MNF_OA_post_resps div{
+    display: inline-block;
+}
+.MNF_OA_post_resps{
+    margin-top: 4px;
+}
+.img-MNF_OA_PR{
+    max-height: 20px;
+}
+.img-MNF_OA_PR_Unl{
+    max-width: 17px;
+}
+.img-MNF_OA_PR_rte{
+    max-height:15px;
+    margin-bottom:4px;
+}
+.MNF_OA_respitm:not(:first-child){
+    margin-left: 20px;
+}
+.MNF_OA_respCount{
+    /*
+    font-weight: bold;
+    font-size: 12px;
+    background-color:crimson;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 3px;
+    */
+    font-size: 12px;
+}
+#Main_Notif_Post_Gift_OA .MNF_In{
+  min-width: 575px;
+}
+#Main_Notif_Post_Gift_OA .MNF_Ttl{
+    width: 575px;
+}
+.NotifpostGiftHoldr .MNF_Arr{
+    margin-top: 10px;
+}
+#Main_Notif_Post_Gift_Like{
+    margin-top:0px;
+}
+#Main_Notif_Post_Gift_Unlike{
+    margin-top:35px;
+}
+#Main_Notif_Post_Gift_Rate{
+    margin-top:70px;
+    margin-right: 250px;
+}
+
+#Main_Notif_Post_Gift_Comment{
+    margin-top: 105px;
+    margin-right: 250px;
+}
+
+#Main_Notif_Post_Gift_OA{
+    margin-right: 250px;
+    
+}
+#Main_Notif_Post_Gift_OA .MNF_In{
+    padding:0.7px;
+}
+#Main_Notif_Post_Gift_OA .MNF_Arr{
+    margin-top: 140px;
+    border-left-color:indigo;
+}
+
+.NotifNotifHoldr .MNF_Arr{
+    margin-top: 3px;
+    
+}
+.NotifNotifHoldr{
+    margin-left: 140px;
+}
+#Main_Notif_Bulbs .MNF_In{
+    padding-bottom: 1px;
+}
+#Main_Notif_Bulbs .MNF_innrCont{
+    padding:0px 5px;
+}
+.QuickPostHoldr{
+    position: absolute;
+  //  background-color: rgba(0,0,0,0.2);
+   // height: 1000%;
+   
+    width: 550px;
+   right: 41%;
+    z-index: 100000;
+    top: -30px;
+}
+.qckPostTtl{
+    background-color:darkblue;
+    padding:5px 25px;
+    color: white;
+}
+.quickPostClose{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.QuickPostOut{
+    margin-top: 150px;
+    box-shadow: -5px 5px 5px -5px grey;
+}
+.qckPostCont{
+    padding: 10px 15px;
+    background-color: white;
+}
+.qckPostCont input,.qckPostCont textarea{
+    padding: 5px 15px;
+    color: navy;
+   
+    font-size: 14px;
+    width:480px;
+    border: 1px solid silver;
+    color: black;
+}
+.qckPostSubmit{
+    //background-color: whitesmoke;
+    margin:10px 10px 0px 0px;
+    padding: 5px 25px;
+    display: inline-block;
+    color:indigo;
+}
+.qckPostSubmit:hover{
+    cursor: pointer;
+    //color: white;
+    background-color: whitesmoke;
+    color: black;
+}
+.qckPostArr{
+    height: 0px;
+    width: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid navy;
+    float: right;
+    margin-right: -10px;
+    margin-top: 5px;
+}
+#QuickMsg{
+    margin-top: 45px;
+}
+.qckRecips{
+    margin-top: 10px;
+    color: grey;
+    margin-left: 10px;
+}
+.qckRecips input{
+    margin: 0px 10px;
+}
+.qckRecips input[type="checkbox"]{
+     width:20px;
+}
+.QuickMsgInp{
+     border: 1px solid darkgray;
+    border-width: 0px 0px 1px 0px;
+}
+.qckPostCont textarea:focus{
+    border: 1px solid darkgray;
+    border-width: 0px 0px 1px 0px;
+}
+.qckspNo{
+    margin:5px;
+    text-indent: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.qckRecipsHold{
+    margin: -5px 15px 0px 15px;
+    padding:5px;
+    background-color: whitesmoke;
+}
+.qckRecipItm{
+    background-color:white;
+    padding: 5px 15px;
+    color:crimson;
+    display: inline-block;
+}
+.qckRspArr{
+    display: inline-block;
+    margin-left: 10px;
+    height: 0px;
+    width: 0px;
+    margin-bottom: 1px;
+    border-top: 7px solid;
+    border-left:5px solid transparent;
+    border-right: 5px solid transparent;
+}
+#QuickNotif{
+    margin-top:90px;
+}
+.qckSpTtl{
+    color: silver;
+    padding: 5px;
+    margin-top: -5px;
+}
+.qckSpCont{
+    color: grey;
+    padding: 5px;   
+}
+#QuickMySpecial{
+    margin-top: 155px;
+}
+#QuickMySpecial .QckPostIn{
+    background-color: white;
+}
+#QuickMySpecial .qckPostTtl{
+    background-color:darkgreen;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0px 2px 5px -3px;
+    position:  sticky;
+    
+}
+#Main_Notif_Profile_Views{
+    right: 25%;
+   
+    bottom: 185px;
+    box-shadow: none;
+}
+#Main_Notif_Profile_Views .MNF_like_itm:first-child{
+    margin-top: 0px;
+}
+#Main_Notif_Security_Alert .MNF_like_itm:first-child{
+    margin-top: 0px;
+}
+#Main_Notif_Security_Alert{
+    margin-left: 342px;
+    position:absolute;
+    bottom: 135px;
+    box-shadow: none;
+}
+.Notif_Sec_Alrt_Dets{
+    padding: 10px;
+    display: none;
+}
+.Notif_SAD_Itm{
+    margin: 5px;
+}
+.Notif_Propose_unk{
+    margin:0px 10px;
+}
+.Notif_Propose_unk .RelReqMyDet{
+    margin-left: 15px;
+}
+#Main_Notif_Propose .MNF_Ttl{
+  background-color:navy;
+   // color: grey;
+}
+.Main_Notif_Float_Out{
+    position:absolute !important;;
+   // right: 540px;
+    top:50px;
+    left: 500px;
+    max-height: 400px !important;
+    overflow-y:auto;
+    overflow-x: hidden;
+    box-shadow: 0px 5px 5px grey;
+    z-index: 1000;
+}
+.taskbarType{
+    display: inline-flex;
+    background-color: white;
+    padding: 5px 15px 4px 15px;
+    position: absolute;
+    top: 0px;
+   left: 850px;
+    z-index: 10000;
+   
+}
+#CustmNotifBulb{
+    padding:4px 0px 5px 0px;
+    background-color: green;
+    border-radius: 150px;
+}
+#CustmNotifBulb #Notif_BulbCount{
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    color: white;
+}
+.taskbarType .tb_notifItm{
+    margin: 0px 10px;  
+}
+.sftb_prevDec{
+    float: left;
+    margin-left: -15px;
+    width: 0px;
+    height: 0px;
+    border-top: 19.5px solid transparent;
+    border-bottom: 19.5px solid transparent;
+     border-left:17px solid darkcyan;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.sftb_nextDec{
+    float:right;
+    width: 0px;
+    height: 0px;
+    border-top: 19.5px solid transparent;
+    border-bottom: 19.5px solid transparent;
+     border-right:17px solid darkcyan;
+    margin-top: -5px;
+    margin-right: -15px;
+    margin-left: 15px;
+}
+.closeForNoti{
+    float: right;
+    margin-right: 25px;
+}
+.MNF_Ttl{
+ 
+}

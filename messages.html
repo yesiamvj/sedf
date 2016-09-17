@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title>Messages </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="messages.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="loggedinPage.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div class="sf_tradeMark" >
+          SedFed
+      </div>
+      <div id="content-full">
+          <div id="pageLoadStatus"></div>
+            <div id="Topest">
+                
+                <div id="title_bar"  onmouseover="mouseOntitleBar(1)" onmouseout="mouseOntitleBar(0)">
+                
+                    <font id="sedfed" onclick="myNameClicked()">Vijayakumar</font>
+              <div id="searchbar" >
+                  <form>
+                      <input id="srchbar" type="text" autofocus/>
+                      <input id="proceedsrch" type="submit" value="Search"/>
+                  </form>
+              </div>
+              <div id="notes" style="display:inline-block;">
+                  
+                  
+              </div>
+              <div id="logout">
+                  <button id="logoutbtn">Logout</button>
+              </div>
+              
+            </div>
+      </div>
+            <div id="innerPageCont">
+                
+                <div class="msgTab">
+                    <div class="msgTabsTtls">
+                        <div class="masgTabItm"> All messages </div>
+                        <div class="masgTabItm"> Inbox </div>
+                        <div class="masgTabItm"> Sent </div>
+                        <div class="masgTabItm"> Deleted </div>
+                        
+                       
+                    </div>
+                   
+                    
+                        <div class="msgTabIn">
+                            
+                          
+                            
+                          
+                            <div id="moreMsgControls" style="display: none;" >
+                               <!-- <div class="msgControlItm" >
+                                    <input type="checkbox" /> Select all
+                                </div>
+                                <div class="msgControlItm">
+                                    <input type="checkbox" /> Invert Selection
+                                </div>
+                                <div class="msgControlItm">
+                                   Delete
+                                </div>
+                                <div class="msgControlItm">
+                                    Mark as Important
+                                </div>
+                                <div class="msgControlItm">
+                                    Mark as Read
+                                </div>
+                                <div class="msgControlItm">
+                                    Forward
+                                </div>
+                                <div class="msgControlItm">
+                                    Download Files
+                                </div>
+                                -->
+                            </div>
+                            <div id="MsgViews" style="display: none;margin-left: 50px;" >
+                                <div class="msgControlItm" >
+                                    Conversation
+                                </div>
+                                <div class="msgControlItm" >
+                                    Messages List
+                                </div>
+                                
+                               <br/> <br/>
+                                
+                            </div>
+                            <div class="tabContHold">
+                                <div class="tabContTtl">
+                                    Unread <div class="tabCount"> 20 Items</div>
+                                </div>
+                                
+                           
+                                <div class="MsgHolder">
+                                 
+                                    
+                                    <div class="MsgHoldin">
+                                        <div class="msgFaceHold">
+                                             <img class="msgFace" src="profileimg.PNG" alt="yogesh"/>
+                                        </div>
+                                        <div class="msgContHold">
+                                            <div class="msgHeaders">
+                                            <div class="msgSender">Yogeshwaran  </div>
+                                            <div class="msgSenderDets">
+                                                
+                                            </div>
+                                            <div class="msgDets"> 
+                                                <div class="msgDetItm">10:30 pm , 1 Jun 2015</div>
+                                            </div>
+                                        </div>
+                                        <div class="msgContent">
+                                            This is the msg  This is the msg  This is the msg  This is the msg  This is the msg
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                              
+                                <div class="tabContTtl">
+                                   Already Seen <div class="tabCount"> 20 Items</div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                   
+                </div>
+                <div class="theaterTextsOut" id="forwardMsg" style="display: none;" >
+                    <div class="theaterTextsIn">
+                        <div class="closeTheater" onclick="$(\'#forwardMsg\').fadeOut()" >
+                            X
+                        </div>
+                        <div class="th_Ttl">Forward Message</div>
+                        <div class="th_Cont">
+                            Forward this message to <input class="th_inp" type="text" placeholder="Name of the Person" />
+                        </div>
+                        <div class="th_proceed">
+                            <div class="th_prcdbtn">
+                                forward
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+       
+  </body>
+</html>

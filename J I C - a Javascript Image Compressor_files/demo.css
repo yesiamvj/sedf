@@ -1,0 +1,101 @@
+body {
+  
+  background: rgb(237,237,236);
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  font-family: Segoe UI;
+  font-size: 14px;
+}
+
+
+#holder_result {
+  border: 1px dashed #ccc;
+  
+  
+ 
+  
+  
+}
+#holder.is_hover {
+  border: 10px dashed #333;
+}
+
+
+#slider-range-min {
+  width: 310px;
+  height: 10px;
+  margin: 10px 20px;
+  border: 1px solid silver;
+}
+#jpeg_encode_quality {
+  width: 25px;
+}
+
+.img_container { 
+                 border: 0px;
+                 display:none;
+                 margin:auto;
+}
+#jpeg_encode_button{
+  padding:7px 25px;
+  background-color: blue;
+  color: white;
+  box-shadow: 0px 5px 3px -4px black;
+  margin: 10px;
+  font-size: 15px;
+  border: 1px solid royalblue;
+  border-radius:5px;
+  background-image: linear-gradient(rgb(0,0,175),rgb(0,0,200),rgb(0,0,225));
+}
+#controls-wrapper{
+  margin: 10px;
+  padding: 0px;
+  color: grey;
+  margin-bottom:15px;
+}
+.NP_ImgQSlideHold{
+  margin: 10px;
+}
+#JICHolderOut{
+  margin: 0px;
+  width: 30%;
+  text-align: left;
+  line-height:1.75;
+  background-color: white;
+  position: absolute;
+ left: 82%;
+  top: 30%;
+  
+}
+.NP_ImgQSlideHold{
+  display: flex;
+  flex-wrap: nowrap;
+  color: blue;
+}
+#NPC_QSildeinp{
+ width:100%;
+}
+#controls-wrapper{
+  
+}
+#jpeg_encode_quality{
+  padding: 3px 10px;
+  width:50px;
+ 
+}
+.NPQP_Tip{
+    
+}
+#JICHolderOut{
+  margin-left: -200px;
+}
+.NPQP_Ttl{
+  font-size: 15px;
+  color: blue;
+  margin: 10px;
+}
+.NPQP_Rtip{
+  float: right;
+  color: green;
+}

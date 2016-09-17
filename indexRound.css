@@ -1,0 +1,46 @@
+/* 
+    Created on : Jul 27, 2015, 10:30:35 PM
+    Author     : Vijayakumar M
+*/
+
+#logins{
+    border-radius: 550px;
+}
+#logins{
+    text-align: center;
+}
+#inps input[type="text"]{
+    width: 65%;
+}
+#inps input[type="password"]{
+    width: 65%;
+}
+#inps{
+    padding: 10px;
+}
+
+#lbtn{
+   width: 35%;
+}
+.LoginWindowPane{
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    background-color: white;
+    padding: 10px;
+}
+.txts{
+    padding: 7px 15px;
+    font-family: segoe ui;
+    font-size: 14px;
+    color: navy;
+    border: 1px solid silver;
+    width: 250px;
+}
+#lbtnea{
+    padding: 8px 15px;
+    border: 0px;
+    float: right;
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title>Deleted Messages </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="messages.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="loggedinPage.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div class="sf_tradeMark" >
+          SedFed
+      </div>
+      <div id="content-full">
+          <div id="pageLoadStatus"></div>
+            <div id="Topest">
+                
+                <div id="title_bar"  onmouseover="mouseOntitleBar(1)" onmouseout="mouseOntitleBar(0)">
+                
+                    <font id="sedfed" onclick="myNameClicked()">Vijayakumar</font>
+              <div id="searchbar" >
+                  <form>
+                      <input id="srchbar" type="text" autofocus/>
+                      <input id="proceedsrch" type="submit" value="Search"/>
+                  </form>
+              </div>
+              <div id="notes" style="display:inline-block;">
+                  
+                  
+              </div>
+              <div id="logout">
+                  <button id="logoutbtn">Logout</button>
+              </div>
+              
+            </div>
+      </div>
+            <div id="innerPageCont">
+                <div id="pageTitle">Messages</div>
+                <div class="msgTab">
+                    <div class="msgTabsTtls">
+                         <div class="nonFocTabTtl"  style="margin-left: 0px;" > All Messages </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 130px;" > Inbox </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 210px;//z-index: 13;" > Sent </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 290px;" > Group </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 380px;//z-index: 13;" > Important </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 500px;//z-index: 13;" > Hidden </div>
+                         <div class="nonFocTabTtl"  style="margin-left: 600px;//z-index: 13;" > Secret </div>
+                         <div class="nonFocTabTtl" id="msgTabTtl" style="margin-left: 700px;//z-index: 13;" > Deleted </div>
+                       
+                    </div>
+                   
+                    
+                        <div class="msgTabIn">
+                            
+                            <div class="tabControl">
+                                <div  class="tabContItm" style="cursor: pointer" onclick="$('#MsgViews').slideToggle()" >
+                                    View as
+                                </div>
+                                <div  class="tabContItm">
+                                    Sort by
+                                    <select>
+                                        <option> Time </option>
+                                        <option> Sender Name </option>
+                                        <option> Messages Count </option>
+                                        
+                                    </select>
+                                    <div id="desc" class="arrows" title="decending"></div>
+                                    <div id="asc" class="arrows" title="ascending"></div>
+                                </div>
+                                <div  class="tabContItm" style="cursor: pointer" onclick="$('#filtrs').slideToggle()" >
+                                    Filters
+                                </div>
+                                <div  class="tabContItm" style="cursor: pointer" onclick="$('#moreMsgControls').slideToggle()" >
+                                    More
+                                </div>
+                                <div  class="tabContItm" style="float: right;">
+                                    Search
+                                    
+                                    <input type="text" placeholder="Search messages" />
+                                   
+                                </div>
+                                
+                            </div>
+                            <div id="filtrs" style="display: none;" >
+                                   
+                                    <div class="filtrMItm">
+                                        <input type="checkbox" /> Has Attachment 
+                                        <select>
+                                            <option>Image</option>
+                                            <option>Audio</option>
+                                            <option>Video</option>
+                                            <option>PDF Docs</option>
+                                            <option>Other Files</option>
+                                        </select>
+                                        <input type="text" placeholder="File Name" style="width: 200px;" />
+                                    </div>
+                                   
+                                    <div class="filtrMItm">
+                                        <input type="checkbox" /> Date
+                                        <input type="text" placeholder="dd/mm/yyyy"/>
+                                    </div>
+                                <button>Filter</button>
+                                    </div>
+                            <div id="moreMsgControls" style="display: none;" >
+                                <div class="msgControlItm" >
+                                    <input type="checkbox" /> Select all
+                                </div>
+                                <div class="msgControlItm">
+                                    <input type="checkbox" /> Invert Selection
+                                </div>
+                                <div class="msgControlItm">
+                                   Delete
+                                </div>
+                                <div class="msgControlItm">
+                                    Send Now
+                                </div>
+                                
+                                <div class="msgControlItm">
+                                    Forward
+                                </div>
+                                <div class="msgControlItm">
+                                    Download Files
+                                </div>
+                                
+                            </div>
+                            <div id="MsgViews" style="display: none;margin-left: 50px;" >
+                                <div class="msgControlItm" >
+                                    Conversation
+                                </div>
+                                <div class="msgControlItm" >
+                                    Text List
+                                </div>
+                                <div class="msgControlItm" >
+                                    With faces
+                                </div>
+                               <br/> <br/>
+                                
+                            </div>
+                            <div class="tabContHold">
+                                
+                                
+                                <div class="MsgHolder">
+                                    <input class="msgCheck" type="checkbox" onchange="$('#moreMsgControls').slideDown()" />
+                                    <div class="pplTheme" style="background-color: crimson" >
+                                        sedfed
+                                    </div>
+                                    <div class="MsgHoldin">
+                                        <div class="msgHeaders">
+                                            <div class="msgSender">Yogeshwaran  </div>
+                                            <div class="msgSenderDets">
+                                                <span class="divider"> | </span>no. of attachment : 1
+                                            </div>
+                                            <div class="msgDets"> 
+                                                <div class="msgDetItm">10:30 pm , 1 Jun 2015</div>
+                                            </div>
+                                        </div>
+                                        <div class="msgContent">
+                                            This is the msg  This is the msg  This is the msg  This is the msg  This is the msg
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <div class="MsgHolder">
+                                    <input class="msgCheck" type="checkbox" onchange="$('#moreMsgControls').slideDown()" />
+                                    <div class="pplTheme" style="background-color:blue" >
+                                        sedfed
+                                    </div>
+                                    <div class="MsgHoldin">
+                                        <div class="msgHeaders">
+                                            <div class="msgSender">Yogeshwaran  </div>
+                                            <div class="msgSenderDets">
+                                                <span class="divider"> | </span>no. of attachment : 10
+                                            </div>
+                                            <div class="msgDets"> 
+                                                <div class="msgDetItm">10:30 pm , 1 Jun 2015</div>
+                                            </div>
+                                        </div>
+                                        <div class="msgContent">
+                                            This is the msg  This is the msg  This is the msg  This is the msg  This is the msg
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <div class="MsgHolder">
+                                    <input class="msgCheck" type="checkbox" onchange="$('#moreMsgControls').slideDown()" />
+                                    <div class="pplTheme" style="background-color:green" >
+                                        sedfed
+                                    </div>
+                                    <div class="MsgHoldin">
+                                        <div class="msgFaceHold">
+                                             <img class="msgFace" src="profileimg.PNG" alt="yogesh"/>
+                                        </div>
+                                        <div class="msgContHold">
+                                            <div class="msgHeaders">
+                                            <div class="msgSender">Yogeshwaran  </div>
+                                            <div class="msgSenderDets">
+                                               
+                                            </div>
+                                            <div class="msgDets"> 
+                                                <div class="msgDetItm">10:30 pm , 1 Jun 2015</div>
+                                            </div>
+                                        </div>
+                                        <div class="msgContent">
+                                            This is the msg  This is the msg  This is the msg  This is the msg  This is the msg
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                   
+                </div>
+                <div class="theaterTextsOut" id="forwardMsg" style="display: none;" >
+                    <div class="theaterTextsIn">
+                        <div class="closeTheater" onclick="$('#forwardMsg').fadeOut()" >
+                            X
+                        </div>
+                        <div class="th_Ttl">Forward Message</div>
+                        <div class="th_Cont">
+                            Forward this message to <input class="th_inp" type="text" placeholder="Name of the Person" />
+                        </div>
+                        <div class="th_proceed">
+                            <div class="th_prcdbtn">
+                                forward
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+       
+  </body>
+</html>

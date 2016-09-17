@@ -1,0 +1,94 @@
+/* 
+    Created on : Jun 16, 2015, 4:07:16 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+#SedFed_Live_Log{
+    background-color: whitesmoke;
+    padding: 5px;
+    box-shadow: 0px 0px 7px -4px black;
+}
+.Live_Log_Out{
+    background-color:whitesmoke;
+    height: inherit;
+}
+.Live_Log_Ttl{
+   position: absolute;
+    top: 40px;
+    background-color: whitesmoke;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 0px 5px 5px -5px grey;
+   
+}
+.Live_Log_In{
+    height:650px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.L_L_Itm{
+    border-bottom: 1px dotted silver;
+    padding-bottom: 7px;
+    margin: 5px 3px;
+    background-color: white;
+    margin-right:7px;
+}
+.L_L_Itm:hover{
+   
+}
+.L_L_Itm_PplThme,.L_L_Itm_Post_PplThme{
+    margin-top: 5px;
+    width: 5px;
+   height:40px;
+    float:left;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.L_L_Itm_Post_PplThme{
+    height: 60px;
+}
+.L_L_usrnme{
+    color: crimson;
+    padding: 5px;
+}
+.L_L_Time{
+    float: right;
+    color:silver;
+    font-size: 12px;
+}
+.L_L_Itm_Cont{
+    color:grey;
+    font-size: 13px;
+    line-height: 1.5;
+    padding:0px 20px;
+}
+.L_L_icon{
+    max-height:12px;
+    margin: 0px 5px;
+}
+.L_L_forSpace{
+    margin-top: 30px;
+}
+.tst{
+    background-color:whitesmoke;
+    top: 30px;
+    left: 100px;
+    position: fixed;
+    padding: 10px;
+}
+#forNewItem{
+    height: 50px;
+    display: none;
+}
+.L_L_othrNme{
+    color: navy;
+}
+.closeLivLog{
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+.tst{
+    display: none;
+}

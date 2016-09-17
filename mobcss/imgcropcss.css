@@ -1,0 +1,108 @@
+.imageBox
+{
+    position: absolute;
+    height: 70%;;
+    width: 50%;;
+    text-align: center;
+    border:1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+   top: 50px;
+    
+}
+
+.imageBox .thumbBox
+{
+    position: absolute;
+    top: 54%;
+    float: center;
+    left: 40%;
+    width: 50%;;
+    height: 75%;;
+    margin-top: -140px;
+    margin-left: -78px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+div.action
+{
+    background-color: whitesmoke;
+   position: absolute;
+    top: 400px;
+    z-index:100;
+    width: 520px;
+    cursor:auto;
+}
+.imageBox .spinner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+.cropped
+{
+    position: absolute;
+    left: 620px;
+    top:100px;
+    
+    
+}
+.action>#filemc
+{
+    display: none;
+ 
+}
+#btnCrop
+{
+    width: 150px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    margin-left: 55px;
+    color: navy;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#upldimg
+{
+padding: 5px;
+    display: inline;
+    position: relative;
+    top:5px;
+    cursor: pointer;
+}
+#swcrop
+{
+    padding: 5px;
+     cursor: pointer;
+    display: inline;
+     position: relative;
+  top: 15px;
+    display: inline;
+}
+.inpitm
+{
+    background-color: white;
+   margin-left: -1px;
+    color: navy;
+    position: relative;
+    border: 1px solid lightgrey;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -0px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+   
+}

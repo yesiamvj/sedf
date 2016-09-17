@@ -1,0 +1,672 @@
+/* 
+    Created on : May 27, 2015, 12:23:30 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    margin-top: 43px;
+    margin-left: 0%;
+   //font-family:Arial, Helvetica, sans-serif;
+   font-family:Microsoft YaHei UI;
+   font-size: 14px;
+ color:navy;
+   background-image: url('backs.png');
+    background-size: 7px;
+    background-attachment: fixed;
+  // background-color:  ivory;
+//  background-image: url('backs.png');
+}
+body:hover{
+  //  background-color:  cornsilk;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.publicfold
+{
+    background-color: whitesmoke;
+    border-bottom: 1px solid lightgray;
+}
+#pf_filesize
+{
+    color: gray;
+}
+#pf_contents
+{
+    background-color: white;
+    padding: 10px;
+   font-weight: bold;
+    display: inline-block;
+    border-left-width: 1px solid none;
+}
+#pf_totcont
+{
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+#pf_totcont:hover,#pf_contents:hover
+{
+    background-color: whitesmoke;
+}
+.pfmenubar
+{
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    font-family: sans-serif;
+}
+#checbox
+{
+    cursor: pointer;
+}
+#menuitem
+{
+    display: inline-block;
+    background-color: white;
+    padding: 4px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: sans-serif;
+
+
+}
+
+#menuitem:hover
+{
+    background-color: navy;
+    color: white;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#title_bar{
+    top: 0px;
+    position: fixed;
+   border: #ef0000 outset;
+    border-width: 1px 2px 1px 2px;
+    background-color:#ef0000;
+    padding: 5px;
+    width: 100%;
+    text-indent: 25px;
+    z-index: 5000;
+   // -moz-animation:  page-blur 5s;
+   // -webkit-animation: page-blur 5s;
+    box-shadow: 1px -5px 5px 4px navy;
+    
+    //-moz-box-shadow: 3px 3px 5px 6px #ef0000;
+//-webkit-box-shadow: 3px 3px 5px 6px #ef0000;
+
+}
+#Mytitle_bar{
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+    color: navy;
+    text-align: center;
+    padding:7px 0px;
+    box-shadow: 0px 5px 5px -7px;
+    font-size: 16px;
+    z-index: 100;
+    top:44px;
+}
+
+#pageLoadStatus{
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    top: -1px;
+    width:100%;
+    height: 3px;
+    z-index: 10000;
+    -moz-animation:  title-bar 2s;
+   
+    -webkit-animation: title-bar 2s;
+    
+}
+#MysedfedUserName{
+    border-left: 5px solid navy;
+    padding: 2px 10px;
+}
+#sedfed{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    //font-weight: bold;
+}
+#searchbar{
+    text-indent:60px;
+    display: inline-block;
+}
+#srchbar{
+     font-size:14px;
+     background-image: url('srch20.png');
+     background-repeat: no-repeat;
+     background-position: 325px;
+    border:solid 1px #ef0000;
+    width: 350px;
+    color:white;
+   padding:5px 0px 5px 10px;
+   background-color:white;
+}#logout{
+    display: inline-block;
+    right: 0px;
+}
+#srchbar:focus{
+   font-size:14px;
+   background-image:  none;
+    border:solid 1px #ef0000;
+    width: 350px;
+    color:navy;
+   padding:5px 0px 5px 10px;
+   background-color:white;
+}
+#proceedsrch{
+   // background-image: url('s2.png');
+    cursor:pointer;
+    background-color: white;
+    color:#ef0000;
+    font-size: 14px;
+    padding:5px 15px 5px 15px;
+    margin-left: -10px;
+    border:solid 1px;
+    border-color:#ef0000;
+}
+#proceedsrch:hover{
+    cursor:pointer;
+    background-color: white;
+    color:navy;
+    border:solid 1px;
+    border-color:navy;
+}
+#logout{
+    position: absolute;
+}
+#logoutbtn{
+    background-color: red;
+    color:white;
+    padding: 5px 40px 5px 10px;
+     border:outset 1px red;
+    cursor: pointer;
+    
+}
+#notificationsArea{
+    display: none;
+    position: fixed;
+    text-align: center;
+    top:40px;
+    border: 1px outset #ef0000;
+    width:100%;
+    background-color: white;
+    padding: 10px;
+   // -moz-animation:  timegoing 0.5s;
+    z-index: 1000;
+   // -webkit-animation: timegoing 0.5s;
+    
+}
+#prof_sidebar{
+    margin-left: 0px;
+    height:30px;
+    position: fixed;
+    left: 0px;
+    background-color:crimson;
+   
+}
+#tst{
+    
+}
+#howThisPerson,#howThisPersonStuffs{
+    margin-top: 24px;
+    //height: 50px;
+    padding: 6px 0px 6px 0px;
+    background-color:white;
+    box-shadow: 0px 0px 15px -5px;
+    z-index: 1000;
+    transform: rotate(270deg);
+    position: fixed;
+   left:-23%;
+   top: 50%;
+    
+}
+#howThisPersonStuffs .hTP-holders{
+    margin-left: 15px;
+}
+.hTP-holders {
+   display: inline-block;
+    padding: 7px 20px;
+    //margin-left:80px;
+    background-color: white;
+    color: grey;
+    font-size: 13px;
+    
+}
+.hTP-holders:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.hTP-holders img{
+    height: 20px;
+}
+#currrentPlace{
+    background-color:whitesmoke;
+    color:navy;
+}
+.storageOutHolder{
+    width:60%;
+   min-height: 500px;
+    margin-left: 60px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px grey;
+    
+}
+.storageInrHolder{
+    padding:5px;
+    
+    
+}
+.Title_Storage{
+    border-bottom: 1px solid navy;
+    color: crimson;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.fileLocationUrl{
+    padding:8px 15px;
+    background-color:whitesmoke;
+    color:grey;
+    font-size: 15px;
+}
+#tims
+{
+    float:right;
+    color:grey;
+}
+span>img
+{
+    float:right;
+    padding-right:20px;
+}
+#close_btn_file:hover
+{
+    background-color:white;
+    color:crimson;
+    
+}
+#close_btn_file
+{
+    background-color:#ef0000;
+    display:inline-block;
+    padding:7px;
+    margin-left:100px;
+    color:white;
+    padding-left:50px;
+    padding-right:50px;
+    cursor:pointer;
+    border:2px solid crimson;
+}
+.StorageCont{
+   // height:100x;
+    /* margin: 10px; */
+    /* max-height: 200px; */
+    overflow: auto;
+    background-color:white;
+    height:100%;
+    text-align:center;
+    color:grey;
+    height:500px;
+}
+.folderContainer{
+    display: inline-table;
+    padding: 15px;
+    cursor: pointer;
+}
+.folderContainer:hover{
+    background-color: white;
+    box-shadow: 0px 0px 1px green;
+}
+.folderContainer:not(:first-child){
+    margin-left: 75px;
+}
+.img-folder{
+    max-height: 75px;
+}
+.fileSomeActions{
+    background-color: white;
+    border-bottom:1px solid grey;
+    padding:2px 3px 5px 3px;
+}
+.fileSomeActions div{
+    display: inline-block;
+    padding:3px 20px;
+    cursor: pointer;
+    
+}
+.fileActItem:hover{
+    background-color: navy;
+    color: white;
+}
+#foldname
+{
+    /* text-align: center; */
+    font-size: 19px; 
+    /* font-family: sans-serif; */
+    color:navy;
+    font-family:cursive;
+
+    /* width: 95%; */
+    background-color: transparent;
+}
+#bfilebtn
+{
+    background-color: white;
+     cursor: pointer;
+     border:1px solid white; 
+}
+#adfilebtn
+{
+    text-align: center;
+
+    
+    cursor: pointer;
+    border:1px solid white; 
+
+
+}
+#adfilebtn:hover,#uploadfl:hover,#setpwdiv:hover
+{
+    text-align: center;
+ cursor: pointer;
+ border:1px solid navy; 
+
+
+}
+.detc_cont
+{
+    float:right;
+    padding:2px;
+    margin:2px;
+
+}
+div#filesoffolder
+{
+
+    border-top: 1px solid lightgray;
+    background-color: white;
+    border-bottom:1px solid lightgray;
+    padding:3px; 
+    font-size: 13px;
+    padding-left:100px;
+    font-family: Microsoft YaHei UI;
+    color: navy;
+    text-align:left;
+    padding-left:30px;
+}
+
+#setpassbtn
+{
+    background-color: navy;
+    color: white;
+    height: 18px;
+
+}
+#folderpass
+{
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    height: 18px;
+}
+#uploadfl
+{
+  
+    text-align: center;
+    border:1px solid white; 
+}
+#Ldricn
+{
+    width: 30px;
+    height:25px;
+    position: absolute;
+    margin-left: -10px;
+}
+#cpbtn
+{
+    background-color: navy;
+    color: white;
+}
+#setpassdiv
+{
+    background-color: whitesmoke;
+    width: 100%;
+    margin-left: -30px;
+}
+#folderfiles
+{
+    display:none;
+    padding-left:10px;
+    /* border:1px solid navy; */
+    /* height: 250px; */
+    /* overflow: auto; */
+}
+.fileCheck{
+    
+    color: green;
+}
+.expAct{
+    background-color: whitesmoke;
+    color: grey;
+}
+.folderName{
+    text-align: center;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    border:1px solid transparent;
+    cursor: pointer;
+}
+
+#totcont
+{
+    background-color: white;
+    display: inline-block;
+}
+#totcont:hover
+{
+    background-color: whitesmoke;
+}
+.copyins
+{
+    position: absolute;
+}
+
+#pf_contents:hover
+{
+    border-left-style: dotted;
+    border-left-color: lightgray;
+    border-left-width: 2px;
+}
+#setpassdivs
+{
+    padding: 5px;
+    border-bottom:1px solid lightgray;
+    background-color:whitesmoke
+}
+#tragn
+{
+    text-align: center;
+    font-size: 20px;
+}
+.renameInp{
+    padding: 5px 10px;
+   width: 450px;
+    margin:5px 25px;
+}
+.sf-btn{
+    border: none;
+    background-color: crimson;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.fileItem:nth-child(n){
+    border: 1px solid darkgrey;
+    border-width: 0px 0px 1px 0px;
+   background-color: whitesmoke;
+    padding:7px 20px;
+    color:black;
+   
+}
+.fileContainer{
+   margin: 10px;
+    background-color: whitesmoke;
+}
+.fileContainer input{
+    margin-right: 20px;
+}
+.fileItem:hover{
+    background-color:white;
+    cursor: pointer;
+}
+.fileControls{
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    color: grey;
+}
+.fileName{
+    display: inline-block;
+}
+#refresh{
+    position: fixed;
+    background-color: blue;
+    top: 150px;
+    padding: 10px 30px;
+    right: 0px;
+    color: white;
+}
+.win-pass-outer{
+   position: fixed;
+   top:50px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color:rgba(0,0,0,0.3);
+    
+}
+.win-pass-in{
+    background-color: white;
+   margin-top: 10%;
+  margin-left: 25%;
+    width: 500px;
+}
+.win-pass-ttl{
+    background-color: crimson;
+    padding: 5px 30px;
+    color: white;
+}
+.closeXwin{
+    float: right;
+    cursor: pointer;
+}
+.win-pass-cont{
+    padding: 10px 15px;
+}
+.win-pass-hint{
+    color: grey;
+}
+.win_pass_mcont{
+   
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+   
+}
+.passWordInp{
+    margin-top: 25px;
+    padding: 5px 15px;
+    color: green;
+    text-align: center;
+}
+.win-pass-ok{
+    margin: 30px 0px;
+    padding: 4px 15px;
+    text-align: right;
+    color:crimson;
+}
+.win-pass-ok:hover{
+    color: white;
+    background-color: navy;
+    cursor:pointer;
+}
+.UploadProgOut{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:rgba(0,0,0,0.5);
+}
+.UpLdProgCont{
+   margin-top: 15%;
+   background-color: white;
+   padding:20px 300px;
+}
+.UPLD_Ttl{
+    font-size: 16px;
+    color:crimson;
+    margin-bottom: 30px;
+    
+}
+.UPLD_Cont{
+    line-height: 1.5;
+    margin: 10px;
+    max-height: 200px;
+    overflow: auto;
+  
+}
+.Upld_Itm{
+    color: blue;
+    background-color: whitesmoke;
+    padding: 5px 15px;
+}
+.Upld_Cancl{
+    color: crimson;
+    cursor: pointer;
+      float: right;
+}
+.Upld_Prcd{
+    background-color: navy;
+    color: white;
+    padding: 5px 30px;
+    display: inline-block;
+    margin: 10px;
+}
+.Upld_Prcd:hover{
+    background-color: rgb(0,0,100);
+    cursor: pointer;
+}
+.copied_files
+{
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    left: 450px;
+    border: 1px solid black;
+}
+.copied_items
+{
+    padding: 5px;
+}
+#for_menubar_cont
+{
+    text-align: center;
+}

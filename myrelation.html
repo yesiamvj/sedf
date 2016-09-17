@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+     <!--   <meta http-equiv="Content-Language" content="en-US" />
+        <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title>My Relations </title>
+    <link rel="stylesheet" href="people.css"/>
+    <link rel="stylesheet" href="myrelation.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="people.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div id="content-full" >
+            <div id="pageLoadStatus"></div>
+            <div id="Topest">
+                
+                <div id="title_bar"  onmouseover="mouseOntitleBar(1)" onmouseout="mouseOntitleBar(0)">
+                
+                    <font id="sedfed" onclick="myNameClicked()">Vijayakumar</font>
+              <div id="searchbar" >
+                  <form>
+                      <input id="srchbar" type="text" autofocus/>
+                      <input id="proceedsrch" type="submit" value="Search"/>
+                  </form>
+              </div>
+              <div id="notes" style="display:inline-block;">
+                  
+                  
+              </div>
+              <div id="logout">
+                  <button id="logoutbtn">Logout</button>
+              </div>
+              
+            </div>
+      </div>
+            
+            <div id="innerPageCont">
+                <div id="pageTitle">My Relations</div>
+                <div id="topFiltrPplOut">
+                
+                    <div id="tfiltrPplTtl">
+                        Filter People
+                    </div>
+                    <div id="tfiltrPplIn">
+                        <div class="filtrItm">
+                            <input class="filtrInp" style="color:crimson" type="text" placeholder="Name of the Person" />
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrChecks" type="checkbox"  /> Male
+                            <input class="filtrChecks" type="checkbox"  /> Female
+                        </div>
+                        <div class="filtrItm" id="filtrAge">
+                           Age <input class="filtrInp" type="text" placeholder="From" />
+                           Between
+                            <input class="filtrInp" type="text" placeholder="To" />
+                        </div>
+                        <div class="filtrItm" id="fltrRel" >
+                            <select>
+                             <option>Single</option>
+                              <option>In love</option>
+                             <option>Married</option>
+                             <option>Unmarried</option>
+                             <option>Divorced</option>
+                            </select>
+                           &nbsp;  Or &nbsp;<input class="filtrInp" type="text" placeholder="Other Relationship Status" />
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" style="color:maroon" type="text" placeholder="Place Living in" />
+                        </div>
+                        <div class="filtrItm" id="fltrBGr" >
+                           Blood Group <select>
+                                <option>O +ve</option>
+                                <option>O -ve</option>
+                                <option>A +ve</option>
+                                <option>B -ve</option>
+                            </select>
+                        </div>
+                        <div class="fltrItmTtl">
+                            School / High School
+                        </div>
+                          <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Studying in" />
+                        </div>
+                        <div class="fltrItmTtl">
+                            College
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Studying in" />
+                        </div>
+                        <div class="fltrItmTtl">
+                            Company / Organization
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Working In" />
+                        </div>
+                        <div class="fltrItmTtl">
+                            Very Close ? 
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Mobile" />
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Email" />
+                        </div>
+                       
+                        <div class="proceeds" id="proceedBars" >
+                            <div class="advFiltr">
+                             Search
+                        </div>
+                            
+                            <div class="advFiltr" onclick="$('#AdvSrchHoldr').slideToggle()" >
+                            Advanced Search
+                        </div>
+                             
+                        </div>
+                         
+                         <div id="AdvSrchHoldr" style="display: none" >
+                                <div id="advSrchTtl">
+                                    Advanced Filters
+                                </div>
+                            <div class="filtrItm">
+                                <input class="filtrInp" type="text" placeholder="Nickname" />
+                            </div>
+                              <div class="filtrItm">
+                                <input class="filtrChecks" type="checkbox"  /> Verified
+                                <input class="filtrChecks" type="checkbox"  /> Not Verified
+                             </div>
+                              <div class="filtrItm" id="filtrBorn">
+                                    Birthday <input class="filtrInp" type="text" placeholder="dd" />
+                                    
+                                     <input class="filtrInp" type="text" placeholder="mm" />
+                                     <input class="filtrInp" type="text" placeholder="yyyy" />
+                                </div>
+                                <div class="filtrItm">
+                                <input class="filtrInp" type="text" placeholder="Religion" />
+                                </div>
+                             <div class="fltrItmTtl">
+                            School / High School
+                        </div>
+                          <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Studying in" />
+                            <input type="text" class="timeInp" placeholder="From"/> Between 
+                            <input type="text" class="timeInp" placeholder="To"/>
+                        </div>
+                        <div class="fltrItmTtl">
+                            College
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Studying in" />
+                            <input type="text" class="timeInp" placeholder="From"/> Between 
+                            <input type="text" class="timeInp" placeholder="To"/>
+                        </div>
+                        <div class="fltrItmTtl">
+                            Company / Organization
+                        </div>
+                        <div class="filtrItm">
+                            <input class="filtrInp" type="text" placeholder="Working In" />
+                            <input type="text" class="timeInp" placeholder="From"/> Between 
+                            <input type="text" class="timeInp" placeholder="To"/>
+                        </div>
+                            <div class="fltrItmTtl">
+                            Relation to
+                            </div>
+                             <div class="filtrItm">
+                                <input class="filtrInp" type="text" placeholder="Relation's Name" />
+                            </div>
+                             <div class="fltrItmTtl" onclick="$('#fltrFmly').slideToggle();" style="cursor: pointer">
+                            Know family details ?
+                            </div>
+                             <div id="fltrFmly" class="filtrItm" style="display: none" >
+                                <input class="filtrInp" type="text" placeholder="Father's Name" />
+                                <br/><br/>
+                                <input class="filtrInp" type="text" placeholder="Mother's Name" />
+                                <br/><br/>
+                                <input class="filtrInp" type="text" placeholder="Brother's Name" />
+                                <br/><br/>
+                                <input class="filtrInp" type="text" placeholder="Sister's Name" />
+                                <br/><br/>
+                            </div>
+                             <div class="fltrItmTtl" onclick="$('#fltrMore').slideToggle();" style="cursor: pointer">
+                           More
+                            </div>
+                             <br/><br/>
+                             <div id="fltrMore" class="filtrItm" style="display: none" >
+                                <input class="filtrInp" type="text" placeholder="Vehile Reg.No" />
+                                <br/><br/>
+                                <input class="filtrInp" type="text" placeholder="Language" />
+                                <br/><br/>
+                                <div class="mostFilt" style="cursor: pointer">
+                                    Mostly Searched People
+                                </div>
+                               
+                                
+                            </div>
+                            </div>  
+                        <div class="advFiltrBtn" onclick="$('#AdvSrchHoldr').slideToggle()">
+                        Try advanced search for best results
+                    </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+                <div id="inrPage">
+                    <div class="filtrPplOut">
+                        <div class="fltrTtl">
+                            Categories
+                            <div class="fltrCatItm" style="color:crimson;position: absolute;margin:0px 300px;" onclick="filterTheater()">
+                                        Advanced Search
+                                </div>
+                            <div class="serchPplOut">
+                                
+                                <input type="text" placeholder="Name of the Person"/>
+                            </div>
+                        </div>
+                        <div class="fltrCatItm">
+                            All Relations
+                        </div>
+                         <div class="fltrCatItm">
+                            Friends
+                        </div>
+                        <div class="fltrCatItm">
+                           Family
+                        </div>
+                        <div class="fltrCatItm" >
+                            Enemy
+                        </div>
+                        <div class="fltrCatItm" onclick="$('#allClassmates').fadeToggle();">
+                           Classmates
+                        </div>
+                        <div class="fltrCatItm" >
+                           Specific Group
+                        </div>
+                        <div class="fltrCatItm" >
+                           Others
+                        </div>
+                        <div class="fltrCatItm" >
+                           Unknown
+                        </div>
+                        <div class="fltrCatItm" style="color:crimson" onclick="filterTheater()">
+                            Filter People
+                        </div>
+                        <div class="bigTipOut" id="allRels" style="display: none;" >
+                            <div class="bigTipIn">
+                                <div class="closeBigTip" onclick="$('#allRels').fadeOut();">
+                                        X
+                                    </div>
+                                <div class="bigTipItm">
+                                    My Relations
+                                   
+                                </div>
+                                <div class="bigTipItm">
+                                    Relation of specific Person
+                                    <input type="text" placeholder="Name of your Relation" />
+                                    <button class="prcdBtn" >Proceed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigTipOut" id="allClassmates" style="display: none;" >
+                           
+                                <div class="closeBigTip" onclick="$('#allClassmates').fadeOut();">
+                                        X
+                                    </div>
+                                <div class="bigTipItm">
+                                    All my classmates 
+                                   
+                                </div>
+                                <div class="bigTipItm">
+                                    Classmate of
+                                    <input type="text" placeholder="Name of School / College" />
+                                    <button class="prcdBtn" >Proceed</button>
+                                </div>
+                           
+                        </div>
+                       
+                    </div>
+                     <div class="pplGrpOut">
+                    <div class="pplGrpIn">
+                        <div class="grpTtl">
+                            My Relations  <div class="CurviewTyp">Smart View</div>
+                        </div>
+                        <div class="pplToolsOut">
+                            <div class="pplToolsIn">
+                                <div class="toolItm">
+                                    <input type="checkbox" />
+                                    Select all
+                                </div>
+                                <div class="toolItm">
+                                    <input type="checkbox" />
+                                    Invert Selection
+                                </div>
+                                <div class="toolItm">
+                                    <input type="checkbox" />
+                                    Remove Relation
+                                </div>
+                                <div class="viewItm" onclick="$('#pplView').slideToggle()" >
+                                    View Type 
+                                </div>
+                                 <div class="toolItm">
+                                     <input class="inp_insSrch" type="text" placeholder="Name of the person"/>
+                                    
+                                </div>
+                               
+                                 <div class="toolItm">
+                                     Sort by 
+                                     <select>
+                                         <option>Name</option>
+                                         <option>Age</option>
+                                         
+                                         <option>Relation Made Time</option>
+                                     </select>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            <div id="pplView" class="pplViewType" style="display: none;" >
+                                <div class="viewItm">
+                                    Names Only
+                                </div>
+                                <div class="viewItm">
+                                    Faces Only
+                                </div>
+                                <div class="viewItm">
+                                    Smart Tiles
+                                </div>
+                                <div class="viewItm">
+                                    Expanded Tiles
+                                </div>
+                                <span style="color: grey"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Smart view by default</span>
+                            </div>
+                        </div>
+                        <div class="pplItemOut">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();" >
+                                            Add to Relation
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                         <!--  <div class="pplNamey">Vijayakumar</div> -->
+                            <div class="pplItemIn">
+                                <div class="pplFace">
+                                    <img class="profImg" src="profileimg.PNG" alt="vijayakumar" />
+                                </div>
+                                <div class="pplDets">
+                                    <div class="pplName" style="background-color: crimson;" >Vijayakumar</div>
+                                    <div class="pplDetIn">
+                                       <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified </div>
+                                        
+                                        <div class="pplDetItm">Chennai,Tamilnadu</div>
+                                        <div class="pplDetItm">College of engineering Guindy </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="pplItemOut">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRelAccept').fadeIn();">
+                                            Accept Request
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                         <!--  <div class="pplNamey">Vijayakumar</div> -->
+                            <div class="pplItemIn">
+                                <div class="pplFace">
+                                    <img class="profImg" src="profileimg.PNG" alt="vijayakumar" />
+                                </div>
+                                <div class="pplDets">
+                                    <div class="pplName" style="background-color: navy;" >Vijayakumar</div>
+                                    <div class="pplDetIn">
+                                        <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified </div>
+                                        <div class="pplDetItm">Chennai,Tamilnadu</div>
+                                        <div class="pplDetItm">College of engineering Guindy </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="pplItemOut">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();">
+                                            Cancel Request
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                         <!--  <div class="pplNamey">Vijayakumar</div> -->
+                            <div class="pplItemIn">
+                                <div class="pplFace">
+                                    <img class="profImg" src="profileimg.PNG" alt="vijayakumar" />
+                                </div>
+                                <div class="pplDets">
+                                    <div class="pplName" style="background-color: green;" >Vijayakumar</div>
+                                    <div class="pplDetIn">
+                                       <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified </div>
+                                        <div class="pplDetItm">
+                                        Request Sent On 12 Jan 2015
+                                        </div>
+                                        <div class="pplDetItm">
+                                        Request Seen On 24 Jan 2015
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- all title inside this div should be this style -->
+                        <div class="inrTitle">
+                            Seen Requests
+                        </div>
+                        <div class="inrTitle" style="background-color: crimson">
+                           Not seen Requests
+                        </div>
+                        <div class="NameTypeOut">
+                            <div class="pplTheme" style="background-color: crimson" >
+                                sedfed
+                            </div>
+                             <input type="checkbox" class="pplChecks" />
+                              <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();">
+                                            Add to Relation
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="NmeTypIn">
+                                <div class="NmeTypItm" id="sf_usrname">
+                                    Vijayakumar
+                                </div>
+                                <div class="NmeTypItm">
+                                    <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NameTypeOut">
+                             <div class="pplTheme" style="background-color:navy" >
+                                sedfed
+                            </div>
+                             <input type="checkbox" class="pplChecks" />
+                              <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();">
+                                            Cancel Request
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="NmeTypIn">
+                                <div class="NmeTypItm" id="sf_usrname">
+                                    Vijayakumar
+                                </div>
+                                <div class="NmeTypItm">
+                                    <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> 1 Jun 2015<span class="divider"> | </span> 5 Jun 2015 </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NameTypeOut">
+                             <div class="pplTheme" style="background-color:green" >
+                                sedfed
+                            </div>
+                             <input type="checkbox" class="pplChecks" />
+                              <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();">
+                                            Accept Request
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="NmeTypIn">
+                                <div class="NmeTypItm" id="sf_usrname">
+                                    Vijayakumar
+                                </div>
+                                <div class="NmeTypItm">
+                                    <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified<span class="divider"> | </span> 1 Jun 2015 </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                        <div class="BigpplItemOut">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();">
+                                            Add to Relation
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                           <div class="pplNamey">Vijayakumar</div> 
+                            <div class="BigpplItemIn">
+                                <div class="pplFace">
+                                    <img class="profImgBig" src="profileimg.PNG" alt="vijayakumar" />
+                                </div>
+                                <div class="pplDets">
+                                <!--    <div class="pplName" style="background-color:blue;" >Vijayakumar</div> -->
+                                    <div class="pplDetIn">
+                                        <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified </div>
+                                        <div class="pplDetItm">Chennai,Tamilnadu</div>
+                                        <div class="pplDetItm">College of engineering Guindy </div>
+                                        <div class="pplDetItm">Just programming for SedFed</div>
+                                        <div class="pplDetItm" style="color:gray" >18 relations in common</div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                         
+                        </div>
+                        <div class="BigpplItemOut">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="PplRespOut">
+                                    <div class="pplRespIn">
+                                        <div class="respItm" onclick="$('#TheaterNewRel').fadeIn();">
+                                            Add to Relation
+                                        </div>
+                                        <div class="respItm">
+                                            View Profile
+                                        </div>
+                                    </div>
+                                </div>
+                           <div class="pplNamey">Vijayakumar</div> 
+                            <div class="BigpplItemIn">
+                                <div class="pplFace">
+                                    <img class="profImgBig" src="profileimg.PNG" alt="vijayakumar" />
+                                </div>
+                                <div class="pplDets">
+                                <!--    <div class="pplName" style="background-color:blue;" >Vijayakumar</div> -->
+                                    <div class="pplDetIn">
+                                        <div class="pplDetItm">18<sub>+</sub><span class="divider"> | </span> Male <span class="divider"> | </span> Verified </div>
+                                        <div class="pplDetItm">Chennai,Tamilnadu</div>
+                                        <div class="pplDetItm">College of engineering Guindy </div>
+                                        <div class="pplDetItm">Just programming for SedFed</div>
+                                        <div class="pplDetItm" style="color:gray" >18 relations in common</div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                         
+                        </div>
+                        <br/>
+                        <div class="pplItmFace">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="pplContFOut">
+                                <div class="pplItmFCont">
+                                    <img class="sf_icons" src="icons/notif-add-ppl.png" alt="add" title="Send a Request" />
+                              </div>
+                              <div class="pplItmFCont">
+                                  <img class="sf_icons" src="icons/ppl_profile.png" alt="Profile" title="View Profile" />
+                              </div>
+                            </div>
+                            
+                              <img class="img_FpplFace" src="profileimg.PNG" alt="vijayakumar" />
+                              
+                         </div>
+                        <div class="pplItmFace">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="pplContFOut">
+                                <div class="pplItmFCont">
+                                    <img class="sf_icons" src="icons/notif-add-ppl.png" alt="add" title="Send a Request" />
+                              </div>
+                              <div class="pplItmFCont">
+                                  <img class="sf_icons" src="icons/ppl_profile.png" alt="Profile" title="View Profile" />
+                              </div>
+                            </div>
+                            
+                              <img class="img_FpplFace" src="profileimg.PNG" alt="vijayakumar" />
+                              
+                         </div>
+                        <div class="pplItmFace">
+                            <input type="checkbox" class="pplChecks" />
+                            <div class="pplContFOut">
+                                <div class="pplItmFCont">
+                                    <img class="sf_icons" src="icons/notif-add-ppl.png" alt="add" title="Send a Request" />
+                              </div>
+                              <div class="pplItmFCont">
+                                  <img class="sf_icons" src="icons/ppl_profile.png" alt="Profile" title="View Profile" />
+                              </div>
+                            </div>
+                            
+                              <img class="img_FpplFace" src="profileimg.PNG" alt="vijayakumar" />
+                              
+                         </div>
+                        
+                        <div class="viewMoreItms">
+                            Show More
+                        </div>
+                    </div>
+                    </div>
+                    <div class="theaterTexts" id="TheaterNewRel" style="display: none;" >
+                                           <div class="thtrTxtIn">
+                                               <div class="thtrTtl">
+                                                   New Relation <div class="thtrTxtClose" onclick="$('#TheaterNewRel').fadeOut()" >X</div>
+                                               </div>
+                                               <div class="thtrCont">
+                                                   <div class="reqSendIn">
+                                                       Add   <span id="targetReqst"  >Vijayakumar </span> to my relations as
+                                                       <select id="addRelType" onchange="addRelOther()" >
+                                <option>Friends</option>
+                                <option>Family</option>
+                                <option>Enemy</option>
+                                <option >Unknown</option>
+                                <option value="classmate" >Classmates</option>
+                                <option value="other" >Other</option>
+                            </select> 
+                                                       <div  class="othrGrps" id="orGroup" style="display: none;">
+                                                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            Or  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input class="inp_th" type="text" placeholder="Other Group" />
+                                                       </div>          
+                                                       <div class="othrGrps" id="classGroup" style="display: none;" >
+                                                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            In  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input class="inp_th" type="text" placeholder="School / College " />
+                                                       </div>          
+                                                       
+                        </div>
+                                                   <div class="thtrPrcd">
+                                                       Send Request
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                    <div class="theaterTexts" id="TheaterNewRelAccept" style="display: none;" >
+                                           <div class="thtrTxtIn">
+                                               <div class="thtrTtl">
+                                                   New Relation <span  class="ThjustTip" ></span> <div class="thtrTxtClose" onclick="$('#TheaterNewRelAccept').fadeOut()" >X</div>
+                                               </div>
+                                               <div class="thtrCont">
+                                                   <div class="reqSendIn">
+                                                       Add   <span id="targetReqstAcc"  >Vijayakumar </span> to my relations as
+                                                       <select id="addRelTypeAcc" onchange="addRelOtherAcc()" >
+                                <option>Friends</option>
+                                <option>Family</option>
+                                <option>Enemy</option>
+                                <option >Unknown</option>
+                                <option value="classmate" >Classmates</option>
+                                <option value="other" >Other</option>
+                            </select> 
+                                                       <div class="reqTimeHold">Requested On <span id="reqTime">1 Jan 2015 , 10:30 am</span> </div>                          <div  class="othrGrps" id="orGroupAcc" style="display: none;">
+                                                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            Or  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input class="inp_th" type="text" placeholder="Other Group" />
+                                                       </div>          
+                                                       <div class="othrGrps" id="classGroupAcc" style="display: none;" >
+                                                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            In  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input class="inp_th" type="text" placeholder="School / College " />
+                                                       </div>          
+                                                       
+                        </div>
+                                                   <div class="thtrPrcd">
+                                                       Accept Request
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                   
+                    
+                </div>
+               
+            </div>
+     
+  </body>
+</html>

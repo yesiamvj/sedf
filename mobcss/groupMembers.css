@@ -1,0 +1,68 @@
+/* 
+    Created on : Jul 29, 2015, 9:37:08 PM
+    Author     : Vijayakumar M
+*/
+#pageProfileTab{
+    position: absolute;
+    width: 100%;
+}
+.PGM_Itm img{
+    max-height: 75px;
+    border-radius:75px;
+}
+.PGM_Total{
+   // float: right;
+    color:grey;
+}
+.PGM_Itm{
+    display: inline-block;
+    text-align: center;
+}
+.groupMembersOuter{
+    margin: 0px 2%;
+    box-shadow: 0px 0px 5px grey;
+    padding: 50% 25px 100px 25px;
+}
+.PGM_Ttl{
+    padding: 10px 2%;
+    box-shadow: 0px 5px 5px -5px grey;
+    margin-bottom: 10px;
+    color: black;
+}
+.PGM_Inner{
+    margin: 25px;
+    text-align: center;
+}
+.PGM_Itm{
+    padding:15px;
+    text-align: center;
+    margin: 0px 10px;
+    max-width: 200px;
+}
+.PGM_Itm:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.adminOfGroup{
+    background-color: darkcyan;
+    color: white;
+     margin: -10px;
+    margin-bottom: 10px;
+    padding: 2px;
+   
+}
+.addMemberBtn{
+    background-color:darkmagenta;
+    color: white;
+    padding: 5px ;
+    text-align: center;
+    border: 1px solid magenta;
+    margin: 0px 50px;
+}
+.addMemberBtn:hover{
+    cursor: pointer;
+}
+#groupMembersTab{
+    position: absolute;
+    
+}

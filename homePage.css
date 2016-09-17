@@ -1,0 +1,766 @@
+/* 
+    Created on : Jun 22, 2015, 11:19:27 AM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    overflow-x: hidden;
+   background-image:url('icons/t/t (11).jpg');
+    background-size: 100%;
+}
+#SF_OpeningLogo{
+    position: fixed;
+    top: 0px;
+    top: 35%;
+    left:47%;
+    font-size: 25px;
+    border-left: 6px solid crimson;
+    padding-left: 17px;
+    opacity: 0.75;
+}
+
+#SF_pageLoadStatus{
+    position: fixed;
+    width:700px;
+    height: 2px;
+    background-color:white;
+    top: 50%;
+    left: 25%;
+    z-index: 10000;
+    box-shadow: 1px 1px 2px crimson;
+}
+#SF_pageLiveLoadedStatus{
+    width: 0px;
+    height: inherit;
+    background-color: crimson;
+}
+.SedFedTitleBar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+.TitleBarOut{
+    background-color:whitesmoke;
+    padding:2px;
+    box-shadow: 0px 0px 2px grey;
+    -moz-animation: TitleBackClr 6s infinite;
+    animation-iteration-count: infinite;
+}
+.TtlBarIn{
+    
+}
+.TtlBarIn div{
+    display: inline-block;
+}
+.TtlBarTtl{
+    margin-left:75px;
+    border-left: 5px solid navy;
+    padding-left:15px;
+    float: left;
+    margin-top:7px;
+}
+.TopProfPic{
+    max-height: 25px;
+    margin-top: -2px;
+    float: left;
+    margin-right: 15px;
+}
+.SedFedUserName{
+    color:crimson;
+    font-size: 20px;
+    cursor: pointer;
+}
+.SedFedMainBar{
+    float: left;
+    left: 0px;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 5px -2px grey;
+}
+.MainBarOut{
+    padding: 5px;
+}
+.MainBarIn{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.MainBarItm:first-child{
+    margin-top: 135px;
+}
+.profImgMainBar{
+    border-radius:25px;
+    position:fixed;
+    top: 65px;
+    left:8px;
+    max-height:50px;
+    max-width:50px;
+}
+.profImgMainBar:hover{
+    box-shadow: 5px 5px 7px -7px grey;
+}
+.MainBarItm:not(:first-child){
+    margin-top:30px;
+}
+.MainBarItm:hover{
+    cursor: pointer;
+}
+.ico_sf_mBar{
+    max-height: 35px;
+}
+.SFTB_srchInp{
+    padding:5px 15px;
+    font-family: "Segoe UI";
+    width: 375px;
+  //  border:1px solid darkgray;
+    color:navy;
+    border: none;
+}
+.SFTB_srchIn{
+    margin:5px 50px;
+    //padding:2px;
+    background-color: white;
+   // border-radius:4px;
+}
+
+.ico_TtlBarSrch{
+    height: 20px;
+    margin-top: 3px;
+    float: right;
+    padding: 0px 10px;
+    border-left: 1px solid darkgrey;
+}
+.ico_TtlBarSrch:hover{
+    cursor: pointer;
+}
+.TtlBar_FlashNewsHold{
+    float: right;
+  //  background-color: white;
+  // padding:12px 0px;
+    height: 33px;
+    width:500px;
+    text-align: center;
+    position: fixed;
+  //  opacity: 0.5;
+    overflow: hidden;
+    top: 2.5px;
+    right:115px;
+    color: white;
+}
+.FlashNewsText{
+    position: absolute;
+    top: 10px;
+    margin-left: -207px;
+    z-index: 1;
+    color:navy;
+    font-family: Segoe UI;
+    font-size: 13px;
+}
+.TtlBar_FlashNewsHold:hover{
+    opacity: 1;
+    //cursor: pointer;
+}
+.SFTB_FlashArrPrev{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid navy;
+   padding: 0px 10px;
+    opacity: 0.2;
+    z-index: 10;
+}
+.SFTB_FlashArrNext{
+    
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid navy;
+    float: right;
+    opacity: 0.2;
+    padding: 0px 10px;
+    right: 0px;
+    z-index: 10;
+}
+.SFTB_FlashArrNext:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+.SFTB_FlashArrPrev:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.SFTB_FlashDoLike{
+    position: absolute;
+    top: 9px;
+    opacity: 0.1;
+    color:green;
+    padding: 1px 10px;
+    z-index: 10;
+}
+.SFTB_FlashDoLike:hover{
+    opacity: 1;
+    background-color:navy;
+    color: white;
+    cursor: pointer;
+}
+.FlashNewsTime{
+    color:whitesmoke;
+    font-size: smaller;
+}
+.FlashNewsOwner{
+    color:crimson;
+}
+.timeDivider{
+    margin: 0px 15px;
+}
+ 
+
+/* bottom task bar */
+#SedFedHomeTaskBar{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.5);
+}
+#SedFedHomeTaskBar:hover{
+    background-color:rgba(0,0,0,0.75);
+}
+.SedFedHomeTaskBarIn{
+   padding: 5px;
+    display: inline-block;
+   //background-color:white;
+}
+.SedFedHTB_Itm{
+    display: inline-block;
+    padding:5px 35px;
+    font-size: 13px;
+    font-family: Segoe UI;
+}
+.SedFedHTB_Itm:hover{
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+}
+.SedFedHomePageContOut{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+}
+.SedFedHomePageContInFocus{
+    margin-top: 45px;
+}
+.SF_Home_TaskItmHoldr{
+    margin-top: 12%;
+    margin-left:35%; 
+    background-color:rgba(250,250,250,0.5);
+    box-shadow: 0px 0px 5px -1px grey;
+}
+.SF_Home_TaskItmHoldr:hover{
+    background-color: rgba(250,250,250,0.85);
+}
+
+.SF_Home_TaskItmIn{
+    width: 100px;
+    padding: 10px 25px;
+}
+.SFHTItm_Ttl{
+    margin: 10px;
+    color:crimson;
+    font-size: 19px;
+    font-family:cursive;
+}
+.SFHTItm_QueHold{
+    margin: 15px 35px;
+}
+.SFHTItm_QI_Ttl{
+    color: grey;
+    margin:10px 0px;
+}
+.SFHTItm_Que_Itm{
+    margin: 25px 10px;
+}
+/* login window inputs */
+.SFHTIQ_inp{
+    padding:7px 15px;
+    font-family: "Times New Roman";
+    font-family: Segoe UI;
+    width: 350px;
+    color: navy;
+    font-size: 14px;
+    background-color: transparent;
+    border:1px solid darkgrey;
+}
+.SFHTIQ_inp:focus,.SFHTIQ_inp:hover{
+    background-color: white;
+}
+#LoginPurposeSelect{
+    font-size: 12px;
+    padding:5px 25px;
+    font-family: "Times New Roman";
+    font-family: Segoe UI;
+    cursor: pointer;
+    max-height: 33px;
+}
+#LoginPurposeSelect option{
+    padding: 6px ;
+    text-align: center;
+    cursor: pointer;
+}
+#SF_ProceedToLoginBtnHold{
+    display: inline-block;
+    position: absolute;
+   // background-color:whitesmoke;
+    padding:5px 25px;
+    margin-top: -1px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#SF_ProceedToLoginBtnHold:hover .SF_ProceedToLoginBtn{
+    border-left-color: blue;
+    cursor:pointer;
+}
+.SF_ProceedToLoginBtn{
+   // float: right;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid navy;
+}
+#SFHTItm_QILogin{
+    width: 375px;
+}
+.LoginWindowProfileHoldr{
+    position: absolute;
+    top: 40%;
+    left:70%;
+    width:400px;
+}
+.LoginWinProfName{
+    color:green;
+    font-size: 17px;
+    margin: 0px 0px 0px 120px;
+    //float:right;
+}
+.LoginWinProfImg{
+   margin-left: 25px;
+}
+.img_LoginWinProfileface{
+    float: left;
+    max-height: 100px;
+    max-width: 100px;
+}
+.LoginWinProfForgPass{
+  position: absolute;
+  top:45px;
+    left: 150px;
+    color: #ef0000;
+    cursor: pointer;
+}
+.SFHP_forgotPassTheater{
+    position: fixed;
+    top: 35%;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 25px 30px;
+}
+.SFHP_Th_FP_Ttl{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.closeFPth{
+    float: right;
+    font-size: 13px;
+    cursor: pointer;
+}
+.SFHP_Th_FP_Cont{
+    margin: 25px;
+    color:white;
+}
+
+.SFHP_Th_FP_Cont input{
+    margin: 0px 15px;
+    padding:7px 10px;
+    width: 550px;
+    font-family: "Segoe UI";
+}
+.ThforgotPassPrcdBtn{
+    background-color: navy;
+    display: inline-block;
+    padding:8px 50px;
+    color: white;
+}
+.ThforgotPassPrcdBtn:hover{
+    background-color: rgb(0,0,100);
+    cursor: pointer;
+}
+.SF_QuickSignUpWindowOut{
+    position: absolute;
+    top: 15%;
+    background-color: rgba(250,250,250,0.75);
+    padding: 35px 35px;
+    box-shadow: 0px 0px 5px grey;
+}
+.SF_QuickSignUpWindowOut:hover{
+    background-color: rgba(250,250,250,0.85);
+}
+#SF_QuickSignUpWindow{
+    left: -2000px;
+}
+.SF_QSUPWinTtl{
+    color: green;
+    font-size: 16px;
+    font-family: Segoe UI;
+    font-family:cursive;
+}
+.SF_QSUPWinCont{
+    margin:40px 15px;
+}
+.SF_QSUPWinQueItm{
+    margin:25px 10px;
+}
+.SF_QSUPWinQueItm input{
+    padding:7px 15px;
+    width: 350px;
+    font-family: "Segoe UI";
+    color: navy;
+    font-size: 14px;
+}
+.SF_QSUP_Proceed{
+    background-color: navy;
+    color: white;
+    padding: 7px 25px;
+    margin: 0px 10px;
+    font-family: "Segoe UI";
+}
+.SF_QSUPWinQueItm input[type='checkbox']{
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.SF_QSUP_Proceed:hover{
+    background-color: rgb(0,0,100);
+    cursor: pointer;
+}
+.About_Your_SedFed{
+    margin-top:95px;
+    margin-left: 100px;
+}
+.AYSF_Ttl{
+    font-size: 14px;
+    font-family: Segoe UI;
+    margin-top:85px;
+    margin-left: 75px;
+    font-weight: bold;
+}
+.AYSF_In{
+    font-family: Segoe UI;
+}
+.AYSF_Itm{
+    margin:25px 50px;
+    border-left: 5px solid ;
+    padding: 4px;
+    padding-left: 25px;
+   
+}
+.SedFed_Home_UnderGround{
+    margin-top: 100px;
+    height: 175px;
+    background-color: rgba(0,0,0,0.5);
+   position: absolute;
+    width: 100%;
+   bottom: -175px;
+}
+.about_us{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color:black;
+    font-size: 17px;
+    font-family: cursive;
+    cursor: pointer;
+    z-index: 10;
+}
+.about_us:hover{
+    color:silver;
+}
+.SedFedv2Logo{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    font-size: 25px;
+    border-left: 6px solid rgba(0,0,0,0.5);
+    color:rgba(0,0,0,0.5);
+    padding-left: 17px;
+}
+.SedFedVersion{
+    font-size: 11px;
+    font-family:segoe ui;
+}
+.SedFedSlogan{
+    position: absolute;
+    bottom:10px;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size:15px;
+    font-family:cursive;
+}
+.SedFedUserChoice{
+    margin:10px 30px;
+    font-family: cursive;
+}
+.SFUC_Ttl{
+    color: black;
+    font-size: 15px;
+    margin: 20px;
+    font-family: cursive;
+}
+.SFUC_tip{
+    color: grey;
+    margin: 0px 20px;
+}
+.SFUC_BgPic div{
+    display: inline-block;
+}
+.SFUC_HomePage div{
+    display: inline-block;
+}
+.SFUC_HomePage{
+    margin:5px 45px;
+    color:darkgrey;
+}
+.SFUC_BgPic{
+     margin:5px 45px;
+     color:darkgrey;
+}
+.SFUC_Btn{
+    background-color: rgba(0,0,0,0.3);
+    display: inline-block;
+    padding: 3px 25px;
+    right: 0px;
+    float: right;
+}
+.SFUC_Btn:hover{
+    cursor: pointer;
+    background-color:rgba(0,0,0,0.5);
+}
+.SFUC_UploadStatus{
+    position: fixed;
+    top:40%;
+    left:25%;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px 20px;
+}
+.SFUC_UploadStsOut{
+    margin: 25px;
+    width:700px;
+    height:3px;
+    box-shadow: 0px 0px 2px skyblue;
+}
+.SFUC_UploadStsIn{
+    height: inherit;
+    width: 50px;
+    background-color:skyblue;
+}
+.SFUC_UpsDetsHoldr{
+    position: fixed;
+    top: 20%;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 25px 50px;
+    
+}
+.SFUCUDH_Ttl{
+    margin: 10px 10px 20px 10px;
+    color: white;
+    font-size: 15px;
+}
+.SFUCUDH_Itm{
+    margin:15px 20px;
+    color: silver;
+    line-height: 2;
+}
+.SFUCUDH_Itm input[type='text']{
+    padding: 5px 15px;
+    font-family: "Segoe UI";
+    width: 300px;
+}
+.SFUCUDH_Itm input[type='file']{
+    margin: 0px 20px;
+}
+.SFUCUDH_Submit{
+    background-color: silver;
+    display: inline-block;
+    padding: 5px 55px;
+    margin:10px 25px;
+    color:black;
+    cursor:pointer;
+}
+.closeSFUCwin{
+    float: right;
+    cursor: pointer;
+}
+.SedFedLogo{
+    position: fixed;
+    left: 20px;
+    top:7px;
+}
+#sedfedLogoTop{
+    width: 0px;
+    height: 0px;
+    border-top:10px solid navy;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+#sedfedLogoProgress{
+    width: 0px;
+     width: 0px;
+    height: 0px;
+    border-top: 20px solid navy;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    margin-left: -5px;
+    margin-top: -1px;
+    -moz-animation: sedfedlogo 3s infinite;
+    -webkit-animation: sedfedlogo 3s infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+    // 50%{transform: rotate(180deg);}
+     100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+}
+@-moz-keyframes TitleBackClr{
+    0%{background-color: whitesmoke;}
+    50%{background-color: transparent;}
+     100%{background-color:whitesmoke;}
+}
+.passEye{
+    float: right;
+    display:inline-block;
+    max-height: 20px;
+    position: absolute;
+    margin-left:350px;
+    margin-top: 7.5px;
+    cursor: pointer;
+}
+#SedFedVersion2Load{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: whitesmoke;
+    z-index: 10000;
+    text-align: center;
+}
+.SedFedVersion2Logo{
+    position: absolute;
+    left: 47%;
+    top: 37%;
+}
+.SedFedVersion2Name{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    font-size: 25px;
+    color: crimson;
+}
+.SedFedLoadStatusOut{
+   position: absolute;
+    top: 50%;
+    left: 25%;
+    height: 2px;
+    width: 50%;
+    box-shadow: 0px 0px 1px crimson;
+}
+.SedFedLoadLiveStatus{
+    width: 10px;
+    height: inherit;
+    background-color: crimson;
+}
+.About_Your_SedFed{
+    width: 25%;
+}
+
+.ico_AYSF{
+  float: right;
+    margin-left: 20px;
+    width: 20px;
+}
+.SF_pageBgPicDets{
+    position: absolute;
+    right: -10px;
+    padding: 10px 30px;
+    bottom: 50px;
+    padding-right: 50px;
+    text-align: right;
+}
+.SF_pageBgPicDetIn{
+    
+}
+.SFPBG_by{
+    font-size:9px;
+    //font-style: italic;
+    font-family:Segoe UI;
+    color: grey;
+    margin: 10px 0px;
+}
+.SF_PBGDet_Ttl{
+    font-size:15px;
+    color: crimson;
+    font-family:cursive; 
+    margin: 10px 0px;
+    text-align: right;
+}
+.SF_pageBgPicDetIn div{
+    display: inline-block;
+}
+.SF_PBGPD_Itm{
+    font-family:cursive;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: right;
+}
+.SG_PBGPD_ItmCount:not(:last-child){
+    margin-right:25px;
+    margin-left:10px;
+    font-family: Segoe UI;
+    color: blue;
+}
+.SG_PBGPD_ItmCount{
+      color: blue;
+     margin-left:10px;
+}
+.SFPBG_Caption{
+    color:grey;
+    margin: 10px 0px;
+    text-align: right;
+    font-family: cursive;
+}

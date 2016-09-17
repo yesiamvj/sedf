@@ -1,0 +1,80 @@
+/* 
+    Created on : Jun 23, 2015, 4:34:51 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+#UserChoiseProfilePage{
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    z-index: 1000;
+}
+
+.prof1TtlBar{
+    position:fixed;
+    top: 0px;
+    z-index: 10;
+    width: 200%;
+    padding:8px 35px;
+    font-family:Segoe UI;
+    font-size: 15px;
+  //  box-shadow: 0px 0px 5px;
+    background-color: whitesmoke;
+    opacity: 0;
+}
+.prof1TtlBar:hover{
+    opacity: 1;
+}
+.wallPaperHolder{
+    position: absolute;
+    top: 0px;
+    bottom: -0px;
+    left: 0px;
+    width:30%;
+ //   box-shadow: 0px 0px 25px black;
+    z-index: 2;
+    background-position:center;
+}
+.backgroundPicHolder{
+    position: absolute;
+    top: 0px;
+    left:30%;
+    right: 0px;
+    //bottom: 0px;
+    height:100%;
+}
+.profileImgHolder{
+    position: fixed;
+    top: 25%;
+    height: 175px;
+    width: 175px;
+    right: 5%;
+}
+
+.img_backpic{
+    max-height: 100%;
+   // max-width: 100%;
+}
+.img_profiePic{
+    max-height: 100%;
+  //   box-shadow: 0px 0px 10px black;
+}
+.backgroundFront{
+   // background-color:rgba(0,0,0,0.25);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width:100% !important;
+   background: -moz-linear-gradient(top,#050,transparent);
+background-image: -o-linear-gradient(top,#050,transparent);
+background-image: -webkit-linear-gradient(top,#050,transparent);
+background-image: linear-gradient(top,#050,transparent);
+
+  //  right: 0px;
+}
+.backgroundFront:hover{
+    opacity: 0.75;
+}

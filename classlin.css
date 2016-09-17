@@ -1,0 +1,2084 @@
+/* 
+    Created on : Mar 15, 2015, 9:53:11 PM
+    Author     : Vijayakumar M <vijayakumar for www.sedfed.com>
+*/
+
+body{
+    margin-top: 43px;
+    margin-left: 0%;
+   //font-family:Arial, Helvetica, sans-serif;
+   font-family:Aparajita;
+  
+ color:navy;
+   background-image: url('backs.png');
+    background-size: 7px;
+    background-attachment: fixed;
+  // background-color:  ivory;
+//  background-image: url('backs.png');
+}
+body:hover{
+  //  background-color:  cornsilk;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.title_bar{
+    top: 0px;
+    position: fixed;
+   border: #ef0000 outset;
+    border-width: 1px 2px 1px 2px;
+    background-color:#ef0000;
+    padding: 6px;
+    width: 100%;
+    text-indent: 25px;
+    z-index: 5000;
+   // -moz-animation:  page-blur 5s;
+   // -webkit-animation: page-blur 5s;
+    box-shadow: 1px -5px 2px 5px navy;
+    
+    //-moz-box-shadow: 3px 3px 5px 6px #ef0000;
+//-webkit-box-shadow: 3px 3px 5px 6px #ef0000;
+
+}
+
+.pageLoadStatus{
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    top: -1px;
+    width:100%;
+    height: 3px;
+    z-index: 10000;
+    -moz-animation:  title-bar 2s;
+   
+    -webkit-animation: title-bar 2s;
+    
+}
+.sedfed{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Aparajita;
+    margin-top: 15px;
+    //font-weight: bold;
+}
+.searchbar{
+    text-indent:60px;
+    display: inline-block;
+}
+.srchbar{
+     font-size:14px;
+     background-image: url('srch20.png');
+     background-repeat: no-repeat;
+     background-position: 325px;
+    border:solid 1px #ef0000;
+    width: 350px;
+    color:white;
+   padding:5px 0px 5px 10px;
+   background-color:white;
+}.logout{
+    display: inline-block;
+    right: 0px;
+}
+.srchbar:focus{
+   font-size:14px;
+   background-image:  none;
+    border:solid 1px #ef0000;
+    width: 350px;
+    color:navy;
+   padding:5px 0px 5px 10px;
+   background-color:white;
+}
+.proceedsrch{
+   // background-image: url('s2.png');
+    cursor:pointer;
+    background-color: white;
+    color:#ef0000;
+    font-size: 14px;
+    padding:5px 15px 5px 15px;
+    margin-left: -10px;
+    border:solid 1px;
+    border-color:#ef0000;
+}
+.proceedsrch:hover{
+    cursor:pointer;
+    background-color: white;
+    color:navy;
+    border:solid 1px;
+    border-color:navy;
+}
+.logout{
+    position: absolute;
+}
+.logoutbtn{
+    background-color: red;
+    color:white;
+    padding: 5px 40px 5px 10px;
+     border:outset 1px red;
+    cursor: pointer;
+    
+}
+.notificationsArea{
+    display: none;
+    position: fixed;
+    text-align: center;
+    top:40px;
+    border: 1px outset #ef0000;
+    width:100%;
+    background-color: white;
+    padding: 10px;
+   // -moz-animation:  timegoing 0.5s;
+    z-index: 1000;
+   // -webkit-animation: timegoing 0.5s;
+    
+}
+.hotNote{
+    
+}
+@-moz-keyframes timegoing{
+     0%{left:-1500px;background-color: navy;}
+     100%{left: 0px;background-color: white;}
+}
+@-webkit-keyframes timegoing{
+     0%{left:-1500px;background-color: navy;}
+     100%{left:0px;background-color: white;}
+}
+
+.formyface{
+    position: absolute;
+    width: 150px;
+   color:grey;
+    font-size: 15px;
+   text-align: center;
+    top:175px;
+    background-color: white;
+   
+    line-height: 1.75;
+}
+.formyface:hover{
+    cursor: pointer;
+    background-color: white;
+    color:grey;
+    opacity: 0.70;
+}
+@-moz-keyframes title-bar{
+     0%{width:0%;background-color: navy;}
+     100%{width: 100%;background-color: white;}
+}
+@-webkit-keyframes title-bar{
+     0%{width:0%;background-color: navy;}
+     100%{width: 100%;background-color: white;}
+}
+@-moz-keyframes title-bar{
+     0%{width:0%;background-color: navy;}
+     100%{width: 100%;background-color: white;}
+}
+@-webkit-keyframes title-bar{
+     0%{width:0%;background-color: navy;}
+     100%{width: 100%;background-color: white;}
+}
+
+.main-profile{
+    float: left;
+    //color: navy;
+    position: fixed;
+   // overflow-y: scroll;
+   // overflow-x: hidden;
+    left: 0px;
+    top:0px;
+    bottom:0px;
+   height: 200%;
+   width: 190px;
+    background-color: whitesmoke;
+    z-index: 10;
+  box-shadow: 0px 0px 79px 5px navy;
+     
+}
+.main-profile:hover{
+    box-shadow: 0px 0px 79px 5px navy;
+}
+
+.profile-start{
+   margin-top:40px;
+}
+
+@-moz-keyframes myface{
+    from{  max-width:150px;max-height:150px;}
+    to  {   max-width:200px;max-height:200px;padding:0px;}
+}
+@-webkit-keyframes myface{
+    from{  max-width:150px;max-height:150px;}
+    to  {   max-width:200px;max-height:200px;padding:0px;}
+}
+.my-face{
+    max-width:150px;
+    max-height:150px;
+   padding:20px;
+}
+ul>li{
+    font-size: 12px;
+    font-family:arial,sans-serif;
+    font-weight:normal;
+    padding:7px 0px 7px 25px;
+    
+     border: solid;
+     border-color:white transparent white transparent;
+    border-width:0px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+ul>li:hover{
+    cursor: pointer;
+    //background-color: white;
+    border:solid ;
+    border-color:white navy white white;
+   border-width:0px 5px 0px 5px;
+   margin:0px 0px 0px 0px;
+}
+li>a{
+    color: navy;
+}
+li:hover>a{
+    color: navy;
+}
+.curpage{
+     border:solid ;
+     background-color: white;
+    border-color:white white white crimson;
+   border-width:0px 5px 0px 5px;
+}
+.curpage>a{
+    color:crimson;
+}
+.p-spls{
+     background-color: navy;
+     border-color:white navy white navy;
+}
+.p-spls>a{
+    color: white;
+}
+.p-heads{
+    padding: 20px;
+    color:grey;
+}
+hr{
+    color: whitesmoke;
+    padding: 0px;
+    margin: 3px;
+}
+ul>li:hover{
+   // background-color: white;
+    border-color: transparent;
+    border:solid ;
+    border-left-color: transparent;
+    border-width: 0px 5px 0px 5px;
+}
+ul.p-utils>li:hover>a,ul.p-cpnal>li:hover>a{
+    color:navy;
+}
+
+ul.p-mtheme>li{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+ul.p-mtheme>li>span{
+    display: inline-block;
+    background-color: blue;
+    border: solid 0px #ef0000;
+}
+
+ul.p-mtheme>li:hover{
+    border: none;
+}
+
+ul.p-mtheme>li{
+    margin: 5px;
+    border: none;
+}
+ul.p-mtheme>li>span.mp-thme-sf{
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    border-color: #ef0000;
+    
+}
+ul.p-mtheme>li>span.mp-thme-rg{
+   background-color: black;
+    color: white;
+    padding: 5px;
+    border-color: #ef0000;
+}
+ul.p-mtheme>li>span.mp-thme-bw{
+   background-color: crimson;
+    color: white;
+    padding: 5px;
+    border-color: #ef0000;
+}
+ul.p-mtheme>li>span.mp-thme-sb{
+   background-color:darkcyan;
+    color: white;
+    padding: 5px;
+    border-color: #ef0000;
+}
+ul.about_mp>li.mp-heads{
+    background-color: transparent;
+    cursor:default;
+    border-color: transparent;
+    color:grey;
+}
+ul.about_mp>li.mp-heads:hover{
+    background-color:transparent;
+    cursor:default;
+    border-color: transparent;
+    color:grey;
+}
+ul.about_mp>li:hover{
+    //background-color: navy;
+}
+ul.about_mp>li.p-op-neverHide{
+    background-color: crimson;
+    border:solid crimson;
+    border-width: 1px 5px 0px 5px;
+    color:white;
+}
+ul.about_mp>li.p-op-hide{
+    background-color: transparent;
+   // border:solid crimson;
+    border-width: 0px 5px 0px 5px;
+    
+}
+ul.about_mp>li.mp-heads:hover>a{
+    color:navy;
+}
+.whatsOnDown{
+    position: fixed;
+   opacity: 0.1;
+    text-align: center;
+    bottom: 0px;
+    width: 190px;
+    height: 20px;
+    background-color:white;
+    display: inline-block;
+}
+.whatsOnDown:hover{
+     opacity: 0.7;
+    background-color: navy;
+}
+.whatsOnDown>.dropIcon>img{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    transform: rotate(0deg);
+}
+#topscrollimg{
+    transform: rotate(180deg);
+}
+.whatsOnTop{
+    position: fixed;
+    opacity: 0.1;
+    text-align: center;
+    top: 45px;
+    width: 190px;
+    height: 20px;
+    background-color: white;
+    display: inline-block;
+}
+.whatsOnTop>.dropIcon>img{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    transform: rotate(180deg);
+}
+.whatsOnTop:hover{
+     opacity: 0.7;
+    background-color:white;
+}
+.prof-custom-Theme{
+    position: fixed;
+    display: none;
+   
+    width: 250px;
+   // height: 150px;
+    left: 200px;
+    top: 250px;
+    background-color: whitesmoke;
+    box-shadow: 7px 7px 35px 5px black;
+}
+
+.title_for_window{
+    text-align: center;
+    padding: 2px;
+    background-color: crimson;
+    color: white;
+   // background-color: navy;
+}
+.closeForWindow{
+    position: absolute;
+    right: 10px;
+   //font-family:monospace;
+    font-weight: bold;
+    cursor: pointer;
+  // float: right;
+  //  margin-right: 10px;
+}
+.window_content{
+    padding: 10px 10px 10px 20px;
+    line-height: 2.5;
+}
+.cusThmeBCR,.cusThmeCR{
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin:7px 15px;
+    float: right;
+    display: inline-block;
+    background-color: navy;
+    width:50px;
+    height: 20px;
+}
+.cusThmePreBtn{
+   position: absolute;
+    bottom: 0px;
+ //margin-left: 30%;
+   // background-color: navy;
+    color: grey;
+    width: 250px;
+    margin: -20px;
+    padding: 3px 15px;
+    cursor:pointer;
+    border: none;
+   
+}
+.cusThmePreBtn:hover{
+    background-color: navy;
+    color: white;
+}
+/* for center page */
+.FocusPageCenter{
+    float: left;
+   margin-left: 200px;
+// background-color: whitesmoke;
+    width:650px;
+    height: 500px;
+}
+.firstView{
+   // margin-left: 20px;
+    background-color: white;
+    width:645px;
+}
+.startupnote{
+    padding: 9px 10px 9px 30px;
+}
+.lastLogin{
+    color:crimson;
+}
+.closethetip{
+   //margin-left: 70px;
+    float: right;
+   border: 0px;
+   background-color: transparent;
+}
+.msgOptions,.pplOptions,.postOptions{
+    margin-top: 0px;
+    display: none;
+}
+.msgOptions:hover,.pplOptions:hover,.postOptions:hover{
+    background-color: whitesmoke;
+    border: 0px;
+}
+.controlFocus{
+   position: fixed;
+    
+    text-align: center;
+    margin-left: 860px;
+    top:43px;
+    width:60px;
+    height: 1300px;
+    background-color: white;
+}
+.aliveInSF{
+    right: 10px;
+    position: fixed;
+    top:43px;
+    width:225px;
+    height: 100%;
+    background-color: yellow;
+}
+li>.dropIcon{
+    position: absolute;
+    right:17px;
+    transform: rotate(90deg);
+}
+.whatFirst{
+    padding-top: 30px;
+}
+/* for post center */
+.TheWhatsUp{
+   // background-color: crimson;
+    height:2000px;
+    width: 100%;
+    padding-top: 15px; 
+}
+.postContentMain{
+   margin: 1px;
+    border: 1px solid #ef0000;
+    background-color: white;
+    width:640px;
+    float: left;
+    padding-bottom: 5px;
+   
+}
+.postContentMain:hover{
+    z-index: 34567;
+    //border-color:navy;
+    //border: none;
+    position: absolute;
+     box-shadow: 0px 0px 25px -10px navy;  
+}
+.postUser{
+    padding: 5px 0px 5px 10px;
+    width: 98%;
+}
+.postUserName{
+    
+     font-size: 20px;
+     color:crimson;
+}
+.postTime{
+   // float: right;
+     padding: 5px 5px 5px 25px;
+    font-family: arial;
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+}
+.SedFedPostID{
+    color: grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+.SedFedPostID>b{
+    font-size: 15px;
+}
+.postDrivers{
+// background-color: yellow;
+    margin-left: 25px;
+    opacity: 0.5;
+    
+}
+.postDrivers:hover{
+    opacity: 1;
+}
+.forPostDriverPrev{
+    display: inline-block;
+    cursor: pointer;
+}
+.postDriverPrev{
+   display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-right: 10px solid crimson;
+    border-top:7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+.postDrivCur{
+    display: inline-block;
+    background-color: grey;
+    width:1px;
+    height: 13px;
+    margin-left: 20px;
+}
+.forSingleLine{
+    display: inline-block;
+    background-color:crimson;
+    width: 2px;
+    height: 13px;
+}
+.forPostDriverNext{
+    display: inline-block;
+    margin-left: 20px;
+}
+.postDriverNext{
+     display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid crimson;
+    border-top:7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+.forPostMainDetailTt{
+   display: inline-block;
+   display: none;
+  cursor:pointer; 
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -20px;
+}
+.postMainDetTtAr{
+    display:inline-flex;
+    border: solid;
+    border-color: transparent transparent whitesmoke transparent;
+    border-width: 0px 6px 10px 6px;
+}
+.postMainDetTtCont{
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 15px black;
+    color: navy;
+    padding: 3px 15px;
+}
+.postDetail,.postDetailImps{
+    display: inline-block;
+    position: absolute;
+    
+   //float: right;
+   // padding-left:25px;
+  // padding-right: 25px;
+  //margin-left:217px;
+    margin-top: 5px;
+    margin-left: 255px;
+    width: auto;
+    //opacity: 0.9;
+    //width: 200px;
+  //  height: 30px;
+   
+    padding: 3px 21px 2px 0px;
+    color:white;
+    //font-weight: bold;
+    background-color: navy;
+}
+.forMore{
+ position: absolute;
+    padding: 3.5px 2px 0px 2px;
+    right: 2px;
+    bottom: 2px;
+    top:2px;
+    color: navy;
+    font-weight: bold;
+    font-family:arial;
+    background-color: white;
+    opacity: 0.1;
+    cursor: pointer;
+}
+.postDetailImps:hover>.forMore{
+  
+    opacity: 0.5;
+}
+.forMore:hover{
+    opacity: 0.9;
+}
+.postDetail>img,.postDetailImps>img{
+    width: 20px;
+    height: 20px;
+}
+.postDetailImps{
+    margin-left: 440px;
+    padding-right: 25px;
+}
+.postStatusLike{
+    margin-left: 15px;
+    cursor: pointer;
+      width: 25px;
+      height:25px;    
+}
+.postStatusRate{
+     margin-left: 15px;
+     cursor: pointer;
+      width: 20px;
+      height:20px;         
+}
+.postCaption{
+    padding: 0px 0px 0px 15px;
+    margin-bottom: 5px;
+    line-height: 2;
+    font-size: 15px;
+    font-family: arial;
+}
+.mediacontent{
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    width:100%;
+}
+.postImgs{
+    max-height: 400px;
+    max-width: 100%;
+}
+.postPrev{
+    position: absolute;
+    font-family:arial; 
+    margin-left: 15px;
+    margin-top: 125px;
+    //font-weight: bold;
+    font-size: 90px;
+   
+    color:grey;
+    opacity: 0.3;
+    z-index: 100;
+}
+.postPrev:hover,.postNext:hover{
+    opacity: 0.9;
+    color:white;
+    cursor: pointer;
+}
+.postNext{
+    position: absolute;
+    font-family:arial; 
+    float: right;
+   margin-left: -65px;
+    margin-top: 125px;
+    font-size: 90px;
+   // font-weight: bold;
+    color:grey;
+    opacity: 0.5;
+    z-index: 100;
+}
+.aboutThisPost{
+    width: 100%;
+    height: 40px;
+    //background-color: green;
+   // margin-top:-5px;
+}
+.sf-likeIcon{
+    width:30px;
+    cursor: pointer;
+    margin-left: 20px;
+    height: 30px;
+}
+.closewho{
+    position: absolute;
+    float: right;
+    padding: 2px 5px;
+    right: 7px;
+    top:7px;
+    font-weight: bold;
+}
+.closewho:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+.sf-unlikeIcon{
+    width:30px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+}
+.sf-rateIcon{
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+}
+.forPostRate{
+    margin-left: 75px;
+}
+.forComment{
+    margin-left: 10px;
+}
+.toolTipCmntAdd{
+    position: absolute;
+    display: inline-block;
+    background-color: navy;
+    opacity: 0.9;
+    padding:5px 15px 7px 15px;
+   
+    font-size: 15px;
+    width:120%;
+    top: 5px;
+    left: 114%;
+    z-index: 50;
+    color: white;
+}
+.commentContentFull{
+    padding: 5px;
+    width: 100%;
+    display: none;
+}
+.commentTitle{
+   padding: 10px;
+    font-size: 15.5px;
+    cursor: pointer;
+}
+
+.sf-commentInput{
+    width: 415px;
+    margin-left: 10px;
+    border:solid 1px #0000ff;
+    //background-color: blue;
+    padding: 7px 10px 7px 10px;
+    color:crimson;
+    font-size: 14px;
+    border-width: 0px 0px 1px 0px;
+}
+.submitCmnt{
+    width: 100px;
+    height: 30px;
+    background-color: crimson;
+    border: 1px outset crimson;
+    color: white;
+}
+.submitCmnt:hover{
+    cursor: pointer;
+    background-color:navy;
+    border:1px navy inset;
+    
+}
+.forCmntArrow{
+    display: block;
+    position: absolute;
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 10px solid whitesmoke;
+}
+.forShare{
+    float: right;
+    padding-right:25px;
+}
+.forCommentAdds{
+    box-shadow:0px 0px 10px 0px ;
+}
+.forCmntTtArrow{
+     display:inline-block;
+    position: absolute;
+    opacity: 0.9;
+    left: 104%;
+    top: 14px;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+border-bottom: 7px solid transparent;
+border-right: 15px solid navy;
+}
+.cmntAtachIcon{
+    width:30px;
+    height:30px;
+}
+.sf-CommentIcon{
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+}
+.attachCmntIcon{
+    width: 30px;
+    height:25px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+    background-image: url('icons/post-cmnt-attach.png');
+    background-size: 25px;
+    color: transparent;
+    cursor: pointer;
+}
+.colorComment{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+   
+}
+.colorstatus{
+   
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    color: white;
+    border-width: 0px 0px 0px 0px;
+   
+}
+
+.colorCmntIcon{
+    width: 30px;
+    height:25px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+    background-image: url('icons/chooseColor.png');
+    background-size: 25px;
+    margin-left:5px;
+    margin-right: 5px;
+    color: transparent;
+    cursor: pointer;
+}
+.sf-shareIcon{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 25px;
+    height:25px;
+}
+.postDetails{
+     position: absolute;
+   display: inline-block;
+    background-color: white;
+    border: 1px solid red;
+    margin-top: 1px;
+    border-width: 1px 0px 1px 0px;
+    opacity: 0.95;
+    z-index: 10;
+   //padding-right:10px;
+    //min-height: 500px;
+    overflow-y:auto;
+    max-height:500px;
+   //float: right;
+  // display: none;
+    left: 67%;
+    box-shadow: 0px 0px 35px  -10px navy;  
+}
+.postDetails:hover{
+    opacity: 0.97;
+}
+/*for preview panel*/
+.openMediaPeview{
+    padding: 10px;
+    position: absolute;
+    display: none;
+    margin-top: -50px;
+    opacity: 0.1;
+    z-index: 1000;
+    width: 85%;
+    left:100px;
+    right: 100px;
+    background-color:rgba(100%, 100%, 100%, 0.9);
+   // border: 1px outset navy;
+    box-shadow: 0px 0px 50px navy;
+}
+.postPreviewCaption{
+    padding:0px 20px 5px 30px;
+    font-size: 16px;
+    line-height:1.5;
+}
+.postPreviewDetails{
+    float: right;
+    margin-right:20px;
+    //line-height: 25px;
+    background-color: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    margin-top:75px;
+}
+.details{
+    max-height: 460px;
+    overflow: auto  ;
+    padding:0px 5px 0px 0px;
+    
+}
+.changeppic
+{
+    width:100px;
+    height: 30px;
+    background-color: navy;
+    color:white;
+    font-family: Times New Romen;
+}
+.closePreview{
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 0px;
+    padding: 15px 30px 10px 10px;
+}
+.closePreview:hover{
+    color:red;
+}
+.openMediaPeview:hover{
+    opacity: 1.0;
+    z-index:2000;
+}
+.postImagePreview{
+    padding-left: 25px;
+   cursor: pointer;
+   opacity: 1.0;
+   max-width:80%;
+   max-height:480px;
+}
+.hintForPostControls{
+    margin-left: 40px;
+}
+.fullScreenMediaContent>.FullScreenMedia{
+    max-height: 630px;
+    max-width:1100px;
+}
+.forFullScreenMedia{
+    text-align: center;
+    display: none;
+    position: absolute;
+    padding:10px 0px 0px 0px;
+    width:99%;
+    z-index: 3000;
+    height: 99%;
+    top:44px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(100%,100%,100%,0.6);
+}
+
+/*post details starts*/
+.postLikers,.postRatings,.postCommenters,.postShares,.postTagers,.postReachers{
+       padding: 10px;   
+       min-width: 160px;
+       display: none;
+                
+}
+.user{
+    font-size: 15px;
+    color: crimson;
+    line-height: 1.75;
+   padding: 10px;
+}
+.decBackground{
+    position: absolute;
+    width: 99%;
+        height:99%;
+    top: 0px;
+    z-index: 1000;
+    left: 0px;
+    background-color:rgba(100%, 100%, 100%, 0.1);
+    display:none;
+}
+.postDetailHead{
+    font-size: 16px;
+    
+}
+.LikeofPreview{
+    width: 20px;
+    height: 20px;
+}
+.ratingHeads{
+    padding: 5px;
+    background-color: white;
+   cursor: pointer;
+}
+.raterspans{
+    display: none;
+}
+.previousComments{
+    display: none;
+    margin:5px;
+   padding: 5px;
+  //  background-color: whitesmoke;
+}
+.commentUser{
+    padding: 5px;
+    color: crimson;
+    font-size: 16px;
+}
+.hisComment{
+    margin:7px 5px 7px 10px;
+   margin: 10px;
+    padding: 5px;
+    background-color: white;
+}
+.commentText{
+    padding: 10px;
+}
+.userCmntFull{
+   padding: 5px;
+   background-color: whitesmoke;
+    margin-bottom: 2px;
+}
+.spaceBetween{
+    color: transparent;
+    font-size: 10px;
+}
+.commentImage,.commentVideo{
+    //margin-top: 10px;
+    padding: 5px;
+    display:inherit;
+    text-align: center;
+}
+.commentImage>img{
+    max-height:200px;
+    max-width:200px;
+}
+.commentVideo>video{
+    max-height: 250px;
+    max-width:90%;
+}
+.commentVideo>audio{
+    width: 90%;
+}
+.forCommentAdds{
+    background-color: whitesmoke;
+   display: none;
+    position: absolute;
+    margin-top:-50px;
+    margin-left: -47px;
+    border: 1px outset;
+    border-color: white;
+}
+.toolTipCmntUtils{
+    background-color: navy;
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -30px;
+    opacity: 0.9;
+    padding: 5px 20px;
+    color: white;
+}
+.forCmntTtArrowUtil{
+     display:none;
+    position: absolute;
+    opacity: 0.8;
+    width: 0px;
+    height: 0px;
+    margin-left:8px;
+    border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom: 15px solid navy;
+    
+}
+ol{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+ol>li{
+    padding:5px 15px 2px 15px;
+    margin: 0px;
+    text-indent: 0px;
+    color:black;
+   display: inline-block;
+}
+.npsharp{
+ font-size: 0px; line-height: 0%; width: 0px;
+border-left:0px solid transparent;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+border-right: 10px solid navy;
+position: absolute;
+margin-top: -25px;
+
+}
+.putnewpost{
+   position: absolute;
+   width:100px;
+   height: 100px;
+}
+.smileyHead{
+    cursor: pointer;
+    width: 35px;
+    height:35px;
+}
+.forCommentStatus>img{
+    width: 20px;
+    height: 20px;
+}
+/*for live time line */
+.LiveTimeLine{
+    background-color: crimson;
+    position: absolute;
+    right: 245px;
+    width: 220px;
+    height:600px;
+}
+.postnavbtn{
+   font-size: 15px;
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+    background-color:transparent;
+    color:crimson;
+    border: 1px outset;
+    border-color: transparent;
+}
+.postnavbtn:hover{
+    font-size: 15px;
+    width: 40px;
+    height: 25px;
+    background-color: navy;
+    color:white;
+    border: 1px outset;
+    border-color: white;
+}
+.QuickPostAccess{
+    display: none;
+    position: absolute;
+    opacity:0.15;
+}
+.QuickPostAccess:hover{
+    opacity: 0.85;
+     box-shadow:0px 1px 15px -0px black;
+}
+
+.forQuickPostAccArrow{
+   // position: absolute;
+    margin-left: 10px;
+    width: 0px;
+    height:0px;
+    border-left:7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid white;
+    
+}
+.forQuickPostAcc{
+   // position: absolute;
+    //margin: 5px;
+    //opacity: 0.9;
+    background-color: white;
+    color: white;
+    padding: 5px 5px 0px 5px;
+   
+}
+.forQuickPostAcc>.sf-likeIcon,.forQuickPostAcc>.sf-unlikeIcon,.forQuickPostAcc>img{
+    max-height: 22.5px;
+    max-width: 22.5px;
+    
+    padding: 0px 3px;
+    margin:0px;
+    margin-bottom:5px;
+}
+.forQuickPostAcc>.sf-unlikeIcon{
+    margin-left: -15px;
+    
+}
+.forPostDetailToolt{
+    position: absolute;
+    opacity:0.8;
+    display: none;
+    //margin-left:30px;
+}
+.postDetailTtAr{
+     // position: absolute;
+    margin-left: 10px;
+    
+    width: 0px;
+    
+    height:0px;
+    border-left:7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid navy;
+}
+.postDetailTtCont{
+    background-color:navy;
+    color: white;
+    border: 1px solid navy;
+    margin-top: -2px;
+   padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+.forPostViews{
+     color: grey;
+    position: absolute;
+    margin:12px 0px 0px 20px;
+  
+}
+.forPeopleSedfedTag{
+    padding:7px 10px;
+    background-color: whitesmoke;
+    position: absolute;
+    box-shadow: 0px 0px 5px;
+    max-height:170px;
+    max-width: 380px;
+    overflow: hidden;
+}
+.SedFedUserName{
+    color: crimson;
+    font-size: 30px;
+    font-family: Aparajita;
+}
+.forQPmyFirstApp{
+    float: right;
+}
+.forQPmyFirstApp>img{
+    margin-top: 5px;
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.forQuickSFprofile{
+    opacity: 0;
+    margin-top: 20px;
+    //margin-left: 5px;
+    position: absolute;
+   background-color: white;
+    padding: 7px 7px 0px 7px;
+}
+.forQuickSFprofile:hover{
+    opacity: 0.95;
+    box-shadow: 30px 0px 85px 1px white;
+}
+.forQuickSFprofile>img{ 
+    cursor: pointer;
+    margin: 0px;
+   max-width: 23px;
+    max-height: 23px;
+    margin-bottom: 3px;
+}
+.forQuickSFprofile>img:hover{
+    opacity: 0.9;
+}
+.forQuickProfileArrow{
+    //position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-top:-12px;
+    margin-left: 40px;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:10px solid whitesmoke;
+}
+.forQPdmyDetails{
+    //background-color: white;
+    display: none;
+    height: 125px;
+    max-width: 225px;
+    //overflow-y:scroll;
+    //overflow-x: hidden;
+    overflow: hidden;
+    float: right;
+    margin-left: 10px;
+    padding:0px 15px 5px 5px;
+    margin-top:2px;
+    line-height:1.4;
+}
+.forQPdetMyName{
+    font-size:16px;
+    color: grey;
+}
+.SedFedUserAge{
+    color: grey;
+    margin-left: 5px;
+   // font-size: 15px;
+}
+.forQPmyDetTtle{
+    color: grey;
+    margin-right: 15px;
+}
+.forQPmyDetAns{
+    font-size:15px;
+}
+#changepas{
+   display: none;
+   line-height: 2.5;
+}
+
+.cptext{
+    width:85%;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 7.5px;
+    padding: 0px 0px 0px 5px;
+    border-radius: 0px 0px 0px 0px;
+}
+#cpimg{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+.cptext:focus{
+    width:85%;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 7.5px;
+    padding: 0px 0px 0px 5px;
+   
+}
+.crntpass,.newpass{
+    font-size: 17px;
+    margin-left: 5px;
+}
+#cpbtn{
+     background-color: white;
+    width: 90%;
+    cursor: pointer;
+    color: navy;
+    border-width: 0px 0px 0px 0px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    float: left;
+  
+    height: 30px;
+    margin-left: -10px;
+}
+#prcdcpbtn
+{
+    width: 89%;
+    font-size: 17px;
+    height: 30px;
+    background-color: #ef0000;
+    color:white;
+    font-family: Times New Romen;
+    margin-left: 7.5px;
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+#cpresult{
+    margin-left: 7px;
+    color: navy;
+}
+.upstutus{
+    background-color: white;
+    width: 170px;
+    height: 25px;
+    font-family: Microsoft Sans Serif;
+    font-size: 14px;
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+     margin-top: -5px;
+     margin-left: 20px;
+     color: navy;
+    
+}
+.upstutus:hover{
+    background-color: white;
+   border-width: 1px 0px 1px 0px;
+    border-color: red;
+     color: navy;
+    
+}
+
+.updateimg{
+  position: relative;
+ position: absolute;
+ margin-left: 10px;
+ margin-top: -5px;
+  
+}
+.updatestdiv{
+    margin-left: -2px;
+    
+    
+}
+.chagestatusdiv{
+    position:absolute;
+    margin-left: 200px; 
+    background-color: white;
+    min-width: 320px;
+    height: 580px;
+    max-width: 1300px;
+    margin-left: 210px;
+    margin-top: -130px;
+    overflow: hidden;
+box-shadow: 0px 0px 59px 5px navy;
+  border-left: 1px solid #ef0000;
+border-top: 1px solid #ef0000;
+border-bottom: 1px solid #ef0000;
+border-right: 1px solid #ef0000;
+display: none;
+}
+.chagestatussharp{
+    display: none;
+    position:absolute;
+    font-size: 0px; line-height: 0%; width: 0px;
+border-left: 0px solid transparent;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+border-right: 15px solid white;
+margin-left: 195px;
+margin-top: -20px;
+    
+}
+textarea{
+    width: 92%;
+    margin-left: 9.5px;
+    margin-top:10px;
+    font-size: 17px;
+    color: navy;
+    
+        font-family:Microsoft Sans Serif;
+}
+.chngstspan{
+   position: absolute;
+   width: 100%;
+   background-color: navy;
+   height: 30px;
+   margin-top: 3px;
+   text-align: center;
+   font-size: 25px;
+  color:white;
+   font-family: Aparajita;
+}
+#allcontbtn{
+    width:100%;
+}
+.updatebtn{
+    background-color: #ef0000;
+    color: white;
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    
+    border-width: 0px 0px 0px 0px;
+}
+.updatebtn:hover{
+    background-color: white;
+    color: navy;
+     border-color: #ef0000;
+    cursor: pointer;
+    border-width: 1px 1px 1px 1px;
+}
+.updatebtn:active{
+    background-color: white;
+    box-shadow: 1px 1px 1px;
+    color: navy;
+    border-color: #ef0000;
+    cursor: pointer;
+    border-width: 1px 1px 1px 1px;
+}
+
+
+.ppicdiv{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.prfimg{
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.chngpicbtn{
+    background-color: whitesmoke;
+    border-width: 0px 0px 0px 0px ;
+    cursor: pointer;
+    width:300px;
+    height: 30px;
+    
+    
+}
+.chngpicbtn:hover{
+    background-color: whitesmoke;
+    border-width: 1px 1px 1px 1px ;
+    cursor: pointer;
+    border-color: #ef0000;
+    color: navy;
+    width:300px;
+    height: 30px;
+    
+    
+}
+.mystatus{
+    color:navy;
+}
+.adimgdiv{
+   position: relative;
+   margin-top: -28px;
+   margin-left: 190px;
+   cursor: pointer;
+}
+.bgmsharp{
+    position: absolute;
+     font-size: 0px; line-height: 0%; width: 0px;
+border-left: 15px solid transparent;
+border-top: 0px solid navy;
+border-bottom:15px solid navy;
+border-right: 15px solid transparent;
+margin-top: -10px;
+margin-left: 45px;
+
+}
+.colorsharp{
+    position: absolute;
+     font-size: 0px; line-height: 0%; width: 0px;
+border-left: 10px solid transparent;
+border-top: 0px solid transparent;
+border-bottom:15px solid navy;
+border-right: 10px solid transparent;
+margin-top: 5px;
+margin-left: 100px;
+
+}
+
+.imagesharp{
+    position: absolute;
+     font-size: 0px; line-height: 0%; width: 0px;
+border-left: 10px solid transparent;
+border-top: 0px solid transparent;
+border-bottom:15px solid navy;
+border-right: 10px solid transparent;
+margin-top: 5px;
+margin-left: 110px;
+
+}
+.addedimg{
+    max-width: 100px;
+    max-height: 100px;
+}
+.adbgmhint{
+   
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
+.imagehint{
+   
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 170px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.colorhint{
+   
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 170px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 5px 5px 5px 5px;
+}
+.holebgmhint{
+    position: absolute;
+    width: 10px;
+    display: none;
+    margin-left: -10px;
+    margin-top: 10px;
+  
+}
+.holeimagehint{
+   
+    position: absolute;
+    display: none;
+    margin-left: 80px;
+    margin-top: -25px;
+  
+
+}
+
+.holecolorhint{
+   
+    position: absolute;
+  display: none;
+    margin-left: 50px;
+    margin-top: -25px;
+  
+
+}
+#holeprvccont
+{
+    text-align: left;
+    width: 80%;
+ 
+    margin-left: 67px;
+}
+#updatingstatus{
+    padding: 10px;
+    font-size: 18px;
+}
+
+input#allcontbtn
+{
+    background-color: white;
+    color: navy;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-width: 0px 0px 1px 0px;
+}
+#privacyul{
+    
+    line-height: 1.11;
+  
+    
+
+}
+#holeprvccont
+{
+    display: none;
+    font-size: 15px;
+}
+.chkbox
+{
+    
+    text-align: left;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 9px;
+     font-size: 19px;
+     background-color: white;
+}
+.privacylist{
+    font-size: 16px;
+}
+#privacylistimg
+{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+div#oldstatus{
+    padding: 20px;
+    margin-top: -30px;
+}
+h3{
+    color:navy;
+}
+h3#curst{
+  position: relative;
+    margin-top: 10px;
+}
+#preview
+{
+    padding:10px;
+}
+div#bottomscrolldiv
+{
+   position:absolute;
+    width: 100%;
+    height: 23px;
+    margin-left: 0px;
+    margin-top: 540px;
+    text-align: center;
+    background-color: transparent;
+    opacity: 0.3;
+}
+div#bottomscrolldiv:hover
+{
+   
+    opacity: 0.5;
+}
+
+div#topscrolldiv{
+    position:absolute;
+    width: 100%;
+    height: 23px;
+    margin-left: 0px;
+    margin-top: -16px;
+    text-align: center;
+    background-color: transparent;
+    opacity: 0.3;
+ 
+}
+li{
+    font-family: Aparajita;
+}
+div#topscrolldiv:hover{
+   
+    opacity: 0.5;
+ 
+}
+#holestatuscont
+{
+    
+}
+font#thinkername
+{
+    
+    font-size: 19px;
+}
+#rememberdiv
+{
+   margin-left: 10px;
+   margin-top: 5px;
+}
+#remeberbtn
+{
+    background-color: white;
+    border-width: 0px 0px 0px 0px;
+    color: rgb(0,0,100);
+    font-family: Aparajita;
+    font-size: 23px;
+    
+}
+#myfeelingwords
+{
+    font-size: 28px;
+    font-family: Aparajita;
+}
+#updateitems
+{
+    background-color: whitesmoke;
+    height: 50px;
+}
+#innercontent
+{
+    margin-top: -10px;
+    padding-top: 10px;
+}
+#selectppldiv
+{
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    
+    margin-left: 50px;
+    margin-top: -400px;
+    min-width: 450px;
+    max-width: 1400px;
+    height: 450px;
+    border-left:1px solid red;
+    border-right:1px solid red;
+    border-bottom:1px solid red;
+    border-top:1px solid red;
+    box-shadow:0px 0px 70px #ef0000;
+}
+
+.srchppl
+{
+    width: 340px;
+    height: 30px;
+    font-size: 25px;
+    font-family: Aparajita;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding-top:5px;
+    padding-left:5px;
+    padding-bottom:0px;
+    color:navy;
+}
+#addpplbtn
+{
+    background-color: white;
+    margin-top: 313px;
+    margin-left: 290px;
+    width: 150px;
+    height: 30px;
+    border-width: 0.1px 0.1px 0.1px 0.1px;
+    border-color: crimson;
+    color: #ef0000;
+    box-shadow: 0px 0px 2px blue ;
+    font-family: Aparajita;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 2px;
+}
+#srchboxcontdiv{
+    border-bottom: 1px solid navy;
+    height: 60px;
+    background-color: white;
+    margin-top:-20px;
+    padding-top:10px;
+}
+#selectpplspan{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+#searchedppl
+{
+    max-height: 31000px;
+    width: 250px;
+    position: absolute;
+  
+    border-right: 1px solid navy;
+}
+.usrsdiv{
+    background-color: white;
+    height: 36.5px;
+    padding-left: 10px;
+    overflow: hidden;
+    
+}
+#pplbtn{
+    background-color: transparent;
+    border-width: 0px 0px 0px 0px;
+    padding-top: -5px;
+        font-size: 22px;
+    color:navy;
+    font-family: Aparajita;
+}
+.usrsimg{
+    width:25px;
+    padding-top: 5px;
+}
+#selectedppldiv{
+    
+   
+    text-align: left;
+    margin-top: 0.5px;
+    margin-left: 251px;
+    max-width: 1200px;
+    height: 300px;
+    border-left: 1px solid navy;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: auto;
+   font-size: 20px;
+    
+    
+}
+
+#selectpplclsbtn{
+    background-color: white;
+    border-width:0px 0px 0px 0px;
+    margin-left:100px;
+    width:25px;
+    cursor: pointer;
+    
+   
+    font-weight:bold;
+    height:25px;
+    position:absolute;
+}
+#searchedpplconst{
+    position: absolute;
+    width: 250px;
+    height: 330px;
+    overflow: hidden;
+}
+#remvusrbtn
+{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+    font-size: 10px;
+}
+#viewppldiv{
+    margin-top: -20px;
+    height: 50px;
+}
+#viewexppplbtn
+{
+    position: absolute;
+    margin-left: 10px;
+    border-width: 0px 0px 0px 0px;
+    margin-top:0px;
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Aparajita;
+    color:navy;
+    background-color: white;
+    padding-top: 2px;
+}
+#viewexppplbtn:hover{
+    border-width: 1px 1px 1px 1px;
+    border-color: gray;
+    
+}
+#viewselpplbtn
+{
+    width: 160px;
+    height: 30px;
+    border-width: 0px 0px 0px 0px;
+    background-color: white;
+    font-family: Aparajita;
+    font-size: 20px;
+    padding-top: 4px;
+    color: navy;
+    cursor: pointer;
+}
+#viewselpplbtn:hover{
+    border-width: 1px 1px 1px 1px;
+    border-color: gray;
+    
+}#somepplspan
+{ background-color: navy;
+    color: white;
+    font-size: 20px;
+   margin-top: 0px;
+    width: 300px;
+    position: absolute;
+}
+#exppplspan
+{
+     background-color: navy;
+    color: white;
+    font-size: 20px;
+   margin-top: 0px;
+    width: 300px;
+    position: absolute;
+    
+    
+   
+}
+#someppldiv
+{
+      display: none;
+    position: fixed;
+    background-color: white;
+   width: 300px;
+    color: white;
+    max-height: 500px;
+    height:300px;
+    font-size: 20px;
+    margin-top: -290px;
+    margin-left: 340px;
+       border-left: 1px solid navy;
+     border-right: 1px solid navy;
+    border-bottom: 1px solid navy;
+    box-shadow: 0px 0px 50px navy;
+    
+}
+#exceptppldiv
+{
+      display: none;
+   position: fixed; 
+   background-color: white;
+    width: 300px;
+    height:300px;
+    margin-left:670px;
+    margin-top: -290px;
+     border-left: 1px solid navy;
+     border-right: 1px solid navy;
+    border-bottom: 1px solid navy;
+    box-shadow: 0px 0px 50px navy;
+    
+    
+   
+}
+#somepplclosbtn
+{
+    background-color: white;
+    color: navy;
+    border-width: 1px 1px 1px 1px;
+    border-color: navy;
+  
+}
+#exppplclosbtn
+{
+  
+      background-color: white;
+    color: navy;
+    border-width: 1px 1px 1px 1px;
+    border-color: navy;
+}
+#wantedppldiv{
+    overflow:auto;
+    color:navy;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-left: 10px;
+    max-height: 230px;
+   max-width: 600px;
+}
+#unwantedppldiv
+{
+   overflow:auto;
+    color:navy;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 10px;
+        max-height: 230px;
+   max-width: 600px;
+
+}

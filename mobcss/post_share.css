@@ -1,0 +1,167 @@
+#for_share_widow{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.postExtraWindow{
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    width:500px;
+    z-index:5;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 35px -2px black;
+}
+.xWindowTtle{
+    padding: 5px 15px;
+    color: white;
+    font-size:15px;
+    //text-align:center;
+    background-color: crimson;
+}
+.closeXwindow{
+    display: inline-block;
+    float: right;
+    padding-left: 10px;
+}
+.closeXwindow:hover{ 
+  cursor: pointer;
+}
+.incontXwin{
+    padding: 7px 20px 15px 20px;
+    margin: 10px;
+    background-color: white;
+}
+.x-win-share-list{
+    //background-color: white;
+    padding: 7px 15px;
+   
+    margin-top: 3px;
+    cursor: pointer;
+}
+.x-win-share-list:hover{
+    background-color: whitesmoke;
+}
+.x-win-share-frTxt{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.xWindowSubmit{
+    background-color: white;
+    //text-align: right;
+   text-align: center;
+    font-size:15px;
+    padding: 4px 20px;
+   
+}
+.xWindowSubmit:hover{
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px -2px 5px -2px grey;
+}
+.x-win-share-cntnr>form>input{
+    margin: 10px 50px;
+    width: 75%;
+    padding: 5px 15px;
+    border: solid 1px grey;
+    //background: transparent;
+    //border-width: 0px 0px 1px 0px;
+    color: crimson;
+   
+}
+.x-listItem:hover{
+    background-color: whitesmoke;
+}
+.x-win-share-list>img{
+  float: right;
+   margin-right: 30px;
+   margin-top: 6px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+}
+.x-win-share-list:hover>img{
+    transform: rotate(0deg);
+}
+.xWindowHint{
+    color: grey;
+    background-color: white;
+    padding: 5px 20px;
+    box-shadow: 0px 2px 5px;
+}
+.xWindowDetails{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+.x-win-share-cnt-fr-target{
+    border-bottom: 1px solid whitesmoke;
+    background-color:navy;
+    color: white;
+    margin:0px 20px 0px 50px;
+    padding:5px 15px;
+}
+.removeShareTgt{
+    float: right;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.x-win-otherShares>div>.x-win-share-list>.x-win-share-frTxt{
+    font-size: 14px;
+}
+.shareConsts{
+    //background-color: white;
+}
+.shareConsts>div{
+    cursor: pointer;
+    display: inline-block;
+   // background-color: green;
+    padding: 5px 10px;
+    margin: 0px 20px 0px 40px;
+    font-size: 14px;
+}
+.shareConsts>div>div{
+    display: inline-block;
+    padding:0px 15px;
+}
+.xWinShareSpeople{
+    background-color: white;
+    padding: 10px 10px;
+    margin:0px 40px;
+}
+.xWinShareSpeople>div{
+    background:white;
+   // width:130px;
+    padding: 2px 23px;
+}
+.xWinShareSpItem{
+    display: inline-block;
+    margin-top:5px;
+}
+.xWinShareSpItem>div{
+    margin-left: 10px;
+    display: inline-block;
+}
+.xWinShreSpITtle>input[type='number']{
+    display: inline-block;
+      margin: 10px 5px;
+    width:50px;
+    padding: 3px 5px;
+}
+.xWinShreSpITtle>span>select{
+    margin-left: 50px;
+    padding: 3px 10px;
+}
+.xWinShreSpITtle>span>input{
+    margin-left: 30px;
+     padding: 3px 10px;
+    width: 66%;
+    
+}

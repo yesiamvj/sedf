@@ -1,0 +1,21 @@
+#mypicstrgt
+{
+  position: absolute;
+  top: 100px;
+  border:1px solid lightgray;
+}
+#cropimgsubt
+{
+  background-color: white;
+  border:1px solid lightgray;
+  padding:10px;
+}
+#myifram
+{
+  width: 100%;
+  margin-top: -150px;
+  height: 300px;
+
+  border: 1px solid lightgray;
+  
+}

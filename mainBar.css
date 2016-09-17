@@ -1,0 +1,1552 @@
+/* 
+    Created on : Jun 19, 2015, 8:18:26 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+       margin: 0px;
+       padding: 0px;
+       font-family: Segoe UI;
+    color: navy;
+}
+a{
+    color: navy;
+}
+#SedFed_SearchTheater
+{
+    z-index: 111;
+    max-height: 700px;
+        overflow-y: auto;
+    width: 70%;
+   
+    left: 10px;
+    right: 0px;
+    top: 0px;
+   margin-left: 150px;
+    bottom: 0px;
+     position:fixed;
+}
+.SedFedLogo{
+    position: fixed;
+    left: 27px;
+    top:7px;
+}
+#sedfedLogoTop{
+    width: 0px;
+    height: 0px;
+    border-top:8px solid whitesmoke;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+#sedfedLogoProgress{
+    width: 0px;
+     width: 0px;
+    height: 0px;
+    border-top: 17px solid whitesmoke;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: -4px;
+    margin-top: -0.5px;
+    -moz-animation: sedfedlogo 3s infinite;
+    -webkit-animation: sedfedlogo 3s infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+    // 50%{transform: rotate(180deg);}
+     100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+}
+.close_smpl_post
+{
+    cursor:pointer;
+    background-color:red;
+    color:white;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    
+}
+#SF_OpeningLogo{
+    position: fixed;
+    top: 0px;
+    top: 35%;
+    left:47%;
+    font-size:0px;
+    border-left: 6px solid crimson;
+    padding-left: 17px;
+    opacity: 0.75;
+}
+#SF_pageLoadStatus{
+    position: fixed;
+    width:500px;
+    height: 1px;
+    background-color:white;
+    top: 50%;
+    left: 25%;
+    z-index: 10000;
+    box-shadow: 1px 1px 2px crimson;
+}
+#SF_pageLiveLoadedStatus{
+    width: 0px;
+    height: inherit;
+    background-color: crimson;
+}
+.SedFedTitleBar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+.TitleBarOut{
+   // background-color:rgb(0,160,225);
+   // padding:2px;
+    box-shadow: 0px 0px 2px grey;
+    -moz-animation: sedfedback 15s alternate;
+    -webkit-animation: sedfedback 15s alternate;
+    animation-iteration-count: infinite;
+    
+}
+@-moz-keyframes sedfedback{
+    0%{background-color:darkcyan;}
+    25%{background-color:navy; }
+    50%{background-color:green; }
+     75%{background-color:crimson; }
+     
+     
+     
+     100%{background-color:#0093FF;}
+}
+@-webkit-keyframes sedfedback{
+     0%{background-color:darkcyan;}
+    25%{background-color:navy; }
+    50%{background-color:green; }
+     75%{background-color:crimson; }
+     
+     
+     
+     100%{background-color:#0093FF;}
+}
+@-moz-keyframes sedfedbackar{
+     0%{border-left-color:crimson; }
+     25%{border-left-color:green; }
+     50%{border-left-color:darkcyan;}
+     75%{border-left-color:navy; }
+     100%{border-left-color:#0093FF;}
+}
+@-moz-keyframes sedfedbackarr{
+     0%{border-right-color:crimson; }
+     25%{border-right-color:green; }
+     50%{border-right-color:darkcyan;}
+     75%{border-right-color:navy; }
+     100%{border-right-color:#0093FF;}
+}
+.TtlBarIn{
+    
+}
+.TtlBarIn div{
+    display: inline-block;
+}
+.TtlBarTtl{
+    margin-left:100px;
+   // border-left: 5px solid white;
+   // padding-left:15px;
+}
+.TtlBarTtl:not(:first-child){
+    margin-left: 25px;
+   
+}
+.TopProfPic{
+    max-height: 25px;
+    float: left;
+    border-radius:100px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.SedFedUserName{
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 45px;
+   // font-weight: bold;
+    font-family:cursive;
+}
+.SedFedMainBar{
+    float: left;
+    left: -500px;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 5px -2px grey;
+}
+.MainBarOut{
+    padding: 5px;
+}
+.MainBarIn{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.MainBarItm:first-child{
+    margin-top: 135px;
+}
+.profImgMainBar{
+    border-radius:25px;
+    position:fixed;
+    top: 65px;
+    left:8px;
+    max-height:50px;
+    max-width:50px;
+}
+.profImgMainBar:hover{
+    box-shadow: 5px 5px 7px -7px grey;
+}
+.MainBarItm:not(:first-child){
+    margin-top:30px;
+}
+.MainBarItm:hover{
+    cursor: pointer;
+}
+.ico_sf_mBar{
+    max-height: 35px;
+}
+.SFTB_srchInp{
+    padding:6px 25px;
+    font-family: "Segoe UI";
+    width: 320px;
+  //  border:1px solid darkgray;
+    color:navy;
+    border:none;
+     border-radius: 115px 0px 0px 115px;
+   
+}
+.SFTB_srchIn{
+    margin:5px 50px;
+    //padding:2px;
+   // background-color: white;
+    margin-left:125px;
+   
+}
+
+.ico_TtlBarSrch{
+    height: 20px;
+    margin-top: 4px;
+    float: right;
+    padding: 0px 10px;
+    border-left: 1px solid darkgrey;
+}
+.ico_TtlBarSrch:hover{
+    cursor: pointer;
+}
+.TtlBar_FlashNewsHold{
+   
+     padding:12px 0px;
+    text-align: center;
+    position: fixed;
+    //opacity: 0.5;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    background-color:white;
+   z-index: 150;
+    top: 0px;
+    width: 100%;
+    padding-top: 47px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.FlashNewsText{   
+    z-index: 1;
+    color:navy;
+   
+    
+}
+
+.TtlBar_FlashNewsHold:hover{
+    opacity: 1;
+    //cursor: pointer;
+}
+.SFTB_FlashArrPrev{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid navy;
+   padding: 0px 10px;
+    opacity: 0.2;
+    z-index: 10;
+}
+.SFTB_FlashArrNext{
+    
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid navy;
+    float: right;
+    opacity: 0.2;
+    padding: 0px 10px;
+    right: 10px;
+    z-index: 10;
+}
+.SFTB_FlashArrNext:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+.SFTB_FlashArrPrev:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.SFTB_FlashDoLike{
+    top: 9px;
+    opacity: 0.1;
+    color:green;
+    padding: 0px 10px;
+    z-index: 10;
+    display: none;
+    font-size: 0px;
+}
+.SFTB_FlashDoLike:hover{
+    opacity: 1;
+    background-color:silver;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.FlashNewsTime{
+    color:grey;
+    font-size: smaller;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    padding:4px 30px;
+}
+.FlashNewsOwner{
+    color:darkcyan;
+    font-size: 16px;
+ //   text-shadow: 1px 1px 2px grey;
+    position: absolute;
+    left:20px;
+    padding: 0px 50px;
+    background-color: white;
+}
+.timeDivider{
+    margin: 0px 15px;
+    color: silver;
+}
+.SFTB_NewFlashBtn{
+  position: absolute;
+    padding:4px 10px 2px 10px;
+  //  background-color: rgba(250,250,250,0.5);
+    
+    left:0px;
+    z-index: 10;
+    bottom: 3px;
+}
+.SFTB_NewFlashBtn:hover{
+    background-color: rgba(250,250,250,0.9);
+    cursor: pointer;
+}
+.SFTB_NewFlashBtn img{
+     height: 22.5px;
+}
+
+.Theater_Window_Flash{
+    position: fixed;
+    top: 25%;
+    background-color: whitesmoke;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px grey;
+}
+.ThWin_CreateFlashIn{
+    background-color: white;
+    padding: 20px 30px;
+    position: fixed;
+    top: 25%;
+    z-index: 10000;
+     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.ThWin_flashTtl{
+    font-size: 18px;
+    color:blue;
+}
+.Th_Win_Flsh_Cont{
+    margin:20px 25px;
+}
+.ThWinFlsh_QueItm{
+    margin: 20px;
+}
+.ThWinFlashInp{
+    padding:7px 20px;
+    width: 700px;
+    font-family: Segoe UI;
+    font-size: 15px;
+}
+.ThWinFlshChks{
+    margin: 0px 10px 0px 20px;
+}
+.ThWinFlshSubmit{
+    background-color:navy;
+    display: inline-block;
+    padding:7px 20px;
+    width: 300px;
+    color:white;
+}
+.ThWinFlshSubmit:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px blue;
+}
+.ThFlahTip{
+    color: silver;
+    margin-left: 100px;
+}
+.ThFlshClose{
+    float: right;
+    display: inline-block;
+    margin-right: 30px;
+    color: crimson;
+    font-size: 14px;
+    padding: 1px 5px;
+}
+.ThFlshClose:hover{
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+#flashPlus{
+    float: right;
+    position: absolute;
+    bottom: 11px;
+    font-weight:bold;
+    color:black;
+    margin-left: -3px;
+}
+.TtlBarAccountActs{
+    position: fixed;
+    right: 15px;
+    height: 40px;
+}
+
+.TACT_Lock{
+    padding: 10px 8px;
+    background-color: white;
+}
+.TACT_Lock:hover{
+    cursor: pointer;
+}
+.ico_sf_LogOut{
+    max-height: 20px;
+   margin-left: 5px;
+}
+.TACT_Logout:hover{
+  
+    cursor: pointer;
+}
+.TACT_Logout{
+    float: right;
+    padding: 5px 12px 6px 12px;
+}
+.ico_sf_Lock{
+    max-height: 25px;
+}
+.ico_sf_Logout{
+    margin-top:6px;
+    max-height:18px;
+}
+.TtlNewFlashHold{
+    position:absolute;
+    //margin: 20px -50px;
+    //z-index: 11;
+    right: 460px;
+    top: 40px;
+}
+.TtlFlshArr{
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0,0.6);
+}
+.TtlFlashCont{
+    margin-top:-4px;
+    background-color: rgba(0,0,0,0.6);
+    padding:4px 15px;
+    color: white;
+    font-family: Segoe UI;
+}
+.ToolTipMainBarHold{
+    position: absolute;
+    width: 230px;
+    left: 60px;
+    margin-top: -100px;
+}
+.ToolTipMainBarHold div{
+    display: inline-block;
+}
+.TtMBArr{
+    width: 0px;
+    height: 0px;
+    float: left;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 10px solid rgba(0,0,0,0.7);
+    margin-top: 5px;
+   
+}
+.TtMBCont{
+   background-color: rgba(0,0,0,0.7);
+    padding: 3px 10px;
+    color: white;
+    float: left;
+}
+#SedFedLockScreenOut{
+    position: fixed;
+   top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 1000;
+}
+.SedFedLockScreenIn{
+    
+}
+.SF_LockScreenCont{
+  margin-top: 15%;
+}
+.SF_LockScreenUsrName{
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    
+}
+.SF_LockScreenFace{
+  float: left;
+    margin-left: 30%;
+}
+.Sf_LockScreenImg{
+    max-height: 150px;
+    float: left;
+   
+}
+.SF_LockScreenDets{
+    float: left;
+    height: 150px;
+}
+.SF_LS_pass_Inp{
+    margin-top: 20px;
+    margin-left: 50px;
+    padding:7px 10px;
+    text-align: center;
+    color: crimson;
+    width: 250px;
+    border: none;
+}
+.SedFedLS_Logo{
+    position:absolute;
+    bottom: 50px;
+    right: 70px;
+    color: black;
+    font-size: 25px;
+    border-left: 7px solid black;
+    padding-left: 20px;
+}
+.SF_LockScreenUsrName div{
+    display: inline-block;
+}
+.SF_LS_Logout{
+    margin-left: 15px;
+    padding:0px 7px;
+    
+}
+.SF_LS_Logout:hover{
+    cursor: pointer;
+    background-color:whitesmoke;
+}
+.SF_LS_Pass_Submit{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid black;
+    position:  absolute;
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.SF_LS_passAlert{
+  //  position: absolute;
+    margin-top: 20px;
+    margin-left: 130px;
+    color: grey;
+    cursor:help;
+}
+.SF_Upload_Sts_Out{
+    position: fixed;
+    top: 35%;
+    background-color: whitesmoke;
+    left: 0px;
+    right: 0px;
+    padding:5px 10px;
+    box-shadow: 0px 0px 2px grey;
+}
+.SF_Upload_Sts_In{
+    background-color: white;
+    padding: 20px 50px;
+}
+.SF_Upl_Ttl{
+    color:green;
+    font-size:18px;
+}
+.SF_Upload_StatusBar{
+    height: 30px;
+    margin: 20px;
+    border: 1px solid darkgray;
+}
+.SF_Upload_LiveStatus{
+   display: inline-block;
+  padding:7px 0px;
+  text-indent: 30px;
+    color:black; 
+   background-color: blue;
+  
+}
+.SF_Upload_Percent{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.SF_Upload_PercntTxt{
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+.SF_Upload_Speed{
+    color: blue;
+    margin: 0px 40px;
+}
+.SF_Upload_Time{
+    color: grey;
+}
+.SF_Upload_CancelBtn{
+    display: inline-block;
+    width: 100px;
+    padding: 5px 15px;
+    color: crimson;
+    margin:0px 50px;
+}
+.SF_Upload_FileSize{
+    margin: 0px 30px;
+}
+.SF_Upload_CancelBtn:hover{
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+.AccountActsHold{
+    position: fixed;
+    right: 15px;
+    box-shadow: 0px 5px 5px -2px grey;
+}
+#SedFed_SearchTheater{
+    position: fixed;
+    top: 30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+.SedFed_ThSrchIn{
+    padding:30px 0px;
+}
+.SedFed_ThSrchTtl{
+    padding: 10px 100px; 
+    background-color:rgba(0,0,0,0.3);
+    color: white;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+.SearchCatogs{
+    text-align: center;
+    color: white;
+    font-family:vijaya;
+}
+.SearchCatogItm{
+    display: inline-block;
+    margin: 0px 50px;
+    color:whitesmoke;
+    font-family: Segoe UI;
+   
+}
+.SF_ThSrchResults{
+    max-height:600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.srchCatChk{
+    margin: 0px 20px;
+}
+
+.img_SrchReslt{
+    max-height: 70px;
+    max-width: 70px;
+    margin-top: 3px;
+}
+
+.SrchResPplFace{
+    display: inline-block;
+    float: left;
+}
+
+.SrchPplNme{
+    display: inline-block;
+    color: crimson;
+    font-size: 17px;
+}
+.SrchPplExtra{
+    margin-top: 13px;
+}
+.SrchResPplDets{
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+}
+.SF_SrchResultItmPpl{
+    display: inline-block;
+    background-color: rgba(250,250,250,0.5);
+     padding:5px 10px;
+    margin: 10px;
+}
+.SF_SrchResultItmPpl:hover{
+    background-color:white;
+    cursor: pointer;
+}
+.SF_ThSrchResults{
+    margin: 30px 100px;
+}
+.Srchdivider{
+    margin: 0px 10px;
+}
+.SrchResTip{
+    position:fixed;
+    bottom: 100px;
+    left: 40%;
+    background-color:rgba(0,0,0,0.1);
+    color: white;
+    padding: 10px 15px;
+}
+.SrchTipTtl{
+    color: white;
+    font-size: 16px;
+}
+.SrchTipCont{
+    color: whitesmoke;
+    margin: 10px 20px;
+}
+.SrchTipItm{
+    margin: 10px 0px;
+}
+.SF_SrchResultItmFlash{
+     background-color: rgba(250,250,250,0.5);
+    padding:0px 10px;
+    margin-top: 10px;
+}
+.SF_SrchResultItmFlash:hover{
+    background-color: white;
+}
+.SrchMsgTime{
+    display: inline-block;
+    float:right;
+    padding: 15px;
+    color: grey;
+}
+.SrchMsgCont{
+   margin:7px 10px;
+}
+.SearchThtrClose{
+    position: absolute;
+    right: 30px;
+    margin-top: -5px;
+    padding:6px 10px;
+    //background-color:rgba(0,0,0,0.4);
+    color: white;
+   // border-radius: 25px;
+}
+.SearchThtrClose:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+    box-shadow: 0px 0px 5px red;
+}
+.BigSearchBarOut{
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+    padding: 3px;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+     box-shadow: 0px 0px 5px grey;
+}
+
+.BigSearchBarIn input{
+    padding: 10px 50px;
+    width:100%;
+    border: none;
+    font-size: 14px;
+    font-family: Segoe UI;
+}
+.BigSearchBarIn div{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 5px 20px;
+    margin-top: 7px;
+    display: inline-block;
+    border-left: 1px solid silver;
+    cursor: pointer;
+}
+.BigSearchBarIn img{
+    margin-top: 0px;
+    border: none;
+}
+.SF_BSrchItmFace img{
+    max-height: 50px;
+}
+.SF_BSrchItm{
+    background-color: white;
+    padding:5px;
+    padding-left: 10px;
+    margin-bottom:5px;
+     border: 1px solid white;
+}
+.SF_BSrchItm:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.SF_BSrchItmFace{
+   float: left;
+    margin-right: 20px;
+}
+.SF_BSrchItmDets{
+    font-size: 13px;
+    color:silver;
+    padding-bottom:5px;
+}
+.SF_BSUserName .SFBS_SedfedDets{
+    float: right;
+    margin-right: 20px;
+    color: navy;
+    font-size: 13px;
+}
+.SF_BSUserName{
+    color: crimson;
+    font-size:15px;
+    font-family:Segoe UI;
+    margin-bottom: 10px;
+}
+.divider{
+    margin-left: 15px;
+    border-left: 1px solid;
+    padding:0px 15px;
+}
+.SF_BigSrchResultOut{
+    position:fixed;
+    top: 0px;
+    left: 50px;
+    padding-top: 50px;
+    padding: 50px 5px 10px 5px;
+    background-color: whitesmoke;
+    width: 50%;
+    bottom:40%;
+   overflow-y:auto;
+    overflow-x: hidden;
+    z-index: 1050;
+    box-shadow:0px 0px 5px grey;
+}
+.BigSearchType{
+    position: absolute;
+    left: 65%;
+    border: none !important;
+   
+}
+.BigSearchBarIn select{
+    border: none;
+     font-family: "Segoe UI";
+   // padding:0px 10px;
+   
+}
+.BigSearchBarIn select:hover{
+     cursor: pointer;
+}
+.BigSearchBarIn option{
+    line-height: 2;
+    position: absolute;
+}
+.BigSearchTypeFilters{
+    position: absolute;
+    left: 75%;
+    border: none !important;
+    display: none;
+}
+.closeBigSearch{
+    position:fixed;
+    top:35px !important;
+    border: none !important;
+    background-color: white;
+    color: crimson;
+    padding:10px 15px 10px 15px !important;
+    box-shadow: 7px 2px 5px -5px navy;
+    z-index: 2;
+}
+.BS_Prcd{
+    z-index: 10;
+    background-color: white;
+    
+}
+.SedFed_leftMouseChecker{
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    width: 5px;
+    //background-color: blue;
+    z-index: 100;
+}
+.SedFedMainBar{
+    z-index: 1000;
+}
+#mainBarSafetyLayer{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: -500px;
+    width: 25%;
+    background-color: rgba(256,256,256,0.2);
+    z-index: 10;
+   
+}
+.myAccountLeftWindow{
+    
+    top: 0px;
+   
+    width: 100%;
+    min-height: 100%;
+    background-color:whitesmoke;  
+}
+.MALW_sedfed_Ttl_Bar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color:darkcyan;
+    color: white;
+    padding:9px 0px;
+    text-indent: 10%;
+    font-family: Segoe UI;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 5px grey;
+}
+.MALW_sedfed_SubTtl_Bar{
+    display: inline-flex;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 45px;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 10;
+}
+.MALW_SubTtl_Itm{
+    padding: 10px 25px;
+}
+.MALW_SubTtl_Itm:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.MALW_Profile{
+    margin-top: 125px;
+    margin-left: 75px;
+}
+.img_MALW_profPic{
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 100px;
+    //box-shadow: 4px 0px 5px rgba(0,0,0,0.2);
+   float: left;
+}
+.MALW_ProfileDets{
+    display: inline-block;
+    padding:15px 20px;
+}
+.MALW_sedfed_userFullName{
+    font-size: 27px;
+    
+}
+.MALW_sedfed_userSignature{
+    color: darkcyan;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.MALW_sedfed_userId{
+    display: inline-block;
+     margin-left: 100px;
+    color: grey;
+    font-size: 12px;
+}
+.MALW_createNewSomeOut{
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+}
+.MALW_CNS_InnerTtl{
+    color: black;
+    font-family: cursive;
+    padding: 10px 15px;
+}
+.MALW_ItmTtl{
+   color: grey;
+    font-family: cursive;
+    margin: 15px 0px;
+    padding:0px 25px;
+}
+.MALW_CNS_Itm{
+    padding: 10px 55px;
+}
+.MALW_CNS_Itm:hover{
+    background-color:navy;
+    color: white;
+    cursor: pointer;
+}
+.MALW_MyGroups{
+    margin: 50px;
+    max-width: 55%;
+}
+.MALW_grpTtl{
+    padding:10px 20px;
+    background-color: rgba(256,256,256,0.75);
+    color: black;
+    margin-bottom: 10px;
+}
+.MALW_GrpItm{
+    background-color: white;
+    margin:5px 15px;
+    padding: 10px 25px;
+    text-align: center;
+}
+.img_MALW_grpPic{
+    max-height: 50px;
+    border-radius: 100px;
+    //float: left;
+    
+}
+.MALW_GrpName{
+    margin: 5px;
+   font-size: 16px;
+}
+.MALW_GrpItm a{
+    color: navy;
+}
+.MALW_GrpItm:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 2px grey;
+}
+.MALW_MyGroups a{
+    color: navy;
+}
+.MALW_MyGroups a:hover{
+    color: blue;
+}
+#bottom{
+    position: absolute;
+    bottom: -100%;
+}
+.SedFed_SubTitleBarMain{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    display: inline-flex;
+    padding-top: 40px;
+    justify-content: center;
+    box-shadow: 0px 0px 4px grey;
+    z-index: 150;
+}
+.sf_subTtlMainItm{
+    padding: 10px 25px;
+    font-size: 14px;
+    color:grey;
+}
+.sf_subTtlMainItm:hover{
+    cursor: pointer;
+  
+   color: black;
+}
+.sedfed_Tools_Bar{
+    position:fixed;
+    bottom: 0px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px grey;
+    z-index: 100000;
+}
+.sedfed_ToolBarItm{
+    display: inline-block;
+    padding: 10px 25px;
+}
+.sedfed_ToolBarItm:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.sedfed_ToolBarItm input{
+    border: 1px solid silver;
+    margin-left: 20px;
+}
+.sf_toolbarrclose{
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    color: crimson;
+    cursor: pointer;
+}
+.sf_pageSpeedUpOut{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px 15%;
+    padding: 10px 25px;
+    padding-top: 100px;
+    background-color: white;
+    z-index: 140;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+}
+.sf_pageSpeedUpTtl{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.sf_pageSpeedUptm{
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+.sf_pageSpeedUptm input{
+    margin-left: 20px;
+    padding:7px 10px;
+    font-family: segoe ui;
+}
+.sf_pageSpeedUptm button{
+    padding: 5px 25px;
+    background-color:blue;
+    color: white;
+    font-family: segoe ui;
+    border: 1px solid navy;
+    margin-left: 25px;
+    
+}
+.SF_PSPUP_Tip{
+    color: silver;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.sf_pageSpeedUptm button:hover{
+    cursor: pointer;
+    background-color: navy;
+}
+.sf_pageSpeedUptm input[type="range"]{
+    margin:10px 20px -10px 20px;
+    width: 75%;
+}
+.newPostTypeHold{
+    position: fixed;
+    top: 20%;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(256,256,256,1);
+   padding-bottom: 15px;
+    text-align: center;
+    margin: 0px 15%;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.newPostTypeTtl{
+    font-size: 17px;
+    margin: 20px 0px 25px 0px;
+    color:grey;
+}
+.newPostInnerCont{
+    display: inline-flex;
+    justify-content:center;
+}
+.newPostTypeItm{
+    display: inline-block;
+    font-size: 17px;
+   // width: 10%;
+   width: 20%;
+    margin-left: 25px;
+    background-color: white;
+}
+.NPT_Ttl{
+    padding: 15px;
+   // background-color: white;
+    color: white;
+}
+.NPTItm_Tip{
+    padding: 15px;
+    font-size: 14px;
+    color: silver;
+    font-family: cursive;
+    background-color:white;
+}
+#NPT_Simple{
+    color: gray;
+}
+#NPT_Smart{
+    color: darkcyan;
+}
+#NPT_Album{
+    color: orange;
+}
+#NPT_Advanced{
+    color: darkmagenta;
+}
+#NPT_Simple .NPT_Ttl{
+   background-color:black;
+    
+   
+}
+#NPT_Smart .NPT_Ttl{
+    background-color: darkcyan;
+   
+}
+#NPT_Advanced .NPT_Ttl{
+    background-color:darkmagenta;
+}
+#NPT_Album .NPT_Ttl{
+   background-color: orange;
+}
+.newPostTypeItm:hover{
+    box-shadow: 0px 0px 5px;
+    cursor: pointer;
+}
+.closeNPTS{
+    display: inline-block;
+    float: right;
+    margin-right: 25px;
+    font-size: 14px;
+    color: crimson;
+    cursor: pointer;
+}
+.NPT_QuickPostHolder{
+    position:fixed;
+    top: 15%;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    box-shadow: 0px 4px 5px grey;
+    margin: 0px 15%;
+    max-height:75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000000;
+}
+.NPT_QPTtl{
+    background-color:grey;
+    color: white;
+    padding: 7px;
+    text-indent: 10%;
+    box-shadow: 0px 5px 5px -5px grey;
+}
+.NPT_QPCont{
+    padding: 25px 15% 10px 15%;
+    text-align: center;
+}
+.NPT_QPCont textarea{
+    height: 50px;
+    width: 100%;
+    font-family: segoe ui;
+    font-size: 14px;
+    color: navy;
+    padding:10px 25px;
+    border: 1px solid silver;
+}
+.NPT_PostSubmit{
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding:7px 50px;
+    text-align: center;
+}
+.NPT_PostSubmit:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+}
+.QPSuuB{
+    margin: 0px 15%;
+    text-align: center;
+    
+    padding-bottom: 20px;
+}
+.NPT_QPTip{
+   
+    color: silver;
+    margin-bottom: 10px;
+}
+.NPT_QPTtl .closeNPTS{
+   margin-right: 250px;
+    color: white;
+}
+.newAdvancedPostStartUp{
+    position: fixed;
+    top: 20%;
+    left: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    padding:0px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin: 0px 10%;
+    z-index: 100000;
+}
+.NAPStrt_Ttl{
+    background-color: darkmagenta;
+    padding: 7px;
+    color: white;
+    text-indent: 10%;
+    box-shadow: 0px 5px 5px -5px grey;
+    font-size: 16px;
+    font-family:cursive;
+}
+.NAPSU_Cont{
+    padding: 25px;
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+.NAPSU_Tip{
+    color: silver;
+    font-family: cursive;
+   margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+.NAPSU_Editor{
+   width: 40%;
+     display: inline-block;
+     height: 250px;
+}
+.NAPSU_Editor textarea{
+    width:100%;
+    height: 100%;
+    font-family:monospace;
+    line-height: 1.75;
+    padding:15px 25px;
+    font-family: Segoe UI;
+    color: navy;
+    border: 1px solid silver;
+}
+.NAPSU_PreviewPane{
+    width: 40%;
+    height: 250px;
+   display: inline-block;
+    background-color: white;
+    text-align: left;
+    margin-left: 55px;
+    border:1px solid white;
+     padding:13px 25px;
+    overflow: hidden;
+}
+.NAPSU_Submit{
+    display: inline-block;
+    background-color: blue;
+    padding: 7px 25px;
+    color: white;
+    margin-bottom:25px;
+}
+.NAPSU_Submit:hover{
+    background-color: navy;
+    cursor: pointer;
+}
+.closeNAPSU{
+    float: right;
+    margin-right: 200px;
+    cursor: pointer;
+}
+.NA_albumNameInp{
+    padding: 7px 25px;
+    font-family: cursive;
+    color: navy;
+    font-size: 14px;
+    width: 50%;
+    border: 1px solid silver;
+}
+
+
+
+/*meme holder*/
+.imageMmeHolder{
+    text-align: center;
+}
+.imageMmeHolder img{
+    max-width: 480px !important;;
+    margin-bottom: -5px;
+}
+#newAlbumPost{
+    text-align: center;
+}
+.imageMmeTopTtl{
+    display: inline-block;
+    background-color:rgba(0,0,0,0.9);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 460px;
+}
+#memeSubmittt{
+    margin: 25px 0px 0px 0px;
+}
+#newSimplePost .NPT_QPTtl{
+    display: none;
+}
+#newSimplePost textarea{
+   
+    width: 90%;
+    margin-bottom: 0px;
+}
+#newSimplePost .QPSuuB{
+    padding: 0px;
+}
+#newSimplePost .NPT_QPCont{
+    padding: 10px;
+    margin: 0px;
+}
+#newSimplePost .closeNPTS{
+    float: left;
+    margin-left: 25px;
+    margin-right: -10px;
+}
+
+#newSimplePost{
+    margin: 0px;
+    top: 35%;
+    padding: 0px;
+}
+#newSimplePost .NPT_QPTip{
+    display: none;
+}
+#newSimplePost .NPT_PostSubmit{
+    position: absolute;
+    right: 20px;
+    margin-top: -50px;
+}
+#newSimplePost{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+#MyAccLeftPane{
+    display: block !important;;
+    position: fixed;
+    left: 0px;
+    border-radius: 10px !important;;
+}
+
+.SedFedMainBar{
+    float: left;
+    left: 0px !important;;
+    position: fixed;
+ 
+    top:15%;
+    background-color: white;
+    box-shadow: 0px 0px 5px -2px grey;
+      display: inline-flex;
+    flex-direction: column;
+   bottom: 15% ;
+}
+.MainBarOut{
+    padding: 0px;
+   
+}
+.MainBarIn{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.MainBarItm:first-child{
+    margin:105% 0px;
+}
+.profImgMainBar{
+    border-radius:25px;
+    position:fixed;
+    top: 65px;
+    left:8px;
+    max-height:50px;
+    max-width:50px;
+}
+.profImgMainBar:hover{
+    box-shadow: 5px 5px 7px -7px grey;
+}
+.MainBarItm:not(:first-child){
+    
+}
+.MainBarItm:hover{
+    cursor: pointer;
+}
+.ico_sf_mBar{
+    max-height: 30px;
+    border-radius: 100px;
+}
+.mBdecPre
+{
+   height: 0px;
+    width: 0px;
+    border-top: 19.5px solid transparent;
+    border-bottom:19.5px solid transparent;
+    border-left:18px solid whitesmoke;
+    float: left;
+    display: none !important;;
+}
+.mBdecNext{
+     height: 0px;
+    width: 0px;
+    border-top: 19.5px solid transparent;
+    border-bottom: 19.5px solid transparent;
+    border-right: 18px solid whitesmoke;
+    float: right;
+    display: none !important;;
+}
+.SFTB_searchSubmit{
+    color: white;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#sf_logoTop{
+    padding-bottom: 2px;
+}
+a{
+    text-decoration: none;
+}

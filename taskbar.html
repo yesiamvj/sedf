@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title> Taskbar </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="taskbar.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="loggedinPage.js" type="text/javascript"></script>
+   <script src="taskbar.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div id="fullPageContainer">
+         
+          <div class="taskbarHold">
+                
+              <div class="taskbarIn">
+                
+                  <div class="taskbarType">
+                      <div class="tb_notifItm" style="margin-left: 12px;" onclick="$('#Main_Notif_Rel_Req').fadeToggle();" >
+                          <div id="CustmNotifPeople">
+                              <div id="Notif_PplHead"></div>
+                              <div id="Notif_PplBody">
+                                  10
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#Main_Notif_Msgs').fadeToggle();" >
+                          <div id="CustmNotifMsg">
+                              <div id="Notif_MsgArr"></div>
+                              <div id="Notif_MsgCont">
+                                  40
+                              </div>
+                          </div>        
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#Main_Notif_Bulbs').fadeToggle();" >
+                          <div id="CustmNotifBulb">
+                              <div id="Notif_BulbCount" class="tb_Notif_Count" >60</div>       
+                              <div id="Notif_BulbGlass">           
+                              </div> 
+                              <div id="Notif_BulbHoldr">
+                                  <div id="Notif_BulbPin">    
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="Notif_Gft_TypOut" id="Notif_Gift_Types" style="display: none;" >
+                          <div class="Notif_Gift_Arr"></div>
+                          <div class="Notif__Gft_Typin">
+                              <div class="Notif_Gift_Cont">
+                                  <div class="Notif_Gft_Itm" onclick="$('#Main_Notif_Post_Gift_Like').fadeToggle();" >
+                                      Likes <div class="Notif_Gft_Count">89</div>
+                              </div>
+                              <div class="Notif_Gft_Itm" onclick="$('#Main_Notif_Post_Gift_Unlike').fadeToggle();">
+                                  Unlikes <div class="Notif_Gft_Count">0</div>
+                              </div>
+                              <div class="Notif_Gft_Itm" onclick="$('#Main_Notif_Post_Gift_Rate').fadeToggle();">
+                                  Rates <div class="Notif_Gft_Count">9</div>
+                              </div>
+                              <div class="Notif_Gft_Itm" onclick="$('#Main_Notif_Post_Gift_Comment').fadeToggle();">
+                                  Comments <div class="Notif_Gft_Count">9</div>
+                              </div>
+                              <div class="Notif_Gft_Itm" onclick="$('#Main_Notif_Post_Gift_OA').fadeToggle();">
+                                  Overall <div class="Notif_Gft_Count">9</div>
+                              </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#Notif_Gift_Types').fadeToggle();" >
+                          <div id="CustmNotifGift">
+                            
+                              <div id="Notif_GiftLid">           
+                              </div>
+                               
+                              <div id="Notif_GiftHold">
+                                    <div id="Notif_GiftCount" class="tb_Notif_Count" >60</div>       
+                                 
+                              </div>
+                          </div>
+                      </div>
+                     
+                  </div>
+                  <div class="taskbarType">
+                      <div class="tb_TbItm" onmouseover="setTbTTip(event,'New Post')" onmouseout="$('#TaskBTt').hide()" >
+                          <div class="tb_Tb_Icon">
+                              <img  class="tb_newIcos" src="icons/taskbar/newPost.png" alt="New Post" /> 
+                          </div>
+                      </div>
+                  
+                 
+                      <div class="tb_TbItm"  onclick="$('#QuickPost').fadeToggle();" onmouseover="setTbTTip(event,'Quick Post')" onmouseout="$('#TaskBTt').hide()">
+                          <div class="tb_Tb_Icon">
+                              <img  class="tb_newIcos" src="icons/taskbar/newAdvPost.png"  alt="Quick Post" style="max-height: 23px;margin-left: 14px;" /> 
+                          </div>
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#QuickMsg').fadeToggle();" onmouseover="setTbTTip(event,'New Message')" onmouseout="$('#TaskBTt').hide()">
+                          <div id="new_CustmNotifMsg">
+                             <div id="new_Notif_MsgArr"></div>
+                              <div id="new_Notif_MsgCont">
+                                  <div id="Notif_MsgIn">
+                                       +
+                                  </div>
+                                  
+                              </div>
+                          </div>        
+                      </div>
+                      <div class="tb_TbItm" onclick="$('#QuickNotif').fadeToggle();" onmouseover="setTbTTip(event,'New Notification')" onmouseout="$('#TaskBTt').hide()">
+                          <div class="tb_Tb_Icon">
+                               <span class="tb_n_plus">+</span>
+                              <img  class="tb_newIcos" src="icons/taskbar/notifBulb.png"  alt="New Notif" style="max-height: 45px;margin-left:3px" />
+                          </div>
+                      </div>
+                      <div class="tb_TbItm" onclick="$('#QuickMySpecial').fadeToggle()" onmouseover="setTbTTip(event,' My feature')" onmouseout="$('#TaskBTt').hide()">
+                          <div class="tb_Tb_Icon">
+                               
+                              <img  class="tb_newIcos" src="icons/taskbar/notif_giftBox.png" alt="Feedback" style="max-height: 23px;margin-left:14px" />
+                          </div>
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#Main_Notif_Profile_Views').fadeToggle();" style="margin-top: 20px;" onmouseover="setTbTTip(event,' Profile Views')" onmouseout="$('#TaskBTt').hide()">
+                          <div id="NotifProfVw">
+                              <img class="ico_tb_notif" src="icons/taskbar/off-prof_seen.png" alt="Profile Views" style="max-height: 27px;margin-left: 2px;" />
+                               <div class="tb_ico_Count">
+                              
+                          </div>
+                         
+                          </div>
+                         
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#Main_Notif_Security_Alert').fadeToggle();" onmouseover="setTbTTip(event,' Security Alerts')" onmouseout="$('#TaskBTt').hide()">
+                          <div id="NotifProfVw">
+                              <img class="ico_tb_notif" src="icons/taskbar/off-notif_secure.png" alt="Security" style="max-height: 28px;margin-top:-7px;" />
+                               <div class="tb_ico_Count">
+                              
+                          </div>
+                         
+                          </div>
+                         
+                      </div>
+                      <div class="tb_notifItm" onclick="$('#Main_Notif_Propose').fadeToggle();" onmouseover="setTbTTip(event,' Proposals ')" onmouseout="$('#TaskBTt').hide()">
+                          <div id="NotifProfVw">
+                              <img class="ico_tb_notif" id="notif_love" alt="Proposals" src="icons/taskbar/off-notif-love.png" style="max-height: 21px;margin-left: 3px;margin-top: 1px;" />
+                              <div class="tb_ico_Count" style="margin-left: -8px;" >
+                              
+                          </div>
+                          </div>
+                          
+                      </div>
+                  
+              </div>
+                  
+          </div>
+              
+      </div>
+      <div class="toolTaskbr" id="TaskBTt" >
+                      <div class="tT_Tb_Arr"></div>
+                      <div class="tT_Tb_Cont" id="tT_Tb_Txt" >
+                          New Post
+                      </div>
+      </div>
+          <div class="QuickPostHoldr" id="QuickPost" style="display: none;" >
+              <div class="QuickPostOut">
+                  <div class="qckPostArr"></div>
+                  <div class="QckPostIn">
+                      <div class="qckPostTtl">Quick Post <div class="quickPostClose" onclick="$('#QuickPost').fadeOut();">X</div> </div>  
+                      <div class="qckPostCont">
+                          <input type="text" placeholder="Say something ..." />
+                          <div class="qckPostSubmit">
+                              Publish
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          </div>
+          <div class="QuickPostHoldr" id="QuickMsg" style="display: none;" >
+              <div class="QuickPostOut">
+                  <div class="qckPostArr" style="border-left-color: teal;" ></div>
+                  <div class="QckPostIn">
+                      <div class="qckPostTtl" style="background-color: teal;" >Quick Message <div class="quickPostClose" onclick="$('#QuickMsg').fadeOut();">X</div> </div>  
+                      <div class="qckPostCont">
+                          <input class="QuickMsgInp" type="text" placeholder="Say something ..." />
+                          <div class="qckRecips">
+                              To <input  type="text" placeholder="Recipient Name" style="width: 200px;" />
+                              <input type="checkbox" /> All Relations
+                              <div class="qckspNo" onclick="$('#qckMsgResp').slideToggle();" > 0 people added  <div class="qckRspArr"></div> </div>
+                          </div>
+                          <div class="qckRecipsHold" style="display: none;" id="qckMsgResp" >
+                              <span class="qckRecipItm" title="click to remove" ></span>
+                          </div>
+                          <div class="qckPostSubmit" style="margin-top: 0px;" >
+                              Send
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          </div>
+          <div class="QuickPostHoldr" id="QuickNotif" style="display: none;" >
+              <div class="QuickPostOut">
+                  <div class="qckPostArr" style="border-left-color: teal;" ></div>
+                  <div class="QckPostIn">
+                      <div class="qckPostTtl" style="background-color: teal;" >Notify People<div class="quickPostClose" onclick="$('#QuickNotif').fadeOut();">X</div> </div>  
+                      <div class="qckPostCont">
+                          <textarea  placeholder="What's Up ..."></textarea>
+                          <div class="qckRecips">
+                              To <input  type="text" placeholder="Recipient Name" style="width: 200px;" />
+                              <input type="checkbox" /> All Relations
+                              <div class="qckspNo" onclick="$('#qckNotifResp').slideToggle();" > 1 people added  <div class="qckRspArr"></div> </div>
+                          </div>
+                          <div class="qckRecipsHold" style="display: none;" id="qckNotifResp" >
+                              <span class="qckRecipItm" title="click to remove" >Yogeshwaan</span>
+                          </div>
+                          <div class="qckPostSubmit" style="margin-top:0px;" >
+                              Send Notification
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          </div>
+          <div class="QuickPostHoldr" id="QuickMySpecial" style="display: none;" >
+              <div class="QuickPostOut">
+                  <div class="qckPostArr" style="border-left-color:silver" ></div>
+                  <div class="QckPostIn">
+                      <div class="qckPostTtl">Reach us<div class="quickPostClose" onclick="$('#QuickMySpecial').fadeOut();">X</div> </div>  
+                      <div class="qckPostCont">
+                          <div class="qckSpTtl">Feedback / Suggestion / Report </div>
+                          
+                          <textarea  placeholder="How can we help ?"></textarea>
+                          <div class="qckSpCont">
+                              If you want any special feature only for your account / page you can query here. 
+                          </div>
+                          <div class="qckPostSubmit" style="margin-top:0px;" >
+                              Submit
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          </div>
+           <div class="Main_Notif_Float_Out" id="Main_Notif_Profile_Views" style="display: none;" >
+                    
+              <div class="MNF_In"  style="background-color:darkcyan;">
+                 
+                  <div class="MNF_Cont" id="Notif_ProfView_Cont" style="background-color: white"  >
+                       
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                             
+                              <div class="Notif_Liker"  >
+                                    One of your relation <div class="Notif_Just_Tip">Visited your profile</div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No">
+                                       
+                                      </div>
+                                    1 jun 2013 , 10:30 pm
+                                  </div>
+                              </div>
+                             
+                          </div>
+                      </div>
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                             
+                              <div class="Notif_Liker" >
+                                An Unknown person <div class="Notif_Just_Tip">Visited your profile</div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No">
+                                        
+                                      </div>
+                                      
+                                      1 jun 2013 , 10:30 pm
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                    
+                      
+                    
+                    
+                      
+                   
+                     
+                      <!-- on no notification 
+                      <div class="Notif_Empty">
+                          Empty
+                      </div>
+                      
+                      -->
+                     <!-- after 25 items put this
+                     <div class="Notif_ShowMore">
+                         Show More
+                     </div>
+                     -->
+                     
+                      <div class="Notif_End">
+                          End
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+                <div class="MNF_Ttl" style="background-color: darkcyan;" >Profile Views<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+               <div class="MNF_Arr" style="border-left-color:darkcyan;margin-top: 0px;" ></div> 
+          </div>
+           <div class="Main_Notif_Float_Out" id="Main_Notif_Security_Alert" style="display: none;" >
+                    
+              <div class="MNF_In"  style="background-color: khaki">
+                 
+                  <div class="MNF_Cont" id="Notif_SecAl_Cont" style="background-color: white"  >
+                       
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                             
+                              <div class="Notif_Liker"  >
+                                    Someone <div class="Notif_Just_Tip"> logged in your account </div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No"  onclick="$('#alertNo1').slideToggle()" >
+                                       Details
+                                      </div>
+                                    1 jun 2013 , 10:30 pm
+                                  </div>
+                              </div>
+                              <div class="Notif_Sec_Alrt_Dets" id="alertNo1">
+                                  <div class="Notif_SAD_Itm">
+                                      Browser : Chrome
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Location : India, Tamilnadu
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      IP address : 20.2.3.12
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Usage Duration: 10 minutes
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Logged out: 10.40pm
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                             
+                              <div class="Notif_Liker" >
+                                Someone <div class="Notif_Just_Tip"> Tried to login with wrong password </div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No" onclick="$('#alertNo2').slideToggle();" >
+                                        Details
+                                      </div>
+                                      
+                                      1 jun 2013 , 10:30 pm
+                                  </div>
+                              </div>
+                              <div class="Notif_Sec_Alrt_Dets" id="alertNo2">
+                                  <div class="Notif_SAD_Itm">
+                                      Browser : Chrome
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Location : India, Tamilnadu
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      IP address : 20.2.3.12
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Password Used : hasbhj
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                             
+                              <div class="Notif_Liker" >
+                                Vijayakumar <div class="Notif_Just_Tip"> Tried to access your storage  </div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No" onclick="$('#alertNo3').slideToggle();" >
+                                        Details
+                                      </div>
+                                      
+                                      1 jun 2013 , 10:30 pm
+                                  </div>
+                              </div>
+                              <div class="Notif_Sec_Alrt_Dets" id="alertNo3">
+                                  <div class="Notif_SAD_Itm">
+                                      Browser : Chrome
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Location : India, Tamilnadu
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      IP address : 20.2.3.12
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Password Used : hasbhj
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                             
+                              <div class="Notif_Liker" >
+                                Vijayakumar <div class="Notif_Just_Tip"> accessed your storage </div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No" onclick="$('#alertNo4').slideToggle();" >
+                                        Details
+                                      </div>
+                                      
+                                      1 jun 2013 , 10:30 pm
+                                  </div>
+                              </div>
+                              <div class="Notif_Sec_Alrt_Dets" id="alertNo4">
+                                  <div class="Notif_SAD_Itm">
+                                      Browser : Chrome
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      Location : India, Tamilnadu
+                                  </div>
+                                  <div class="Notif_SAD_Itm">
+                                      IP address : 20.2.3.12
+                                  </div>
+                                 
+                              </div>
+                          </div>
+                      </div>
+                    
+                      <!-- on no notification 
+                      <div class="Notif_Empty">
+                          Empty
+                      </div>
+                      
+                      -->
+                     <!-- after 25 items put this
+                     <div class="Notif_ShowMore">
+                         Show More
+                     </div>
+                     -->
+                     
+                      <div class="Notif_End">
+                          End
+                      </div>
+                      
+                  </div>
+              </div>
+                <div class="MNF_Ttl" style="background-color:khaki;color:black;" >Security Alerts<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+               <div class="MNF_Arr" style="border-left-color:khaki;margin-top: 0px;" ></div> 
+          </div>
+          <div class="NotifNotifHoldr">
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Rel_Req" style="display: none" >
+                    <div class="MNF_Arr" style="border-left-color: crimson" ></div>
+                    <div class="MNF_In">
+                        <div class="MNF_Ttl">Relation Requests <div class="NotifStatus"> Total  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont">
+                            <div class="MNF_Rel_Req_Itm" id="Notif1" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif1').css({'background-color':'white'});" >
+                                <div class="RelReqItmIn">
+                                    <div class="RelReqFace">
+                                        <div class="RelReqPplThme" style="background-color: crimson;" ></div>
+                                        <img class="img_relreq" src="profileimg.PNG"/>
+                                    </div>
+                                    <div class="RelReqDets">
+                                        <div class="RelReqNme">Vijayakumar <span class="RelReqMyDet"><span class="divider">|</span>18+<span class="divider">|</span>Male<span class="divider">|</span>Verified</span> <div class="reqTime">1 Jun 2013</div> </div>
+                                        <div class="RelReqExt"><div class="RReqXdets"> 18 Common relations  </div>  <div class="RelReqAccpt">Accept Request</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+                            <div class="Notif_End">
+                                End
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Msgs" style="display: none;margin-top: 40px;" >
+                  <div class="MNF_Arr" style="border-left-color:navy"></div>
+                  <div class="MNF_In" style="background-color: white;" >
+                        <div class="MNF_Ttl" style="background-color: navy" >Messages<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont" id="Notif_Msg_Cont" >
+
+                            <div class="MNF_Msg_Itm" id="Notif3" style="background-color: rgba(0,0,200,0.03);margin-bottom: 3px;//for unread messages this style" onmouseover="$('#Notif3').css({'background-color':'whitesmoke','margin-bottom':'0px'});" >
+                                <div class="Notif_Msg_In">
+                                    <div class="NotifMsgPpl">
+                                        <div class="Notif_Msg_Pplthme"></div>
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="" />
+                                    </div>
+                                    </div>
+                                    <div class="NotifMsgContHold">
+                                        <div class="Notif_Msg_Arr"></div>
+                                    <div class="Notif_Msg_Cont">
+                                        <div class="Ntf_Msg_Sendr"> Vijayakumar <span class="Notif_MsgDets"><span class="divider" >|</span> attachment : 1 </span> <div class="Notif_Msg_Time">10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt">
+                                            This is the message jhhj fshjkd kdkj..vgvbvnhhbjhbk
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- for outgoing message -->
+                            <div class="MNF_Msg_Itm"  onmouseover="//$('#Notif2').css({'background-color':'white'});" >
+                                <div class="Notif_Msg_In_Out">
+                                    <div class="NotifMsgPpl_Out"  >
+
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="MYface" />
+                                    </div>
+
+                                    </div>
+                                    <div class="NotifMsgContHold">
+                                        <div class="Notif_Msg_Arr_Out"  ></div>
+                                    <div class="Notif_Msg_Cont">
+                                        <div class="Ntf_Msg_Sendr"><span class="Notif_To">To</span> Vijayakumar <span class="Notif_MsgDets"> </span> <div class="Notif_Msg_Time">10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt">
+                                            This is the message jhhj fshjkd kdkj..vgv
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- on no notification 
+                            <div class="Notif_Empty">
+                                Empty
+                            </div>
+
+                            -->
+                           <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+
+                            <div class="Notif_End">
+                                End
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Bulbs" style="display: none;margin-top:90px;margin-left: 90px;" >
+                  <div class="MNF_Arr" style="border-left-color:green"></div>
+                  <div class="MNF_In" style="background-color: green;">
+                        <div class="MNF_Ttl" style="background-color: green" >Notifications<div class="NotifStatus"> Unread  &nbsp; 25</div> </div>
+
+                        <div class="MNF_Cont" id="Notif_Bulb_Cont" style="background-color: white" >
+                            <div class="MNF_innrCont">
+                                <div class="MNF_Bulb_Itm" id="Notif4" style="background-color: rgba(0,0,200,0.03);margin-bottom: 3px;//for unread messages this style" onmouseover="$('#Notif4').css({'background-color':'whitesmoke','margin-bottom':'0px'});" >
+                                <div class="Notif_Msg_In"  >
+                                    <div class="NotifMsgPpl">
+                                        <div class="Notif_Msg_Pplthme"></div>
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="" />
+                                    </div>
+                                    </div>
+                                    <div class="NotifMsgContHold">
+                                        <div class="Notif_Msg_Arr"></div>
+                                    <div class="Notif_Msg_Cont">
+                                        <div class="Ntf_Msg_Sendr"> Vijayakumar <span class="Notif_MsgDets"><span class="divider" >|</span> with 8 people </span> <div class="Notif_Msg_Time">10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt">
+                                            This is the message jhhj fshjkd kdkj..vgvbvnhhbjhbk tyftg ughvnb ggyvbn vu  nvnb  nbbn hgfhgv nbvh    hvnb   nbhnb  v
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- for outgoing message -->
+                            <div class="MNF_Bulb_Itm"  onmouseover="//$('#Notif2').css({'background-color':'white'});" >
+                                <div class="Notif_Msg_In_Out">
+                                    <div class="NotifMsgPpl_Out"  >
+
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="MYface" />
+                                    </div>
+
+                                    </div>
+                                    <div class="NotifMsgContHold">
+                                        <div class="Notif_Msg_Arr_Out"  ></div>
+                                    <div class="Notif_Msg_Cont">
+                                        <div class="Ntf_Msg_Sendr"><span class="Notif_To">To</span> &nbsp; 8 people <span class="Notif_MsgDets"> </span> <div class="Notif_Msg_Time">10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt">
+                                            This is the message jhhj fshjkd kdkj..vgv
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="MNF_Bulb_Itm" id="Notif6" style="background-color: rgba(0,0,200,0.03);margin-bottom: 3px;//for unread messages this style" onmouseover="$('#Notif6').css({'background-color':'whitesmoke','margin-bottom':'0px'});" >
+                                <div class="Notif_Msg_In"  >
+                                    <div class="NotifMsgPpl">
+                                        <div class="Notif_Msg_Pplthme"></div>
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="" />
+                                    </div>
+                                    </div>
+                                    <div class="NotifMsgContHold"  >
+
+                                    <div class="Notif_Msg_Cont_full" >
+                                        <div class="Ntf_Msg_Sendr"> Vijayakumar <span class="Notif_MsgDets"><span class="divider" >|</span><span class="Notif_Acts" id="noteone" onclick="if($('#noteone').text()==='Like'){$('#noteone').text('Liked');}else{$('#noteone').text('Like')};">Like</span> <span class="divider" >|</span><span class="Notif_Acts" id="noteoneun" onclick="if($('#noteoneun').text()==='Unlike'){$('#noteoneun').text('Unliked');}else{$('#noteoneun').text('Unlike')};">Unlike</span></span> <div class="Notif_Msg_Time" title="1 Jan 2013"><span class="Notif_Post_No" title="click to view post" >Post No: 267 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt"  style="line-height: 1.25;color:black;width: 420px;" >
+                                            Changed his profile picture
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="MNF_Bulb_Itm" id="Notif7" style="background-color: rgba(0,0,200,0.03);margin-bottom: 3px;//for unread messages this style" onmouseover="$('#Notif7').css({'background-color':'whitesmoke','margin-bottom':'0px'});" >
+                                <div class="Notif_Msg_In"  >
+                                    <div class="NotifMsgPpl">
+                                        <div class="Notif_Msg_Pplthme"></div>
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="" />
+                                    </div>
+                                    </div>
+                                    <div class="NotifMsgContHold"  >
+
+                                    <div class="Notif_Msg_Cont_full" >
+                                        <div class="Ntf_Msg_Sendr"> Vijayakumar <span class="Notif_MsgDets"><span class="divider" >|</span><span class="Notif_Acts" onclick="">Like</span> <span class="divider" >|</span><span class="Notif_Acts" onclick="">Unlike</span></span> <div class="Notif_Msg_Time" title="1 Jan 2013"><span class="Notif_Post_No" title="click to view post" >Post No: 268 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt"  style="line-height: 1.25;color:black;width: 420px;" >
+                                            Changed his wallpaper
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- on no notification 
+                            <div class="Notif_Empty">
+                                Empty
+                            </div>
+
+                            -->
+                           <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+
+                            <div class="Notif_End">
+                                End
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+        
+          <div class="NotifpostGiftHoldr">
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Post_Gift_Like" style="display: none;" >
+                    <div class="MNF_Arr" style="border-left-color: navy;" ></div>
+              <div class="MNF_In"  style="background-color: navy;">
+                  <div class="MNF_Ttl" style="background-color:navy;" >Likes<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                  <div class="MNF_Cont" id="Notif_Like_Cont" style="background-color: white"  >
+                       
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                              <div class="MNF_Post_Gft_Img" id="img_postno124" style="display: none;" >
+                                  <img class="MNF_Post_Lik_Img" src="icons/post-testimg.jpg" />
+                              </div>
+                              <div class="Notif_Liker" onmouseover="expndNotfc('#img_postno124','#cap_postno124')" >
+                                  Vijayakumar <div class="Notif_Just_Tip">Likes your post</div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No">
+                                          Post No 124
+                                      </div>
+                                      
+                                      10:30 pm
+                                  </div>
+                              </div>
+                              <div class="Notif_Post_CapPre" id="cap_postno124" style="display: none;" onmouseout="hideNotfc('#img_postno124','#cap_postno124');" >
+                                  This is the post caption...
+                              </div>
+                          </div>
+                      </div>
+                      <div class="MNF_like_itm"  >
+                          <div class="MNF_Like_Itmin"  >
+                              <div class="MNF_Post_Gft_Img" id="img_postno125" style="display: none;" >
+                                  <img class="MNF_Post_Lik_Img" src="icons/post-testimg.jpg" />
+                              </div>
+                              <div class="Notif_Liker" onmouseover="expndNotfc('#img_postno125','#cap_postno125')" >
+                                  Vijayakumar <div class="Notif_Just_Tip">Likes your post</div>
+                                  <div class="Notif_Time">
+                                      <div class="Notif_Gft_Post_No">
+                                          Post No 124
+                                      </div>
+                                      
+                                      10:30 pm
+                                  </div>
+                              </div>
+                              <div class="Notif_Post_CapPre" id="cap_postno125" style="display: none;" onmouseout="hideNotfc('#img_postno125','#cap_postno125');" >
+                                  This is the post caption...
+                              </div>
+                          </div>
+                      </div>
+                    
+                      
+                    
+                    
+                      
+                   
+                     
+                      <!-- on no notification 
+                      <div class="Notif_Empty">
+                          Empty
+                      </div>
+                      
+                      -->
+                     <!-- after 25 items put this
+                     <div class="Notif_ShowMore">
+                         Show More
+                     </div>
+                     -->
+                     
+                      <div class="Notif_End">
+                          End
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+                
+          </div>
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Post_Gift_Unlike" style="display: none;"  >
+                  <div class="MNF_Arr"style="border-left-color:crimson;"></div>
+                    <div class="MNF_In"  style="background-color: crimson;">
+                        <div class="MNF_Ttl" style="background-color:crimson;" >Unlikes<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont" id="Notif_Like_Cont" style="background-color: white"  >
+
+                            <div class="MNF_like_itm"  >
+                                <div class="MNF_Like_Itmin"  >
+                                    <div class="MNF_Post_Gft_Img" id="img_postno126" style="display: none;" >
+                                        <img class="MNF_Post_Lik_Img" src="icons/post-testimg.jpg" />
+                                    </div>
+                                    <div class="Notif_Liker" onmouseover="expndNotfc('#img_postno126','#cap_postno126')" >
+                                        1 person <div class="Notif_Just_Tip">unlike your post</div>
+                                        <div class="Notif_Time">
+                                            <div class="Notif_Gft_Post_No">
+                                                Post No 124
+                                            </div>
+
+                                            10:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="Notif_Post_CapPre" id="cap_postno126" style="display: none;" onmouseout="hideNotfc('#img_postno126','#cap_postno126');" >
+                                        This is the post caption...
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!-- on no notification 
+                            <div class="Notif_Empty">
+                                Empty
+                            </div>
+
+                            -->
+                           <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+
+                            <div class="Notif_End">
+                                End
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Post_Gift_Rate" style="display: none;" >
+                  <div class="MNF_Arr"style="border-left-color:green;"></div>
+                    <div class="MNF_In"  style="background-color:green;">
+                        <div class="MNF_Ttl" style="background-color:green;" >Ratings<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont" id="Notif_Rate_Cont" style="background-color: white"  >
+
+                            <div class="MNF_like_itm"  >
+                                <div class="MNF_Like_Itmin"  >
+                                    <div class="MNF_Post_Gft_Img" id="img_postno129" style="display: none;" >
+                                        <img class="MNF_Post_Lik_Img" src="icons/post-testimg.jpg" />
+                                    </div>
+                                    <div class="Notif_Liker" onmouseover="expndNotfc('#img_postno129','#cap_postno129')" >
+                                        Vijayakumar <div class="Notif_Just_Tip"> Rated 3 stars </div>
+                                        <div class="Notif_Rated_hold">
+                                        <img class="Notif_Gift_Rateimg" src="icons/post-Qrated-3.png"/>
+                                        <img class="Notif_Gift_Rateimg" src="icons/post-Qrated-3.png"/>
+                                        <img class="Notif_Gift_Rateimg" src="icons/post-Qrated-3.png"/>
+                                        </div>
+
+                                        <div class="Notif_Time">
+                                            <div class="Notif_Gft_Post_No">
+                                                Post No 124
+                                            </div>
+
+                                            10:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="Notif_Post_CapPre" id="cap_postno129" style="display: none;" onmouseout="hideNotfc('#img_postno129','#cap_postno129');" >
+                                        This is the post caption...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MNF_like_itm"  >
+                                <div class="MNF_Like_Itmin"  >
+                                    <div class="MNF_Post_Gft_Img" id="img_postno129" style="display: none;" >
+                                        <img class="MNF_Post_Lik_Img" src="icons/post-testimg.jpg" />
+                                    </div>
+                                    <div class="Notif_Liker" onmouseover="expndNotfc('#img_postno129','#cap_postno129')" >
+                                        Vijayakumar <div class="Notif_Just_Tip"> Rated 2 stars </div>
+                                        <div class="Notif_Rated_hold">
+                                        <img class="Notif_Gift_Rateimg" src="icons/post-Qrated-2.png"/>
+                                        <img class="Notif_Gift_Rateimg" src="icons/post-Qrated-2.png"/>
+
+                                        </div>
+
+                                        <div class="Notif_Time">
+                                            <div class="Notif_Gft_Post_No">
+                                                Post No 124
+                                            </div>
+
+                                            10:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="Notif_Post_CapPre" id="cap_postno129" style="display: none;" onmouseout="hideNotfc('#img_postno129','#cap_postno129');" >
+                                        This is the post caption...
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!-- on no notification 
+                            <div class="Notif_Empty">
+                                Empty
+                            </div>
+
+                            -->
+                           <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+
+                            <div class="Notif_End">
+                                End
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Post_Gift_Comment" style="display: none;" >
+                  <div class="MNF_Arr" style="border-left-color:teal;" ></div>
+                    <div class="MNF_In"  style="background-color:teal;">
+                        <div class="MNF_Ttl" style="background-color: teal;" >Comments<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont" id="Notif_Cmnt_Cont" style="background-color: white"  >
+                            <div class="MNF_Post_CmntItm">
+                                 <div class="MNF_like_itm"  >
+                                <div class="MNF_Like_Itmin"  >
+                                    <div class="MNF_Post_Gft_Img" id="img_postno130" style="display: none;" >
+                                        <img class="MNF_Post_Lik_Img" src="icons/post-testimg.jpg" />
+                                    </div>
+                                    <div class="Notif_Liker"  >
+                                        Vijayakumar <div class="Notif_Just_Tip" style="cursor: pointer;" onclick="$('#MNF_cmnt_poNo130').slideToggle()" title="click to view comment" > Commented on your post <div class="MNF_Gift_CmntArr"></div> </div>
+
+
+                                        <div class="Notif_Time"  >
+                                            <div class="Notif_Gft_Post_No" onmouseover="expndNotfc('#img_postno130','#cap_postno130')">
+                                                Post No 124
+                                            </div>
+
+                                            10:30 pm
+                                        </div>
+                                    </div>
+                                    <div class="Notif_Post_CapPre" id="cap_postno130" style="display: none;" onmouseout="hideNotfc('#img_postno130','#cap_postno130');" >
+                                        This is the post caption...
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="MNF_Bulb_Itm" id="MNF_cmnt_poNo130" style="background-color: rgba(0,0,200,0.03);margin-bottom: 3px;display: none;margin-left: -10px;"  >
+                                <div class="Notif_Msg_In"  >
+                                    <div class="NotifMsgPpl">
+                                        <div class="Notif_Msg_Pplthme"></div>
+                                    <div class="Notif_Msg_Face">
+                                        <img class="img-Notif_Msg_Face" src="profileimg.PNG" alt="" />
+                                    </div>
+                                    </div>
+                                    <div class="NotifMsgContHold">
+                                        <div class="Notif_Msg_Arr"></div>
+                                    <div class="Notif_Msg_Cont">
+                                        <div class="Ntf_Msg_Sendr"> Vijayakumar <span class="Notif_MsgDets"><span class="divider" >|</span> Like <span class="divider">|</span> Unlike </span> <div class="Notif_Msg_Time">10:30 pm</div> </div>
+                                        <div class="Ntf_Msg_Txt">
+                                            This is the comment
+                                            <div style="margin: 5px;" >
+                                                <img class="Notif_Gft_Cmnt_Media" src="icons/post-testimg.jpg" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <!-- on no notification 
+                            <div class="Notif_Empty">
+                                Empty
+                            </div>
+
+                            -->
+                           <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+
+                            <div class="Notif_End">
+                                End
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Main_Notif_Float_Out" id="Main_Notif_Post_Gift_OA" style="display: none;"  >
+                  <div class="MNF_Arr" style="border-left-color:indigo;margin-right:-2px;"></div>
+                    <div class="MNF_In"  style="background-color:indigo;">
+                        <div class="MNF_Ttl" style="background-color: indigo;" >Overall Responses<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont"  style="background-color: white"  >
+
+                            <div class="MNF_OA_itmOut">
+                                <div class="MNF_OA_itmIn">
+                                    <img class="MNF_OA_Img" src="icons/post-testimg.jpg" />
+                                    <div class="MNF_OA_PostCap">
+                                        This is post Caption...
+                                    </div>
+                                    <div class="MNF_OA_Time"><div class="MNF_OA_postno">Post No 167</div> 10:30 pm</div>
+                                    <div class="MNF_OA_post_resps">
+                                         <div class="MNF_OA_respitm">
+                                          &nbsp;&nbsp;&nbsp;&nbsp;  <img class="img-MNF_OA_PR" src="icons/msg_seen.png" />
+                                            <div class="MNF_OA_respCount">
+                                                5
+                                            </div>
+                                        </div>
+                                        <div class="MNF_OA_respitm">
+                                            <img class="img-MNF_OA_PR" src="icons/post-preview-like.png"/>
+                                            <div class="MNF_OA_respCount">
+                                                19000
+                                            </div>
+                                        </div>
+                                        <div class="MNF_OA_respitm">
+                                             <img class="img-MNF_OA_PR_Unl" src="icons/post-sf-unliked.png" />
+                                             <div class="MNF_OA_respCount">
+                                                24
+                                            </div>
+                                        </div>
+                                        <div class="MNF_OA_respitm">
+                                            <img class="img-MNF_OA_PR_rte" src="icons/post-Qrated-3.png" />
+                                            <div class="MNF_OA_respCount">
+                                                65
+                                            </div>
+                                        </div>
+                                        <div class="MNF_OA_respitm">
+                                            <img class="img-MNF_OA_PR" src="icons/post-sf-comment.png" />
+                                            <div class="MNF_OA_respCount">
+                                                5
+                                            </div>
+                                        </div>
+
+                                        <div class="MNF_OA_respitm">
+                                            <img class="img-MNF_OA_PR" src="icons/post-media-download.png" />
+                                            <div class="MNF_OA_respCount">
+                                                5
+                                            </div>
+                                        </div>
+                                        <div class="MNF_OA_respitm">
+                                            <img class="img-MNF_OA_PR_rte" src="icons/post-sf-share.png" />
+                                            <div class="MNF_OA_respCount">
+                                                5
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                            <!-- on no notification 
+                            <div class="Notif_Empty">
+                                Empty
+                            </div>
+
+                            -->
+                           <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+
+                            <div class="Notif_End">
+                                End
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div> 
+              
+          </div>
+          <div  id="Main_Notif_Propose" style="display: none" >
+               <div class="Main_Notif_Float_Out"  >
+                    
+                    <div class="MNF_In"  style="background-color: navy" >
+                        <div class="MNF_Ttl" >Proposals<div class="NotifStatus"> New  &nbsp; 25</div> </div>
+                        <div class="MNF_Cont">
+                            <div class="MNF_Rel_Req_Itm" id="Notif2" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif2').css({'background-color':'white'});" >
+                                <div class="RelReqItmIn">
+                                    <div class="RelReqFace">
+                                        <div class="RelReqPplThme" style="background-color: crimson;" ></div>
+                                        <img class="img_relreq" src="profileimg.PNG"/>
+                                    </div>
+                                    <div class="RelReqDets">
+                                        <div class="RelReqNme">Vijayakumar <span class="RelReqMyDet"><span class="divider">|</span>18+<span class="divider">|</span>Male<span class="divider">|</span>Verified</span> <div class="reqTime">1 Jun 2013</div> </div>
+                                        <div class="RelReqExt"><div class="RReqXdets"> Propsed bravely  </div>  <div class="RelReqAccpt">Accept</div><div class="RelReqAccpt">Reject</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MNF_Rel_Req_Itm" id="Notif16" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif16').css({'background-color':'white'});" >
+                               
+                                    <div class="Notif_Propose_unk">
+                                        <div class="RelReqNme">  Someone  <span class="RelReqMyDet"> Proposed  you secretly</span><div class="reqTime">1 Jun 2013</div> </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class="MNF_Rel_Req_Itm" id="Notif17" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif17').css({'background-color':'white'});" >
+                               
+                                    <div class="Notif_Propose_unk">
+                                        <div class="RelReqNme">  One of your relation  <span class="RelReqMyDet"> Proposed  you secretly</span><div class="reqTime">1 Jun 2013</div> </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class="MNF_Rel_Req_Itm" id="Notif187" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif187').css({'background-color':'white'});" >
+                               
+                                    <div class="Notif_Propose_unk">
+                                        <div class="RelReqNme">  Yogeshwaran  <span class="RelReqMyDet"> already proposed you secretly </span><div class="reqTime">1 Jun 2013</div> </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class="MNF_Rel_Req_Itm" id="Notif182" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif182').css({'background-color':'white'});" >
+                               
+                                    <div class="Notif_Propose_unk">
+                                        <div class="RelReqNme">  Yogeshwaran  <span class="RelReqMyDet"> too proposed you secretly </span><div class="reqTime">1 Jun 2013</div> </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class="MNF_Rel_Req_Itm" id="Notif181" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif181').css({'background-color':'white'});" >
+                               
+                                    <div class="Notif_Propose_unk">
+                                        <div class="RelReqNme">  Yogeshwaran  <span class="RelReqMyDet"> accepted your proposal </span><div class="reqTime">1 Jun 2013</div> </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class="MNF_Rel_Req_Itm" id="Notif184" style="background-color: rgba(0,0,0,0.03);" onmouseover="$('#Notif184').css({'background-color':'white'});" >
+                               
+                                    <div class="Notif_Propose_unk">
+                                        <div class="RelReqNme">  Yogeshwaran  <span class="RelReqMyDet">rejected your proposal </span><div class="reqTime">1 Jun 2013</div> </div>
+                                       
+                                    </div>
+                            </div>
+                            <!-- after 25 items put this
+                           <div class="Notif_ShowMore">
+                               Show More
+                           </div>
+                           -->
+                            <div class="Notif_End">
+                                End
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+      </div>
+  </body>
+</html>

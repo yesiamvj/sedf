@@ -1,0 +1,121 @@
+/* 
+    Created on : Jun 25, 2015, 9:28:21 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    background: whitesmoke;
+    margin-left: 0px;
+    overflow: hidden;
+    font-family: Segoe UI;
+    
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+.SedFedLogo{
+    position: fixed;
+    top: 2%;
+    left: 43%;
+}
+.SedFedLogoHead{
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid navy;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent
+}
+.SedFedLogoBody{
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid navy;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    margin-left: -9px;
+    margin-top: -2px;
+ -moz-animation: sedfedlogo 10s infinite;
+    -webkit-animation: sedfedlogo 3s infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes sedfedlogo{
+     0%{transform: rotateX(0deg)}
+     20%{transform: rotateX(360deg)}
+     25%{transform: rotateY(0deg)}
+     45%{transform: rotateY(360deg)}
+     50%{transform: rotateZ(0deg)}
+     75%{transform: rotateZ(360deg)}
+    // 50%{transform: rotate(180deg);}
+     //100%{transform: rotateX(360deg)}
+}
+@-webkit-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+}
+.SedFedSiteName{
+   cursor: pointer;
+    font-size: 27px;
+    color: crimson;
+    text-transform: lowercase;
+    
+}
+.SedFed_TitleBar{
+    background-color: whitesmoke;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+   padding: 40px 0px;
+    box-shadow: 0px 0px 5px grey;
+    z-index: 100;
+}
+.SedFedSubTtl{
+    position: absolute;
+    background-color: white;
+    color: navy;
+    top: 110px;
+    width: 100%;
+    padding:10px 0px;
+    text-indent: 50px;
+    font-family: cursive;
+    z-index: 10;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.SedFed_inner_content{
+    margin-top:70%;
+    text-align:center;
+}
+.loginItm{
+   // margin: 20px;
+    text-align: center;
+}
+.loginItm input{
+    
+    padding:8px 10px;
+    width: 85%;
+    font-family: Segoe UI;
+    font-size: 14px;
+    margin: 15px 0px;
+    border: 1px solid silver;
+    margin-left: 5px;
+}
+.loginProceed{
+    background-color: navy;
+    padding: 7px 0px;
+    color: white;
+    font-size: 14px;
+    font-family: cursive;
+    margin-top: 10px;
+    margin: 10px;
+}
+.loginProceed:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+}
+.HomePageLink{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: grey;
+    cursor: pointer;
+}

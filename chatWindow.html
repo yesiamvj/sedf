@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title> </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="chatWindow.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="chatWind.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div id="content-full">
+          <div class="SedFedChatWindow">
+              <div class="ChatWindMinIcon" onclick="$('#ChatIcon1').fadeOut();$('#ChatWind1').slideDown();" id="ChatIcon1" >
+                          <img class="img_ChWin_BigIcon" src="profileimg.PNG" />
+                      </div>
+              <div class="ChatWindowHold" id="ChatWind1" >
+                  
+                  <div class="ChatWindowOut">
+                      
+                      <div class="ChatWindTtl" style="background-color: crimson;"  >
+                          <div class="ChWin_ChaterFace">
+                              <img class="img_ChWin_ProfPic" src="profileimg.PNG" />
+                          </div>
+                          <div class="ChWin_ChaterNme" onclick="$('#ChatWind1').slideUp();$('#ChatIcon1').fadeIn();"><marquee>Vijayakumar</marquee>  <div class="Ch_Usr_Sts" style="background-color: green" ></div> </div>
+                          <div class="ChWin_Tools" style="background-color: crimson;" >
+                              <div class="ChWin_Min" onclick="MinChatWindow('#ChatWind1')" title="Smaller" >_</div>
+                              <div class="ChWin_Max" onclick="MaxChatWindow('#ChatWind1')" title="Larger" >+</div>
+                              <div class="ChWin_Close">X</div>
+                          </div>
+                      </div>
+                      <div class="ChWinNewMsgOut" id="ChWinNMsgHold1" >
+                          <div class="ChWinNewMsgIn">
+                              
+                              <div class="CWNM_Cont">
+                                  <input class="CWNM_InpTxt" id="CWNewMsgInpUsr1" oninput="chatWindMsgInp('#ChWinNMsgHold1','#CWNewMsgPreUsr1','#CWNewMsgTxt1','#CWNewMsgInpUsr1')" onclick="chatWindMsgInp('#ChWinNMsgHold1','#CWNewMsgPreUsr1','#CWNewMsgUsr1','#CWNewMsgInpUsr1','#CWNM_attchHold1')" onblur="chatWinInpBlur('#ChWinNMsgHold1','#CWNewMsgPreUsr1','#CWNewMsgInpUsr1')" type="text" placeholder="Type your message" />
+                                  <div class="ChWinSendMsgBtn" title="Send Message" ></div>
+                                  
+                              </div>
+                              <div class="CWNM_Attach" id="CWNM_attchHold1" style="display: none;" >
+                              <div class="CWNM_AttachItm">
+                                  <img  src="icons/chooseColor.png" onclick="$('#newMsgClrinp1').click()" title="Choose a color for your message" />
+                                   <input type="color" id="newMsgClrinp1" style="display: none;" value="#000077" onchange="newMsgClr('1')" />
+                              </div>
+                                   <div class="CWNM_AttachItm" >
+                                       <div class="CWNM_AtchBG" id="newMsgBGhold1" onclick="$('#newMsgBGClrinp1').click()" title="Background color for your message" ></div>
+                                        <input type="color" id="newMsgBGClrinp1" style="display: none;" onchange="newMsgClr('1')" value="#ffffff" />
+                                   </div>
+                                  <div class="CWNM_AttachItm" title="Add Smiley">
+                                       <img  src="icons/test-smiley.png" onclick="showSmiley('#smileyWindow1')" />
+                                   </div>
+                                     <div class="smileyHold" id="smileyWindow1"  style="display: none" >
+                                            <div class="smileyArr"></div>
+                                            <div class="smileyContOut">
+                                                <div class="smileyContIn">
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Smile Face.png','Cute')" >
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Smile Face.png" alt="Cute" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Cute
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Smile.png','Smile')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Smile.png" alt="Smile" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Smile
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Happy.png','Happy')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Happy.png" alt="Happy" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                           Happy
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Laughing.png','Laughing')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Laughing.png" alt="Laughing" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Laughing
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Cool.png','Cool')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/cutey/Cool.png" alt="Cool" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Cool
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Nerd.png','Nerd')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Nerd.png" alt="Nerd" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Nerd
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Winking.png','Winking')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Winking.png" alt="Winking" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Winking
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Blushing.png','Blushing')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Blushing.png" alt="Blushing" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Blushing
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Surprised.png','Surprised')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Surprised.png" alt="Surprised" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Surprised
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Angry.png','Angry')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Angry.png" alt="Angry" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Angry
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/tongue.png','Tongue')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/tongue.png" alt="Tongue" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Tongue
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Sick.png','Sick')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/cutey/Sick.png" alt="Sick" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Sick
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Sad.png','Sad')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Sad.png" alt="Sad" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Sad
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','cutey/Crying.png','Crying')">
+                                                        <div class="smileyImg">
+                                                            <img class="ico_smiley" src="icons/smileys/cutey/Crying.png" alt="Cry" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Crying
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="$('#smile_blacks').slideToggle()" >
+                                                        <div class="moreSmiley">
+                                                            +
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            More
+                                                        </div>
+                                                    </div>
+                                                    <div class="blackSmiley"  id="smile_blacks" style="display: none;" >
+                                                         <div class="smileyItm" onclick="addSmiley('1','blacks/amazing.png','amazing')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/amazing.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Amazing
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/anger.png','anger')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/anger.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Anger
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/bad_egg.png','bad_egg')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/bad_egg.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Bad Egg
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/bad_smile.png','bad_smile')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/bad_smile.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Bad Smile
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/beaten.png','beaten')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/beaten.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                            Beaten
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/big_smile.png','big_smile')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/big_smile.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                             Smile
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/black_heart.png','black heart')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/black_heart.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                             Heart
+                                                        </div>
+                                                    </div>
+                                                    <div class="smileyItm" onclick="addSmiley('1','blacks/electric_shock.png','electric shock')">
+                                                        <div class="smileyImg">
+                                                             <img class="ico_smiley" src="icons/smileys/blacks/electric_shock.png" />
+                                                        </div>
+                                                        <div class="smileyNme">
+                                                             Shock
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                  <div class="CWNM_AttachItm" title="Add Any File">
+                                       <img  src="icons/msg_atch.png" />
+                                       
+                                   </div>
+                                  <div class="CWNM_AtchClose" onclick="$('#CWNM_attchHold1').slideUp();" >
+                                     X 
+                                   </div>
+                              </div>
+                          </div>
+                         
+                      </div>
+                      
+                  </div>
+                  <div class="ChWinConvHoldr" >
+                      <!-- new message Preview -->
+                      <div class="CW_Conv_OutHold" id="CWNewMsgPreUsr1" style="display: none;" >
+                              <div class="CW_Conv_OutArr" id="newMsgArw1"></div>
+                              <div class="CW_Conv_OutCont" id="newMsgBG1">
+                                  <div class="CW_ConvMsgTxt" id="CWNewMsgTxt1"  >
+                                      
+                                  </div>
+                                  <div class="CW_ConvMsgMedia" id="newMsgMedia1" >
+                                       <div class="CW_MMed_Itm">
+                                         
+                                      </div>
+                                  </div>
+                                  <div  class="CW_ConvMsgFile">    
+                                  </div>
+                                  
+                              </div> <br/>
+                              <div class="convMsgOutDets">
+                                      <div class="convMsgOutSeen">
+                                          <img class="CW_ConvMsgIcos" src="icons/chatwin/msg_seen.png" />
+                                          <div class="CW_MsgSeenTime">Looking...</div>
+                                      </div>
+                                      <div class="CW_Conv_MsgTimeOut"> 10:30 pm </div>
+                                  </div>
+                          </div>
+                         <div class="CW_Conv_OutHold">
+                              <div class="CW_Conv_OutArr" style="border-right-color: white"></div>
+                              <div class="CW_Conv_OutCont" style="background-color: white">
+                                  <div class="CW_ConvMsgTxt" style="color:green;" >
+                                      
+                                  </div>
+                                  <div class="CW_ConvMsgMedia">
+                                       <div class="CW_MMed_Itm">
+                                         
+                                      </div>
+                                  </div>
+                                  <div  class="CW_ConvMsgFile">    
+                                  </div>
+                                  
+                              </div> <br/>
+                              <div class="convMsgOutDets">
+                                      <div class="convMsgOutSeen">
+                                          <div class="CW_delMsg" title="You can delete message before he sees">
+                                              <img class="CW_ConvMsgIcos" src="icons/msg_del.png" />
+                                          <div class="CW_MsgSeenTime" >delete</div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="CW_Conv_MsgTimeOut"> 10:30 pm </div>
+                                  </div>
+                          </div>
+                             <!-- incoming message-->
+                          <div class="CW_Conv_InHold">
+                              <div class="CW_Conv_InArr" style="border-right-color:white" ></div>
+                              <div class="CW_Conv_InCont" style="background-color:white;" >
+                                  <div class="CW_ConvMsgTxt" style="color: navy;">This is the message</div>
+                                  <div class="CW_ConvMsgMedia">
+                                      <div class="CW_MMed_Itm"><img class="img_ConvMsgMedia" src="profileimg.PNG" /></div>
+                                      <div class="CW_MMed_Itm"><img class="img_ConvMsgMedia" src="profileimg.PNG" /></div>
+                                     
+                                  </div>
+                                  <div class="CW_ConvMsgFile">
+                                      <div class="CW_ConvMsgFileItm">12 th result.pdf</div>
+                                  </div>
+                                  
+                              </div>
+                               <div class="CW_Conv_MsgTimeIn"> 10:30 pm </div>
+                          </div>
+                          <div class="CW_Conv_InHold">
+                              <div class="CW_Conv_InArr" style="border-right-color:white"></div>
+                              <div class="CW_Conv_InCont" style="background-color:white">
+                                  <div class="CW_ConvMsgTxt" style="color: navy;" >hi</div>
+                                  <div class="CW_ConvMsgMedia">
+                                          
+                                  </div>
+                                  <div class="CW_ConvMsgFile">
+                                     
+                                  </div>
+                                  
+                              </div>
+                              <div class="CW_Conv_MsgTimeIn"> 10:30 pm </div>
+                              
+                          </div>
+                        
+                          
+                          <!-- outgong message -->
+                          <div class="CW_Conv_OutHold">
+                              <div class="CW_Conv_OutArr" style="border-right-color: white"></div>
+                              <div class="CW_Conv_OutCont" style="background-color:white">
+                                  <div class="CW_ConvMsgTxt" style="color:green;" >
+                                      Hi
+                                  </div>
+                                  <div class="CW_ConvMsgMedia">
+                                       <div class="CW_MMed_Itm">
+                                          <video src="icons/test.mp4" controls></video>
+                                      </div>
+                                  </div>
+                                  <div  class="CW_ConvMsgFile">    
+                                  </div>
+                                  
+                              </div> 
+                             
+                              <div class="convMsgOutDets">
+                                      <div class="convMsgOutSeen">
+                                          <img class="CW_ConvMsgIcos" src="icons/chatwin/msg_seen.png" />
+                                          <div class="CW_MsgSeenTime">10:40pm</div>
+                                      </div>
+                                      <div class="CW_Conv_MsgTimeOut"> 10:30 pm </div>
+                                  </div>
+                          </div>
+                           <div class="CW_ConvDate"> 1 Jun 2015</div>
+                          <div class="CW_Conv_OutHold">
+                              <div class="CW_Conv_OutArr" style="border-right-color: white"></div>
+                              <div class="CW_Conv_OutCont" style="background-color: white">
+                                  <div class="CW_ConvMsgTxt" style="color:green;" >
+                                      
+                                  </div>
+                                  <div class="CW_ConvMsgMedia">
+                                       <div class="CW_MMed_Itm">
+                                         
+                                      </div>
+                                  </div>
+                                  <div  class="CW_ConvMsgFile">    
+                                  </div>
+                                  
+                              </div> <br/>
+                              <div class="convMsgOutDets">
+                                      <div class="convMsgOutSeen">
+                                          <img class="CW_ConvMsgIcos" src="icons/chatwin/msg_seen.png" />
+                                          <div class="CW_MsgSeenTime">10:40pm</div>
+                                      </div>
+                                      <div class="CW_Conv_MsgTimeOut"> 10:30 pm </div>
+                                  </div>
+                          </div>
+                         
+                      <div class="CW_End_Of_Msg">
+                                  End
+                      </div>
+                      </div>
+              </div>
+              <div class="ExtCopyright" style="display: none;" id="CopyRSmiley" >
+              Smileys from Bruno Maia, IconTexto http://www.icontexto.com
+          </div>
+          </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+/* 
+    Created on : Aug 13, 2015, 8:37:13 PM
+    Author     : Vijayakumar M
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI",arial,sans-serif;
+    font-family: Segoe UI;
+    font-size: 100%;
+    color: navy;
+}
+a{
+    text-decoration: none;
+    color: navy;
+}

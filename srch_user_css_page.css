@@ -1,0 +1,322 @@
+#innercontent
+{
+    margin-top: -10px;
+    padding-top: 10px;
+}
+#hidetoppldiv
+{
+
+    background-color: whitesmoke;
+    position: absolute;
+    display: none;
+    margin-left: 50px;
+    margin-top: 00px;
+    min-width: 450px;
+    max-width: 1400px;
+    height: 450px;
+    border-left:1px solid red;
+    border-right:1px solid red;
+    border-bottom:1px solid red;
+    border-top:1px solid red;
+   z-index: 5000; 
+    box-shadow:0px 0px 7px #ef0000;
+}
+#selectedpeople
+{
+    display: none;
+}
+#hiddenpeople,#withpeoplediv,#selectedpeople
+{
+    display: none;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    background-color: transparent;
+}
+
+#selectppldiv
+{
+    background-color: white;
+    position: fixed;
+    
+   
+    min-width: 550px;
+    max-width: 1400px;
+    top: 20%;
+    left: 30%;
+    height: 450px;
+   
+   z-index: 10000000; 
+    box-shadow: 0px 0px 5px grey;
+}
+
+.srchppl
+{
+    padding: 7px 15px;
+    font-size: 14px;
+   width: 85%;
+  
+    border: 1px solid silver;
+    font-family:segoe ui;
+    
+}
+#addpplbtn
+{
+    background-color:navy;
+    margin-top: 325px;
+   
+    width: 100%;
+   border: 0px;
+   cursor: pointer;
+   text-align: center;
+    color:white;
+    font-family:segoe ui;
+    font-size: 16px;
+    position: absolute;
+    padding:5px;
+}
+#addpplbtn:hover{
+    background-color: rgb(0,0,100);
+}
+#srchboxcontdiv{
+   
+    background-color: white;
+    margin-top:0px;
+    text-align: center;
+}
+#selectpplspan{
+   background-color:darkcyan;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 16px;
+    font-family: segoe ui;
+    
+}
+#searchedppl
+{
+    max-height: 3100px;
+    width:100%;
+    position: absolute;
+     padding:20px 30px;
+    border-right: 1px solid silver;
+}
+.usrsdiv{
+    background-color: white ;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: 1px solid silver;
+    
+}
+
+.usrsdiv:hover,#pplbtn:hover{
+    background-color:aliceblue ;
+   
+    
+}
+
+#pplbtn{
+    background-color: transparent;
+    cursor: pointer;
+    border-width: 0px;
+  
+        font-size:15px;
+    color:darkcyan ;
+    font-family:segoe ui;
+    margin: 5px;
+    padding: 5px;
+}
+.usrsimg{
+    max-width:50px;
+    max-height: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;
+    
+    
+}
+#selectedppldiv{
+    
+   
+    text-align:right;
+    margin-left: 275px;
+    max-width: 1200px;
+    height: 300px;
+    border-left: 1px solid silver;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: auto;
+   font-size: 16px;
+   
+    list-style: none;
+}
+#selectppldiv li{
+   
+    color:navy;
+    font-family: segoe ui;
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+#selectpplclsbtn{
+   
+    border-width:0px 0px 0px 0px;
+    
+   
+    cursor: pointer;
+    
+   float: right;
+    font-weight:bold;
+    color:white;
+    background-color: transparent;
+    margin-top: 2px;
+}
+#searchedpplconst{
+    position: absolute;
+    width: 275px;
+    height: 330px;
+    overflow: hidden;
+}
+#remvusrbtn
+{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+    font-size: 10px;
+    color: crimson;
+    font-family: cursive;
+    margin-left: 15px;
+}
+#viewppldiv{
+    margin-top: -20px;
+    height: 50px;
+}
+#viewexppplbtn
+{
+    position: absolute;
+    margin-left: 10px;
+    border-width: 0px 0px 0px 0px;
+    margin-top:0px;
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Aparajita;
+    color:navy;
+    background-color: white;
+    padding-top: 2px;
+}
+#viewexppplbtn:hover{
+    border-width: 1px 1px 1px 1px;
+    border-color: gray;
+    
+}
+#viewselpplbtn
+{
+    width: 160px;
+    height: 30px;
+    border-width: 0px 0px 0px 0px;
+    background-color: white;
+    font-family: Aparajita;
+    font-size: 20px;
+    padding-top: 4px;
+    color: navy;
+    cursor: pointer;
+}
+#viewselpplbtn:hover{
+    border-width: 1px 1px 1px 1px;
+    border-color: gray;
+    
+}#somepplspan
+{ background-color: navy;
+    color: white;
+    font-size: 20px;
+   margin-top: 0px;
+    width: 300px;
+    position: absolute;
+}
+#exppplspan
+{
+     background-color: navy;
+    color: white;
+    font-size: 20px;
+   margin-top: 0px;
+    width: 300px;
+    position: absolute;
+    
+    
+   
+}
+#someppldiv
+{
+      display: none;
+    position: fixed;
+    background-color: white;
+   width: 300px;
+    color: white;
+    max-height: 500px;
+    height:300px;
+    font-size: 20px;
+    margin-top: -290px;
+    margin-left: 340px;
+    
+}
+#exceptppldiv
+{
+      display: none;
+   position: fixed; 
+   background-color: white;
+    width: 300px;
+    height:300px;
+    margin-left:670px;
+    margin-top: -290px;
+    
+    
+   
+}
+#somepplclosbtn
+{
+    background-color: white;
+    color: navy;
+    border-width: 1px 1px 1px 1px;
+    border-color: navy;
+  
+}
+#exppplclosbtn
+{
+  
+      background-color: white;
+    color: navy;
+    border-width: 1px 1px 1px 1px;
+    border-color: navy;
+}
+#wantedppldiv{
+    overflow:auto;
+    color:navy;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-left: 10px;
+    max-height: 230px;
+   max-width: 600px;
+}
+#unwantedppldiv
+{
+   overflow:auto;
+    color:navy;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 10px;
+        max-height: 230px;
+   max-width: 600px;
+
+}
+#show_members li
+{
+       display: inline-block;
+}
+#hide_members li{
+       display: inline-block;
+}

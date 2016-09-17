@@ -1,0 +1,139 @@
+/*
+This document created for SedFed Community
+\
+/
+*/
+/* 
+    Created on : Apr 18, 2015, 4:01:19 PM
+    Author     : Vijayakumar M <vijayakumar for www.sedfed.com>
+*/
+#imgsm{
+    margin-top: 25px;
+    margin-left: 35%;
+   max-width:85px;
+    max-height: 85px;
+}
+body{
+    overflow: scroll;
+}
+#til{
+   // text-align: center;
+    color:crimson;
+    z-index: 100;
+    margin-top: -7px;
+    margin-left:-10px;
+    text-indent: 20px;
+    padding: 5px;
+   font-size: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    opacity: 0.9;
+}
+#til>hr{
+    color: gray;
+}
+#controlPanel{
+    color: darkblue;
+   // text-align: center;
+    position: fixed;
+    top:15%;
+    left: 40%;
+}
+#name1,#name2{
+    border: 1px solid;
+    margin-top: 10px;
+   padding: 10px;
+    width: 300px;
+   // height:30px;
+}
+input[type=button]{
+    //width: 300px;
+    margin-left: 100px;
+    margin-top:20px ; 
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    background-color: darkblue;
+    border: 2px solid;
+    border-color: darkblue;
+    color:white;
+}
+input[type=button]:hover{
+   
+    background-color:white;
+    border-color: blue;
+    color:darkblue;
+}
+#name1{
+    //font-family: "Times New Roman";
+    font-size: 14px;
+    border-color:black;
+    color: darkblue;
+}
+#name2{
+     font-size: 14px;
+    border-color: black;
+    color: crimson;
+}
+#name1:hover{
+     border-color: red;
+}
+#name2:hover{
+     border-color: blue;
+}
+#decor{
+    
+    display: inline-block;
+    position: fixed;
+    background-color: white;
+    opacity: 0.6;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+#result{
+    padding:20px  50px 20px 50px;
+    font-size: 20px;
+    color:crimson;
+    background-color: white;
+}
+#look{
+    color:brown;
+    line-height: 3;
+   
+}
+#main{
+    padding-top: 70px;
+}
+#au{
+    position: fixed;
+    background-color: white;
+    color: gray;
+    padding: 30px;
+    bottom: -10px;
+    right: 0px;
+}
+#rst{
+    background-color: white;
+    border: none;
+    color:grey;
+}
+#rst:hover{
+    color: crimson;
+}
+#title{
+    font-size: 35px;
+}
+input[type=checkbox]{
+  color: crimson;
+}
+#thisisf{
+    position:fixed;
+    top:250px;
+    left: 250px;
+}
+#idimg{
+    position: absolute;
+    z-index: 10;
+}

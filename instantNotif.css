@@ -1,0 +1,76 @@
+/* 
+    Created on : Aug 8, 2015, 8:45:04 PM
+    Author     : Vijayakumar M
+*/
+body{
+    font-family: segoe ui;
+    font-size: 14px;
+}
+.insNotifIcon img{
+    max-height: 35px;
+    padding: 3px 10px;
+}
+.insNotifItmHold{
+    border: 1px solid blue;
+    display: inline-block;
+    position:fixed;
+    top: 25%;
+    left: -4px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    z-index: 1000000;
+   
+}
+.insNotifIcon{
+    float: left;
+}
+.insNotifItmHold div{
+    display: inline-flex;
+}
+.insNotifCont{
+    background-color:blue;
+    padding: 10px 25px;
+    color:white;
+    font-family: cursive;
+}
+.sf-actionCompleteConfirmHold{
+    position: fixed;
+    top: 35%;
+    left: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+}
+.sf_ACCH_Ttl{
+    font-size: 17px;
+    color: navy;
+}
+.sf_ACCH_acknow{
+    margin: 20px 0px 0px;
+    color:grey;
+}
+.TheWhatsUp{
+    width: 44%;
+    left: 25%;
+    margin-left: 0px;
+    
+}
+
+.sf_extraPane{
+    left: 75px;
+}
+.taskbarHold{
+    right: 20%;
+}
+#MyAccLeftPane{
+   top: 0px;
+    bottom: 0px;
+    z-index: 1;
+  padding-top: 120px;
+    background-color: transparent;
+    box-shadow: none;
+    left: 10px !important;
+}
+.MainBarIn{
+    background-color: transparent;
+}

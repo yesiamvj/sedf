@@ -1,0 +1,373 @@
+ <div class="SedFed_SubTitleBarMain">
+              <div class="sf_subTtlMainItm" onclick="$(\'#newPostTypeSelecterPopUp\').toggle(500)" >
+                  New Post
+              </div>
+            
+              <script>
+                 function showMyAccLftWindow(){
+                     if($(\'#MYACCOUNTLEFTPANEEE\').css(\'left\')===\'0px\'){
+                            $(\'#MYACCOUNTLEFTPANEEE\').animate({\'left\':\'101%\'});
+                     }
+                     else{
+                         $(\'#MYACCOUNTLEFTPANEEE\').animate({\'left\':\'0px\'});
+                     }
+                 }
+              </script>
+              <!--<div class="sf_subTtlMainItm">
+                 Flash News
+              </div> -->
+              <!--
+            <div class="sf_subTtlMainItm" onclick="$(\'#sf_ToolBarFir\').slideToggle();" >
+                 Tools
+              </div>
+           -->
+              
+            <div class="sf_subTtlMainItm" onclick="$(\'#PageSpeedUpDiv\').slideToggle()" >
+                  Speed Up
+              </div> 
+              <div class="sf_subTtlMainItm" onclick="$(\'#sfPsuTheme\').slideToggle()" >
+                  Theme
+              </div> 
+              <a target="_blank" href="stuff.php" target="_blank"><div class="sf_subTtlMainItm" >
+                more
+              </div></a>
+             
+          </div>
+          <div class="newPostTypeHold" id="newPostTypeSelecterPopUp" style="display: none;" > 
+              <div class="newPostTypeTtl">
+                  Select Your Post Type <div class="closeNPTS" onclick="$(\'#newPostTypeSelecterPopUp\').toggle(750)" >X</div>
+              </div>
+              <div class="newPostInnerCont">
+                  
+              
+                  <div class="newPostTypeItm" id="NPT_Simple" onclick="$(\'#newSimplePost\').slideDown();$(\'#newPostTypeSelecterPopUp\').hide(750)" >
+                  <div class="NPT_Ttl">
+                       Simple Post
+                  </div>
+                 
+                  <div class="NPTItm_Tip">
+                      Publish a quick text
+                  </div>
+              </div>
+              <div class="newPostTypeItm" id="NPT_Smart" onclick="show_next_step_post()">
+                  <div class="NPT_Ttl" onclick="$(\'#for_create_post\').fadeIn();">
+                       Smart Post
+                  </div>
+	 <input type="hidden" value="1" id="chkalrdclkd" />
+	 <input type="hidden" id="grp_chat_add" value="1" />
+                  <div class="NPTItm_Tip">
+                      Publish a post with Caption & Image , Video .., Etc
+                  </div>
+              </div>
+              <div class="newPostTypeItm" id="NPT_Album" onclick="open_meme()">
+                  <div class="NPT_Ttl"  >
+                     MEME Photo
+                  </div>
+                  <div class="NPTItm_Tip">
+                     Post images with big text titles (e.g My reaction..)
+                  </div>
+              </div>
+              
+              <div class="newPostTypeItm" id="NPT_Advanced" onclick="$(\'#newPostTypeSelecterPopUp\').hide(750);$(\'#newADVStarts\').slideToggle();" >
+                  <div class="NPT_Ttl">
+                       Advanced Post
+                  </div>
+                  <div class="NPTItm_Tip" > 
+                      Are you a programmer -
+                      Post in HTML language
+                  </div>
+              </div>
+                  </div>
+             
+          </div>
+          <div class="newAdvancedPostStartUp" id="newADVStarts" style="display: none;" >
+              <div class="NAPStrt_Ttl">
+                  Advanced Post <div class="closeNAPSU" onclick="$(\'#newADVStarts\').fadeToggle();" >X</div>
+              </div>
+              
+                  <div class="NAPSU_Tip">
+                     < You can use HTML Language tags and attributes except position and class & id tags . 
+                    * Start with div tag ..  ! All tags should be closed >
+                  </div>
+              <div class="NAPSU_Cont">
+                  
+                  <div class="NAPSU_Editor">
+                      <textarea id="NPASU_TextEditor" placeholder="Type your HTML Code here" oninput="$(\'#NAPSU_AdvTextPrevTerm\').html($(\'#NPASU_TextEditor\').val());"  >  </textarea>
+                  </div>
+                  <div class="NAPSU_PreviewPane" id="NAPSU_AdvTextPrev" >
+                      <div id="NAPSU_AdvTextPrevTerm">
+                          Preview Panel
+                      </div>
+                  </div>
+                  
+                  
+              </div>
+              <div style="text-align: center">
+                    <div class="NAPSU_Submit" onclick="show_next_step_post()">
+                  Next Step
+              </div>
+              <div class="NAPSU_Submit" onclick="upload_adv_post()">
+                  Post
+              </div>
+              </div>
+            
+          </div>
+          <div id="next_setp_post"></div>
+          <div class="NPT_QuickPostHolder" id="newSimplePost" style="display: none;" >
+              <div class="NPT_QPTtl">
+                  Simple Post <div class="closeNPTS" onclick="$(\'#newSimplePost\').slideUp()" >X</div>
+              </div>
+              <div class="NPT_QPCont">
+                
+                  <textarea  placeholder="What\'s Up ?" id="simple_post_cap" ></textarea>
+                  <div class="NPT_QPTip">
+                    Note :  To tag a person or specify a person use \'$\' in front of their username ( e.g $user )
+                  </div>
+              </div>
+              <div class="QPSuuB" >
+                   <div class="NPT_PostSubmit" onclick="simple_post()">
+                      Publish
+                  </div>
+              </div>
+              
+          </div>
+          <div class="NPT_QuickPostHolder" id="newAlbumPost" style="display: none;" >
+              <div class="NPT_QPTtl" style="background-color: darkorange">
+                  Photo Album <div class="closeNPTS" onclick="$(\'#newAlbumPost\').slideUp()" >X</div>
+              </div>
+              <div class="NPT_QPCont">
+                
+                  <input type="text" class="NA_albumNameInp" placeholder=" album name " />
+                  <div class="NPT_QPTip">
+                    Note :  The name you type here will be used as folder name in your storage .
+                  </div>
+              </div>
+              <div class="QPSuuB">
+                   <div class="NPT_PostSubmit">
+                     Next step
+                  </div>
+              </div>
+              
+          </div>';
+             $qd="select speed_up as p from person_config where user_id=$user_id";
+                          $rd=  mysqli_query($dbc, $qd);
+                          if($rd)
+                          {
+                              if(mysqli_num_rows($rd)>0)
+                              {
+                                  $rf=mysqli_fetch_array($rd,MYSQLI_ASSOC);
+                                  $qlty=$rf['p'];
+                              }else
+                              {
+                                  $qlty=40;
+                              }
+                          }
+                          $allrels="checked";
+                          $allppls="";
+                            $qs="select post_pers_view as pv from person_config where user_id=$user_id";
+             $rs=  mysqli_query($dbc, $qs);
+             if($rs)
+             {
+                 if(mysqli_num_rows($rs)>0)
+                 {
+                     $row=  mysqli_fetch_array($rs,MYSQLI_ASSOC);
+                     
+                     $post_pers=$row['pv'];
+                     if($post_pers==0)
+                     {
+                         $allppl=0;
+                            $allrel=1;
+                            $allrels="checked";
+                            $allppls="";
+                     }
+                     else
+                     {
+                         $allrels="";
+                         if($post_pers==1)
+                         {
+                             $allppl=1;
+                             $allrel=0;
+                             
+                         }
+                          $allppls="checked";
+                     }
+                     
+                     
+                 }else
+                 {
+                     $allppl=0;
+                     $allrel=1;
+                 }
+             }else
+             {
+                     $allppl=0;
+                     $allrel=1;
+                 
+             }
+             
+             
+         echo '
+          <div id="for_meme"></div>
+          <div class="sf_pageSpeedUpOut" id="PageSpeedUpDiv" style="display: none;" >
+              <div class="sf_pageSpeedUpTtl">
+                  Speed Up Page
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  Image Quality of Posts 
+                  <input type="number" id="spped_up_q" placeholder="Image Quality" value="'.$qlty.'" /> %
+                  <button onclick="speedup_my_images($(\'#spped_up_q\').val())">
+                      Speed Up
+                  </button>
+                  <div class="SF_PSPUP_Tip">
+                      lesser quality speed loading
+                  </div>
+              </div>
+          </div>
+          <div class="sf_pageSpeedUpOut" id="sfPsuTheme" style="display: none;"  > 
+              <div class="sf_pageSpeedUpTtl">
+                  Page Theme
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  What\'s Up Post\'s Style
+                  <button  style="background-color:grey" onclick="normTheme()" >
+                      Normal
+                  </button>
+                  <button style="background-color:blue" onclick="compactTheme()" >
+                      Compact
+                  </button>
+                  
+                  <div class="SF_PSPUP_Tip">
+                      Change how posts look like
+                  </div>
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  Size of posts
+                  <div class="sf_psuinp">
+                      <input id="postSizeDecider" onchange="resizePostUp()"  type="range" min="0"  max="100" />
+                  </div>
+                  <div class="SF_PSPUP_Tip">
+                      set the width of the posts
+                  </div>
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  Posts from
+                  <input type="radio" '.$allppls.' id="all_ppl" onchange="select_post_pers_view()" name="post_pers"  /> Public
+                  <input type="radio" '.$allrels.' onchange="select_post_pers_view()"  name="post_pers" /> Relations
+                  <input type="checkbox" checked /> Official
+              </div>
+          </div>
+          <div class="sedfed_Tools_Bar" id="sf_ToolBarFir"  style="display: none;" >
+            <div class="sedfed_ToolBarItm" onclick="//page_scroll()" >
+                  Auto Scroll
+              </div>
+              <script>
+              function page_scroll()
+              {
+               window.scrollBy(0,50);
+            setInterval(\'page_scroll()\',1000);
+
+              }
+              
+              
+           
+            </script>
+             <!-- <div class="sedfed_ToolBarItm" onclick="$(\'#sf_ToolBarFir\').slideToggle();$(\'#sf_ToolBarSelct\').slideToggle();" >
+                 Select Posts 
+              </div> -->
+              <div class="sf_toolbarrclose" onclick="$(\'#sf_ToolBarFir\').slideToggle();" >X</div>
+          </div>
+          <div class="sedfed_Tools_Bar" id="sf_ToolBarScroll" style="display: none;"  > 
+              
+              <div class="sedfed_ToolBarItm">
+                  Auto Scroll : <span id="sf_tbb_scrollSts">On</span>
+              </div>
+              <div class="sedfed_ToolBarItm">
+                  Scroll speed
+                  <input type="number" />
+              </div>
+              <div class="sf_toolbarrclose" onclick="$(\'#sf_ToolBarScroll\').slideToggle()" >X</div>
+          </div>
+          <div class="sedfed_Tools_Bar" id="sf_ToolBarSelct" style="display: none;"  > 
+              
+              <div class="sedfed_ToolBarItm">
+                 Select All
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 10 posts selected
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 Like
+              </div>
+              <div class="sedfed_ToolBarItm">
+                Hate
+              </div>
+             
+              <div class="sedfed_ToolBarItm">
+                 1 star
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 2 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 3 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 4 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 5 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 Download
+              </div>
+              <div class="sf_toolbarrclose" onclick="$(\'#sf_ToolBarSelct\').slideToggle();" >X</div>
+             
+          </div>
+          <div class="SedFed_leftMouseChecker" onmouseover="showMyAccLeftPane()" >
+              
+          </div>
+          <div class="SedFedMainBar" id="MyAccLeftPane" >
+              <div class="MainBarOut">
+                  <div class="MainBarIn">
+                     
+                      <div class="ToolTipMainBarHold" id="MainBarToolTip" style="display: none;" >
+                          <div class="TtMBArr"></div>
+                          <div class="TtMBCont" id="MainBarTtTxt" >
+                              Click to Update
+                          </div>
+                      </div>
+                    <a target="_blank" href="../'.$_SESSION['user_name'].'" > <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="'.$ppics.'"  onmouseover="meOnMainBar(event,\'Profile\')" onmouseout="meOutMainBar()"/>
+                      </div></a>
+                      <a target="_blank" href="people.php"><div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/people.png"  onmouseover="meOnMainBar(event,\'People\')" onmouseout="meOutMainBar()"/>
+                      </div></a>
+                      <a target="_blank" href="my_messages.php"><div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/messages.png" onmouseover="meOnMainBar(event,\'Messages\')" onmouseout="meOutMainBar()"/>
+                      </div></a>
+                   <!--   <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/bulbs.png" title="Profile"/>
+                      </div> -->
+                  
+                  <a target="_blank" href="posts.php">    <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/whatsup.png"  onclick="$(\'#PostAuditorium\').fadeIn();" onmouseover="meOnMainBar(event,\' What\'s Up \')" onmouseout="meOutMainBar()"/>
+                      </div></a>
+                        <a target="_blank" href="../'.$_SESSION['user_name'].'/storage.php">  
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:27px;" src="icons/mainBar/folder.png"  onmouseover="meOnMainBar(event,\'My Storage\')" onmouseout="meOutMainBar()"/>
+                      </div>
+                    <!--  <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:15px;" src="icons/mainBar/password.png" title="Profile"/>
+                      </div> -->
+                     <a target="_blank" href="settings.php"> <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:27px;" src="icons/mainBar/settings.png" onmouseover="meOnMainBar(event,\'Settings\')" onmouseout="meOutMainBar()"/>
+                      </div> </a>
+                  <!--    <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:30px;" src="icons/mainBar/lock.png" title="Lock"/>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:23px;" src="icons/mainBar/power.png" title="Logout"/>
+                      </div> -->
+                  </div>
+              </div>
+          </div>

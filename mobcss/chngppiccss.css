@@ -1,0 +1,125 @@
+body{
+    margin-top: 43px;
+    margin-left: 0%;
+    margin-right: 0px;
+   //font-family:Arial, Helvetica, sans-serif;
+   font-family:Microsoft YaHei UI;
+   font-size: 14px;
+ color:navy;
+   background-image: url('backs.png');
+    background-size: 7px;
+    background-attachment: fixed;
+  // background-color:  ivory;
+//  background-image: url('backs.png');
+}
+#chngppicclsctn
+{
+    position: absolute;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    left: 103%;
+    top: -40px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
+}
+#menubarofpic
+{
+   padding: 10px; 
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    z-index: 3000;
+}
+.img_cont
+{
+    display: inline;
+    padding: 10px;
+    overflow: auto;
+    max-height: 100px;
+}
+#imgtot_cont
+{  overflow: auto;
+    max-height: 450px;
+}
+.menuitem
+{
+    display: inline;
+    z-index: 300000;
+    background-color: white;
+    padding: 5px;
+    top: 100px;
+    left: 50px;
+    width: 180px;
+    text-align: center;
+   padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.menuitem:hover
+{
+    background-color: whitesmoke;
+    cursor:pointer;
+}
+#currentppicimg
+{
+    position: relative;
+    margin-top: 50px;
+  padding: 50px;
+    max-width: 100px;
+    max-height: 304px;
+}
+#chngbrdr
+{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    border: 1px solid lightslategrey;
+}
+#chngpichold
+{
+    position: fixed;
+    background-color: white;
+    width: 85%;
+    bottom: 30px;
+    left: 101px;
+    border: 10px solid whitesmoke;
+    top: 20px;
+    z-index: 1001;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#chngpicttl
+{
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+#changepicwind
+{
+    position: fixed;
+    background-color: black;
+        opacity: 0.5;
+    width: 100%;
+    height: 110%;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+        
+}
+.img_cont img{
+    max-height: 100px;
+}
+#chngppiccctn
+{
+    float: right;
+    margin-right: 100px;
+    font-size: 15px;
+}

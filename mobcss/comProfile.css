@@ -1,0 +1,46 @@
+/* 
+    Created on : Jun 25, 2015, 10:39:02 AM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    font-family: Segoe UI !important;;
+}
+.profileImgHolder{
+    -moz-animation: 10s profileDets infinite;
+   -moz-animation-delay:10s;
+    animation: 10s profileDets infinite;
+    animation-iteration-count: infinite;
+    background-color: transparent;
+    font-size: 0px;
+    display: none;
+}
+@-moz-keyframes profileDets{
+     0%{transform: rotateY(0deg);}
+    // 50%{transform: rotate(180deg);}
+     100%{transform: rotateY(360deg);}
+}
+@-webkit-keyframes profileDets{
+     0%{transform: rotateY(0deg);}
+     100%{transform: rotateY(360deg);}
+}
+.prof1TtlBar{
+    padding: 7px 50px;
+    position: absolute;
+}
+.SF_ProilfeUserName{
+    color: navy;
+    font-size: 16px;
+    font-family: Segoe UI;
+    padding:3px 15px;
+    border-left: 5px solid crimson;
+}
+#UserChoiseProfilePage{
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+}
+#fullPageContainer{
+    overflow-x: hidden;
+}

@@ -1,0 +1,14 @@
+/* 
+    Created on : Jun 7, 2015, 12:20:47 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+
+.bigTipItm option{
+    padding: 5px 15px;
+    font-family: "Times New Roman";
+}
+.bigTipItm select{
+    padding-left:10px;
+    margin-left: 20px;
+    
+}

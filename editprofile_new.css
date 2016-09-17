@@ -1,0 +1,459 @@
+/* 
+    Created on : Jun 2, 2015, 4:22:42 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+body{
+    font-size: 14px;
+    font-family: Segoe UI !important;
+}
+
+#Mytitle_bar{
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+    color: navy;
+    text-align: center;
+    padding:8px 0px;
+    box-shadow: 0px 5px 5px -7px;
+    font-size: 15px;
+    z-index: 60;
+   top:40px;
+    
+}
+#sf-profileHolder{
+    margin-top: 75px;
+}
+.txtBxx,.txtBxxTtl,.txtBxxOc{
+    font-family: "Times New Roman";
+    border: 1px solid grey;
+    border-width: 0px 0px 1px 0px;
+    color: navy;
+    font-size:unset;
+    padding: 5px;
+}
+.txtBxx:focus,.txtBxxTttl:focus,.txtBxxOc:focus{
+    border-color: navy;
+    color:green;
+   
+}
+.txtBxx{
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+.firDetCont .txtBxx{
+    width:200px;
+}
+#currentInfo .txtBxx{
+    width: 275px;
+}
+.txtBxx:first-letter{
+    text-transform: uppercase;
+}
+.myEduAns .txtBxx{
+    padding: 5px;
+    width:350px;
+}
+.myEduSubTtl .txtBxx{
+    width: 200px;
+}
+#aboutMe .txtBxx{
+    width: 350px;
+    text-align: right;
+}
+.theaterTexts{
+    position: fixed;
+    left: 0px;
+  
+    background-color:whitesmoke;
+    top: 30%;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    color: navy;
+    
+}
+.thtrTxtIn{
+    background-color:white;
+    padding: 15px 25px;
+}
+.thtrTtl{
+    font-size: 20px;
+    color: darkcyan;
+}
+.thtrTxtInp{
+    margin: 15px;
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 16px;
+    font-family: "Times New Roman";
+    color: navy;
+}
+.thtrPrcd{
+    background-color:darkcyan;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding:7px 30px;
+    width: 275px;
+    font-size: 15px;
+    color: white;
+}
+.thtrPrcd:hover{
+    cursor: pointer;
+  
+}
+.thtrprevCont{
+    display: inline-block;
+    margin: 10px;
+    font-size: 15px;
+}
+.thtrSlctItm{
+    display: inline-block;
+    padding: 15px;
+}
+.thtrSlctItm select{
+    margin-left: 15px;
+   // padding: 5px;
+}
+.thtrSlctItm option{
+    padding: 5px 15px;
+}
+.thtrRelSlct{
+    margin:0px 15px;
+}
+.thtrRelSlct option{
+    
+    padding: 7px 20px;
+    font-family: "Times New Roman";
+   
+}
+.thtrRelSlct select{
+    padding: 2px 20px;
+    font-size: 14px;
+}
+.thtrRelwith{
+    display: inline-block;
+    margin-left: -10px;
+}
+.thtrRelwith .thtrTxtInp{
+    width: 400px;
+}
+.thtrprevRelCont{
+     margin: 0px 15px 15px 20px;
+}
+.thtrTxtClose{
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 7px;
+    color: crimson;
+}
+.thtrTxtClose:hover{
+    background-color:white;
+}
+.firDetCont input[type="checkbox"]{
+  // margin-top: 15px;
+}
+#myFirstDetails{
+    height: auto;
+}
+
+#currentInfo{
+    margin-top: 300px;
+}
+#firDetContainer{
+    padding-bottom: 20px;
+}
+#stsImg{
+    max-width: 250px;
+}
+.StatusImg{
+    //position: absolute;
+  float: right;
+}
+.StatusImg #stsImg{
+    max-height: 70px;
+    max-width: 70px;
+}
+#ThStatus .thtrTxtIn{
+    height:320px;
+}
+.ThstatusImg{
+    margin: 10px;
+    width: 175px;
+    height: 175px;
+    background-color:rgba(230,230,230,0.5);
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+   // float: left;
+    
+}
+.ThstatusImg div{
+   padding-top: 40%;
+}
+.thtrStsInps{
+    display: inline-block;
+}
+.thtrStsInps input{
+    width: 800px;
+}
+#th_addStsFile{
+    background-color: rgba(100,0,0,0.5);
+    text-align: center;
+    padding: 10px 35px;
+   margin:0px 15px;
+}
+#th_addStsFile:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+#th_stsclr{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: -10px;
+    float: right;
+    padding:7px 15px 4px 15px;
+    background-color:white;
+    cursor: pointer;
+}
+#th_stsclr img{
+    max-height: 25px;
+}
+.updateTts{
+    background-color: whitesmoke;
+    padding: 7px;
+    text-align: center;
+    box-shadow: 0px 0px 1px -1px;
+    color: black;
+}
+.updateTts:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+#hYT-Tt-Contact .txtBxx{
+    width: 250px;
+}
+#myEducation .myEduSubTtl .txtBxx{
+    width: 50px;
+    color: blue;
+}
+.txtBxxTtl{
+    width: 240px;
+    color:maroon;
+}
+.updateHolder{
+    background-color: whitesmoke;
+    padding: 7px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 0px 1px grey;
+    width: 300px;
+    margin-left: 225px;
+}
+.updateHolder:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+.addNewEdu{
+    float: right;
+    font-size: 14px;
+    background-color: whitesmoke;
+    padding: 2px 15px;
+}
+.addNewEdu:hover{
+    background-color:grey;
+    color: white;
+    cursor: pointer;
+}
+#myFamilyHolder .txtBxx{
+    width: 50px;
+}
+#myFamilyHolder .txtBxxOc{
+    width: 170px;
+
+}
+#myLocationHolder .txtBxx{
+    width: 75px;
+    color: blue;
+}
+#aboutMyFavs .txtBxx,#aboutMyAnnoys .txtBxx{
+    width: 225px;
+}
+#aboutEverything .txtBxx{
+    width: 450px;
+}
+#myGadgHolder .txtBxx{
+    width: 175px;
+}
+#FinishAllEdit{
+    margin: 10px 0px;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    border:none;
+}
+#FinishAllEdit:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+    box-shadow: 0px 0px 5px grey;
+}
+#OverallPictureChange{
+   padding: 15px 0px;
+   background-color: white;
+    display: inline-flex;
+    justify-content:  space-around;
+    width: 100%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px -5px grey;
+}
+.OPC_ItmBtn:not(:last-child){
+    //border-right: 1px solid silver;
+}
+.OPC_ItmBtn{
+    padding:0px 15px;
+}
+.OPC_ItmBtn:hover{
+   cursor: pointer;
+    color: blue;
+}
+.EnoughSkipBtn{
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    left:0px;
+    right: 0px;
+    text-align: right;
+    padding:7px 55px;
+    color: blue;
+    box-shadow: 0px 0px 5px grey;
+ }
+.EnoughSkipBtn:hover{
+    color: green;
+    cursor: pointer;
+}
+
+
+
+
+body{
+   // background-color:rgb(245,245,256);
+  
+}
+#title_bar{
+    
+    padding: 7px 50px;
+}
+#EP_Ttl_Bar{
+    position: absolute;
+    top: 0px;
+    background-color: whitesmoke;
+    color: navy;
+    padding: 10px;
+    z-index: 1000;
+   left: 0px;
+    right: 0px;
+    text-indent: 10%;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px -1px grey;
+}
+#Mytitle_bar{
+   position: absolute; 
+}
+#myFirstAppear{
+    background-color: transparent;
+    position: static;
+    box-shadow: none;
+}
+#firDetContainer{
+    display:block;
+    width: 100%;
+  
+}
+#firDetInner{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#myFirstDetails{
+    width: 100%;
+    padding: 0px;
+}
+.firDetContEx{
+    float: none;
+    margin-left: 25px;
+}
+.QT{
+    color:grey;
+    font-size: 14px;
+    margin-right: 25px;
+}
+#firDetInner .txtBxx{
+    width: 75% !important;
+}
+#firDetInner .firDetCont{
+    margin-top: 15px;
+}
+#firDetInner select,#firDetInner option{
+    padding: 3px 15px;
+    font-family: Segoe UI;
+}
+#myFirstAppear{
+    padding:25px 75px;
+}
+.firProudOf{
+    
+}
+.FPO_Ttl{
+    color: grey;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.FPO_Itm{
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.FPO_Tip{
+    color: grey;
+    display: inline;
+    margin-right: 20px;
+}
+#currentInfo{
+    margin-top: 30px;
+}
+.wallPaperOuter{
+    height: 300px;
+  //   background-size: 100%;
+    margin:0px 15px;
+    background-attachment: fixed;
+   
+}
+.profPicOuter{
+    position: absolute;
+    top: 140px;
+    left: 25%;
+    
+}
+.profPicOuter img{
+    max-height: 150px !important;;
+    max-width: 150px !important;;
+    border-radius:100px;
+    box-shadow: 0px 0px 5px black;
+}
+.sf_NameOnWall{
+    position: absolute;
+    left: 40%;
+    top: 200px;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    font-size: 25px;
+}
+#heyYouThere{
+    top: 25%;
+}

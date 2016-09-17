@@ -1,0 +1,273 @@
+/* 
+    Created on : May 31, 2015, 11:58:13 AM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+
+#notificationsArea{
+    display: none;
+    position: fixed;
+    text-align: center;
+    top:40px;
+    border: 1px outset #ef0000;
+    width:100%;
+    background-color: white;
+    padding: 10px;
+   // -moz-animation:  timegoing 0.5s;
+    z-index: 1000;
+   // -webkit-animation: timegoing 0.5s;
+    
+}
+#prof_sidebar{
+    margin-left: 0px;
+    height:30px;
+    position: fixed;
+    left: 0px;
+    background-color:crimson;
+   
+}
+#tst{
+    
+}
+#howThisPerson,#howThisPersonStuffs{
+    
+   // height: 40px;
+    background-color:white;
+    box-shadow: 0px 0px 4px grey;
+    z-index: 10;
+   position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top:80px;
+    text-align: center;
+}
+#howThisPersonStuffs .hTP-holders{
+   
+}
+.hTP-holders {
+   display: inline-block;
+    padding: 10px 25px;
+    //margin-left:80px;
+    background-color: white;
+    color:black;
+    font-size: 14px;
+    
+}
+.hTP-holders:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.hTP-holders img{
+    height: 20px;
+}
+#currrentPlace{
+    background-color:whitesmoke;
+    color:navy;
+}
+.giftCreateOut{
+       margin: 0px 2%;
+    background-color: white;
+    
+    padding: 25px 5px;
+    padding-top: 170px;
+    box-shadow: 0px 0px 5px grey;
+}
+.giftTtl{
+    padding: 5px 15px;
+    color: crimson;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.giftsContOut{
+    margin: 10px 0px;
+    min-height: 500px;
+}
+.giftItem{
+    line-height: 1.75;
+    //float: left;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+   border: 1px solid silver;
+    margin-left: 15px;
+}
+.giftItem:hover{
+    cursor: pointer;
+    border: 1px solid grey;
+}
+.giftSender{
+    color: crimson;
+    margin-bottom: 7px;
+}
+.giftSender div{
+    display: inline-block;
+}
+.giftdTime{
+    float: right;
+    font-size: small;
+    color: gray;
+}
+.giftCheck{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -20px;
+    opacity: 0;
+}
+.giftCheck:hover{
+    opacity: 0.75;
+}
+
+.giftItem:hover input{
+    opacity: 0.5;
+}
+.giftItem input:checked{
+    opacity: 1;
+}
+.giftControls{
+    float: right;
+}
+.giftControls div{
+    display: inline-block;
+    color: green;
+    font-size: 15px;
+    margin-left: 25px;
+}
+.giftControlItm:hover{
+    cursor: pointer;
+}
+.win-newWish-out{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 100;
+    
+}
+.win_newWish_in{
+   margin: auto;
+    background-color: white;
+    width:600px;
+    margin-top: 200px;
+}
+.win_nW_Ttl{
+    background-color: crimson;
+    color: white;
+    padding:5px 25px;
+    font-size: 16px;
+}
+.win_nW_Ttl .closeNwWin{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.winSubmit{
+   
+    bottom: 0px;
+    padding:7px 25px;
+    
+    text-align: right;
+    font-size: 15px;
+}
+.winSubmit:hover{
+     background-color: navy;
+    color: white;
+    cursor: pointer;
+}
+#newWishInp{
+   padding:7px 25px;
+    color: navy;
+    font-size:15px;
+   font-family: Segoe UI;
+    width: 85%;
+    margin: 10px 20px;
+    height: 100px;
+    line-height: 1.75;
+    border: 1px solid silver;
+}
+.wishTxtCont{
+    background-color: whitesmoke;
+}
+.gifterFace{
+    max-height: 60px;
+    border-radius: 100px;
+   // float: left;
+    margin-right: 25px;
+}
+#newWishBtn{
+    background-color: darkcyan;
+    color: white;
+    padding:7px 25px;
+    border-radius: 15px 0px;
+}
+.newWisjSheduleHold{
+    margin-top: 5px;
+    color: grey;
+    padding:10px 25px;
+}
+.newWisjSheduleHold input{
+    width: 50px;
+    padding: 5px 10px;
+    color:black;
+    margin-left: 5px;
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+.wishResponds{
+    display: none;
+    text-align:center;
+    line-height: 1.25;
+    margin-top: 10px;
+}
+.wishResponds div{
+    padding:7px 25px;
+    display: inline-block;
+    color: white;
+  
+}
+.giftItem:hover .wishResponds{
+    display: block;
+}
+.WRSP_Itm_TY{
+   background-color:darkblue;
+}
+.WRSP_Itm_TY:hover{
+    background-color: rgb(0,0,100);
+    cursor: pointer;
+}
+.WRSP_Itm_Del{
+    background-color: crimson;
+}
+.WRSP_Itm_Del:hover{
+    background-color: rgb(200,0,0);
+    cursor: pointer;
+}
+.giftCont{
+   padding: 10px 0px;
+}
+.img_wishOwnerUser{
+    max-height: 70px;
+    border-radius: 70px;
+    float: left;
+    margin-top: -20px;
+    margin-right: 25px;
+}
+.giftTtl{
+   position: absolute;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    margin: 0px 10.5%;
+    box-shadow: 0px 5px 5px -5px grey;
+    top: 0px;
+    padding-right:0px 50px;
+    padding-top: 145px;
+}
+.sf_UserName{
+    display: inline-block;
+    color: darkcyan;
+    font-size: 20px;
+    margin-left: 10px;
+}

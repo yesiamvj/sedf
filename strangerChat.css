@@ -1,0 +1,138 @@
+/* 
+    Created on : Aug 12, 2015, 12:56:50 AM
+    Author     : Vijayakumar M
+*/
+body{
+    margin: 0px;
+    font-size: 14px;
+    font-family: segoe ui;
+    color: navy;
+}
+.sf_TtlBar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: darkcyan;
+    color: white;
+    padding: 7px;
+    text-indent: 15%;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 5px grey;
+    z-index:100;
+}
+.sf_subTtlBar{
+    position: fixed;
+    padding: 10px;
+    padding-top: 50px;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    color:gray;
+    right: 0px;
+    box-shadow: 0px 0px 5px grey;
+    font-size: 14px;
+    text-align: center;
+    //font-weight: bold;
+    z-index: 10;
+}
+.pageInnerCont{
+     margin: 0px 10%;
+    margin-top: 150px;
+     padding: 25px;
+    padding-top: 50px;
+   box-shadow: 0px 0px 10px -2px grey;
+    min-height: 500px;
+    font-family: cursive;
+}
+.allowMeTo{
+    color: blue;
+    margin: 15px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 7px 0px 10px;
+}
+.allowMeTo input{
+    margin-left:15px;
+}
+.availStrangerTtl{
+    color: orange;
+    font-size:15px;
+    background-color:green;
+    color: white;
+    padding: 6px 25px;
+}
+.availStrangerTab{
+    border: 1px dotted silver;
+    margin: 20px;
+    border-top: 0px;
+}
+.availStrangerTab .AVSC_Inner{
+    padding: 0px 20px 25px 20px;
+    text-align: center;
+}
+.AVSC_Tip{
+    color: silver;
+    margin: 20px;
+}
+.AVSC_Itm_male,.AVSC_Itm_female{
+    display: inline-block;
+    padding: 7px 25px;
+}
+.AVSC_Itm_male{
+   // background-color: navy;
+    color: white;
+}
+.AVSC_Itm_female{
+    color: white;
+   // background-color:darkmagenta;
+}
+.whatIsIt{
+    text-align: right;
+    margin-right: 20px;
+    color: orange;
+    cursor: pointer;
+}
+.rulesConds{
+    background-color: whitesmoke;
+    padding: 15px;
+}
+.ico_avc_itm{
+    max-height: 50px;
+    border: 1px solid silver;
+    border-radius: 100px;
+    padding: 10px;
+}
+.AVSC_Itm_male:hover img{
+    cursor: pointer;
+   border: 1px dotted green;
+    box-shadow: 0px 0px 5px green;
+}
+.AVSC_Itm_female:hover img{
+    cursor: pointer;
+   border: 1px dotted pink;
+    box-shadow: 0px 0px 5px hotpink;
+}
+
+.superTitle{
+    position: absolute;
+    top: 0px;
+    padding-top: 100px;
+    background-color: whitesmoke;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 5px grey ;
+    text-align: center;
+    color: grey;
+    padding-bottom: 15px;
+    
+}
+.superBT_Itm{
+    display: inline-block;
+    font-size: 25px;
+    color:darkorange;
+    padding-bottom: 15px;
+    margin: 0px 25px;
+}

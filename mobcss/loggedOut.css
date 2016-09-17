@@ -1,0 +1,116 @@
+/* 
+    Created on : Jun 25, 2015, 8:07:46 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.SedFedTitleBar{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+#SF_OpeningLogo{
+    position: fixed;
+    top: 0px;
+    top: 35%;
+    left:47%;
+    font-size: 25px;
+    border-left: 6px solid crimson;
+    padding-left: 17px;
+    opacity: 0.75;
+}
+.TitleBarOut{
+    background-color:whitesmoke;
+    padding:2px;
+    box-shadow: 0px 0px 2px grey;
+    -moz-animation: TitleBackClr 6s infinite;
+    animation-iteration-count: infinite;
+    height: 37px;
+}
+.TtlBarIn{
+    
+}
+.TtlBarIn div{
+    display: inline-block;
+}
+.TtlBarTtl{
+    margin-left:75px;
+    border-left: 5px solid navy;
+    padding-left:15px;
+    float: left;
+    margin-top:7px;
+}
+.TopProfPic{
+    max-height: 25px;
+    margin-top: -2px;
+    float: left;
+    margin-right: 15px;
+}
+.SedFedUserName{
+    color:crimson;
+    font-size: 20px;
+    cursor: pointer;
+}
+.SFTB_srchInp{
+    padding:5px 15px;
+    font-family: "Segoe UI";
+    width: 375px;
+  //  border:1px solid darkgray;
+    color:navy;
+    border: none;
+}
+.SFTB_srchIn{
+    margin:5px 50px;
+    //padding:2px;
+    background-color: white;
+   // border-radius:4px;
+}
+
+.ico_TtlBarSrch{
+    height: 20px;
+    margin-top: 3px;
+    float: right;
+    padding: 0px 10px;
+    border-left: 1px solid darkgrey;
+}
+.ico_TtlBarSrch:hover{
+    cursor: pointer;
+}
+.SedFedLogo{
+    position: fixed;
+    left: 20px;
+    top:7px;
+}
+#sedfedLogoTop{
+    width: 0px;
+    height: 0px;
+    border-top:10px solid navy;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+#sedfedLogoProgress{
+    width: 0px;
+     width: 0px;
+    height: 0px;
+    border-top: 20px solid navy;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    margin-left: -5px;
+    margin-top: -1px;
+    -moz-animation: sedfedlogo 3s infinite;
+    -webkit-animation: sedfedlogo 3s infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+    // 50%{transform: rotate(180deg);}
+     100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes sedfedlogo{
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+}
+@-moz-keyframes TitleBackClr{
+    0%{background-color: whitesmoke;}
+    50%{background-color: transparent;}
+     100%{background-color:whitesmoke;}
+}

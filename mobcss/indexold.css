@@ -1,0 +1,450 @@
+/* 
+    Created on : Mar 9, 2015, 9:43:50 PM
+    Author     : Vijayakumar M <vijayakumar for www.sedfed.com>
+*/
+body{
+    margin-top: 0px;
+    margin-left: 0%;
+    margin-top: 0px;
+    font-family:"Segoe UI";
+  
+}
+#title_bar{
+   top: 0px;
+    position: fixed;
+    background-color:whitesmoke;
+    padding:8px;
+   left: 0px;
+    right: 0px;
+    z-index: 100;
+    font-family: Segoe UI;
+    box-shadow: 0px 0px 5px gray;
+}
+#sedfed{
+    border: solid;
+    border-width:0px 0px 0px 4px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    font-size: 20px !important;
+    color: navy;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    margin-left: 50px;
+}
+#sed,#fed{
+    color: crimson;
+    font-size: 17px;
+}
+
+#ed{
+    color: navy;
+    font-size: 17px;
+}
+#wlcmemsg{
+    margin-left: 30px;
+    padding:7px;
+    border: solid;
+    border-width: 0px 5px 0px 5px;
+    border-color: #ef0000 navy #ef0000 #ef0000;
+    color: grey;
+}
+
+
+
+#logins{
+    position: absolute;
+    
+    
+   
+    top:0px;
+    padding-top:20px;
+    
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 5px grey;
+    overflow: hidden;
+    width: 100%;
+    
+   
+    
+}
+#lgin{
+    margin-top: 30px;
+    width: 100%;
+    background-color:navy;
+    box-shadow: 0px 5px 5px -5px grey;
+    //padding: 6px 45px 6px 50px;
+    padding:6px 0px;
+    border: solid;
+    border-width: 0px 5px 0px 0px;
+    color:white;
+    font-size: 13px !important;
+    font-family: cursive;
+    border: none;
+    
+   
+}
+
+#inps{
+    margin-top: 10%;
+}
+#regs{
+      top: 75px;
+      position: fixed;
+    left: 0px;
+      padding: 2px 15px 3px 0px;
+   background-color: whitesmoke;
+    border: solid ;
+    border-color:whitesmoke;
+    border-width: 2px 2px 2px 0px;
+    color: navy;
+    cursor: pointer;
+     font-size: 13px !important;
+      font-family: Cursive;
+    box-shadow: 0px 0px 5px -2px grey;
+    text-indent: 25px;
+    font-family: Segoe UI;
+}
+#regs:hover{
+    border-left-color:black;
+    color:black;
+}
+.rbtnArr{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid royalblue;
+    left: 0px;
+}
+.regSlogn{
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    margin-left: 50px;
+    font-family: Cursive;
+    color:grey;
+    text-indent: 35px;
+}
+.regSlogn .rbtnArr{
+    border-left: none;
+    border-right: 12px solid darkgreen;
+    border-top:9px solid transparent;
+   border-bottom: 9px solid transparent;
+    margin-top: 2px;
+}
+#usrnme,#pswd,#frgtemail{
+    margin-top: 20px;
+    background-color: white;
+    width:100%;
+    padding:8px 20px;
+    color:navy;
+    border: none;
+    font-size: 13px !important;
+   border:1px solid white;
+    font-family: "Segoe UI",cursive;
+    
+}
+
+span#txtHint
+{
+    color:white;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#usrnme:hover,#pswd:hover,#frgtemail:hover{
+    //color:grey !important;;
+  
+    
+ 
+    
+}
+#usrnme:focus,#pswd:focus,#frgtemail:hover{
+    color: black !important;;
+   
+ 
+   
+  
+}
+#cption{
+   margin-left: 10px;
+    color:grey;
+   // font-size: 13px !important;;
+}
+#cption2{
+   
+    margin-left: 25px;
+    color:silver;
+    font-size: 14px;
+    font-family: cursive;
+    position: absolute;
+}
+
+#lbtn{
+    margin-top: 50px;
+    border: solid darkgreen;
+   padding: 4.5px 0px;
+    color:white;
+    width:95%;
+   
+    background-color:darkgreen;
+    cursor: pointer;
+    border-radius:5px;
+   
+    
+}
+
+#lbtn:hover{
+    background-color:forestgreen;
+    border-color: forestgreen;
+    cursor: pointer;
+    
+}
+#frgtbtn
+{
+     margin-top: 30px;
+      width: 100%;
+   padding: 7px 0px;
+    color: navy;
+    background-color:royalblue;
+    cursor: pointer;
+    border: none;
+    color: white;
+    
+}
+#frgtbtn:hover{
+    background-color: blue;
+}
+#lgn{
+    text-align: center;
+}
+#footr{
+  position: absolute;
+    bottom: -50px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+#about_us,a[href="aboutus.html"]{
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    padding:10px 10px 10px 10px;
+    color: grey;
+}
+#fotr{
+    margin-left: 35%;
+    color: grey;
+}
+#fot{
+    margin-left: 30%;
+    color: grey;
+}
+#vrs{
+    border: solid gray;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+#forgotbtn
+{
+  
+    border: none;
+    color:crimson;
+    font-family:Cursive;
+    background-color: transparent;
+     margin-top: 10px;
+    width: 90%;
+    text-align: right;
+}
+
+#forgotbtn:hover
+{
+    color: red;
+    cursor: pointer;
+}
+p#fgthint
+{
+    color:red;
+    margin:10px 0px 0px 15px;
+}
+
+#loginType{
+    padding:3px 10px;
+    
+}
+#loginType option{
+    padding:2px 5px;
+}
+.LoginItm{
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.BigSearchBarOut{
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+    padding: 3px;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 4px grey;
+}
+
+.BigSearchBarIn input{
+    padding: 10px 50px;
+    width:100%;
+    border: none;
+    font-size: 14px;
+    font-family: Segoe UI;
+}
+.BigSearchBarIn div{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 5px 20px;
+    margin-top: 7px;
+    display: inline-block;
+    border-left: 1px solid silver;
+    cursor: pointer;
+}
+.BigSearchBarIn img{
+    margin-top: 0px;
+    border: none;
+}
+.BigSearchBarIn img{
+    margin-top: 0px;
+    border: none;
+}
+.SF_BSrchItmFace img{
+    max-height: 50px;
+}
+.SF_BSrchItm{
+    background-color: white;
+    padding:5px;
+    padding-left: 10px;
+    margin-bottom:5px;
+     border: 1px solid white;
+}
+.SF_BSrchItm:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.SF_BSrchItmFace{
+   float: left;
+    margin-right: 20px;
+}
+.SF_BSrchItmDets{
+    font-size: 13px;
+    color:silver;
+    padding-bottom:5px;
+}
+.SF_BSUserName .SFBS_SedfedDets{
+    float: right;
+    margin-right: 20px;
+    color: navy;
+    font-size: 13px;
+}
+.SF_BSUserName{
+    color: crimson;
+    font-size:15px;
+    font-family:Segoe UI;
+    margin-bottom: 10px;
+}
+.divider{
+    margin-left: 15px;
+    border-left: 1px solid;
+    padding:0px 15px;
+}
+.SF_BigSrchResultOut{
+    position:fixed;
+    top: 0px;
+    left: 50px;
+    padding-top: 50px;
+    padding: 50px 5px 10px 5px;
+    background-color: whitesmoke;
+    width: 50%;
+    bottom:40%;
+   overflow-y:auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    box-shadow:0px 0px 5px grey;
+}
+.BigSearchBarIn img{
+    margin-top: 0px;
+    border: none;
+}
+.SF_BSrchItmFace img{
+    max-height: 50px;
+}
+.SF_BSrchItm{
+    background-color: white;
+    padding:5px;
+    padding-left: 10px;
+    margin-bottom:5px;
+     border: 1px solid white;
+}
+.SF_BSrchItm:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.SF_BSrchItmFace{
+   float: left;
+    margin-right: 20px;
+}
+.SF_BSrchItmDets{
+    font-size: 13px;
+    color:silver;
+    padding-bottom:5px;
+}
+.SF_BSUserName .SFBS_SedfedDets{
+    float: right;
+    margin-right: 20px;
+    color: navy;
+    font-size: 12px;
+}
+.SF_BSUserName{
+    color: crimson;
+    font-size:15px;
+    font-family:Segoe UI;
+    margin-bottom: 10px;
+}
+.divider{
+    margin-left: 15px;
+    border-left: 1px solid;
+    padding:0px 15px;
+}
+.SF_BigSrchResultOut{
+    position:fixed;
+    top: 0px;
+    left: 50px;
+    padding-top: 50px;
+    padding: 50px 5px 10px 5px;
+    background-color: whitesmoke;
+    width: 50%;
+    bottom:40%;
+   overflow-y:auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    box-shadow:0px 0px 5px grey;
+}
+#logins{
+    z-index: 15;
+    margin-top:25px;
+}
+#logins input[type="text"],#logins input[type="password"]{
+   // border: 1px solid silver;
+   
+  
+}
+.SedFed_Home_UnderGround{
+    z-index: 10;
+}

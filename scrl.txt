@@ -1,0 +1,266 @@
+var ctyu=0;
+var click=0;
+var myppl;
+var mynewhtml;
+var myprehtml;
+var mycnt;
+var totcnt;
+var chkcuuserid;
+var tockuid;
+var ex=0;
+     function clicktoaddppl(userid,username)
+     { 
+         click=click+1;
+         totcnt=$("#chkalrdclkd").val();
+        
+         var addornot=0;
+         for(mycnt=1;mycnt<=totcnt;mycnt++)
+         {
+            chkcuuserid="#hiddeuserid"+mycnt;
+            tockuid=$(chkcuuserid).val();
+            if(tockuid==userid)
+            {
+                addornot=1;
+                
+            }
+         }
+         if(addornot!==1)
+         {
+             
+         myprehtml=$("#selectedppldiv").html();
+                   myppl="<li> "+username+" "+" "+"<input type=\"hidden\" value=\""+userid+"\""+" id=\"hiddeuserid"+click+"\" /> </li>";
+                   
+                  mynewhtml=myprehtml+ myppl;
+                  $("#selectedppldiv").html(mynewhtml);
+                
+         }else{
+            alert("its already added"); 
+         }
+        if(click>totcnt)
+        {
+          $("#chkalrdclkd").val(click);
+       
+        }
+               
+     }
+      
+       function srchpople(srch)
+          {
+          n=0;
+  
+ ex=0;
+     $("#searchedppl").animate({'margin-top':""+0+"px"},'slow');
+          
+    var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                document.getElementById("searchedppl").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "srchpeople.php?q=" + srch, true);
+        xmlhttp.send();
+    }
+   var n=0;
+ 
+
+
+  var margin=0;
+/*function overflow()
+{
+    var g=0;
+    var srchhint=$("#searchid").val();
+    var finallistcnt=$("#fincnt").val();
+   if(finallistcnt>8 || finallistcnt===8)
+   {
+      
+       $("#8").val("See more "+(finallistcnt-7)+" results ");
+       
+      $("#8").css({"background-color":"whitesmoke","color":"red"});
+    }
+    for(g=9;g<=finallistcnt;g++)
+    {
+        var hidebtnid="#"+g;
+        $(hidebtnid).hide();
+        
+    }
+}*/
+          
+         
+            //for select search result
+              var preuserid;
+               var ap=0;
+               var cntt=0;
+               var asd=0;
+               var down=0;
+               var dfg=0;
+               
+              $(document).ready(function(){
+    $("#searchid").keydown(function(event){
+        var x = event.which || event.keyCode;
+   var finallistcnt=$("#fincnt").val();
+       
+        var sft;
+      if(n===0)
+      {
+          var temps=$("#searchid").val();
+         $("#srchval").val(temps);
+      }
+      var sdsb=$("#srchval").val();
+    if(x===40)  //for down key
+        {
+             asd=asd+1;
+             ex=ex+1;
+          
+         if(n>finallistcnt || n==finallistcnt)
+        {
+            n=1;
+            var pcssn=finallistcnt;
+        }
+        else{
+             
+             n=n+1;
+             var pcssn=n-1;
+        }
+        var hilituser="#"+n;
+        var hilitbtn="."+n;
+        var dltprecssu="#"+pcssn;
+        var dltprebtn="."+pcssn;
+           $(hilituser).css({"background-color":"#ef0000","color":"white"});
+      if(ex==finallistcnt)
+      {
+          margin=0;
+           ex=0;
+           $("#searchedppl").animate({'margin-top':""+margin+""},'slow');
+          
+      }else{
+           if(asd>8)
+           {
+              if(asd===finallistcnt || ex<8)
+              {
+                  margin=0;
+                  asd=1;
+                 
+              }else{
+                  asd=1;
+                   margin=margin-282;
+              }
+           
+              $("#searchedppl").animate({'margin-top':""+margin+""},'slow');
+          
+           }
+       }
+           var usename=$(hilituser).val();
+            $(hilitbtn).css({"color":"white"});
+        $(dltprecssu).css({"background-color":"white","color":"navy"});
+       $(dltprebtn).css({"color":"navy"});
+        }
+        else{
+           
+            var cnt=0;
+            if(x===13)//for enter key
+            {
+                ap=ap+1;
+                   var mycnt=$("#chkalrdclkd").val();
+                   if(ap>mycnt)
+                   {
+                       mycnt=ap;
+                       $("#chkalrdclkd").val(mycnt);
+                   }
+                n=n;
+                var hituserid="."+n;
+                
+                if(n==8)
+                {
+                    var srchusrnm=$("#searchid").val();
+                }
+                else
+                {
+                    var srchusrnm=$(hituserid).val();
+                }
+               
+               var userscls="."+n;
+               var usersid="#usersid"+n;
+               usersid=$(usersid).val();
+                
+               var usersname=$(userscls).val();
+               $("#searchid").val(srchusrnm);
+               var prehtml=$("#selectedppldiv").html();
+               var newhtml;
+               var checks;
+               var useridadd;
+               var ctyu=0;
+              for(cntt=1;cntt<=mycnt;cntt++)
+              {
+                  useridadd="#hiddeuserid"+cntt;
+                  checks= $(useridadd).val();
+                  if(checks==usersid)
+                  {
+                      ctyu=1;
+                  }else{
+                      
+                  }
+                }
+                if(ctyu==1)
+                {
+                    alert("its already added");
+                }else{
+               if(usersid!==preuserid || ap===1 )
+               {
+               for(cnt=1;cnt<=ap;cnt++)
+               {
+                   var ppl="<li> "+usersname+" "+" "+"<input type=\"hidden\" value=\""+usersid+"\""+" id=\"hiddeuserid"+ap+"\" /> </li>";
+                   
+                  newhtml=prehtml+ ppl;
+                  $("#selectedppldiv").html(newhtml);
+               }
+               }else{alert("already added");}}
+                 preuserid=usersid;
+                 alert("this is preusersid "+preusersid);
+              
+            }
+            if(x==38) // for (^) key
+            {
+                down=down+1;
+               
+                var dltprecss="#"+n;
+                var dltprecssbn="."+n;
+                n=n-1;
+                if(n<0)
+                {
+                          n=finallistcnt;
+                     
+                }
+                else{
+                    n=n;
+                     margin=margin+40;
+              $("#searchedppl").animate({'margin-top':""+margin+"px"},'slow');
+         
+                }
+               
+                var frwrdcssn=n;
+        var hilituser="#"+frwrdcssn;
+        var hilitbtnrev="."+frwrdcssn;
+      $(hilituser).css({"background-color":"#ef0000","color":"white"});
+       $(hilitbtnrev).css({"color":"white"});
+       var usename=$(hilituser).val();
+         
+      if(n>finallistcnt)
+                     {
+                        
+                         $("#searchid").val(sdsb);
+                         
+                     }
+                     else{
+                        
+                           $("#searchid").val(usename);
+                     }        
+      $(dltprecss).css({"background-color":"white","color":"navy"});
+      $(dltprecssbn).css({"color":"navy"});
+            }
+        }
+     
+    });
+});
+
+              
+      

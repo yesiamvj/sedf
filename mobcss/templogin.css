@@ -1,0 +1,109 @@
+#title_bar
+{
+    background-color: red;
+    width: 130%;
+    margin-left: -10px;
+    margin-top: -10px;
+    height: 70px;
+    position: fixed;
+        text-align:center;
+}
+span{
+    color:white;
+   
+}
+#leftpan{
+    background-color: green;
+    width: 200px;
+    height: 1000px;
+    
+}
+img{
+    padding: 0px 0px 0px 7px;
+}
+#rightpan{
+    background-color: blue;
+    width: 200px;
+    height: 1000px;
+    float: right;
+    margin-left: 1150px;
+    margin-top: -1000px;
+    position: absolute;
+    
+}
+
+#sedfed{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+	body{ 
+		font-family:Times New Romen;
+		font-size:18px;
+	}
+	.content{
+		width:900px;
+		margin:0 auto;
+	}
+	#searchid
+	{
+		width:430px;
+		border:solid 1px #000;
+		padding:10px;
+		font-size:14px;
+	}
+        div#srch-cont
+        {
+            position: absolute;
+           margin-left: 400px;
+           text-align: left;
+        }
+	#result
+	{
+		position:absolute;
+		width:450px;
+		padding: 0px;
+		margin-top:0px;
+		border-top:0px;
+		overflow: hidden;
+                max-height: 470px;
+		border:1px #CCC solid;
+		background-color:white;
+	}
+        div#usrsdiv
+        {
+            background-color: white;
+            padding: 2px 0px 0px 0px;
+            height: 60px;
+            border-color: red;
+           
+        }
+        .ppl{
+            background-color: white;
+            color:navy;
+            font-family: Cambria Math;
+            font-size: 18px;
+            width:400px;
+            font-weight: bold;
+            position: absolute;
+            border-width: 0px 0px 0px 0px;
+            text-align: left;
+            height: 30px;
+            padding: 0px 0px 5px 5px;
+        }
+	.show
+	{
+		padding:10px; 
+		border-bottom:1px #999 dashed;
+		font-size:15px; 
+		height:50px;
+	}
+	.show:hover
+	{
+		background:#4c66a4;
+		color:#FFF;
+		cursor:pointer;
+	}

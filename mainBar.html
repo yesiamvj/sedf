@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title> </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="mainBar.css"/>
+    <link rel="stylesheet" href="photos.css"/>
+    <link rel="stylesheet" href="postAudi.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="mainBar.js" type="text/javascript"></script>
+   <script src="jquery.MultiFile.js" type="text/javascript"></script>
+   <script src="jquery.form.js" type="text/javascript"></script>
+   <script src="jquery.MetaData.js" type="text/javascript"></script>
+   <script src="postAudi.js" type="text/javascript"></script>
+  </head>
+  
+  <body onload="showPageLoadStatus()" >
+      <div id="content-full">
+          <script>
+              $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+          </script>
+           
+          <div id="SedFed_PageStatus">
+             
+                <div id="SF_OpeningLogo">SedFed</div>
+                <div id="SF_pageLoadStatus">
+                    <div id="SF_pageLiveLoadedStatus" ></div>
+                </div>
+          </div>
+          <div id="SF_BigSearch" class="BigSearchBarOut" style="display: none;" >
+          <div class="BigSearchBarIn">
+              <input type="text" id="SF_inpBigSrch" oninput="srchInp();" onblur="//$('#SF_BigSearch').fadeOut();" placeholder="Search People on SedFed ..." />
+              <script>
+                  function srchInp(){
+                      $('.SFTB_srchInp').val($('#SF_inpBigSrch').val());
+                      if($('#SF_inpBigSrch').val()===''){
+                          $('#SF_SearchSugg').slideUp();
+                          
+                      }
+                      else{
+                          $('#SF_SearchSugg').slideDown();
+                      }
+                  }
+                  </script>
+                  <div class="BigSearchType">
+                      <select onchange="BigSrchTypeSelcted('#BigSearchTypeSlct')" id="BigSearchTypeSlct" >
+                          <option value="People" >People</option>
+                          <option value="Posts" >Posts</option>
+                          <option value="Messages" >Messages</option>
+                          <option value="FlashNews" >Flash News</option>
+                          
+                          
+                      </select>
+                  </div>
+                  
+                  <!-- don't change id's of any filters used in jquery -->
+                  
+                  <div class="BigSearchTypeFilters" id="BST_People" style="display: block;" >
+                      <select>
+                          <option>Name</option>
+                          <option>SedFed ID</option>
+                          <option>Mobile</option>
+                          <option>Email</option>
+                          <option>Place</option>
+                          <option>School / College</option>
+                          
+                      </select>
+                  </div>
+                  <div class="BigSearchTypeFilters" id="BST_Posts" style="display: none;" >
+                      <select>
+                          <option>Poster Name</option>
+                          <option>Post ID</option>
+                          <option>Post Caption</option>
+                          <option>HashTag</option>
+                          <option>@-Tag</option>
+                      </select>
+                  </div>
+                  <div class="BigSearchTypeFilters" id="BST_Messages" style="display: none;" >
+                      <select>
+                          <option>Sender Name</option>
+                          <option>Message Text</option>
+                          
+                      </select>
+                  </div>
+                  <div class="BigSearchTypeFilters" id="BST_FlashNews" style="display: none;" >
+                      <select>
+                          <option>Flash ID</option>
+                          <option>Name of Person</option>
+                          <option>Flash Message</option>
+                          
+                      </select>
+                      
+                  </div>
+                  <div class="closeBigSearch" onclick="$('#SF_BigSearch').fadeOut();" >
+                          X
+                      </div>
+              <div class="BS_Prcd" title="Search">
+                  <img class="ico_TtlBarSrch" alt="Search"  src="icons/mainBar/search.png" onclick="$('#SedFed_SearchTheater').slideDown();" />
+              </div>
+          </div>
+      </div>
+      <div class="SF_BigSrchResultOut" id="SF_SearchSugg" style="display: none;" >
+          <div class="SF_BSrchItm">
+              <div class="SF_BSrchItmFace">
+                  <img src="profileimg.PNG" class="img_srchRes" />
+              </div>
+              <div class="SF_BSrchItmDets">
+                  <div class="SF_BSUserName">Vijayakumar <div class="SFBS_SedfedDets"> SedFed ID : 1</div> </div>
+                  <div class="SF_BSUserExtra">Male<span class="divider">Salem</span><span class="divider">Tamilnadu</span></div>
+              </div>
+          </div>
+      </div>
+          <div class="SedFedTitleBar">
+             <div class="SedFedLogo">
+                <div id="sedfedLogoTop"></div>
+                <div id="sedfedLogoProgress"></div>
+            </div>
+              <div class="TitleBarOut">
+                  <div class="TtlBarIn">
+                      <div class="TtlBarTtl">
+                          <img class="TopProfPic" src="profileimg.PNG" alt="SedFed"/>
+                          <div class="SedFedUserName"> Vijayakumar  </div>
+                      </div>
+                      <div class="TtlBar_SrchHold">
+                          <div class="SFTB_srchIn">
+                              <input class="SFTB_srchInp" type="text" placeholder="Search People , Posts , Etc.," autofocus onclick="$('#SF_BigSearch').show();$('#SF_inpBigSrch').focus();" />
+                               <img class="ico_TtlBarSrch" src="icons/mainBar/search.png"   />
+                          </div>
+                          <div class="SFTB_searchSubmit">
+                             
+                          </div>
+                      </div>
+                 
+               
+                      <div class="TtlBarAccountActs">
+                          <div class="TtlBarACactIn">
+                              
+                              <div class="TACT_Logout" onclick="$('#MyAccountAct').slideToggle();" >
+                                  <img class="ico_sf_Logout"  src="icons/mainBar/powerB.png" alt="Logout" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="AccountActsHold" id="MyAccountAct" style="display: none;" >
+                      <div class="AccountActsItm">
+                          <div class="TACT_Lock" onclick="$('#SedFedLockScreenOut').fadeIn();" title="Lock">
+                                  <img class="ico_sf_Lock"  src="icons/mainBar/lock.png" alt="Lock" />
+                          </div>
+                          <div class="TACT_Lock" title="Logout">
+                                  <img class="ico_sf_LogOut"  src="icons/mainBar/logout.png" alt="Logout" />
+                          </div>
+                      </div>
+                  </div>
+                 
+              </div>
+          </div>
+          <div class="SedFed_SubTitleBarMain">
+              <div class="sf_subTtlMainItm" onclick="$('#newPostTypeSelecterPopUp').toggle(500)" >
+                  New Post
+              </div>
+              <div class="sf_subTtlMainItm" onclick="showMyAccLftWindow()" >
+                 Stuff
+              </div>
+              <script>
+                 function showMyAccLftWindow(){
+                     if($('#MYACCOUNTLEFTPANEEE').css('left')==='0px'){
+                            $('#MYACCOUNTLEFTPANEEE').animate({'left':'101%'});
+                     }
+                     else{
+                         $('#MYACCOUNTLEFTPANEEE').animate({'left':'0px'});
+                     }
+                 }
+              </script>
+              <div class="sf_subTtlMainItm">
+                 Flash News
+              </div>
+              <div class="sf_subTtlMainItm" onclick="$('#sf_ToolBarFir').slideToggle();" >
+                 Tools
+              </div>
+              
+              <div class="sf_subTtlMainItm" onclick="$('#PageSpeedUpDiv').slideToggle()" >
+                  Speed Up
+              </div>
+              <div class="sf_subTtlMainItm" onclick="$('#sfPsuTheme').slideToggle()" >
+                  Theme
+              </div>
+              <div class="sf_subTtlMainItm">
+                  Guide
+              </div>
+          </div>
+          <div class="newPostTypeHold" id="newPostTypeSelecterPopUp" style="display: none;" > 
+              <div class="newPostTypeTtl">
+                  Select Your Post Type <div class="closeNPTS" onclick="$('#newPostTypeSelecterPopUp').toggle(750)" >X</div>
+              </div>
+              <div class="newPostInnerCont">
+                  
+              
+                  <div class="newPostTypeItm" id="NPT_Simple" onclick="$('#newSimplePost').slideDown();$('#newPostTypeSelecterPopUp').hide(750)" >
+                  <div class="NPT_Ttl">
+                       Simple Post
+                  </div>
+                 
+                  <div class="NPTItm_Tip">
+                      Publish a quick text
+                  </div>
+              </div>
+              <div class="newPostTypeItm" id="NPT_Smart" >
+                  <div class="NPT_Ttl">
+                       Smart Post
+                  </div>
+                  <div class="NPTItm_Tip">
+                      Publish a post with Caption & Image , Video .., Etc
+                  </div>
+              </div>
+              <div class="newPostTypeItm" id="NPT_Album" onclick="$('#newAlbumPost').slideDown();$('#newPostTypeSelecterPopUp').hide(750)">
+                  <div class="NPT_Ttl"  >
+                     MEME Photo
+                  </div>
+                  <div class="NPTItm_Tip">
+                     Post images with big text titles (e.g My reaction..)
+                  </div>
+              </div>
+              <div class="newPostTypeItm" id="NPT_Advanced" onclick="$('#newPostTypeSelecterPopUp').hide(750);$('#newADVStarts').slideToggle();" >
+                  <div class="NPT_Ttl">
+                       Advanced Post
+                  </div>
+                  <div class="NPTItm_Tip" > 
+                      Are you a programmer -
+                      Post in HTML language
+                  </div>
+              </div>
+                  </div>
+             
+          </div>
+          <div class="newAdvancedPostStartUp" id="newADVStarts" style="display: none;" >
+              <div class="NAPStrt_Ttl">
+                  Advanced Post <div class="closeNAPSU" onclick="$('#newADVStarts').fadeToggle();" >X</div>
+              </div>
+              
+                  <div class="NAPSU_Tip">
+                     < You can use HTML Language tags and attributes except position and class & id tags . 
+                    * Start with div tag ..  ! All tags should be closed >
+                  </div>
+              <div class="NAPSU_Cont">
+                  
+                  <div class="NAPSU_Editor">
+                      <textarea id="NPASU_TextEditor" placeholder="Type your HTML Code here" oninput="$('#NAPSU_AdvTextPrevTerm').html($('#NPASU_TextEditor').val());"  >  </textarea>
+                  </div>
+                  <div class="NAPSU_PreviewPane" id="NAPSU_AdvTextPrev" >
+                      <div id="NAPSU_AdvTextPrevTerm">
+                          Preview Panel
+                      </div>
+                  </div>
+                  
+                  
+              </div>
+              <div style="text-align: center">
+                    <div class="NAPSU_Submit">
+                  Next Step
+              </div>
+              </div>
+            
+          </div>
+          <div class="NPT_QuickPostHolder" id="newSimplePost" style="display: none;" >
+              <div class="NPT_QPTtl" style="background-color:navy" >
+                  Simple Post 
+              </div>
+              <div class="NPT_QPCont">
+                <div class="closeNPTS" onclick="$('#newSimplePost').slideUp()" >X</div>
+                  <textarea  placeholder="What's Up ?" ></textarea>
+                  <div class="NPT_QPTip">
+                    Note :  To tag a person or specify a person use '$' in front of their username ( e.g $user )
+                  </div>
+              </div>
+              <div class="QPSuuB">
+                   <div class="NPT_PostSubmit">
+                      Publish
+                  </div>
+              </div>
+              
+          </div>
+          <div class="NPT_QuickPostHolder" id="newAlbumPost" style="display: none;" >
+              <div class="NPT_QPTtl" style="background-color:darkblue">
+                  MeMe Photo <div class="closeNPTS" onclick="$('#newAlbumPost').slideUp()" >X</div>
+              </div>
+             
+               <div class="NPT_QPCont">
+                    
+                   <div class="NPT_memeSelHold">
+                       <div class="NPT_QPTip">
+                           Step 1 : Add an image file  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="file" onchange="preview_pic(this)"/>
+                  </div>
+                        
+                   </div>
+                    <div class="NPT_QPTip">
+                           Step 2 : Put your Titles
+                  </div>
+                   <input type="text" id="inp_memeTope" class="NA_albumNameInp" oninput="$('#memeTopTtlCNPH').text($('#inp_memeTope').val());"  placeholder=" Top text " />
+                  <br/>
+                   <input type="text" id="inp_memeBotm" class="NA_albumNameInp" placeholder=" Bottom Text " oninput="$('#memeBotmTtlCNPH').text($('#inp_memeBotm').val());"  />
+                 
+              </div>
+              <div class="imageMmeTopTtl" id="memeTopTtlCNPH" >
+                 Top Title
+             </div>
+              
+              <div class="imageMmeHolder" style="color: silver" >
+                 Add an image
+              </div> 
+              <script>
+                  function preview_pic(pic)
+                  {
+                      if(pic.files[0].type==="image/png" || pic.files[0].type==="image/jpeg" || pic.files[0].type==="image/jpg" || pic.files[0].type==="image/gif"){
+                           var r=new FileReader();
+                      r.onload=(function(e)
+                      {
+                       $('.imageMmeHolder').html('<img src='+e.target.result+'>');   
+                      });
+                      r.readAsDataURL(pic.files[0]);
+                      }
+                      else{
+                          alert('please upload an image file');
+                      }
+                     
+                  }
+                  </script>
+              <div class="imageMmeTopTtl" id="memeBotmTtlCNPH">
+                 Bottom Title
+             </div>
+            
+              <div class="QPSuuB">
+                  <div class="NPT_PostSubmit" id="memeSubmittt" >
+                    Post
+                  </div>
+              </div>
+              
+          </div>
+          <div class="sf_pageSpeedUpOut" id="PageSpeedUpDiv" style="display: none;" >
+              <div class="sf_pageSpeedUpTtl">
+                  Speed Up Page
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  Image Quality of Posts 
+                  <input type="number" placeholder="Image Quality" value="75" /> %
+                  <button>
+                      Speed Up
+                  </button>
+                  <div class="SF_PSPUP_Tip">
+                      lesser quality speed loading
+                  </div>
+              </div>
+          </div>
+          <div class="sf_pageSpeedUpOut" id="sfPsuTheme" style="display: none;"  > 
+              <div class="sf_pageSpeedUpTtl">
+                  Page Theme
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  What's Up Post's Style
+                  <button  style="background-color:grey" >
+                      Normal
+                  </button>
+                  <button style="background-color:blue" >
+                      Compact
+                  </button>
+                  <button  style="background-color: navy" >
+                      Smart
+                  </button>
+                  <div class="SF_PSPUP_Tip">
+                      Change how posts look like
+                  </div>
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  Size of posts
+                  <div class="sf_psuinp">
+                      <input type="range" min="0"  max="100" />
+                  </div>
+                  <div class="SF_PSPUP_Tip">
+                      set the width of the posts
+                  </div>
+              </div>
+              <div class="sf_pageSpeedUptm">
+                  Posts from
+                  <input type="checkbox" /> Public
+                  <input type="checkbox" checked disabled /> Relations
+                  <input type="checkbox" checked /> Official
+              </div>
+          </div>
+          <div class="sedfed_Tools_Bar" id="sf_ToolBarFir"  style="display: none;" >
+              <div class="sedfed_ToolBarItm" onclick="$('#sf_ToolBarFir').slideToggle();$('#sf_ToolBarScroll').slideToggle()" >
+                  Auto Scroll
+              </div>
+              <div class="sedfed_ToolBarItm" onclick="$('#sf_ToolBarFir').slideToggle();$('#sf_ToolBarSelct').slideToggle();" >
+                 Select Posts 
+              </div>
+              <div class="sf_toolbarrclose" onclick="$('#sf_ToolBarFir').slideToggle();" >X</div>
+          </div>
+          <div class="sedfed_Tools_Bar" id="sf_ToolBarScroll" style="display: none;"  > 
+              
+              <div class="sedfed_ToolBarItm">
+                  Auto Scroll : <span id="sf_tbb_scrollSts">On</span>
+              </div>
+              <div class="sedfed_ToolBarItm">
+                  Scroll speed
+                  <input type="number" />
+              </div>
+              <div class="sf_toolbarrclose" onclick="$('#sf_ToolBarScroll').slideToggle()" >X</div>
+          </div>
+          <div class="sedfed_Tools_Bar" id="sf_ToolBarSelct" style="display: none;"  > 
+              
+              <div class="sedfed_ToolBarItm">
+                 Select All
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 10 posts selected
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 Like
+              </div>
+              <div class="sedfed_ToolBarItm">
+                Hate
+              </div>
+             
+              <div class="sedfed_ToolBarItm">
+                 1 star
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 2 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 3 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 4 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 5 stars
+              </div>
+              <div class="sedfed_ToolBarItm">
+                 Download
+              </div>
+              <div class="sf_toolbarrclose" onclick="$('#sf_ToolBarSelct').slideToggle();" >X</div>
+             
+          </div>
+          <div class="SedFed_leftMouseChecker" onmouseover="showMyAccLeftPane()" >
+              
+          </div>
+          <div class="SedFedMainBar" id="MyAccLeftPane" >
+              <div class="MainBarOut">
+                  <div class="MainBarIn">
+                     
+                      <div class="ToolTipMainBarHold" id="MainBarToolTip" style="display: none;" >
+                          <div class="TtMBArr"></div>
+                          <div class="TtMBCont" id="MainBarTtTxt" >
+                              Click to Update
+                          </div>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/profile.png"  onmouseover="meOnMainBar(event,'Profile')" onmouseout="meOutMainBar()"/>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/people.png"  onmouseover="meOnMainBar(event,'People')" onmouseout="meOutMainBar()"/>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/messages.png" onmouseover="meOnMainBar(event,'Messages')" onmouseout="meOutMainBar()"/>
+                      </div>
+                   <!--   <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/bulbs.png" title="Profile"/>
+                      </div> -->
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/myposts.png"  onmouseover="meOnMainBar(event,'My Posts')" onmouseout="meOutMainBar()"/>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" src="icons/mainBar/whatsup.png"  onclick="$('#PostAuditorium').fadeIn();" onmouseover="meOnMainBar(event,' What\'s Up ')" onmouseout="meOutMainBar()"/>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:27px;" src="icons/mainBar/folder.png"  onmouseover="meOnMainBar(event,'My Storage')" onmouseout="meOutMainBar()"/>
+                      </div>
+                    <!--  <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:15px;" src="icons/mainBar/password.png" title="Profile"/>
+                      </div> -->
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:27px;" src="icons/mainBar/settings.png" onmouseover="meOnMainBar(event,'Settings')" onmouseout="meOutMainBar()"/>
+                      </div> 
+                  <!--    <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:30px;" src="icons/mainBar/lock.png" title="Lock"/>
+                      </div>
+                      <div class="MainBarItm">
+                          <img class="ico_sf_mBar" style="max-height:23px;" src="icons/mainBar/power.png" title="Logout"/>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+          <div id="mainBarSafetyLayer" onmouseover="hideMyAccLeftPane()" ></div>
+          <div id="SedFedLockScreenOut" style="display: none;" >
+              <div class="SedFedLockScreenIn">
+                  <div class="SF_LockScreenCont">
+                      
+                      <div class="SF_LockScreenFace">
+                          
+                          <img class="Sf_LockScreenImg" src="profileimg.PNG" />
+                          
+                      </div>
+                      <div class="SF_LockScreenDets">
+                          <div class="SF_LockScreenUsrName">
+                              <div class="SF_LS_Usr">
+                                  Vijayakumar 
+                              </div>
+                              <div class="SF_LS_Logout" title="Logout">
+                                   <img class="ico_sf_Logout"  src="icons/mainBar/powerB.png" />
+                              </div>
+                          </div>
+                          <div class="SF_LockScreenFocus">
+                              <input class="SF_LS_pass_Inp" id="SF_LS_password" oninput="checkPass()" onblur="checkLockPass()"  type="password" placeholder=" * * * " />
+                              <div class="SF_LS_Pass_Submit" onclick="checkPass()" ></div>
+                              
+                          </div>
+                          <div class="SF_LS_passAlert" title="Login password or Lockscreen Password">
+                              <span id="SF_LS_AlertTxt"> Password to Unlock </span> 
+                          </div>
+                      </div>
+                       
+                      
+                  </div>
+              </div>
+              <div class="SedFedLS_Logo">
+                  SedFed
+              </div>
+          </div>
+          <div class="SF_Upload_Sts_Out" style="display: none;" >
+              <div class="SF_Upload_Sts_In">
+                  <div class="SF_Upl_Ttl"> Uploading...</div>
+                  <div class="SF_Upload_StatusBar">
+                      <div class="SF_Upload_LiveStatus" id="LiveUpload" onmouseover="doStst()" >
+                         index.html
+                      </div>
+                  </div>
+                  <div class="SF_Upload_Percent">
+                      <span class="SF_Upload_PercntTxt">90%</span> 
+                      <span class="SF_Upload_FileSize">100 MB/200 MB</span> 
+                      <span class="SF_Upload_Speed"> 1.3 Kbps</span> 
+                      <span class="SF_Upload_Time"> Time Remaining : 10 min</span> 
+                      <div class="SF_Upload_CancelBtn"> Cancel </div>
+                  </div>
+                  
+                  
+              </div>
+          </div>
+          <div id="SedFed_SearchTheater" style="display: none;" >
+              <div class="SedFed_ThSrchIn">
+                  <div class="SearchThtrClose" onclick="$('#SedFed_SearchTheater').slideUp();" >X</div>
+                  <div class="SearchCatogs">
+                      Search In
+                      <div class="SearchCatogItm">
+                          <input class="srchCatChk" id="Chk_SrchPpl" type="checkbox" onchange="SrchCatSelected('Chk_SrchPpl','#SrchTipPpl')" checked /> People
+                      </div>
+                      <div class="SearchCatogItm">
+                          <input class="srchCatChk" id="Chk_SrchPost" type="checkbox" onchange="SrchCatSelected('Chk_SrchPost','#SrchTipPost')" /> Posts
+                      </div>
+                      <div class="SearchCatogItm">
+                          <input class="srchCatChk" id="Chk_SrchFlash" type="checkbox" onchange="SrchCatSelected('Chk_SrchFlash','#SrchTipFlash')" /> Flash News
+                      </div>
+                      <div class="SearchCatogItm">
+                          <input class="srchCatChk" id="Chk_SrchMsg" type="checkbox" onchange="SrchCatSelected('Chk_SrchMsg','#SrchTipMsg')" /> Messages
+                      </div>
+                      <div class="SearchCatogItm">
+                          <input class="srchCatChk" id="Chk_SrchNotif" type="checkbox"  onchange="SrchCatSelected('Chk_SrchNotif','#SrchTipNotif')"/> Notification
+                      </div>
+                  </div>
+                  <div class="SedFed_ThSrchTtl">People</div>
+                  <div class="SF_ThSrchResults">
+                      <div class="SF_SrchResultItmPpl">
+                          <div class="SrchPplThme"></div>
+                          <div class="SrchResPplFace">
+                              <img class="img_SrchReslt" src="profileimg.PNG" />
+                          </div>
+                          <div class="SrchResPplDets">
+                              <div class="SrchPplNme">
+                                  Vijayakumar
+                              </div>
+                              <div class="SrchPplExtra">
+                                  18+ <span class="Srchdivider">|</span> Male <span class="Srchdivider">|</span> Verified
+                              </div>
+                          </div>
+                      </div>
+                      <div class="SF_SrchResultItmPpl">
+                          <div class="SrchPplThme"></div>
+                          <div class="SrchResPplFace">
+                              <img class="img_SrchReslt" src="profileimg.PNG" />
+                          </div>
+                          <div class="SrchResPplDets">
+                              <div class="SrchPplNme">
+                                  Vijayakumar 's Post
+                              </div>
+                              <div class="SrchPplExtra">
+                                  Post ID : 198 <span class="Srchdivider">|</span> 1 Jan , 10:30 pm
+                              </div>
+                          </div>
+                      </div>
+                      <div class="SF_SrchResultItmFlash">
+                          <div class="SrchPplThme"></div>
+                         
+                          <div class="SrchResPplDets">
+                              <div class="SrchPplNme">
+                                  Vijayakumar 
+                              </div>
+                              
+                              <div class="SrchMsgCont">
+                                  This is the flash news 
+                              </div>
+                          </div>
+                          <div class="SrchMsgTime"> Flash No 189 <span class="Srchdivider">|</span> 1 Jan 2015 , 10:30 pm</div>
+                      </div>
+                      <div class="SF_SrchResultItmFlash">
+                          <div class="SrchPplThme"></div>
+                         
+                          <div class="SrchResPplDets">
+                              <div class="SrchPplNme">
+                                  Vijayakumar 
+                              </div>
+                              
+                              <div class="SrchMsgCont">
+                                  This is the Message
+                              </div>
+                          </div>
+                          <div class="SrchMsgTime">  1 Jan 2015 , 10:30 pm</div>
+                      </div>
+                      <div class="SF_SrchResultItmFlash">
+                          <div class="SrchPplThme"></div>
+                         
+                          <div class="SrchResPplDets">
+                              <div class="SrchPplNme">
+                                  Vijayakumar 
+                              </div>
+                              
+                              <div class="SrchMsgCont">
+                                  This is the Notification
+                              </div>
+                          </div>
+                          <div class="SrchMsgTime">  1 Jan 2015 , 10:30 pm</div>
+                      </div>
+                   
+                      <div class="SrchResTip" id="SrchTipPpl" style="display: none">
+                          <div class="SrchTipTtl"> You can Search By  </div> 
+                          <div class="SrchTipCont">
+                              <div class="SrchTipItm"> User ID Number ( Best Result ) </div>
+                              <div class="SrchTipItm"> Name of Person </div>
+                              <div class="SrchTipItm"> Email / Mobile </div>
+                              <div class="SrchTipItm"> School / College </div>
+                              <div class="SrchTipItm"> Place </div>
+                              
+                          </div>
+                      </div>
+                      <div class="SrchResTip" id="SrchTipPost" style="display: none" >
+                          <div class="SrchTipTtl"> You can Search By  </div> 
+                          <div class="SrchTipCont">
+                              <div class="SrchTipItm"> Post ID Number ( Best Result ) </div>
+                              <div class="SrchTipItm"> Name of Person </div>
+                              <div class="SrchTipItm"> Post Caption </div>
+                              
+                              
+                          </div>
+                      </div>
+                      <div class="SrchResTip" id="SrchTipFlash" style="display: none" >
+                          <div class="SrchTipTtl"> You can Search By  </div> 
+                          <div class="SrchTipCont">
+                              <div class="SrchTipItm"> Flash ID Number ( Best Result ) </div>
+                              <div class="SrchTipItm"> Name of Person </div>
+                              <div class="SrchTipItm"> Flash Message </div>
+                          </div>
+                      </div>
+                      <div class="SrchResTip" id="SrchTipMsg" style="display: none" >
+                          <div class="SrchTipTtl"> You can Search By  </div> 
+                          <div class="SrchTipCont">
+                              <div class="SrchTipItm"> Sender Name </div>
+                              <div class="SrchTipItm"> Message Text </div>
+                              
+                          </div>
+                      </div>
+                      <div class="SrchResTip" id="SrchTipNotif" style="display: none" >
+                          <div class="SrchTipTtl"> You can Search By  </div> 
+                          <div class="SrchTipCont">
+                              <div class="SrchTipItm"> Sender Name </div>
+                              <div class="SrchTipItm"> Notification Text </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+           
+      </div>
+      <div class="myAccountLeftWindow" id="MYACCOUNTLEFTPANEEE" >
+          <div class="MALW_sedfed_Ttl_Bar">
+              sedfed
+          </div>
+          <div class="MALW_sedfed_SubTtl_Bar">
+              <div class="MALW_SubTtl_Itm">
+                  Profile
+              </div>
+              <div class="MALW_SubTtl_Itm">
+                  Diary
+              </div>
+              <div class="MALW_SubTtl_Itm">
+                  People
+              </div>
+              <div class="MALW_SubTtl_Itm">
+                  Messages
+              </div>
+              <div class="MALW_SubTtl_Itm">
+                  My Storage
+              </div>
+              <div class="MALW_SubTtl_Itm">
+                  Settings
+              </div>
+              
+              <div class="MALW_SubTtl_Itm">
+                  Help
+              </div>
+             
+          </div>
+          <div class="MALW_sedfed_content">
+              <div class="MALW_Profile">
+                  <img src="profileimg.PNG" class="img_MALW_profPic" />
+                  <div class="MALW_ProfileDets">
+                      <div class="MALW_sedfed_userFullName">
+                          Vijayakumar
+                      </div>
+                      <div class="MALW_sedfed_userSignature">
+                          <span class="sf_dollar" >$</span> vijayakumar
+                          <div class="MALW_sedfed_userId">
+                         User ID : 10
+                      </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="MALW_MyGroups">
+              <div class="MALW_grpTtl">
+                  My Groups
+              </div>
+             <a href="http://sedfed.com/pageName">
+               <div class="MALW_GrpItm">
+                  <img class="img_MALW_grpPic" src="profileimg.PNG" />
+                  <div class="MALW_GrpName">
+                      sedfed official group
+                  </div>
+              </div>
+                   </a>
+             
+          </div>
+          <div class="MALW_MyGroups">
+              <div class="MALW_grpTtl">
+                  My Pages
+              </div>
+              <a href="http://sedfed.com/pageName">
+               <div class="MALW_GrpItm">
+                  <img class="img_MALW_grpPic" src="profileimg.PNG" />
+                  <div class="MALW_GrpName">
+                      sedfed official group
+                  </div>
+              </div>
+                   </a>
+          </div>
+          <div class="MALW_createNewSomeOut">
+              <div class="MALW_CNS_InnerTtl">
+                  Do Something..
+              </div>
+              <div class="MALW_ItmTtl">
+                  For Me & Relations
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Create New Post
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Create Advanced Post
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Create Photo album
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Create Flash news
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Update / Edit profile
+              </div>
+               <div class="MALW_ItmTtl">
+                  For My Crew / Company
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Create Group
+              </div>
+              <div class="MALW_CNS_Itm">
+                  Create Page
+              </div>
+              <div class="MALW_ItmTtl">
+                  For Messaging
+              </div>
+               <div class="MALW_CNS_Itm">
+                  New Group Chat
+              </div>
+               <div class="MALW_CNS_Itm">
+                  New Team Chat
+              </div>
+               <div class="MALW_CNS_Itm">
+                  New Stranger Chat
+              </div>
+              
+          </div>
+         
+      </div>
+    
+          
+  </body>
+</html>

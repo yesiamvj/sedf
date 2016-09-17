@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+        <meta http-equiv="Author" content="Vijayakumar for SedFed" />   
+    <title>| SedFed - Registration  </title>
+   <link type="text/css" href="registererr.css" rel="stylesheet" />
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="registerinit.js" type="text/javascript">     
+   </script>
+  </head>
+  
+  <body ng-app="">
+      
+      <div id="content-full">
+          <div title="A Colorful Communication" id="title_bar" >
+              <font id="sedfed">SedFed</font>
+      </div>
+          <font id="rwlcmemsg">
+              Hi , Please Complete Some Steps to Create your New Account
+          </font>
+          
+          <div id="steps">
+              <ul id="stps">
+                  <li id="curstep">Initialization</li>
+                  <li>Basic</li>
+                  <li>Current</li>
+                  <li>Personal</li>
+                  <li>Favorites</li>
+                  <li>Annoying</li>
+                  <li>About</li>
+                  <li id="lststep">Status</li>
+              </ul>
+          </div>
+          <div id="r-inps">
+              <div id="r-itbls" >
+                   <form method="post" action="newuser.php" >
+              <table>
+                  <tr>
+                      
+                          <div id="errhint">You Entered Already Registered Email / Mobile no.
+                              Choose Different Email & Mobile no. <input id="hideerrbtn" type="button" value="X" onclick="btnhide()"> </div>
+                      
+                  </tr>
+                  <tr>
+                      <td><font id="r-ins">Email</font>  </td>
+                      <td><input oninput="typingel('#r-txtemail','email')" onfocus="elonfocus('1')" name="email" id="r-txtemail" type="text" placeholder="example@mail.com" required="required" ng-model="emailid" autofocus/><span id="mailhint" class="r-error"></span><div id="tipmail"></div></td>
+                 
+                  </tr>
+                   <tr>
+                      <td><font id="r-ins"> Mobile No</font>  </td>
+                      <td><input oninput="typingel('#r-txtmobno','mobile')"  onfocus="elonfocus('2')" name="mob_no" ng-model="mobno" id="r-txtmobno" type="text" placeholder="Your Contact Number" required/><span id="mobhint" class="r-error"></span><div id="tipmob"></div></td>
+                      
+                  </tr> <tr>
+                      <td><font id="r-ins"> Password 1</font>  </td>
+                      <td><input oninput="pwdtype('#r-txtpass1')"  onfocus="elonfocus('3')" name="pass1" ng-model="pass" id="r-txtpass1" type="password" placeholder="0 to 20 Characters"/> <span id="passhint" class="r-error"></span><div id="tippass1"></div> </td>
+                      
+                  </tr> <tr>
+                      <td><font id="r-ins"> Password 2</font>  </td>
+                      <td><input oninput="pwdtype('#r-txtpass2')"  onfocus="elonfocus('4')" name="pass2" ng-model="pass2" id="r-txtpass2" type="password"  placeholder="0 to 20 Characters"/> <span id="passhint" class="r-error"></span><div id="tippass2"></div> </td> 
+                  </tr>
+                  <tr>
+                      <td>
+                           </td>
+                      <td>
+                          <input onchange="accpt()" type="checkbox" id="chkbx" required/><font id="r-ins">By clicking Register<span style="color:crimson"> I </span> Accept to the terms and conditions...</font>
+                     
+                      </td>
+                  </tr>
+                   <tr>
+                      <td>  </td>
+                      <td><input onclick="accpt()" id="r-submit" type="submit" value="Register" disabled="" />  </td>
+                      
+                  </tr>
+                  
+              </table>
+                       </form>
+              </div>
+          </div>
+          <div id="helps">
+              <div id="forusrnme">
+                   <div id="mheads">Instructions</div>
+                   <font style="color:navy">&nbsp;&nbsp;&nbsp;&nbsp;These details are very important</font> 
+                  <div id="heads">For Logging in</div>
+                  <div id="content-hlp">
+              Username<br/>
+              <input  id="rh-usrnme"  type="text" disabled value="{{emailid}}" placeholder="email / mobile / username"/><br/>
+              Password<br/>
+              <input type="password" id="rh-pwd" disabled placeholder="password"/><br/>
+              <button  disabled="disabled">Login</button></div>
+              <div id="heads">For Search</div>
+              <div id="content-hlp" style="text-align: center">
+                  <span id="whatsrch">People can search you by your email</span><br/>
+              <input id="rh-srch" type="text" disabled placeholder="Search people" value="{{emailid}}"/><br/>
+              <button  disabled="disabled">Search</button></div>
+                <div id="heads">For Adding Contact</div>
+                <div id="content-hlp" style="text-align: center">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="howadd">People can add you by your email</span>
+             <br/>
+              <input id="rh-contmail"  type="text" disabled placeholder="email / mobile" value="{{emailid}}"/><br/>
+              <button disabled="disabled">Add to Contact</button></div>
+              
+              </div>
+          </div>
+          <div id="footr">
+              <button id="about_us" ><a href="aboutus.html">about us</a></button>
+         <font id="fotr">Just a Social Network</font>
+         <font id="fot" onclick="sm()"><i id="vrs"> SedFed 2.5 </i></font></div>
+          
+      </div>
+     
+      
+  </body>
+</html>

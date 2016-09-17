@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="robots" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta name="description" content="Welcome to SedFed - SedFed is a Free Social Network based on New Generation People for Colorful Communication" />
+        <meta name="keywords" content="SedFed1,Social Network,File sharing,Colorful communication,New social network,Indian Social Network,Tamilan Social Network,SedFed,www.sedfed.com,SedFed,SedFed,SedFed,Everything for communication as Social network,ALL" />
+        <meta http-equiv="Content-Language" content="en-US" />
+       <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
+    <title> </title>
+    <link rel="stylesheet" href="lin.css"/>
+    <link rel="stylesheet" href="onlines.css"/>
+   <script src="angular.js"></script>
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="onlines.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+      <div id="content-full">
+          <div id="SedFed_Online_People">
+              <div class="Online_Tab_Hold">
+                          <div class="Online_Tab_Itm"  >
+                              People
+                          </div>
+                          <div class="Online_Tab_Itm" id="CurOnlineTab" >
+                              Groups
+                          </div>
+                          <div class="Online_Tab_Itm">
+                              Teams
+                          </div>
+                      </div>
+              <div class="Online_Ppl_Out">
+                  <div class="Online_Ppl_In">
+                      
+                      <div class="Online_Ppl_Ttl" id="OnTopStatus" >Online  </div> 
+                   <!--   <div class="OLV_Type" title="Type of view" >
+                          <div class="OLV_Circle" title="Only faces" ></div> <div class="OLV_Sqre" title="Name & Face" ></div> <div class="OLV_Nme" title="Name & Face"></div>
+                      </div> -->
+                   <div class="Online_Tool_Hold">
+                       <div class="Online_Tool_Itm" title="Search" onclick="$('#OTEH_Search').slideToggle();" >
+                           <img class="Online_Tool_Img" src="icons/chatwin/search.png" alt="search" />
+                       </div>
+                       <div class="Online_Tool_Itm" title="Types of View" onclick="$('#OTEH_ViewType').slideToggle();" >
+                           <img class="Online_Tool_Img" src="icons/chatwin/view_type.png" alt="View Type" />
+                       </div>
+                       <div class="Online_Tool_Itm" title="More" onclick="$('#OTEH_More').slideToggle();">
+                           <img class="Online_Tool_Img" src="icons/chatwin/moreItms.png" alt="More" />
+                       </div>
+                       
+                       <div class="Online_Tool_Itm" title="I'm online" onclick="$('#OTEH_OnlineState').slideToggle();" >
+                           <div id="Online_Status"  > 
+                           </div>
+                       </div>
+                   </div>
+                   <!-- status on the top -->
+                  <div class="Online_Tool_Expnd" >
+                       <div class="OTE_In">
+                           <div class="OTE_OState" id="ON_Txt" style="cursor: pointer;" onclick="changeCurOnlineSts()" >I'm Online</div>
+                          
+                       </div>
+                   </div>
+                   
+                   <div class="Online_Tool_Expnd" id="OTEH_Search" style="display: none">
+                       <div class="OTE_In">
+                           <div class="OTE_Itm">
+                               <input type="text" placeholder="Name of person" />
+                           </div>
+                       </div>
+                   </div>
+                   
+                      <div class="Online_Tool_Expnd" id="OTEH_ViewType" style="display: none">
+                       <div class="OTE_In">
+                           <div class="OTE_Itm">
+                               <div class="OTE_View_Itm" onclick="$('#Group_NameFace').fadeOut();$('#Group_Faces').fadeIn();" >
+                                   <div class="OLV_Circle" title="Only faces"  ></div> Faces
+                               </div>
+                               <div class="OTE_View_Itm" onclick="$('#Group_Faces').fadeOut();$('#Group_NameFace').fadeIn();" >
+                                
+                                 <div class="OLV_Sqre" title="Name & Face" ></div> <div class="OLV_Nme" title="Name & Face"></div> Name & Faces
+                                 </div>
+                               </div>
+                       </div>
+                   </div>
+                   <div class="Online_Tool_Expnd" id="OTEH_More" style="display: none">
+                       <div class="OTE_In">
+                           <div class="OTE_Itm">
+                               <div class="OTE_moreItm" onclick="showMyGroups()">
+                                  My Groups 
+                               </div>
+                               <div class="OTE_moreItm" onclick="showOtherGroups()">
+                                  Join a Group
+                               </div>
+                              
+                               </div>
+                       </div>
+                   </div>
+                   
+                   <div class="Online_Tool_Expnd" id="OTEH_OnlineState" style="display: none">
+                       <div class="OTE_In">
+                           
+                           <div style="cursor: pointer;" onclick="changeCurOnlineSts()">
+                                <div class="OTE_OSChnge"   >Change
+                               <span class="OTE_Nxt_OS" id="ON_Nxt"  >to Offline</span>
+                           </div>
+                               
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="newGroupBtn" onclick="$('#CreateNewGroup').fadeIn();" >
+                     Create New Group
+                   </div>
+                   
+                   <!-- here is Groups  name & face -->
+                   <div class="RightBarHoldr" id="Group_Msgs" style="//display: none;" >
+                   <div class="Online_Live_Ppl" id="Group_NameFace" style="//display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName" style="color:brown" >
+                                      Coolers
+                                      <div class="OLPN_ItmDets" title="Online from 1 Jan 2013,10:30pm">
+                                          21 members online of 48
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName" style="color:blueviolet" >
+                                      VIP's
+                                      <div class="OLPN_ItmDets" title=" Online from 1 Jan 2013,10:30pm">
+                                          28 members online 76
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                   <div class="Online_Live_Ppl" id="OtherGroup_NameFace" style="display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OthrGrpTtl">Groups of Relations</div>
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName" style="color:brown" >
+                                      Coolers
+                                      <div class="OLPN_ItmDets" title="Online from 1 Jan 2013,10:30pm">
+                                          43 members <div class="GrpreqJoinBtn" id="GrpReqid1" onclick="GrpdoJoinAct('#GrpReqid1')" >Join</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="OLPN_Itm">
+                                  <img class="OLPN_ItmImg" src="profileimg.PNG" />
+                                  <div class="OLPN_ItmName" style="color:blueviolet" >
+                                      VIP's
+                                      <div class="OLPN_ItmDets" title=" Online from 1 Jan 2013,10:30pm">
+                                         43 members <div class="GrpreqJoinBtn" id="GrpReqid2" onclick="GrpdoJoinAct('#GrpReqid2')">Join</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                   <div class="Online_Live_Ppl" id="Group_Faces" style="display: none;" >
+                          <div class="Online_Live_In">
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm" >
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="OL_Itm" title=" Online from 1 Jan 2013,10:30pm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                              </div>
+                              <div class="forFullView"></div>
+                          </div>
+                      </div>
+                      </div>
+                  
+                   <div class="Online_Active_Chat" id="Online_Active_Chat_Hold" >
+                       <div class="OAC_Out" id="OAC_ContHolder" >
+                           <div class="OAC_In">
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              <div class="OAC_Itm">
+                                  <img class="OAC_ItmImg" src="profileimg.PNG" />
+                                  <div class="OAC_ItmCount">1</div>
+                              </div>
+                              
+                          </div>
+                       </div>
+                          
+                       <div id="OAC_Minimized" onclick="$('#OAC_ContHolder').slideToggle()" >Active Chats <div class="OAC_Minimize"> - </div></div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          
+          <!-- online tab content finishes -->
+          
+          
+          <div class="Theater_Window" id="CreateNewGroup" style="display: none;" >
+              <div class="Theater_Window_Out">
+                  <div class="Theater_Window_In">
+                      <div class="CloseThWin" onclick="$('#CreateNewGroup').fadeOut()" > X </div>
+                      <div class="ThWin_Ttl">
+                          Create New Group
+                      </div>
+                      <div class="Th_Win_Innr">
+                          <div class="New_Group_Picture">
+                              <div class="NGPic_add_btn">Add Profile Picture</div> 
+                          </div>
+                          <div class="New_Group_Quests">
+                              <div class="NewGrp_QueItm">
+                                  <input class="Th_Win_Inp" id="NewGrpNme" type="text" placeholder="Group Name" />
+                              </div>
+                              <div class="NewGrp_QueItm">
+                                  Group Theme <div class="GroupThmeClr" id="NewGrpThmeHold" onclick="$('#NewGrpTheme').click();" ></div>
+                                  <input type="color" id="NewGrpTheme" style="display: none;" onchange="NewGrpColorInp('#NewGrpTheme','#NewGrpThmeHold')" />
+                              </div>
+                              <div class="NewGrp_QueItm">
+                                  Visibility <input class="NewGrpChks" type="Checkbox"/> Public <input class="NewGrpChks" type="Checkbox"/> Private
+                              </div>
+                              <div class="NewGrp_QueItm">
+                                  Secret Messages<input class="NewGrpChks" type="Checkbox"/> Allow <input class="NewGrpChks" type="Checkbox"/> Deny <span class="ThWinTip">Group Members can send messages with hiding their names</span>
+                              </div>
+                              <div class="NewGrp_QueItm">
+                                  Add Members <input class="Th_Win_SubInp" type="text" placeholder="Name of Person" /> <span id="NewGrpMembNum"> 1 member</span> 
+                              </div>
+                              <div class="NewGrpSubmit">
+                                  Create Group
+                              </div>
+                              
+                              
+                          </div>
+                          
+                      </div>
+                  </div>
+                 
+              </div>
+              <div class="ThSideWindow">
+                  <div class="ThSideWinTtl">Group Members</div>
+                  <div class="ThSideWinIn">
+                      
+                      <div class="GrpMembItm">Vijayakumar  <span class="GrpMemDel">X</span> </div>
+                      <div class="GrpMembItm">Vijayakumar  <span class="GrpMemDel">X</span> </div>
+                  </div>
+              </div>
+          </div>
+          <div class="Theater_Window" id="CreateNewBattle" style="display: none;" >
+              <div class="Theater_Window_Out">
+                  <div class="Theater_Window_In">
+                      <div class="CloseThWin" onclick="$('#CreateNewBattle').fadeOut()" > X </div>
+                      <div class="ThWin_Ttl">
+                          Create New Battle
+                      </div>
+                      <div class="Th_Win_Innr">
+                          
+                          <div class="New_Group_Quests">
+                              <div class="NewGrp_QueItm">
+                                  <input class="Th_Win_Inp" id="NewBattleNme" type="text" placeholder="Topic of Battle" />
+                              </div>
+                              <div class="NewGrp_QueItm">
+                                  Visibility <input class="NewGrpChks" type="Checkbox"/> Public <input class="NewGrpChks" type="Checkbox"/> Private
+                              </div>
+                              <div class="NewGrp_QueItm">
+                                  Secret Messages<input class="NewGrpChks" type="Checkbox"/> Allow <input class="NewGrpChks" type="Checkbox"/> Deny <span class="ThWinTip">Team Members can send messages  hiding their names</span>
+                              </div>
+                              <div class="TeamHoldr">
+                                  <div class="TeamTtl" onclick="ExpandNewTeam('1')" ><span class="NewTeam1Name">Team 1</span></div>
+                                  <div id="TeamOneHoldr" style="display: none;" >
+                                      <div class="New_Team_Picture">
+                              <div class="NGPic_add_btn">Profile Picture</div> 
+                          </div>
+                                      <div class="NewTeamQueHold">
+                                          <div class="NewGrp_QueItm">
+                                              Team Name &nbsp;&nbsp;&nbsp; <input id="Team1NameInp" oninput="TeamNameinp('1')" class="Th_Win_SubInp" type="text" placeholder="Choose a Team Name" />
+                                  </div>
+                                  <div class="NewGrp_QueItm">
+                                  Team Theme <div class="GroupThmeClr" id="NewTeam1ThmeHold" onclick="$('#NewTeam1Theme').click();" ></div>
+                                  <input type="color" id="NewTeam1Theme" style="display: none;" onchange="NewTeamColorInp('Team1')" />
+                              </div>
+                              
+                              <div class="NewGrp_QueItm">
+                                  Add Members <input class="Th_Win_SubInp" type="text" placeholder="Name of Person" /> <span id="NewGrpMembNum"> 1 member</span> 
+                              </div>
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="TeamTtl" onclick="ExpandNewTeam('2')" ><span class="NewTeam2Name">Team2</span> </div>
+                                  
+                                  <div id="TeamTwoHoldr" style="display: none;" >
+                                      <div class="New_Team_Picture">
+                              <div class="NGPic_add_btn">Profile Picture</div> 
+                          </div>
+                                      <div class="NewTeamQueHold">
+                                          <div class="NewGrp_QueItm">
+                                              Team Name &nbsp;&nbsp;&nbsp; <input class="Th_Win_SubInp" id="Team2NameInp" oninput="TeamNameinp('2')" type="text" placeholder="Choose a Team Name" />
+                                  </div>
+                                  <div class="NewGrp_QueItm">
+                                  Team Theme <div class="GroupThmeClr" id="NewTeam2ThmeHold" onclick="$('#NewTeam2Theme').click();" ></div>
+                                  <input type="color" id="NewTeam2Theme" style="display: none;" onchange="NewTeamColorInp('Team2')" />
+                              </div>
+                              
+                              <div class="NewGrp_QueItm">
+                                  Add Members <input class="Th_Win_SubInp" type="text" placeholder="Name of Person" /> <span id="NewGrpMembNum"> 1 member</span> 
+                              </div>
+                                      </div>
+                                      
+                                  </div>
+                                  
+                              </div>
+                              
+                              <div class="NewGrpSubmit">
+                                  Create Group
+                              </div>
+                              
+                              
+                          </div>
+                          
+                      </div>
+                  </div>
+                 
+              </div>
+              
+              <div class="ThSideWindow" id="Team1Memb" style="display: none;" >
+                  <div class="ThSideWinTtl" id="Team1MembTtl" ><span class="NewTeam1Name">Team 1</span> Members</div>
+                  <div class="ThSideWinIn">
+                      
+                      <div class="GrpMembItm">Vijayakumar  <span class="GrpMemDel">X</span> </div>
+                      <div class="GrpMembItm">Vijayakumar  <span class="GrpMemDel">X</span> </div>
+                  </div>
+              </div>
+              <div class="ThSideWindow" id="Team2Memb" style="display: none;" >
+                  <div class="ThSideWinTtl" id="Team2MembTtl" ><span class="NewTeam2Name">Team 2</span> Members</div>
+                  <div class="ThSideWinIn">
+                      
+                      <div class="GrpMembItm">Vijayakumar  <span class="GrpMemDel">X</span> </div>
+                      <div class="GrpMembItm">Vijayakumar  <span class="GrpMemDel">X</span> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>

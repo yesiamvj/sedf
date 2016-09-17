@@ -1,0 +1,95 @@
+/* 
+    Created on : Jun 22, 2015, 9:52:40 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.TitleBarOut{
+    padding: 8px;
+}
+.TtlBarTtl{
+   font-family:cursive;
+}
+.img_profilePages{
+    max-height: 100px;
+    border: 1px solid silver;
+    box-shadow: 0px 0px 10px -5px grey;
+}
+.img_profilePages:hover{
+    box-shadow: 0px 0px 15px -5px grey;
+    cursor: pointer;
+}
+.SF_Reg_Prof_Type_Itm{
+    display: inline-block;
+    margin: 20px;
+}
+.SF_Reg_Thme_Hold{
+    margin-top: 75px;
+    margin-left: 35%;
+}
+.SF_Reg_Thme_BG{
+    display: inline-block;
+    width:75px;
+    height: 30px;
+    margin-left:50px;
+    background-color: crimson;
+    box-shadow: 0px 0px 5px -2px grey;
+}
+.SF_Reg_Thme_BG:hover{
+    cursor: pointer;
+}
+.SF_Reg_Theme_Ttl{
+    display: inline-block;
+    font-size: 17px;
+    margin: 10px;
+}
+.SF_Reg_Prof_Type_Holdr{
+   text-align: center;
+    padding: 30px 13%;
+}
+.SF_Reg_Prof_Type_Ttl{
+    color: crimson;
+   font-family:cursive;
+    font-size: 16px;
+    margin: 10px;
+}
+.Theater_Window_Profile{
+    position: fixed;
+    top: 30%;
+   right: 0px;
+    left: 0px;
+    background-color: whitesmoke;
+    padding: 10px ;
+    box-shadow: 0px 0px 5px -2px grey;
+}
+.ThWinProfIn{
+    background-color: white;
+    padding: 10px 35px;
+}
+.ThWinProfTtl{
+    color: crimson;
+    font-size: 18px;
+    margin: 10px;
+}
+.ThWinProfCont{
+    margin: 20px;
+    line-height: 2;
+    font-family: cursive;
+}
+.ThWinProfProceed{
+    width: 200px;
+    padding:5px 25px;
+    background-color: navy;
+    color: white;
+    margin: 20px;
+}
+.ThWinProfCont input{
+    margin:0px 100px;
+}
+.ThWinProfProceed:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+}
+.ThWinProfClose{
+    float: right;
+    cursor: pointer;
+    font-family: cursive;
+}

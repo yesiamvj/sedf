@@ -1,0 +1,257 @@
+/* 
+    Created on : Aug 31, 2015, 2:41:39 AM
+    Author     : Vijayakumar M
+*/
+body{
+    margin: 0px;
+    font-family: Segoe UI;
+    background-color: whitesmoke;
+    font-size: 14px;
+}
+.profileImageOnMP{
+    max-height: 200px;
+    max-width: 200px;
+    position: absolute;
+    bottom: -50px;
+    left:75px;
+    box-shadow:2px -3px 5px rgba(0,0,0,0.2);
+    
+}
+.forMainBar{
+    height: 45px;
+    background-color:darkblue;
+    
+}
+.MP_WallPic{
+    position: relative;
+    height:350px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+.MP_WallPic:hover{
+  // background-position: center center;
+       background-attachment:unset;
+  // background-position: bottom;
+    animation: sedfedwallc 3s  forwards;
+}
+
+@-moz-keyframes sedfedwallc{
+   
+   
+     100%{ background-position: center center;}
+}
+@-webkit-keyframes sedfedwallc{
+      100%{ background-position: center center;}
+}
+.MP_MyName{
+    padding: 11px ;
+   text-indent: 300px;
+    background-color: white;
+    text-shadow: 0px 0px 1px white;
+    
+}
+.myRealName{
+    font-size: 21px;
+    
+}
+.myNickName{
+    font-family: cursive;
+    font-size: 19px;
+    margin-left: 20px;
+    color: grey;
+}
+.mySignature{
+    color: darkcyan;
+    margin-left: 25px;
+}
+.sf_dollarSign{
+    font-family: cursive;
+    margin-right: 5px;
+}
+.myLinkToRel{
+    
+    padding: 5px 25px;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: segoe ui;
+    
+}
+.myImpActs{
+    float: right;
+    margin-right: 100px;
+}
+.myLinkToRel:hover{
+    cursor: pointer;
+    background-color: #007b7b;
+}
+.MP_LeftPane{
+    display: inline-block;
+    margin: 30px 0px 0px 50px;
+}
+.primaryDetailHold{
+    background-color: white;
+    
+    
+   padding: 10px 10px;
+    //border: 1px solid silver;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    min-width:250px;
+    margin-top: 10px;
+    max-width: 350px;
+}
+.PrimaryItm{
+    padding: 2px 25px;
+    
+}
+.PrimaryItm div{
+    display: inline-block;
+   
+}
+.verificationDets{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+    color: green;
+}
+.PI_Cnt{
+    font-size: 23px;
+    color: darkcyan;
+}
+.PI_Name{
+    color: gray;
+    margin-left: 20px;   
+}
+#sendMsgBtn{
+    background-color: navy;
+}
+.PI_Que{
+    color: silver;
+    font-size: 14px;
+}
+.PI_Ans{
+    color:navy;
+    font-size: 16px;
+    margin-left:20px;
+}
+#sedfed_dets .PrimaryItm{
+    margin:5px 0px;
+}
+#person_dets .PrimaryItm{
+    margin:5px 0px;
+}
+#person_dets .PI_Ans{
+    color: black;
+    font-size: 14px;
+}
+.MP_Position{
+    background-color: rgba(256,256,256,0.4);
+    padding: 10px 100px;
+    text-align: right;
+    color: silver;
+    
+}
+#personal_dets .PI_Ans{
+    color:darkmagenta;
+    font-size: 15px;
+    
+}
+a{
+    text-decoration: none;
+}
+#personal_dets .PrimaryItm{
+    margin: 5px 0px;
+}
+.MP_RightPane{
+   
+    width:370px;
+    margin-left:865px;
+    position: absolute;
+  //  top: 0px;
+  
+   
+   
+  
+}
+.MP_RP_Itm img{
+    max-height: 75px;
+    max-width: 75px;
+    border-radius: 100px;
+    
+}
+.MP_RP_Itm{
+    margin: 5px;
+    display: inline-block;
+}
+.MP_RPTtl{
+    background-color:darkgray !important;;
+    color: white;
+    padding: 5px 10px;
+}
+.MP_RightPaneCont{
+      padding:10px;
+    text-align: center;
+    
+}
+.MP_RP_Window{
+    margin-top: 35px;
+    background-color: white;
+     box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+.MP_RP_Cnt{
+    display: inline-block;
+    float: right;
+    margin-right: 25px;
+}
+.MP_CenterPane{
+    position: absolute;   
+    left: 375px;
+    width:450px;;
+    margin-top: 40px;
+}
+.MP_CP_WishBtn{
+    background-color:darkolivegreen;
+    color: white;
+    padding:5px;
+    text-align: center;
+    border-radius: 10px;
+}
+.MP_CP_WishBtn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px grey;
+}
+.MP_RP_Itm{
+    color: silver;
+}
+#MyAccLeftPane *{
+    display: none !important;
+}
+.TheWhatsUp{
+    margin-top: 515px !important;;
+    
+    left: 0px !important;
+    margin-left: 345px !important;
+    width: 450px !important;
+    padding-left: 45px !important;
+}
+.secondaryNavTtlBar{
+    text-align: center;
+    background-color: rgba(256,256,256,0.5);
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+    padding-top: 40px;
+}
+.secondaryNavTtlBar .secNavToolItm{
+   display: inline-block;
+   padding: 9px 25px;
+    text-shadow:0px 0px 1px rgba(0,0,0,0.1);
+   color: black;
+}

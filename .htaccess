@@ -1,0 +1,8 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.sedfed.com)(:80)? [NC]
+RewriteRule ^(index.php*) sedfed/$1 [R=301,L]
+order deny,allow

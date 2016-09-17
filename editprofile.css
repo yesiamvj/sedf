@@ -1,0 +1,454 @@
+/* 
+    Created on : Jun 2, 2015, 4:22:42 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+#subtbtn
+{
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Microsoft YaHei UI;
+    cursor: pointer;
+    background-color: white;
+    border: 0px;
+    margin-top: -100px;
+}
+.txtBxxs
+{
+    padding: 5px;
+    width: 210px;
+    border-width:0px 0px 1px 0px ;
+    border-color: gray;
+}
+input
+{
+    font-family: Microsoft YaHei UI;
+}
+#errordiv
+{  border: 1px solid crimson;
+    background-color: #ef0000;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.updtmycntcnt
+{
+    position: absolute;
+}
+
+#totsclcont,#myEduTtl
+{
+    background-color: white;
+}
+#chngeurpic
+{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 90%;
+    margin-left: -485px;
+    top: 75px;
+    text-align: center;
+    opacity: 0.9;
+    z-index: 5000;
+}
+#chngpicdiv
+{
+    top: -200px;
+}
+div#chngepicttl
+{
+    opacity: 1;
+}
+#Mytitle_bar{
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+    color: navy;
+    text-align: center;
+    padding:8px 0px;
+    box-shadow: 0px 5px 5px -7px;
+    font-size: 16px;
+    z-index: 60;
+   top:40px;
+    
+}
+#stsupdtimg
+{
+  max-width: 200px;
+    margin-left: -75px;
+    margin-top: -60px;
+    box-shadow: 1px 1px 5px;
+    max-height:  240px;
+    margin-left: 0px;
+}
+iframe
+{
+    position: fixed;
+    color: navy;
+    margin-top: 10px;
+    margin-left: 300px;
+    width: 200px;
+    border :1px solid white;
+    background-color: white;
+}
+#sf-profileHolder{
+    margin-top: 75px;
+}
+.txtBxx,.txtBxxTtl,.txtBxxOc{
+    font-family: Microsoft YaHei UI;
+    border: 1px solid grey;
+    border-width: 0px 0px 1px 0px;
+    color: navy;
+    font-size:unset;
+    padding: 5px;
+}
+.txtBxx:focus,.txtBxxTttl:focus,.txtBxxOc:focus{
+    border-color: navy;
+    color:green;
+   
+}
+.firDetCont .txtBxx{
+    width:200px;
+}
+#currentInfo .txtBxx{
+    width: 275px;
+}
+.txtBxx:first-letter{
+    text-transform: uppercase;
+}
+.myEduAns .txtBxx{
+    padding: 5px;
+    width:350px;
+}
+.myEduSubTtl .txtBxx{
+    width: 200px;
+}
+#aboutMe .txtBxx{
+    width: 350px;
+    text-align: right;
+}
+.theaterTexts{
+    position: fixed;
+    left: 0px;
+  
+    background-color:rgba(250,250,250,0.75);
+    top: 30%;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    color:navy;
+    
+}
+.thtrTxtIn{
+   background-color:rgba(250,250,250,0.5);
+    padding: 15px 25px;
+}
+.thtrTtl{
+    font-size: 20px;
+}
+.thtrTxtInp{
+    margin: 15px;
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 16px;
+  
+    color: navy;
+}
+a
+{
+    text-decoration: none;
+}
+.thtrPrcd{
+    background-color:navy;
+    margin-left: 15px;
+    padding: 10px 30px;
+    width: 275px;
+    font-size: 15px;
+    color: white;
+}
+.thtrPrcd:hover{
+    cursor: pointer;
+    background-color:grey;
+}
+.thtrprevCont{
+    display: inline-block;
+    margin: 10px;
+    font-size: 15px;
+}
+.thtrSlctItm{
+    display: inline-block;
+    padding: 15px;
+}
+.thtrSlctItm select{
+    margin-left: 15px;
+   // padding: 5px;
+}
+.thtrSlctItm option{
+    padding: 5px 15px;
+}
+.thtrRelSlct{
+    margin:0px 15px;
+}
+.thtrRelSlct option{
+    
+    padding: 7px 20px;
+    font-family: "Times New Roman";
+   
+}
+.thtrRelSlct select{
+    padding: 2px 20px;
+    font-size: 14px;
+}
+.thtrRelwith{
+    display: inline-block;
+    margin-left: -10px;
+}
+.thtrRelwith .thtrTxtInp{
+    width: 400px;
+}
+.thtrprevRelCont{
+     margin: 0px 15px 15px 20px;
+}
+.thtrTxtClose{
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 7px;
+}
+.thtrTxtClose:hover{
+    background-color: red;
+}
+.firDetCont input[type="checkbox"]{
+  // margin-top: 15px;
+}
+#myFirstDetails{
+    height: auto;
+}
+.ThstatusImg img{
+    max-height: 100%;
+    max-width: 100%;
+}
+#currentInfo{
+    margin-top: 300px;
+}
+#firDetContainer{
+    padding-bottom: 20px;
+}
+#stsImg{
+    max-width: 250px;
+}
+.StatusImg{
+    //position: absolute;
+  float: right;
+}
+.StatusImg #stsImg{
+    max-height: 70px;
+    max-width: 70px;
+}
+#ThStatus .thtrTxtIn{
+    height:320px;
+}
+.ThstatusImg{
+    margin: 10px;
+    width: 175px;
+    height: 175px;
+    background-color:rgba(230,230,230,0.5);
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+   // float: left;
+    
+}
+.ThstatusImg div{
+   padding-top: 40%;
+}
+.thtrStsInps{
+    display: inline-block;
+}
+.thtrStsInps input{
+    width: 800px;
+}
+#th_addStsFile{
+    background-color: silver;
+    text-align: center;
+    padding: 10px 35px;
+   margin:0px 15px;
+}
+#th_addStsFile:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+#th_stsclr{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: -10px;
+    float: right;
+    padding:7px 15px 4px 15px;
+    background-color:white;
+    cursor: pointer;
+}
+#th_stsclr img{
+    max-height: 25px;
+}
+.updateTts{
+    background-color: whitesmoke;
+    padding: 7px;
+    text-align: center;
+    box-shadow: 0px 0px 1px -1px;
+    color: black;
+}
+.updateTts:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+#hYT-Tt-Contact .txtBxx{
+    width: 250px;
+}
+#myEducation .myEduSubTtl .txtBxx{
+    width: 50px;
+    color: blue;
+}
+.txtBxxTtl{
+    width: 240px;
+    color:maroon;
+}
+.updateHolder{
+    background-color: whitesmoke;
+    padding: 7px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 0px 1px grey;
+    width: 300px;
+    margin-left: 225px;
+}
+.updateHolder:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+.addNewEdu{
+    float: right;
+    font-size: 14px;
+    background-color: whitesmoke;
+    padding: 2px 15px;
+}
+.addNewEdu:hover{
+    background-color:grey;
+    color: white;
+    cursor: pointer;
+}
+#myFamilyHolder .txtBxx{
+    width: 50px;
+}
+#myFamilyHolder .txtBxxOc{
+    width: 170px;
+
+}
+#myLocationHolder .txtBxx{
+    width: 75px;
+    color: blue;
+}
+#aboutMyFavs .txtBxx,#aboutMyAnnoys .txtBxx{
+    width: 225px;
+}
+#aboutEverything .txtBxx{
+    width: 450px;
+}
+#myGadgHolder .txtBxx{
+    width: 175px;
+}
+#FinishAllEdit{
+    margin: 10px 0px;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+#FinishAllEdit:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+    box-shadow: 0px 0px 5px grey;
+}
+#OverallPictureChange{
+    padding: 15px 0px;
+    background-color: white;
+    display: inline-flex;
+    justify-content:space-around;
+    width: 100%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px -5px grey;
+    
+    
+    
+}
+.OPC_ItmBtn:not(:first-child){
+    border-left: 1px solid silver;
+}
+.OPC_ItmBtn:hover
+{
+    color: blue;
+    
+    cursor: pointer;
+}
+.OPC_ItmBtn
+{
+    padding: 0px 7px;
+ 
+}
+.EnoghSkipBtn
+{
+ position: fixed;
+ bottom: 0px;
+ background-color: white;
+ left: 0px;
+ right: 0px;
+ text-align: right;
+ padding: 7px 55px;
+ color: blue;
+ box-shadow: 0px 0px 5px grey;
+}
+.EnoghSkipBtn:hover
+{
+    color: green;
+    cursor: pointer;
+}
+.img_cont
+{
+    padding: 15px;
+    border:1px solid lightgrey;
+    display: inline-block;
+    justify-content:space-around;
+}
+#imgtot_cont
+{
+    border:1px solid navy;
+    padding: 50px;
+    overflow: auto;
+    height: 360px;
+    justify-content:space-around;
+}
+.choosen_btn
+{
+    cursor: pointer;
+    font-family: Microsoft YaHei UI;
+    background-color: whitesmoke;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border:1px solid lightgray;
+}
+#out_cont
+{
+    display: inline;
+}
+.chngd_pic
+{
+    background-color: red;
+}

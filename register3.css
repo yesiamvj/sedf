@@ -1,0 +1,183 @@
+/* 
+    Created on : Mar 10, 2015, 6:21:07 PM
+    Author     : Vijayakumar M <vijayakumar for www.sedfed.com>
+*/
+body{
+    margin-top: 43px;
+    margin-left: 0%;
+   font-size: 19px;
+   font-family:Times New Romen;
+    position: absolute;
+    font-size: 19px;
+    
+}
+h3
+{
+animation: h3 4s;
+    position: absolute;
+    margin: -40px 0px 0px 120px;
+-webkit-animation: h3 5s; /* Safari and Chrome */
+}
+@-webkit-keyframes h3
+{
+    0%   {text-shadow: 0px 0px 0px;
+       font-size: 20px;}
+25%  {text-shadow: 0px 0px 0px;
+       font-size: 20px;}
+50%  {text-shadow: 0px 0px 0px;
+       font-size: 20px;}
+100% {text-shadow: 0px 0px 5px;
+       font-size: 25px;
+       color: navy;}
+}
+@-moz-keyframes h3
+{
+    0%   {text-shadow: 0px 0px 0px;
+       font-size: 20px;}
+25%  {text-shadow: 0px 0px 0px;
+       font-size: 20px;}
+50%  {text-shadow: 0px 0px 0px;
+       font-size: 20px;}
+100% {text-shadow: 0px 0px 5px;
+       font-size: 25px;
+       color: navy;}
+}
+h2
+{
+animation: h2 4s;
+    position: absolute;
+    color: navy;
+    margin:10px 0px 0px 70px;
+-webkit-animation: h2 5s; /* Safari and Chrome */
+}
+@-webkit-keyframes h2
+{
+    0%   { color: crimson;font-size: 20px;
+    text-shadow: 0px 0px 50px  #FF0000;}
+25%  { color: crimson;font-size: 20px;
+    text-shadow: 0px 0px 50px  #FF0000;}
+50%  { color: crimson;font-size: 20px;
+    text-shadow: 0px 0px 50px  #FF0000;}
+100% {color: red;
+       font-size: 25px;}
+}
+@-moz-keyframes h2
+{
+    0%   { color: crimson;font-size: 20px;
+    text-shadow: 0px 0px 50px  #FF0000;}
+25%  { color: crimson;font-size: 20px;
+    text-shadow: 0px 0px 50px  #FF0000;}
+50%  { color: crimson;font-size: 20px;
+    text-shadow: 0px 0px 50px  #FF0000;}
+100% {color: red;
+       font-size: 25px;}
+}
+div#curins
+{
+animation: curins 10s;
+    position: absolute;
+    margin:150px 0px 0px -15px;
+-webkit-animation: curins 15s; /* Safari and Chrome */
+}
+@-webkit-keyframes curins
+{
+    0%   {}
+25%  {}
+50%  {}
+100% {color:red;text-shadow: 0px 0px 5px;
+      }
+}
+@-moz-keyframes curins
+{
+    0%   {}
+25%  {}
+50%  {}
+100% {color:red;text-shadow: 0px 0px 5px;
+      }
+}
+span#welcmsf
+{
+animation: welcmsf 5s;
+    position: absolute;
+    color: #ef0000;
+    font-weight: bold;
+    font-size: 21px;
+        
+    margin: 70px 0px 0px -100px ;
+-webkit-animation: welcmsf 0s; /* Safari and Chrome */
+}
+@-moz-keyframes welcmsf
+{
+ 0%   {font-size:18px;}
+25%  {font-size:18px;}
+50%  {
+       font-size:18px;}
+75%{font-size:18px;}
+
+100% {font-size: 25px;}
+}
+@-keyframes welcmsf
+{
+ 0%   {font-size:18px;}
+25%  {font-size:18px;}
+50%  {
+       font-size:18px;}
+75%{font-size:18px;}
+
+100% {font-size: 25px;}
+}
+#title_bar{
+    top: 0px;
+    position: fixed;
+   border: solid #ef0000;
+    border-width: 2px 2px 2px 2px;
+    background-color:#ef0000;
+    padding: 6px;
+    width: 100%;
+    text-indent: 35%;
+    
+    z-index: 100;
+     -moz-animation: 1.5s title-bar;
+    -webkit-animation: 1.5s title-bar;
+}
+#sedfed{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+#rwlcmemsg{
+    position: absolute;
+    padding: 20px 20px 10px 40px;
+    color: darkblue;
+    font-size: 19px;
+}
+#helps{
+    -webkit-animation-name: expnd;
+    -moz-animation: expnd 2s;
+    -webkit-animation-duration: 2s;
+    padding:0px 0px 50px 0px; 
+    position: fixed;
+    margin:-40px 0px 0px 210px;
+    height: 100%;
+    display: inline-block;
+   // float:right;
+    width: 325px;
+   z-index: 50;
+    height: 550px;
+    background-color: whitesmoke;
+    border: solid 1px crimson;   
+}
+#whatsrch
+{
+    color: navy;;
+    font-size:17px;
+ 
+}
+

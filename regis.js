@@ -1,0 +1,4 @@
+function subt()
+{
+    alert("ok");
+}

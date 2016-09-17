@@ -1,0 +1,1176 @@
+/* 
+    Created on : Jun 16, 2015, 7:04:47 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+.onlvecnt
+{
+    font-size: 14px;
+}
+#chnggpicupdt
+{
+    max-width: 300px;
+    max-height: 200px;
+}
+#myonlineicon
+{
+    background-color: green;
+    display: block;
+   width: 7px;
+   height: 7px;
+    margin-left: 130px;
+    color: white;
+    margin-top: -25px;
+    border-radius: 3px;
+}
+.Online_Ppl_Out{
+    top:70px;
+    bottom: 0px;
+    right: 0px;
+    width: 250px;
+    background-color:whitesmoke;
+    position:absolute;
+    padding:7px;
+}
+.Online_Ppl_In{
+    background-color: white;
+    height: 100%;
+}
+.Online_Ppl_Ttl{
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 2px 25px;
+    box-shadow: 2px 1px 3px -2px grey;
+    position: absolute;
+     
+}
+.Online_Active_Chat{
+    position: absolute;
+    bottom: 0px;
+    box-shadow:0px -5px 10px -7px grey;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    z-index: 10;
+    background-color: white;
+}
+.OAC_In{
+  padding: 10px;
+}
+.OAC_Itm{
+    display: inline-block;
+    margin:5px;
+}
+.OAC_ItmImg{
+    max-width: 50px;
+    border-radius: 30px;
+    max-height: 50px;
+}
+.OAC_ItmCount{
+    background-color: crimson;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding:1.5px 3px;
+    min-width: 15px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.Online_Live_Ppl{
+  //  padding: 0px 10px;
+    padding-left: 15px;
+   margin-top: 15px;
+    
+}
+.OL_Itm{
+    display: inline-block;
+    margin:3px;
+    padding:5px;
+}
+.OL_Itm:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 2px -1px grey;
+}
+.Online_Live_In{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height:650px;
+}
+.forFullView{
+    height: 300px;
+    width: 100px;
+   // background-color: blue;
+}
+.OLPN_Itm{
+    display: inline-flex;
+    width: 210px;
+    margin-bottom: 10px;
+}
+.OLPN_Itm:hover{
+    cursor: pointer;
+    background-color:  aliceblue;
+}
+.OLPN_ItmImg{
+    max-height: 40px;
+    max-width: 40px;
+    float:left;
+    margin-right: 10px;
+}
+.OLPN_ItmName,.OLPN_ItmNameOn,.OLPN_ItmNameOff{
+    color: green;
+    margin-top:5px;
+}
+.OLPN_ItmDets{
+    color: silver;
+    font-size: 11px;
+    margin-left: 5px;
+}
+.OLV_Circle{
+    display: inline-block;
+    width:11px;
+    height:11px;
+    background-color:silver;
+    border-radius: 10px;
+    margin:0px 7px;
+    margin-top: 2px;
+   
+}
+.OLV_Sqre{
+    width: 11px;
+    height: 11px;
+    background-color:silver;
+    display: inline-block;
+    margin-left: 20px;
+   
+}
+.OLV_Nme{
+    background-color:silver;
+    height: 2px;
+    width:15px;
+    margin-right:7px;
+    margin-bottom: 4.5px;
+    
+}
+.OLV_Type{
+    display: inline-block;
+    margin-left: 150px;
+   position: absolute;
+    margin-top: 4px;
+    cursor: pointer;
+    opacity: 0.1;
+}
+.OLV_Type:hover{
+    opacity: 1;
+}
+.OLV_Type div{
+    display: inline-block;
+}
+.Online_Tool_Hold{
+    margin-top: 5px;
+    float: right;
+    margin-right: 5px;
+}
+.Online_Tool_Itm{
+    display: inline-block;
+    margin:0px 10px;
+}
+.Online_Tool_Itm{
+    cursor: pointer;
+}
+.Online_Tool_Img{
+    max-width:15px;
+}
+#Online_Status{
+    background-color:rgb(0,200,0);
+    width: 10px;
+    height:10px;
+    border-radius: 10px;
+    margin-bottom:2px;
+    //border: 1px solid rgb(0,200,0);
+    box-shadow: -5px 5px 5px -4px green;
+}
+.Online_Tool_Expnd{
+    padding:5px 10px;
+    //margin-bottom: -20px;
+}
+.OTE_Itm{
+   // margin-top: 30px;
+}
+.OTE_Itm input{
+    width:90%;
+    padding:5px 10px;
+    font-family: "Times New Roman";
+    color: crimson;
+}
+.OTE_Itm div{
+    display: inline-block;
+}
+.OTE_View_Itm:hover{
+    cursor: pointer;
+}
+.OTE_moreItm{
+    color: black;
+    ///margin-left: 10px;
+    padding: 5px 10px;
+}
+.OTE_moreItm:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.OTE_OState{
+    margin: 25px 0px -5px 10px;
+   color: green;
+
+}
+.OTE_OSChnge{
+    background-color: whitesmoke;
+    padding: 5px 15px;
+    color: black;
+}
+.OTE_Nxt_OS{
+    float: right;
+    color:silver;
+}
+.Online_Tab_Hold{
+    position: absolute;
+    right: 0px;
+    width: 265px;
+    margin-left: 00px;
+    z-index:9;
+    top: 50px;
+}
+.Online_Tab_Itm{
+    display: inline-block;
+    color:grey;
+    padding:5px 10px;
+    background-color:rgba(250,250,250,0.9);
+    
+}
+.Online_Tab_Itm:hover{
+    cursor: pointer;
+    background-color: white;
+    color: navy;
+}
+#CurOnlineTab{
+    background-color: whitesmoke;
+    padding: 5px 30px;
+    color: black;
+    border-radius: 0px 30px 0px 0px;
+   
+}
+#Offline_NameFace .OLPN_ItmName,.OLPN_ItmNameOff{
+    color: crimson;
+}
+.OAC_Minimize{
+    display: inline-block;
+    float: right;
+    background-color:silver;
+    text-align: center;
+    width: 18px;
+    color:white;
+}
+.OAC_Minimize:hover{
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+}
+#OAC_Minimized{
+    width: 220px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px 20px;
+}
+#OAC_Minimized:hover{
+    cursor: pointer;
+}
+.newGroupBtn{
+    background-color: whitesmoke;
+    padding: 5px;
+    margin:5px 15px;
+    text-align: center;
+    color: grey;
+}
+.newGroupBtn:hover{
+    cursor: pointer;
+    color: navy;
+}
+.Theater_Window{
+    position: absolute;
+    background-color:rgba(0,0,0,0.1);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+.Theater_Window_Out{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 19%;
+    left: 0px;
+    right: 0px;
+    padding:7px;
+}
+.Theater_Window_In{
+    background-color: white;
+    padding: 20px 25px;
+}
+.ThWin_Ttl{
+    color:crimson;
+    font-size: 17px;
+}
+.Th_Win_Innr{
+    margin: 20px;
+    max-height: 400px;
+    overflow-y:auto;
+}
+.New_Group_Picture{
+    width: 175px;
+    height: 175px;
+    background-color:whitesmoke;
+    color: silver;
+  //  display: inline-block;
+    text-align: center;
+   position: absolute;
+   
+}
+.New_Group_Picture:hover{
+    cursor: pointer;
+    background-color:aliceblue;
+    color:green;
+}
+.New_Group_Picture img{
+    max-width: 175px;
+    max-height: 175px;
+}
+.New_Group_Quests{
+   display: inline-block;
+   margin-left: 200px;
+}
+
+.Th_Win_Inp{
+    padding: 7px 15px;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: navy;
+    width: 550px;
+}
+.NewGrp_QueItm:first-child{
+    margin-top:10px;
+}
+.NewGrp_QueItm{
+    margin-top: 20px;
+    color: grey;
+}
+.GroupThmeClr{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.NewGrpChks{
+    margin:0px 10px 0px 40px;
+}
+.ThWinTip{
+    color: silver;
+    margin: 0px 50px;
+}
+.NGPic_add_btn{
+    margin-top:70px;
+}
+.NewGroupMembrs{
+    float: right;
+    background-color:blue;
+    height: 200px;
+}
+.ThSideWindow{
+    position: absolute;
+    right: 100px;
+    top: 75px;
+    height: 500px;
+    width:250px;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 5px -3px black;
+}
+.ThSideWinTtl{
+    background-color: silver;
+    padding: 5px 15px;
+    color: white;
+}
+.ThSideWinIn{
+    background-color: white;
+    height: 455px;
+    margin:7px 5px;
+    padding:1px 5px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+#GrpMembItm{
+    padding: 5px 10px;
+    margin-top:3px;
+    background-color:whitesmoke;
+}
+.GrpMembItm:hover{
+    background-color: aliceblue;
+}
+.GrpMemDel{
+    float: right;
+}
+.GrpMemDel:hover{
+    color: crimson;
+    cursor: pointer;
+}
+.Th_Win_SubInp{
+    width: 400px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: "Times New Roman";
+    margin: 0px 15px;
+    color: crimson;
+}
+#NewGrpMembNum{
+    color: green;
+    font-weight: bold;
+}
+.NewGrpSubmit{
+    margin-top: 30px;
+    background-color:grey;
+    color:white;
+    padding: 7px 25px;
+    width: 300px;
+    display:inline-block;
+    font-size: 15px;
+}
+.NewGrpSubmit:hover{
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+}
+.CloseThWin{
+    position: absolute;
+    float: right;
+    right: 50px;
+    color:crimson;
+    padding:2px 5px;
+}
+.CloseThWin:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+.TeamHoldr{
+   // margin: 10px;
+}
+.TeamTtl{
+    margin-top: 20px;
+    font-size: 15px;
+    color:blue;
+    background-color: whitesmoke;
+    padding: 5px 15px;
+}
+.TeamTtl:hover{
+    cursor: pointer;
+}
+#TeamOneHoldr{
+    
+}
+.TeamHoldr .Th_Win_SubInp{
+    width: 300px;
+}
+.New_Team_Picture{
+  width: 125px;
+    height: 125px;
+    background-color:whitesmoke;
+    color: silver;
+  //  display: inline-block;
+    text-align: center;
+  // position: absolute;   
+    float: left;
+}
+.NewTeamQueHold{
+    margin-left: 150px;
+}
+.New_Team_Picture:hover{
+    cursor: pointer;
+    background-color:aliceblue;
+    color:green;
+}
+.New_Team_Picture img{
+    max-width: 125px;
+    max-height: 125px;
+}
+.New_Team_Picture .NGPic_add_btn{
+    margin-top: 50px;
+   
+}
+#CreateNewTeams .New_Group_Quests{
+    margin-left: 25px;
+}
+#Team1Memb{
+    right: 375px;
+}
+.OthrGrpTtl{
+    color: silver;
+    padding-bottom:5px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+.GrpreqJoinBtn{
+  display: inline;
+  background-color:navy;
+    color: white;
+  height: 21px;
+    margin-left: 35px;
+}
+.GrpreqJoinBtn:hover{
+    background-color:rgb(0,0,100);
+    color: white;
+    cursor: pointer;
+}
+.TeamTopicTtl{
+    color:black;
+    background-color: whitesmoke;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.OLTeamItm .OLPN_Itm:hover{
+    background-color: transparent;
+    cursor: unset;
+}
+#CreateNewBattle .Th_Win_Innr{
+    margin-left: -150px;
+}
+#UpdateBattle .Th_Win_Innr{
+     margin-left: -150px;
+}
+.OLPN_ItmTmlve{
+    margin-left:10px;
+    background-color:silver;
+    color: white;
+    padding: 1px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+}
+.ico_TeamSet{
+    max-height: 15px;
+    float: right;
+}
+.ico_TeamSet:hover{
+    cursor: pointer;
+}
+.OLTM_TmSets{
+    position:  absolute;
+    margin-left: 80px;
+    box-shadow: 0px 0px 5px -1px grey;
+    display: none;
+}
+
+.OLTM_TmSetCont{
+    background-color: whitesmoke;
+    padding:1px 1px;
+}
+.OLTM_TmSetItm{
+    background-color: white;
+    margin:5px 5px;
+    padding: 3px 15px;
+    color:black;
+}
+.OLTM_TmSetItm:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.OLPN_TmSetIn{
+  //  background-color: white;
+}
+.my_team_members
+{
+    padding: 8px;
+    background-color:rgba(0,0,0,0.7);
+    color:white;
+    border-radius: 5px;
+    position:absolute;
+        
+
+}
+/* 
+    Created on : Jun 16, 2015, 7:04:47 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+
+.Online_Ppl_Out{
+    top:16.5%;
+    
+    left:1125px;
+    width:250px;
+    background-color:white;
+    position:absolute;
+    //padding:0px 7px;
+    box-shadow: -2px 5px 2px rgba(0,0,0,0.1);
+    min-height: 500px;
+}
+.Online_Ppl_In{
+    background-color: white;
+    height: 100%;
+}
+.Online_Ppl_Ttl{
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 2px 25px;
+    box-shadow: 2px 1px 3px -2px grey;
+    position: absolute;
+     
+}
+.Online_Active_Chat{
+    position: absolute;
+    bottom: 0px;
+    box-shadow:0px -5px 10px -7px grey;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    z-index: 10;
+    background-color: white;
+}
+.OAC_In{
+  padding: 10px;
+}
+.OAC_Itm{
+    display: inline-block;
+    margin:5px;
+}
+.OAC_ItmImg{
+    max-width: 50px;
+    border-radius: 30px;
+    max-height: 50px;
+}
+.OAC_ItmCount{
+    background-color: crimson;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding:1.5px 3px;
+    min-width: 15px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.Online_Live_Ppl{
+  //  padding: 0px 10px;
+    padding-left: 15px;
+   margin-top: 15px;
+    
+}
+.OL_Itm{
+    display: inline-block;
+    margin:3px;
+    padding:5px;
+}
+.OL_Itm:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 2px -1px grey;
+}
+.Online_Live_In{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height:650px;
+}
+.forFullView{
+    height: 300px;
+    width: 100px;
+   // background-color: blue;
+}
+.OLPN_Itm{
+    display: inline-flex;
+    width: 210px;
+    margin-bottom: 10px;
+}
+.OLPN_Itm:hover{
+    cursor: pointer;
+    background-color:  aliceblue;
+}
+.OLPN_ItmImg{
+    max-height: 40px;
+    max-width: 40px;
+    float:left;
+    margin-right: 10px;
+}
+.OLPN_ItmName,.OLPN_ItmNameOn,.OLPN_ItmNameOff{
+    color: green;
+    margin-top:5px;
+}
+.OLPN_ItmDets{
+    color: silver;
+    font-size: 11px;
+    margin-left: 5px;
+}
+.OLV_Circle{
+    display: inline-block;
+    width:11px;
+    height:11px;
+    background-color:silver;
+    border-radius: 10px;
+    margin:0px 7px;
+    margin-top: 2px;
+   
+}
+.OLV_Sqre{
+    width: 11px;
+    height: 11px;
+    background-color:silver;
+    display: inline-block;
+    margin-left: 20px;
+   
+}
+.OLV_Nme{
+    background-color:silver;
+    height: 2px;
+    width:15px;
+    margin-right:7px;
+    margin-bottom: 4.5px;
+    
+}
+.OLV_Type{
+    display: inline-block;
+    margin-left: 150px;
+   position: absolute;
+    margin-top: 4px;
+    cursor: pointer;
+    opacity: 0.1;
+}
+.OLV_Type:hover{
+    opacity: 1;
+}
+.OLV_Type div{
+    display: inline-block;
+}
+.Online_Tool_Hold{
+    margin-top: 5px;
+    float: right;
+    margin-right: 5px;
+}
+.Online_Tool_Itm{
+    display: inline-block;
+    margin:0px 10px;
+}
+.Online_Tool_Itm{
+    cursor: pointer;
+}
+.Online_Tool_Img{
+    max-width:15px;
+}
+#Online_Status{
+    background-color:rgb(0,200,0);
+    width: 10px;
+    height:10px;
+    border-radius: 10px;
+    margin-bottom:2px;
+    //border: 1px solid rgb(0,200,0);
+    box-shadow: -5px 5px 5px -4px green;
+}
+.Online_Tool_Expnd{
+    padding:5px 10px;
+    //margin-bottom: -20px;
+}
+.OTE_Itm{
+   // margin-top: 30px;
+}
+.OTE_Itm input{
+    width:90%;
+    padding:5px 10px;
+    font-family: "Times New Roman";
+    color: crimson;
+}
+.OTE_Itm div{
+    display: inline-block;
+}
+.OTE_View_Itm:hover{
+    cursor: pointer;
+}
+.OTE_moreItm{
+    color: black;
+    ///margin-left: 10px;
+    padding: 5px 10px;
+}
+.OTE_moreItm:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.OTE_OState{
+    margin: 25px 0px -5px 10px;
+   color: green;
+
+}
+.OTE_OSChnge{
+    background-color: whitesmoke;
+    padding: 5px 15px;
+    color: black;
+}
+.OTE_Nxt_OS{
+    float: right;
+    color:silver;
+}
+.Online_Tab_Hold{
+   
+    right:0%;
+    top: 12.5%;
+    
+}
+.Online_Tab_Itm{
+    display: inline-block;
+    color:grey;
+    padding:5px 15px;
+    background-color:rgba(250,250,250,0.9);
+    
+}
+.Online_Tab_Itm:hover{
+    cursor: pointer;
+    background-color: white;
+    color: navy;
+}
+#CurOnlineTab{
+    background-color: white;
+    padding: 5px 30px;
+    color: black;
+    border: none !important;
+   
+}
+#Offline_NameFace .OLPN_ItmName,.OLPN_ItmNameOff{
+    color: crimson;
+}
+.OAC_Minimize{
+    display: inline-block;
+    float: right;
+    background-color:silver;
+    text-align: center;
+    width: 18px;
+    color:white;
+}
+.OAC_Minimize:hover{
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+}
+#OAC_Minimized{
+    width: 220px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px 20px;
+}
+#OAC_Minimized:hover{
+    cursor: pointer;
+}
+.newGroupBtn{
+    background-color: whitesmoke;
+    padding: 5px;
+    margin:5px 15px;
+    text-align: center;
+    color: grey;
+}
+.newGroupBtn:hover{
+    cursor: pointer;
+    color: navy;
+}
+.Theater_Window{
+    position: absolute;
+    background-color:rgba(0,0,0,0.1);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100000;
+}
+.Theater_Window_Out{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 19%;
+    left: 0px;
+    right: 0px;
+    padding:7px;
+}
+.Theater_Window_In{
+    background-color: white;
+    padding: 20px 25px;
+}
+.ThWin_Ttl{
+    color:crimson;
+    font-size: 17px;
+}
+.Th_Win_Innr{
+    margin: 20px;
+    max-height: 400px;
+    overflow-y:auto;
+}
+.New_Group_Picture{
+    width: 175px;
+    height: 175px;
+    background-color:whitesmoke;
+    color: silver;
+  //  display: inline-block;
+    text-align: center;
+   position: absolute;
+   
+}
+.New_Group_Picture:hover{
+    cursor: pointer;
+    background-color:aliceblue;
+    color:green;
+}
+.New_Group_Picture img{
+    max-width: 175px;
+    max-height: 175px;
+}
+.New_Group_Quests{
+   display: inline-block;
+   margin-left: 200px;
+}
+
+.Th_Win_Inp{
+    padding: 7px 15px;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: navy;
+    width: 550px;
+}
+.NewGrp_QueItm:first-child{
+    margin-top:10px;
+}
+.NewGrp_QueItm{
+    margin-top: 20px;
+    color: grey;
+}
+.GroupThmeClr{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.NewGrpChks{
+    margin:0px 10px 0px 40px;
+}
+.ThWinTip{
+    color: silver;
+    margin: 0px 50px;
+}
+.NGPic_add_btn{
+    margin-top:70px;
+}
+.NewGroupMembrs{
+    float: right;
+    background-color:blue;
+    height: 200px;
+}
+.ThSideWindow{
+    position: absolute;
+    right: 100px;
+    top: 75px;
+    height: 500px;
+    width:250px;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 5px -3px black;
+}
+.ThSideWinTtl{
+    background-color: silver;
+    padding: 5px 15px;
+    color: white;
+}
+.ThSideWinIn{
+    background-color: white;
+    height: 455px;
+    margin:7px 5px;
+    padding:1px 5px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.GrpMembItm{
+    padding: 5px 10px;
+    margin-top:3px;
+    background-color:whitesmoke;
+}
+.GrpMembItm:hover{
+    background-color: aliceblue;
+}
+.GrpMemDel{
+    float: right;
+}
+.GrpMemDel:hover{
+    color: crimson;
+    cursor: pointer;
+}
+.Th_Win_SubInp{
+    width: 400px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: "Times New Roman";
+    margin: 0px 15px;
+    color: crimson;
+}
+#NewGrpMembNum{
+    color: green;
+    font-weight: bold;
+}
+.NewGrpSubmit{
+    margin-top: 30px;
+    background-color:grey;
+    color:white;
+    padding: 7px 25px;
+    width: 300px;
+    display:inline-block;
+    font-size: 15px;
+}
+.NewGrpSubmit:hover{
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+}
+.CloseThWin{
+    position: absolute;
+    float: right;
+    right: 50px;
+    color:crimson;
+    padding:2px 5px;
+}
+.CloseThWin:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+.TeamHoldr{
+   // margin: 10px;
+}
+.TeamTtl{
+    margin-top: 20px;
+    font-size: 15px;
+    color:blue;
+    background-color: whitesmoke;
+    padding: 5px 15px;
+}
+.TeamTtl:hover{
+    cursor: pointer;
+}
+#TeamOneHoldr{
+    
+}
+.TeamHoldr .Th_Win_SubInp{
+    width: 300px;
+}
+.New_Team_Picture{
+  width: 125px;
+    height: 125px;
+    background-color:whitesmoke;
+    color: silver;
+  //  display: inline-block;
+    text-align: center;
+  // position: absolute;   
+    float: left;
+}
+.NewTeamQueHold{
+    margin-left: 150px;
+}
+.New_Team_Picture:hover{
+    cursor: pointer;
+    background-color:aliceblue;
+    color:green;
+}
+.New_Team_Picture img{
+    max-width: 125px;
+    max-height: 125px;
+}
+.New_Team_Picture .NGPic_add_btn{
+    margin-top: 50px;
+   
+}
+#CreateNewTeams .New_Group_Quests{
+    margin-left: 25px;
+}
+#Team1Memb{
+    right: 375px;
+}
+.OthrGrpTtl{
+    color: silver;
+    padding-bottom:5px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+.GrpreqJoinBtn{
+    display: inline-block;
+    background-color:navy;
+    color: white;
+    padding:3px 15px;
+    margin-left: 5px;
+}
+.GrpreqJoinBtn:hover{
+    background-color:rgb(0,0,100);
+    color: white;
+    cursor: pointer;
+}
+.TeamTopicTtl{
+    color:black;
+    background-color: whitesmoke;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.OLTeamItm .OLPN_Itm:hover{
+    background-color: transparent;
+    cursor: unset;
+}
+#CreateNewBattle .Th_Win_Innr{
+    margin-left: -150px;
+}
+#UpdateBattle .Th_Win_Innr{
+     margin-left: -150px;
+}
+.OLPN_ItmTmlve{
+    margin-left:10px;
+    background-color:silver;
+    color: white;
+    padding: 1px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+}
+.ico_TeamSet{
+    max-height: 15px;
+    float: right;
+}
+.ico_TeamSet:hover{
+    cursor: pointer;
+}
+.OLTM_TmSets{
+    position:  absolute;
+    margin-left: 80px;
+    box-shadow: 0px 0px 5px -1px grey;
+    display: none;
+}
+
+.OLTM_TmSetCont{
+    background-color: whitesmoke;
+    padding:1px 1px;
+}
+.OLTM_TmSetItm{
+    background-color: white;
+    margin:5px 5px;
+    padding: 3px 15px;
+    color:black;
+}
+.OLTM_TmSetItm:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.OLPN_TmSetIn{
+  //  background-color: white;
+}
+#CurOnlineTab{
+    border-radius: 0px;;
+}

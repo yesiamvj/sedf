@@ -1,0 +1,29 @@
+/* 
+    Created on : Jul 30, 2015, 12:48:13 AM
+    Author     : Vijayakumar M
+*/
+.emptyWallPic{
+    height: 300px;
+    margin: 0px 15px;
+    background-color: whitesmoke;
+}
+.emptyProfPic{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: silver;
+    top: 150px;
+    left:25%;
+}
+.wallTip{
+    position: absolute;
+   left: 45%;
+    top: 30%;
+    color: grey;
+    font-size: 15px;
+}
+#Mytitle_bar{
+    background-color: white;
+    padding: 12px 0px;
+}

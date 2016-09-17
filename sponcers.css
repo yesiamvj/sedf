@@ -1,0 +1,61 @@
+/* 
+    Created on : Aug 14, 2015, 10:28:51 AM
+    Author     : Vijayakumar M
+*/
+body{
+    background-color: whitesmoke;
+}
+.memberFace img{
+    max-height: 125px;
+    border-radius: 150px;
+}
+
+.TtlBar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color:darkmagenta;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0px 0px 1px black;
+    text-indent: 15%;
+    padding: 7px;
+    box-shadow:0px 2px 30px darkmagenta;
+    z-index: 10;
+}
+.SubTtl{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+   padding:10px;
+    padding-top: 60px;
+    text-align: center;
+     box-shadow:0px 2px 2px grey;
+}
+.pageInnerPane{
+    margin-top: 125px;
+    text-align: center;
+}
+.pageInrItm{
+    display: inline-block;
+    margin: 25px;
+    line-height: 2;
+}
+.membName{
+    font-size:25px;
+    color: darkcyan;
+    
+}
+.memberDets{
+    margin: 10px;
+    background-color: white;
+    padding:10px 25px;
+    padding-bottom: 15px;
+    box-shadow: 0px 5px 7px -7px magenta;
+}
+.membSign{
+    color: silver;
+}

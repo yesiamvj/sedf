@@ -1,0 +1,1415 @@
+/* 
+    Created on : May 19, 2015, 8:19:49 PM
+    Author     : Vijayakumar <vijayakumar at www.sedfed.com>
+*/
+
+body{
+    margin-top: 43px;
+    margin-left: 0%;
+    margin-right: 0px;
+   //font-family:Arial, Helvetica, sans-serif;
+   font-family:slabo;
+   font-size: 14px;
+ color:navy;
+     font-family: "Segoe UI";
+   background-image: url('backs.png');
+    background-size: 7px;
+    background-attachment: fixed;
+  // background-color:  ivory;
+//  background-image: url('backs.png');
+    overflow-x: hidden;
+    margin-bottom: -10px;
+    background: none;
+    background-color: whitesmoke;
+}
+body:hover{
+  //  background-color:  cornsilk;
+}
+#title_bar{
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+   //border: #ef0000 outset;
+    border-width: 1px 2px 1px 2px;
+    background-color:rgb(250,250,250);
+    height: 30px;
+    padding: 15px 100px;
+  
+    z-index: 60;
+    box-shadow: 0px 0px 10px black;
+}
+#title_bar:hover{
+    box-shadow: 0px 0px 25px;
+}
+#pageLoadStatus{
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    top: -1px;
+    width:100%;
+    height: 3px;
+    z-index: 50;
+    -moz-animation:  title-bar 2s;
+   
+    -webkit-animation: title-bar 2s;
+    
+}
+#sedfedUserName{
+    border: solid;
+    border-width:0px 0px 0px 5px;
+    padding: 2px 0px 2px 25px;
+    cursor: pointer;
+   font-size: 20px;
+   
+    border-color:crimson;
+   text-shadow: 0px 0px 1px white;
+}
+#SF_UserAddrsBarDets{
+    position: absolute;
+    top: -25px;
+    right:0px;
+    background-color: white;
+   z-index: 102;
+    padding:5px 175px 5px 50px;
+    box-shadow: 0px 0px 7px -3px grey;
+}
+.SF_UADBD_Itm{
+    margin: 10px 0px;
+    color: grey;
+}
+.SedFed_Primary_Detail{
+    position: fixed;
+    right: 0px;
+   top: 34px;
+    
+}
+.SF_UserId{
+    position: absolute;
+    font-size: 17px;
+    padding:3px 12px 7px 12px;
+    background-color:crimson;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    right: 75px;
+    box-shadow: 5px 5px 5px -5px grey;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
+    top: -20px;
+}
+.SFTtl_userIdText{
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    right: 60px;
+    margin-top: -22.5px;
+    background-color:white;
+    padding:10px 105px 10px 30px;
+    color: crimson;
+    box-shadow: -2px 2px 4px -3px grey;
+  
+    width:70px;
+    z-index: 101;
+}
+@-moz-keyframes title-bar{
+     0%{width:0%;background-color: navy;}
+     100%{width: 100%;background-color: white;}
+}
+@-webkit-keyframes title-bar{
+     0%{width:0%;background-color: navy;}
+     100%{width: 100%;background-color: white;}
+}
+#sf-wallpprHoldr{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    box-shadow: 0px 0px 15px grey;
+    background-position:center;
+   // background-size:100% 100%;
+    background-repeat: no-repeat;
+   // resize:both;
+    width: 460px;
+    
+}
+#sf-wallpprHoldr:hover{
+    z-index: 61;
+    cursor: pointer;
+}
+#chngeWallPic{
+    background-color:rgba(0,0,0,0.5);
+    padding: 8px 20px;
+    color: white;
+    opacity: 0.4;
+    font-size: 15px;
+}
+#chngeWallPic:hover{
+    opacity: 1;
+}
+
+#img-wallpaper{
+   max-height:100%;
+   position:fixed;
+   top: 0px;
+   left:-5000px;
+    box-shadow: 0px 0px 90px -10px;
+}
+#img-wallpaper:hover{
+    z-index: 61;
+    cursor:pointer;
+}
+#sf-profileHolder{
+   
+  margin:0px 15%;
+  margin-top:50%;
+    background-color: white;
+    box-shadow: 0px 0px 15px grey;
+}
+#sf-profileHolder img{
+    max-width: 200px;
+    max-height: 250px;
+}
+#howThisPerson,#howThisPersonStuffs{
+   // height: 40px;
+    background-color:white;
+    box-shadow: 0px 0px 10px grey;
+    z-index: 10;
+   // margin-top: -30px;
+    margin: 0px -50px;
+    padding: 20px 0px 25px 10px;
+}
+#howThisPerson{
+    
+    margin-left: 0px;
+    left: 0px;
+    width: 100%;
+  
+    padding: 20px 0px 0px 10px;
+   // position: absolute;
+    bottom: 0px;
+    margin-top: -15px;
+    background-color: white;
+    
+}
+#innerHTP{
+    text-align: center;
+    margin-left: -50px;
+    width: 100%;
+    
+}
+.howMyProf{
+    color:Black;
+    margin:10px 0px;
+    font-weight: bold;
+    padding: 10px;
+}
+#howThisPersonStuffs .hTP-holders{
+    margin-left: 60px;
+}
+#howThisPersonStuffs{
+    position: absolute;
+    top:1.7%;
+    z-index: 120;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 0px;
+    margin-top: 0px;
+    left: 55%;
+}
+#howThisPersonStuffs>div{
+    background-color: transparent;
+}
+#howThisPersonStuffs .hTP-holders{
+    background-color: transparent;
+    font-size: 0px;
+    margin:0px 10px;
+}
+#howThisPersonStuffs .hTP-holders:hover{
+    background-color: white;
+    
+}
+.hTP-holders {
+   display: inline-block;
+    padding: 7px 20px;
+    margin-left:80px;
+    background-color: white;
+    color: grey;
+    font-size: 13px;
+    
+}
+.hTP-holders:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.hTP-holders img{
+    height: 25px;
+}
+#innerProfile{
+    margin:10px;
+    padding:15px;
+   // box-shadow: 0px 5px 5px;
+}
+#innerProfile:hover{
+   // box-shadow: 0px 5px 7px;
+}
+#myFirstAppear{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding:150px 100px 100px 100px;
+    bottom: 25%;
+    overflow: hidden;
+    margin-top: -10px;
+    background: fixed;
+    background-color: rgb(0,0,100);
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px -2px grey;
+   
+    
+}
+
+#myProfilePic{
+    float: left; 
+    cursor: pointer;
+    position: absolute;
+    top: 37.5%;
+    left: 12.5%;
+   
+}
+#myProfilePic img{
+     border-radius: 100px;
+}
+#chngeProfPic{
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    padding:7px 0px;
+    font-size: 15px;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0.3;
+}
+#chngeProfPic:hover{
+    opacity: 1;
+}
+#myProfilePicOnWall img{
+    max-height: 150px;
+    max-width: 150px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 15px black;
+    opacity: 0.1;
+    z-index: 62;
+    cursor: pointer;
+    display: none;
+}
+#myProfilePicOnWall img:hover{
+    opacity: 0.75;
+    cursor: pointer;
+    z-index: 62;
+}
+.amIexista{
+  
+   padding:7px 20px;
+    text-align: center;
+    font-size: 16px;
+    color:green;
+    cursor: pointer;
+}
+.amIexista:hover{
+    background-color: white;
+}
+.amIexist{
+    text-align: left;
+     background-color:green;
+    padding: 7px 20px;
+    color: white;
+}
+#iAmExist img{
+    position: absolute;
+    max-height: 25px;
+    margin-top:-4px;
+    margin-left: 140px;
+}
+#amIexistorNot{
+    display: inline-block;
+   float: right;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.TtipExist{
+    display: none;
+    position: absolute;
+    background-color:navy;
+    color: white;
+    padding: 7px 15px;
+}
+#myFirstDetails{
+    float: right;
+   // background-color: whitesmoke;
+    width:70%;
+   // height: 245px;
+   
+}
+#firDetInner{
+    display: inline-block;
+  //  background-color:rgba(256,256,256,0.9);
+  //  margin: 5px 0px 5px 5px;
+   // width: 80%;
+   // height: 95%;
+   // padding:5px 20px;
+    float: left;
+  //  border-radius:0px 10px 0px 10px;
+   
+}
+#SedFed_UserNameOnFront{
+    color: white;
+    font-size: 27px;
+    text-shadow: 0px 0px 1px black;
+}
+#firDetInner:hover{
+   // background-color: white;
+}
+#heyYouThere{
+   // float: right;
+   // background-color:white;
+  //  height: 95%;
+   // margin:5px;
+  //  padding:10px 10px 0px 10px;
+    position: fixed;
+    right: 75px;
+    z-index: 100;
+    text-align: center;
+}
+#heyYouThere img{
+    background-color: white;
+    border-radius: 55px;
+    box-shadow:0px 0px 10px green;
+}
+#heyYouThere img{
+    padding: 6px;
+    
+}
+#heyYouThere img:nth-child(1){
+    margin-top: 10px;
+    max-height:35px;
+    max-width:35px;
+    cursor: pointer;
+    
+    
+}
+#heyYouThere img:nth-child(3){
+    margin-top: 10px;
+    max-height:27px;
+    max-width: 27px;
+  //  margin-left: 5px;
+    cursor: pointer;
+     padding:10px;
+    box-shadow:  0px 0px 10px blue;
+}
+#heyYouThere img:nth-child(5){
+    box-shadow: 0px 0px 12px -2px red;
+    padding: 5px 5px 4px 5px;
+    border-radius: 70px;
+   // background-color:transparent;
+}
+#heyYouThere img:nth-child(7),#heyYouThere img:nth-child(9){
+    margin-top: 10px;
+    max-height:25px;
+    max-width: 25px;
+  //  margin-left: 5px;
+    cursor: pointer;
+    padding: 7px;
+   
+}
+#heyYouThere img:nth-child(7){
+     box-shadow: 0px 0px 12px yellow;
+   // border: 1px solid yellow;
+}
+#heyYouThere img:nth-child(9){
+   // box-shadow: 0px 0px 7px grey;
+    background-color:white;
+    box-shadow: none;
+    padding: 2px;
+}
+#heyYouThere img{
+    margin-top: 10px;
+    max-height:35px;
+    max-height: 35px;
+    cursor: pointer;
+}
+.hyticos:hover{
+    transform: rotate(270deg);
+}
+#vrfyPplHold:hover>#vrfyPpl{
+    display: block;
+}
+
+#vrfyPpl{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    line-height:1.75;
+    color: navy;
+    margin-top: 10px;
+    margin-left: -10px;
+    box-shadow: 0px 0px 5px;
+}
+
+#firDetContainer{
+    padding: 10px 15px;
+    line-height:2;
+}
+.firDetCont {
+    margin-left: 20px;
+    font-size: 17px;
+     color: navy;
+}
+
+.firDetTtl {
+   color: grey;
+    margin-top: -3px;
+   font-size: 16px;
+  //  border-bottom: 1px dotted;
+}
+.firDetContEx{
+    float: right;
+    display: inline-block;
+    font-size: 13px;
+    color: grey;
+    margin-right: 15px;
+}
+
+.firDetCont div{
+    display: inline-block;
+}
+#myEduDegree{
+    color:whitesmoke;
+    font-size: 13px;
+    margin-left: 20px;
+   // font-style: italic;
+    font-family:monospace;
+}
+#currentDeg{
+    text-decoration: overline;
+}
+.myCurrentInfoOut{
+   // background-color: whitesmoke;
+    padding:7px 5px 10px 10px;
+    margin-top: 20px;
+}
+#currentInfo{
+   
+  //  position: absolute;
+   // left: 0px;
+   // right: 0px;
+   // bottom:-25px;
+   // box-shadow: 0px 0px 10px black;
+  //  padding-right: 100px;
+   // padding-left: 100px;
+  //  padding-top: 30px;
+ //   padding-bottom: 20px;
+  //  margin: 0px 100px;
+   // padding-right: 0px;
+  //  padding-left: 0px;
+   // z-index: 10;
+}
+.myCurInfoInner{
+  //  background-color: white; 
+    line-height:1.75;
+    padding:30px 25px;
+}
+#currentInfo{
+   // background-color: whitesmoke;
+    
+}
+#currentInfo .myCurInfoInner{
+   // background-color: white;
+    
+}
+#currentInfo{
+  //  padding-bottom: 0px;
+   // margin-left:14%;
+  //  margin-right:14%;
+}
+.profTypeTitle{
+    color:black;
+    font-size: 20px;
+    padding:0px 5px 7px 10px;
+    box-shadow: 0px 5px 6px -6px grey;
+    font-family: cursive;
+    
+}
+#currentInfo .profTypeTitle{
+   // position: absolute;
+    //width:100%;
+    padding: 5px 0px;
+    text-indent: 25px;
+    margin: 0px 0px;
+   // margin-top: -30px;
+   // background-color: whitesmoke;
+}
+#amIalive{
+    display: inline-block;
+    float: right;
+    margin-right:30px;
+    display: none;
+}
+.profInfoTtle,.myEduTtl{
+    color: gray;
+    padding: 7px;
+    //background-color: whitesmoke;
+    font-size: 16px;
+}
+.profInfoItem div{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.profInfoAns {
+   float: right;
+   font-size: 16px;
+}
+.myEduTtl{
+    margin-top: -15px;
+    border-bottom: 1px dotted;
+}
+.myEduTtl:nth-child(n){
+    color:orange;
+    font-weight: bold;
+}
+
+.myEduSubTtl{
+   // text-align: center;
+    margin-left: 30px;
+   margin-top: 3px;
+   padding: 5px;
+    color: darkgray;
+}
+#myEducationHolder{
+   // margin-top:65%;
+}
+.myEduAns {
+    font-size: 16px;
+    margin-left: 50px;
+    //margin-top: -5px;
+}
+
+.myEduItem {
+    margin-bottom: 30px;
+}
+.myEduItem:last-child{
+    margin-bottom: 15px;
+}
+.myEduSubHead{
+    color: darkgray;
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+   
+}
+.myEduSubHead:not(:first-child){
+    margin: 0px 25px;
+     font-size: 14px;
+    
+}
+#myFamilyHolder{
+    
+}
+#myFamilyHolder .myEduItem{
+    margin:7px;
+}
+#myRelationHolder .myEduItem{
+    margin: 7px;
+}
+.myCurrentInfoOut:nth-child(n):not(#currentInfo){
+  //  margin-right: -50px;
+   // padding-right: 30px;
+   // box-shadow: -5px 5px 5px -5px navy;
+}
+.myCurrentInfoOut:nth-child(2n):not(#currentInfo){
+    //float: right;
+    padding-right: 5px;
+   // margin-left: -50px;
+   // padding-left: 50px;
+    margin-right: 0px;
+  //   box-shadow: 5px 5px 5px -5px grey
+}
+
+.divider {
+    color:grey;
+}
+
+.myRelateMF {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    color:grey;
+    margin:-1px 10px;
+}
+.sf-icons{
+    height: 27px;
+    width: 27px;
+    margin:0px 10px;
+}
+.sf-icons30{
+    width: 30px;
+    height: 30px;
+    margin:0px 10px 0px 30px;
+}
+.whoAreCommon{
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+.shwMore{
+    font-size: 13px;
+    margin: 30px;
+    color:darkgray;
+    cursor: pointer;
+}
+.moreItem{
+    font-size: 15px;
+    margin:5px 20px;
+}
+#whoAreCommonNames{
+     position: absolute;
+   
+}
+#commonNameIn{
+    background-color:rgba(0,0,150,0.8);
+    color: white;
+    padding: 5px 15px;
+}
+#commonNameArr{
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid navy;
+    border-left: 10px solid transparent;
+}
+.ExpandMore{
+    background-color: whitesmoke;
+    margin:10px 0px;
+   // color: grey;
+    padding:10px;
+   
+}
+.ExpMoreInner{
+    background-color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: black;
+     cursor: pointer;
+}
+.ExpandMoreArr{
+    display: inline-block;
+     float: right;
+    margin:4px 10px;
+    height: 0px;
+    width: 0px;
+    border-top: 7px solid grey;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transform: rotate(90deg);
+}
+#aboutMyFavs .divider{
+    margin: 0px 30px;
+}
+.favReason{
+    color:darkgray;
+    font-size: 13px;
+}
+#myGadgHolder .gadgMoreDet{
+    display: inline-block;
+    color: grey;
+    font-size: 14px;
+}
+#myGadgHolder .divider{
+    margin: 0px 25px;
+}
+#myGadgHolder .myEduItem{
+    margin-bottom: 10px;
+}
+.heyYoyThereTt{
+    position: fixed;
+     margin-top:15px;
+   right: 80px;
+    box-shadow: 2px 2px 5px -2px navy;
+}
+.hYT-Outer{
+    background-color: whitesmoke;
+   // width: 350px;
+    padding:7px;
+   position: fixed;
+   right: 150px;
+   margin-top: 20px;
+    z-index: 100;
+    box-shadow: -5px 4px 5px -4px grey;
+
+}
+.hYT-Inner{
+    background-color: white;
+   padding: 10px;
+}
+.hYT-Item{
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.hYT-ans{
+    float: right;
+    color:crimson;
+    display: inline-block;
+    margin-left: 100px;
+}
+.hYT-arr{
+    float: right;
+    width: 0px;
+    height: 0px;
+    border-left:15px solid whitesmoke;
+    border-bottom:10px solid transparent;
+    border-top:10px solid transparent;
+    margin-right:-20px;
+}
+.TtTitleProp{
+    color: crimson;
+    border: 1px solid navy;
+    border-width: 0px 0px 1px 0px;
+    margin-left: 10px;
+    padding:2px 3px 5px 3px;
+    font-size: 15px;
+    width: 300px;
+}
+.helpforProp{
+    float: right;
+    display: inline-block;
+    color: grey;
+}
+.helpforProp:hover{
+    cursor: pointer;
+    color: black;
+}
+.propItem {
+    display: inline-block;
+    margin:15px 10px 10px 10px;
+    background-color: whitesmoke;
+    padding:10px 55px;
+    cursor: pointer;
+    //border: 1px solid grey;
+    box-shadow: 2px 2px 2px -1px grey;
+}
+.propItem:hover{
+    background-color: navy;
+    color: white;
+}
+
+.helpWindowOut{
+    position:fixed;
+    background-color:green;
+    max-width:550px;
+    min-height: 300px;
+ //max-height: 500px; 
+    //overflow: auto;
+    top:15%;
+    left: 30%;
+    color: white;
+    box-shadow:0px 0px 10px black;
+    display: none;
+    z-index: 100;
+}
+#HelpWindowInCont{
+  margin: 10px ;
+    background-color:darkgreen;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 2;
+    max-height: 400px;
+    overflow:auto;
+    font-family: Segoe UI;
+    
+}
+#helpWinTitle{
+    box-shadow: 0px 2px 20px black;
+    background-color:darkgreen;
+    padding: 5px 15px;
+}
+#closeHelpWindow{
+    display: inline;
+    float:right;
+}
+#closeHelpWindow:hover{
+    color:whitesmoke;
+    cursor: pointer;
+}
+#helpInnerTitle{
+    font-size: 15px;
+    font-family:cursive;
+}
+#helpContentItem{
+    font-family:Segoe UI;
+    padding: 5px 20px;
+    
+     
+}
+.instantAlert{
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 10px 30px 10px 35px;
+    top:150px;
+    opacity: 0.8;
+    margin-left: -400px;
+}
+#TtPropCont{
+    //line-height: 2;
+    text-align: center;
+}
+.sf-data {
+    display: none;
+}
+.hYT-stsItem{
+    padding:7px 15px;
+    margin-bottom: -10px;
+}
+.hyt-sts {
+    color: grey;
+}
+#hYT-relSts{
+    float: right;
+}
+#forQuickSFprofile{
+    opacity: 0;
+    z-index:100;
+    margin-top: 20px;
+    //margin-left: 5px;
+    position: absolute;
+   background-color: white;
+    padding: 7px 7px 0px 7px;
+}
+#forQuickSFprofile:hover{
+    opacity: 0.95;
+    box-shadow:5px 0px 5px -5px black;
+}
+#forQuickSFprofile>img{ 
+    cursor: pointer;
+    margin: 0px;
+   max-width: 23px;
+    max-height: 23px;
+    margin-bottom: 5px;
+}
+#forQuickSFprofile>img:hover{
+    opacity: 0.9;
+}
+#quickpostrate1{
+    width: 20px;
+}
+#hYT-Tt-Verify .TtTitleProp{
+    margin-top:-5px;
+}
+#hYT-Tt-Verify{
+    margin-top:-0px;
+    
+}
+#hYT-Tt-Verify .hYT-arr{
+   margin-top: -30px;
+    border-bottom: 15px solid whitesmoke;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin-right: 50px;
+}
+#reportFake{
+    background-color:whitesmoke;
+    color:black;
+    text-align: center;
+    margin:5px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px;
+}
+#reportFake:hover{
+    background-color: crimson;
+    color: white;
+}
+.StatusImg{
+    //position: absolute;
+  float: right;
+}
+#stsImg:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px grey;
+}
+.StatusImg #stsImg{
+    max-height: 70px;
+    max-width: 70px;
+}
+#moodWith{
+    margin: 0px 10px;
+    color: crimson;
+}
+.myOrgLocate{
+    float: right;
+    margin-right: 30px;
+    color:green;
+    font-size: 15px;
+}
+.prof1Dets{
+    -moz-animation: 10s profileDets infinite;
+   -moz-animation-delay:10s;
+    animation: 10s profileDets infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes profileDets{
+     0%{transform: rotateY(0deg);}
+    // 50%{transform: rotate(180deg);}
+     100%{transform: rotateY(360deg);}
+}
+@-webkit-keyframes profileDets{
+     0%{transform: rotateY(0deg);}
+     100%{transform: rotateY(360deg);}
+}
+
+
+/* for focus profile */
+#FocusProfileCenter{
+    position: absolute;
+   bottom: -100%;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+   // background-color: white;
+    padding:0% 15%;
+}
+.myFocusProfileWallPaper{
+   height:55%;
+   background-color: blue;
+   margin: 0px -10px;
+ //   box-shadow: 0px 0px 10px grey;
+   
+    background-repeat: no-repeat;
+   
+    background:fixed;
+     background-position: center center;
+     background-size: 100%;
+}
+
+.myFocusProfileFace{
+   
+    position: absolute;
+    top: 15%;
+    left:18%;
+}
+.myFocusProfileFace img{
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px grey;
+}
+.myFocusProfileDetails{
+  
+    background-color: white;
+}
+.myFocusProfile_UserName{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 35px;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+     font-family: "Segoe UI";
+}
+.myFocusProfileDetails{
+    margin-top: 40%;
+    padding:25px 50px;
+    text-align:center;
+}
+.MFPD_Ttl{
+    font-size: 20px;
+    box-shadow: 0px 5px 10px -8px grey;
+    padding:7px 15px;
+    color: blue;
+    font-family: cursive;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.MFPD_Itm div{
+    display: inline-block;
+}
+.MFPD_Itm{
+    padding: 0px 25px;
+    margin-top: 25px;
+}
+.MFPD_Quest{
+    color:orange;
+}
+.MFPD_Ans{
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 20px;
+   margin-left: 30px;
+    font-family: cursive;
+}
+#myCustomAnsQue{
+    color:darkcyan;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    
+}
+.fixed{
+    position: fixed;
+}
+.HTP_TPE_Verifs{
+    color: grey;
+    margin-top: 35px;
+   text-align: center;
+}
+.howMyProf{
+    margin-left: 15%;
+    margin-bottom: 25px;
+}
+.bottomSedFedLogo{
+    width: 100%;
+    padding: 25px;
+    background-color: whitesmoke;
+    left: 0px;
+    margin-left: -20px;
+   // margin-bottom: -55px;
+    margin-top: 50px;
+    text-indent: 35px;
+    color:black;
+    font-size: 16px;
+    font-family: "Times New Roman";
+}
+.bottomSedFedLogo div{
+    display: inline-block;
+}
+.SF_PROFVersion{
+    
+    font-family: Segoe UI;
+    float: right;
+    margin-right: 100px;
+    color: grey;
+    font-size: 14px;
+}
+.HTP_TPE_otherAddrss{
+    text-align: center;
+    margin: 30px 0px;
+    color:darkcyan;
+}
+.profAnotherType{
+    text-decoration: none;
+    
+}
+#currentInfo .profTypeTitle{
+  /*  font-size: 20px;
+    background-color:white;
+    box-shadow: none;
+    text-align: center;
+    padding:10px 0px;
+    color:darkcyan;
+    */
+    
+}
+#howThisPersonStuffs #innerHTP{
+    width: auto;
+}
+#ico_AmIExist{
+    display: inline-block;
+    vertical-align: center;
+    max-height: 20px;
+   // position: absolute;
+    float: left;
+    margin-right: 20px;
+}
+#sedfedUserName{
+    border: none;
+}
+#OtherWiseName{
+    text-align: right;
+}
+#firDetInner{
+    width: 85%;
+}
+.OWN_Ttl{
+    color:grey;
+    font-size: 14px;
+    margin-top: 10%;
+}
+.OWN_OtherName{
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    
+    
+}
+#firDetContainer{
+    display: none;
+}
+#myProfilePic{
+   left: 0px;
+    width: 100%;
+    text-align: center;
+    top: 27.5%;
+}
+.MyNameIs{
+    font-size: 30px;
+    //font-family: cursive;
+   // font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    margin-top: 25px;
+    
+}
+#myProfilePic img{
+    //border-radius: 70px 0px ;
+   
+}
+.OtherWiseKnownAs{
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+   // margin-top: 20px;
+   margin-left: 15px;
+    text-shadow: 0px 0px 1px black;
+}
+#SedFed_Detail_Bench_Out{
+    position: absolute;
+   top: 72%;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    box-shadow:0px 0px 10px navy;
+    text-align: center;
+    padding:0px 0px 75px 0px; 
+  
+}
+#myFirstAppear{
+    z-index: 10;
+    bottom: 23%;
+}
+
+.ico_SFDB{
+    height:50px;
+}
+.SFDB_ItmHold{
+    margin: 0px 50px;
+   margin-top: 50px;
+    display: inline-block;
+   text-align: center;
+    
+}
+.SFDB_Ans{
+    color: blue;
+    margin-top:15px;
+    padding: 5px 50px;
+    box-shadow: 0px -5px 15px -10px;
+    font-weight: bold;
+    max-width: 100px;
+}
+#SFDB_Age{
+    font-size: 50px;
+    color:darkcyan;
+}
+#SFDB_Relations{
+    font-size:50px;
+    color:darkmagenta;
+}
+.curPositionFocus{
+    font-size: 20px;
+    margin-top: 25px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 1px black;
+}
+#img_focusProf{
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 250px;
+    max-width: 250px;
+}
+.img_profTypeTitleImg{
+    height: 50px;
+}
+.profTypeTitleImg{
+    float: right;
+    padding:14px 15px ;
+    border-radius: 100px;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 5px -5px grey;
+    text-align: center;
+    margin-top: -10px;
+}
+.profTypeTitle{
+    background-color: whitesmoke;
+    padding:10px 10px 10px 35px;
+    margin-left: -35px;
+    margin-right: -30px;
+   text-align: center;
+    z-index: 1;
+}
+#currentInfo .profTypeTitle{
+    background-color:transparent;
+    text-align: left;
+}
+#fgy{
+    z-index: 10;
+}
+#profileImge_Static{
+    z-index: 100;
+}
+.secondaryNavTtlBar{
+    position: absolute;
+    top: 0px;
+    padding-top: 60px;
+    background-color:white;
+   
+   left: 0px;
+    right: 0px;
+    z-index: 100;
+    text-align: center;
+}
+#title_bar{
+    z-index: 101;
+    box-shadow: 0px 0px 5px grey;
+}
+#title_bar:hover{
+     box-shadow: 0px 0px 4px grey;
+}
+.secondaryNavTtlBar {
+   box-shadow: 0px 0px 5px grey;
+}
+.secNavToolItm{
+    display: inline-block;
+    padding: 15px 35px;
+}
+.secNavToolItm:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#title_bar{
+    position: fixed;
+}
+.welcomeScreen{
+    position: fixed;
+    z-index: 10000;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+}
+.welTtl{
+    background-color: whitesmoke;
+    color: navy;
+    padding: 10px;
+    font-size: 16px;
+    text-indent: 10%;
+    box-shadow: 0px 0px 5px grey;
+   z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.welcomeScreenWallPaper{
+  
+   
+    background-size: 100%;
+    
+    //position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    opacity: 0.75;
+}
+.welcomeScreenWallPaper:hover .clickTp{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 1000;
+    color:black;
+    background-color: rgba(250,250,250,0.75);
+    
+    padding: 7px 25px;
+    border-radius:0px 10px;
+}
+
+#title_bar{
+    background-color: whitesmoke;
+}
+
+.peopleViewer{
+    position: fixed;
+    background-color:rgba(0,0,0,0.5);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.peopleViewerInnr{
+    background-color: white;
+    margin:0% 25%;
+    margin-top: 10%;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height:60%;
+    box-shadow: 0px 0px 5px grey;
+}
+.PVI_Name{
+    width: 90%;
+    padding: 0px 25px;
+    
+}
+.PVI_Face{
+    
+}
+.PVI_Face img{
+   height: 50px;
+    box-shadow: 5px 0px 5px -5px grey; 
+}
+.PVI_Action{
+    background-color: whitesmoke;
+    padding:0px 15px; 
+}
+.PVI_Action img{
+    max-height: 35px;
+}
+.peopleViewer tr{
+    border: 1px solid silver;
+     //background-color: whitesmoke;
+    
+}
+.wholePeopleItm{
+    border: 1px solid silver;
+    margin-top: 10px;
+}
+.peopleViewerTtl{
+    background-color: whitesmoke;
+    padding: 10px 25px;
+    color: black;
+    margin: -20px;
+    margin-bottom: 20px;
+}
+.closePVI{
+    float: right;
+    
+}
+.closePVI:hover{
+    cursor: pointer;
+    color: crimson;
+}
+.emptyWallPic 
+{
+    background-size: 50%;
+    widows: 100%;
+    text-align: center;
+    background-position: 103px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-blend-mode: inherit;
+    
+}

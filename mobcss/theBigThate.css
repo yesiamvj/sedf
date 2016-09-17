@@ -1,0 +1,1122 @@
+/* 
+    Created on : Aug 4, 2015, 5:33:34 PM
+    Author     : Vijayakumar M
+*/
+
+/* 
+    edited on : Aug 1, 2015, 9:39:59 PM
+    Author     : Vijayakumar M
+*/
+#TheWhatsUpAuditorium .pstop_meme{
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#TheWhatsUpAuditorium .psbtm_meme{
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#TheWhatsUpAuditorium{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+     
+    z-index: 10000;
+    background-color:rgba(250,250,250,0.85) !important;;
+}
+#TheWhatsUpAuditorium .img_PosterFace{
+    max-height:70px;
+    max-width: 70px;
+    float:left;
+    border-radius: 100px;
+    margin-right: 35px;
+    margin-top: -20px;
+    min-height: 70px;
+  text-align: center;
+}
+#TheWhatsUpAuditorium .ThePostHolder{
+   // border-left: 5px solid navy;
+    //box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+   // margin-bottom: 70px;
+    position: absolute;
+    top: 0px;
+   
+}
+#TheWhatsUpAuditorium .ThePostToppper{
+    background-color: white;
+    padding:12px 0px 10px 0px;
+   // border: 1px solid silver;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border-radius: 0px 0px 0px 10px;
+  
+}
+#TheWhatsUpAuditorium .ThePostMediaHolder img{
+   // z-index: 1;
+}
+#TheWhatsUpAuditorium .PosterProfPic{
+    margin-left: -85px;
+    
+}
+#TheWhatsUpAuditorium .PosterName{
+    font-size: 18px;
+    color: darkcyan;
+}
+#TheWhatsUpAuditorium .PosterSignature{
+    display: inline-block;
+    color:silver;
+    margin-left: 20px;
+    font-size: 14px;
+    
+}
+#TheWhatsUpAuditorium .sf_TmDoller{
+    font-family:"Times New Roman";
+    font-size: 14px;
+    margin: 0px 5px;
+    font-family: cursive;
+}
+#TheWhatsUpAuditorium .PosterTime{
+    color: darkgray;
+    text-align: right;
+    font-size: 11px;
+    padding-right: 25px;
+}
+#TheWhatsUpAuditorium .ThePostId{
+    display: inline-block;
+    color: crimson;
+    font-size: 13px;
+    margin:0px 2px;
+}
+#TheWhatsUpAuditorium .ThePostCaption{
+    color: navy;
+    font-size: 14px;
+    padding:5px 15px;
+    margin-left: 15px;
+  // text-align: justify;
+    line-height: 1.5;
+}
+#TheWhatsUpAuditorium .ThePostMediaHolder{
+    margin:10px 15px;
+    text-align: center;
+}
+#TheWhatsUpAuditorium .img_ThePost{
+    max-height: 100%;
+    max-width: 100%;
+    //box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+}
+#TheWhatsUpAuditorium .ThePostStatusHolder{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    //border:1px solid silver;
+   box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+   z-index: 10;
+}
+#TheWhatsUpAuditorium .TPSH_Itm{
+    display: inline-block;
+    margin-left:25px;
+}
+#TheWhatsUpAuditorium .TPSH_Itm img{
+    max-height: 23px;
+}
+#TheWhatsUpAuditorium .TheWhatsUp{
+    top: 0px;
+    padding-top: 75px;
+    border-left: 3px solid darkcyan;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+#TheWhatsUpAuditorium .ThePostArrow{
+    width: 0px;
+    height: 0px;
+    border-top:0px solid transparent;
+   // float: right;
+    border-right: 25px solid white;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin-left: -20px;
+   // margin-top: 1px;
+}
+
+/* added for comments */
+#TheWhatsUpAuditorium .forComment{
+    margin-left: 10px;
+}
+#TheWhatsUpAuditorium .toolTipCmntAdd{
+    position: absolute;
+    display: inline-block;
+    background-color:whitesmoke;
+    opacity: 0.9;
+    padding:5px 15px 7px 15px;
+   
+    font-size: 15px;
+    width:120%;
+    top: 5px;
+    left: 114%;
+    z-index: 50;
+    color: black;
+    border: 1px solid silver;
+}
+#TheWhatsUpAuditorium .commentContentFull{
+    padding: 5px 15px;
+  //  display: none;
+  //  background-color: white;
+     // box-shadow: 3px 5px 3px rgba(0,0,0,0.1);
+    bottom:5%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-color: transparent;
+}
+#TheWhatsUpAuditorium .commentTitle{
+   padding: 10px;
+    font-size: 15.5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#TheWhatsUpAuditorium .sf-commentInput{
+   
+    padding: 7px 10px 7px 25px;
+    color:navy;
+    font-size: 14px;
+   border: 1px solid silver;
+    font-family: cursive;
+    width: 60%;
+    margin: 15px 0px 10px 15px;
+    
+}
+#TheWhatsUpAuditorium .submitCmnt{
+    width: 100px;
+    height: 30px;
+    background-color:navy;
+    border: 1px outset navy;
+    color: white;
+}
+#TheWhatsUpAuditorium .submitCmnt:hover{
+    cursor: pointer;
+    background-color:rgb(0,0,100);
+    border:1px navy inset;
+    
+}
+#TheWhatsUpAuditorium .forCmntArrow{
+    display: block;
+    position: absolute;
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+border-right: 12px solid transparent;
+border-top: 15px solid silver;
+}
+#TheWhatsUpAuditorium .forShare{
+    float: right;
+    padding-right:25px;
+}
+
+#TheWhatsUpAuditorium .forCmntTtArrow{
+     display:inline-block;
+    position: absolute;
+    opacity: 0.9;
+    left: 104%;
+    top: 12px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+border-right: 15px solid silver;
+}
+#TheWhatsUpAuditorium .cmntAtachIcon{
+    width:30px;
+    height:30px;
+}
+#TheWhatsUpAuditorium .sf-CommentIcon{
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .attachCmntIcon{
+    width: 30px;
+    height:25px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+    background-image: url('icons/post-cmnt-attach.png');
+    background-size: 25px;
+    color: transparent;
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .colorComment{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    visibility: hidden;
+}
+#TheWhatsUpAuditorium .colorCmntIcon{
+    width: 30px;
+    height:25px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+    background-image: url('icons/chooseColor.png');
+    background-size: 25px;
+    margin-left:5px;
+    margin-right: 5px;
+    color: transparent;
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .sf-shareIcon{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 25px;
+    height:25px;
+}
+#TheWhatsUpAuditorium .previousComments{
+   // display: none;
+    margin:5px;
+   padding: 10px;
+  //  background-color: whitesmoke;
+  background-color: transparent;
+}
+#TheWhatsUpAuditorium .commentUser{
+    padding: 15px;
+    color: darkcyan;
+    font-size: 17px;
+}
+#TheWhatsUpAuditorium .hisComment{
+   // margin:7px 5px 7px 10px;
+   margin: 0px;
+    padding: 5px;
+  //  background-color:rgba(256,256,256,1);
+  background-color: transparent;
+}
+#TheWhatsUpAuditorium .commentText{
+    padding: 15px;
+    margin: 10px;
+}
+#TheWhatsUpAuditorium .userCmntFull{
+   padding: 5px;
+   background-color:rgba(256,256,256,0.95);
+    margin-bottom:25px;
+    max-width:60%;
+  
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(odd){
+    float: left;
+    display: table-row;
+   //width: 100%;
+    margin-right: 50%;
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(even){
+    float: right;
+   // width: 100%;
+    display: table-row;
+      margin-left: 40%;
+}
+#TheWhatsUpAuditorium .spaceBetween{
+    color: transparent;
+    font-size: 10px;
+}
+#TheWhatsUpAuditorium .commentImage,.commentVideo{
+    //margin-top: 10px;
+    padding: 5px;
+    display:inherit;
+    text-align: center;
+}
+#TheWhatsUpAuditorium .commentImage>img{
+    max-height:175px;
+    max-width:175px;
+}
+#TheWhatsUpAuditorium .commentVideo>video{
+    max-height: 200px;
+    max-width:90%;
+}
+#TheWhatsUpAuditorium .commentVideo>audio{
+    width: 90%;
+}
+#TheWhatsUpAuditorium .forCommentAdds{
+    background-color: whitesmoke;
+   display: none;
+    position: absolute;
+    margin-top:-40px;
+    border: 1px outset;
+    border-color: white;
+    box-shadow:0px 0px 5px grey;
+    margin-top: -100px;
+    left: 30%;
+}
+#TheWhatsUpAuditorium .toolTipCmntUtils{
+    background-color:whitesmoke;
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -30px;
+    opacity: 0.9;
+    padding: 5px 20px;
+    color:black;
+    border: 1px solid silver;
+}
+#TheWhatsUpAuditorium .forCmntTtArrowUtil{
+     display:none;
+    position: absolute;
+    opacity: 0.8;
+    width: 0px;
+    height: 0px;
+    margin-left:8px;
+    border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom: 15px solid silver;
+    
+}
+#TheWhatsUpAuditorium ol{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#TheWhatsUpAuditorium ol>li{
+    padding:5px 15px 2px 15px;
+    margin: 0px;
+    text-indent: 0px;
+   display: inline-block;
+}
+#TheWhatsUpAuditorium .smileyHead{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+}
+#TheWhatsUpAuditorium .forCommentStatus>img{
+    width: 20px;
+    height: 20px;
+}
+#TheWhatsUpAuditorium .aboutThisComment img{
+    height: 20px;
+}
+#TheWhatsUpAuditorium .aboutThisComment{
+    display:none;
+    justify-content:space-around;
+    margin-top: 10px;
+   background-color:whitesmoke;
+    border-top: 1px solid silver;
+    padding-top: 7px;
+   float: left;
+    width: 100%;
+}
+#TheWhatsUpAuditorium .userCmntFull:hover .aboutThisComment{
+  display: inline-flex;
+}
+/* again for post */
+#TheWhatsUpAuditorium .TPSH_Itm img:hover{
+    cursor: pointer;
+}
+
+
+
+/* for post response left panel */
+#TheWhatsUpAuditorium .ThePostRespDetHold{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color:white;
+    display: inline-flex;
+   flex-direction:  column;
+    justify-content: space-around;
+    bottom: 0px;
+    box-shadow: 0px 0px 7px -2px grey;
+   padding: 0px;
+    z-index: 1000;
+}
+#TheWhatsUpAuditorium .TPRD_Ttl{
+    font-size: 14px;
+   color: silver;
+    box-shadow: 0px 5px 5px -5px grey;
+    padding:5px 25px;
+    background-color: white;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+#TheWhatsUpAuditorium .TPRD_PID{
+    color: crimson;
+    /* background-color:darkcyan;
+    color: white;
+    padding: 0px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 10px 0px;
+    */
+}
+#TheWhatsUpAuditorium .TPRD_Itm{
+    text-align: center;
+    padding:2px 0px 7px 0px;
+    border-radius: 0px;
+   
+}
+#TheWhatsUpAuditorium .TPRD_ItmInner{
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0px;
+    transform: none !important;;
+   
+}
+#TheWhatsUpAuditorium .TPRD_ItmInner:hover{
+    cursor: pointer;
+     box-shadow: 3px 3px 5px -5px grey;
+   
+}
+#TheWhatsUpAuditorium .TPRD_RespCount{
+    font-size: 20px;
+    
+}
+#TheWhatsUpAuditorium .TPRD_RespItmName{
+    color: grey;
+   margin-top: 5px;
+    font-size: 13px;
+}
+#TheWhatsUpAuditorium #ThePostLikes{
+    color: blue;
+    font-size:26px;
+}
+#TheWhatsUpAuditorium #ThePostUnlikes{
+    color: crimson;
+}
+#TheWhatsUpAuditorium .TPRD_RatedIcon{
+    max-height: 20px;
+}
+#TheWhatsUpAuditorium #ThePostComments{
+    color:darkgreen;
+}
+#TheWhatsUpAuditorium #ThePostShares{
+    color: orange;
+}
+#TheWhatsUpAuditorium #ThePostViews{
+    color: darkcyan;
+}
+#TheWhatsUpAuditorium .ThePostPreviousResponders{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 15%;
+    background-color: rgba(256,256,256,0.5);
+    z-index: 1000;
+    padding-top: 50px;
+}
+#TheWhatsUpAuditorium .TPPR_Ttl{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 25px;
+}
+#TheWhatsUpAuditorium .TPPR_InnerTitle{
+    color: black;
+    font-size: 15px;
+    margin: 10px 20px;
+}
+#TheWhatsUpAuditorium .TPPR_InnerCont{
+    padding:0px 15px 0px 35px;
+    line-height: 2;
+     height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+#TheWhatsUpAuditorium .RespPeopleName{
+    color: darkcyan !important;
+    margin: 5px 0px;
+}
+#TheWhatsUpAuditorium .RespPeopleName a{
+    color: darkcyan;
+}
+#TheWhatsUpAuditorium .RespPeopleName a:hover{
+    cursor: pointer;
+    color: blue !important;;
+}
+#TheWhatsUpAuditorium .TPPR_ShowMoreBtn{
+    background-color: whitesmoke;
+    color: black;
+    padding:0px 10px;
+    text-align: center;
+}
+#TheWhatsUpAuditorium .TPPR_ShowMoreBtn:hover{
+    cursor: pointer;
+    color: navy;
+}
+#TheWhatsUpAuditorium .ThePostExtra{
+    position: absolute;
+   right: 25px;
+   margin-top: 0px;
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .TPE_Dots{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:"Times New Roman";
+    color: blue;
+}
+#TheWhatsUpAuditorium .TPE_Dots:first-child{
+    color: crimson;
+}
+#TheWhatsUpAuditorium .TPE_Dots:last-child{
+    color:orange;
+}
+#TheWhatsUpAuditorium .ThePostExtraBench{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.3);
+    border-radius: 0px 10px;
+}
+#TheWhatsUpAuditorium .TPEB_Itm img{
+    max-height: 17px;
+    margin-top: 1px;
+}
+#TheWhatsUpAuditorium .TPEB_Itm{
+    display: inline-block;
+    padding: 0px 10px;
+}
+#TheWhatsUpAuditorium .TPEB_Itm:hover{
+    cursor: pointer;
+    
+}
+#TheWhatsUpAuditorium .nextDriver{
+    width: 0px;
+    height: 0px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 15px solid silver;
+    margin-top: 1px;
+}
+#TheWhatsUpAuditorium .prevDriver{
+    width: 0px;
+    height: 0px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 15px solid silver;
+    margin-top: 1px;
+}
+#TheWhatsUpAuditorium .nextDriver:hover{
+    cursor: pointer;
+    border-left-color: darkcyan;
+}
+#TheWhatsUpAuditorium .prevDriver:hover{
+    cursor: pointer;
+    border-right-color: darkcyan;
+}
+#TheWhatsUpAuditorium .PosterName a{
+    color: darkcyan;
+}
+#TheWhatsUpAuditorium .PosterName a:hover{
+    color: blue;
+}
+#TheWhatsUpAuditorium .PosterSignature{
+  margin-right: 25px;
+}
+#TheWhatsUpAuditorium .PosterFeeling{
+    font-size: 13px;
+    color:green;
+    font-family: cursive;
+}
+
+#TheWhatsUpAuditorium .PF_and{
+    font-size: 12px;
+    color:silver;
+}
+#TheWhatsUpAuditorium .postFeelType{
+    color: silver;
+    font-family: Segoe UI;
+    font-size: 12px;
+    display: none;
+}
+#TheWhatsUpAuditorium .PosterUserLink{
+    margin-right: 15px;
+}
+#TheWhatsUpAuditorium .PosterFeeling:hover{
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .PosterFeeling:hover .postFeelType{
+    display: inline-block;
+}
+#TheWhatsUpAuditorium .PosterLocation,.PosterLocation a{
+    font-size: 12px;
+    color:brown; 
+}
+#TheWhatsUpAuditorium .PosterLocation a:hover{
+    color:black;
+}
+#TheWhatsUpAuditorium .PostedWith{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#TheWhatsUpAuditorium .PWI_name{
+    display: inline-block;
+    margin: 0px 1px;
+    padding: 0px 2px;
+}
+#TheWhatsUpAuditorium .PWI_more{
+    display: inline-block;
+    color: blue;
+}
+#TheWhatsUpAuditorium .PWI_more{
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .ThePostPreviousResponders{
+    left: -1000px;
+    margin-left: 15px;
+    background-color: rgba(256,256,256,0.75);
+}
+#TheWhatsUpAuditorium .ThePostPreviousResponders:hover{
+    background-color: rgba(256,256,256,0.95);
+}
+#TheWhatsUpAuditorium .ThePostSafetyLayerForResponders{
+    position: absolute;
+    top: 0px;
+    left: -1000px;
+    width: 35%;
+    bottom: 0px;
+    background-color:rgba(256,256,256,0.25);
+    
+}
+#TheWhatsUpAuditorium .PosterSignature a{
+    color: silver;
+}
+#TheWhatsUpAuditorium .PosterSignature a:hover{
+    color:black;
+}
+#TheWhatsUpAuditorium .PagePinnedTtl{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 40px;
+    background-color: whitesmoke;
+    z-index: 1;
+    box-shadow: 0px 0px 2px grey;
+    text-align: center;
+    display: none;
+}
+#TheWhatsUpAuditorium #pagepinnerid{
+    display: inline-block;
+}
+#TheWhatsUpAuditorium .PagePinItm{
+    display: inline-block;
+    padding: 5px 6px;
+    background-color: darkcyan;
+    border-radius: 15px 0px;
+    margin: 5px 7px;
+    color: white;
+   
+}
+#TheWhatsUpAuditorium .closePinnedTab{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: crimson;
+}
+#TheWhatsUpAuditorium .OfficialCaption{
+    display: inline-block;
+    font-size: 13px;
+    color:rgb(0,0,225);
+}
+#TheWhatsUpAuditorium .OfficialCaptionTime{
+    color:grey;
+    margin-left: 15px;
+}
+#TheWhatsUpAuditorium .OfficialPostCaption{
+    background-color:whitesmoke;
+    margin-bottom: -10px;
+    padding: 10px 35px;
+    color: darkcyan;
+    margin-top: 10px;
+    background-size: 100%;
+    background-attachment: absolute;
+}
+#TheWhatsUpAuditorium .OPC_Signature a{
+    color: grey;
+}
+#TheWhatsUpAuditorium .OPC_Response{
+   text-align: center;
+    margin: 5px 0px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    justify-content:  center;
+}
+
+#TheWhatsUpAuditorium .OPCR_Itm,.OPCR_ItmPrim{
+    display: inline-block;
+    background-color: silver;
+    padding: 5px 35px;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 0px 0px 1px grey;
+   // box-shadow: 1px 1px 1px  rgba(0,0,0,0.1);
+    border: 1px solid silver;
+}
+#TheWhatsUpAuditorium .OPCR_ItmPrim{
+    background-color: navy;
+    border: 1px solid darkblue;
+}
+#TheWhatsUpAuditorium .ODC_Ttl{
+    background-color: crimson;
+    color: white;
+    padding:5px 25px;
+    box-shadow: 0px 5px 5px -5px grey;
+    position: absolute;
+    left: 85px;
+    right: 35px;
+}
+#TheWhatsUpAuditorium .OPC_Signature{
+    text-align: center;
+    margin: 10px 0px;
+}
+#TheWhatsUpAuditorium .OPC_User_Id{
+    text-align: center;
+    margin: 0px 0px;
+}
+#TheWhatsUpAuditorium .OPC_Details{
+    background-color: rgba(256,256,2560,0.75);
+    padding: 10px 0px;
+    padding-top: 45px;
+}
+#TheWhatsUpAuditorium .OPCR_Itm:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+#TheWhatsUpAuditorium .OPCR_ItmPrim:hover{
+    cursor: pointer;
+    background-color: rgb(0,0,100);
+}
+#TheWhatsUpAuditorium .ThePostSharedBy{
+    padding: 10px;
+    color: white;
+    border-radius: 0px 10px;
+    text-align: center;
+    background-color:rgba(256,256,256,0.75);
+    margin-bottom: 10px;
+}
+#TheWhatsUpAuditorium .ThePostSharerName{
+    color: darkcyan;
+    font-size: 16px;
+   
+}
+#TheWhatsUpAuditorium .TPShare_Desc{
+    font-size: 13px;
+    color:navy;
+    margin: 0px 10px;
+}
+#TheWhatsUpAuditorium .TPShare_Time{
+    color: silver;
+    font-size: 12px;
+}
+#TheWhatsUpAuditorium .floatMediaCont{
+    position: absolute;
+    width:50%;
+   // background-color: rgba(256,256,256,0.2);
+    padding: 10px;
+    right: 0px;
+}
+#TheWhatsUpAuditorium .floatMediaCont img{
+    max-width: 50%;
+    margin: 5px 0px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid black;
+}
+#TheWhatsUpAuditorium .floatMediaCont img:hover{
+     background-color: rgba(256,256,256,0.2);
+}
+#TheWhatsUpAuditorium .ThePostMediaMoreImage{
+    padding:7px;
+    margin: 10px;
+    text-align: center;
+    background-color: grey;
+    background-color: darkgreen;
+    color: white;
+   // color:darkcyan;
+}
+#TheWhatsUpAuditorium .ThePostMediaMoreImage:hover{
+    background-color: forestgreen;
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .postAlbumTtl{
+    color: darkcyan;
+    margin: 10px;
+}
+#TheWhatsUpAuditorium .floatMediaCont img:hover{
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+
+#TheWhatsUpAuditorium .ThePostCaption{
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height:250px;
+    line-height: 1.75;
+}
+#TheWhatsUpAuditorium .ThePostToppper{
+   
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 70%;
+   z-index: 1;
+    
+}
+#TheWhatsUpAuditorium .img_PosterFace{
+   
+}
+#TheWhatsUpAuditorium .ThePostExtra{
+    position: absolute;
+    top: 0px;
+    right: 17%;
+    z-index: 1000;
+}
+#TheWhatsUpAuditorium .img_ThePost{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    max-height: 95%;
+    max-width: 80%;
+}
+
+#TheWhatsUpAuditorium .img_ThePost:hover{
+    z-index: 100;
+    box-shadow: 0px 0px 5px grey;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+#TheWhatsUpAuditorium .ThePostStatusHolder{
+    position: absolute;
+    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px 25%;
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2) !important;;
+}
+#TheWhatsUpAuditorium .ThePostSharedBy{
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+    color: white !important;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
+#TheWhatsUpAuditorium .ThePostArrow{
+    z-index: 2;
+}
+#TheWhatsUpAuditorium .ThePostSharedBy *{
+    color: white;
+    
+}
+#TheWhatsUpAuditorium .ThePostSharedBy:hover{
+    opacity: 0.1;
+}
+#TheWhatsUpAuditorium .ThePostArrow{
+   position:absolute;
+    top: 0px;
+    left: 15%;
+}
+#TheWhatsUpAuditorium .ThePostRespDetHold{
+    background-color:white;
+    position:absolute;
+    top:60%;
+    bottom:50%;
+    width: 0px;
+}
+#TheWhatsUpAuditorium .ThePostRespDetHold .TPRD_ItmInner{
+    background-color:white;
+    transform: rotate(-5deg);
+}
+#TheWhatsUpAuditorium .TPPR_Ttl{
+    display: none;
+}
+#TheWhatsUpAuditorium .TPRD_Ttl{
+    display: none;
+}
+#TheWhatsUpAuditorium .ThePostExtraBench{
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    left: 0px;
+    right: 0px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 0px;
+    
+}
+#TheWhatsUpAuditorium .TPRD_ItmInner:hover .TPRD_RespCount{
+    color: white !important;
+}
+#TheWhatsUpAuditorium .TPRD_RespCount:hover{
+   // color: white !important;
+}
+#TheWhatsUpAuditorium .TheWhatsUp{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+#TheWhatsUpAuditorium .theaterPostDrivers{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: whitesmoke !important;
+    color: whitesmoke;
+    font-size: 18px !important;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color:silver !important;;
+    z-index: 1000;
+}
+#TheWhatsUpAuditorium .theaterPostDrivers div{
+    padding: 15px;
+}
+#TheWhatsUpAuditorium .theaterPostDrivers div:hover{
+    cursor: pointer;
+    color:black !important;;
+}
+#TheWhatsUpAuditorium .hideItThh{
+    font-size: 0px;
+}
+#TheWhatsUpAuditorium .theaterPostDriverSafetyLayer{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 25%;
+    background-color: rgba(0,0,0,0.1);
+}
+#TheWhatsUpAuditorium .rightReadyMouseChecker{
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 15px;
+    background-color:rgba(0,0,0,0.1);
+}
+#TheWhatsUpAuditorium .theaterPostUtils{
+    
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 75px !important;
+    z-index: 100;
+    flex-direction: column;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+#TheWhatsUpAuditorium .theaterPostUtils .theaterUtilItm{
+    padding: 7px 15px 10px 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color:grey !important;;
+    background-color:white !important;;
+}
+#TheWhatsUpAuditorium .theaterUtilItm:hover{
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    color: white;
+}
+#TheWhatsUpAuditorium .ThePostCaptionExxBtn{
+    display: inline-block;
+    background-color:navy;
+    color: white;
+    padding:0px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#TheWhatsUpAuditorium .ThePostCaptionExceed{
+    display: inline-block;
+}
+#TheWhatsUpAuditorium .ThePostToppper{
+   // display: none;
+}
+#TheWhatsUpAuditorium .ThePostArrow{
+   // display: none;
+}
+#TheWhatsUpAuditorium .commentContentFull{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    z-index: 1000;
+    display: none;
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(odd){
+    margin-left: 75px;
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(even){
+    margin-right: 75px;
+}
+#TheWhatsUpAuditorium .commentUserArr:first-child{
+    width: 0px;
+    height: 0px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+   
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(even) .commentUserArr:first-child{
+     float: right;
+    margin-right: -15px;
+     border-left: 15px solid white;
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(odd) .commentUserArr:first-child{
+    float: left;
+    border-right: 15px solid white;
+    margin-left: -15px;
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(odd) .commenterFace{
+    max-height: 50px;
+    border-radius:50px;
+    float: left;
+    margin-left: -65px;
+    margin-top: -10px;
+}
+#TheWhatsUpAuditorium .userCmntFull:nth-child(even) .commenterFace{
+     max-height: 50px;
+    border-radius:50px;
+    float:right;
+    margin-right: -65px;
+    margin-top: -10px;
+}
+#TheWhatsUpAuditorium .newCommentHolder{
+    padding:15px 20px;
+    border-radius:0px 10px;
+    margin-bottom: 25px;
+    background-color: rgba(256,256,256,0.95);
+}
+.ico_PostResp{
+    max-height: 20px;
+}
+.TP_rateIcons{
+    max-height: 16px !important;
+    margin-top: -15px !important;;
+}
+#biggerScreen.TheWhatsUp{
+    z-index: 1000000;
+}
