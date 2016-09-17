@@ -270,8 +270,8 @@ $name="../web/icons/male.png";
        fopen("$now/wall.php","w");
   copy("forprofile/wall.php", "$now/wall.php");
 
-   fopen("$now/timeline.php","w");
-  copy("forprofile/timeline.php", "$now/timeline.php");
+   fopen("$now/timeLine.php","w");
+  copy("forprofile/timeLine.php", "$now/timeLine.php");
 
 
 fopen("$now/photos.php", "w");
@@ -333,7 +333,7 @@ $txt = '<?php session_start();
 $usename="'.$usename.'";
  if(isset($_SESSION[\'user_id\']) || isset($_SESSION[\'user_name\']))
 {
-       $url=\'timeline.php?username=\'.urlencode($usename);
+       $url=\'timeLine.php?username=\'.urlencode($usename);
 }else
 {
        

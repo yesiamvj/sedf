@@ -16,8 +16,8 @@ if($r)
              $c5= copy("forprofile/files.php", "../$usernm/files.php");
               $c6=copy("forprofile/wall.php", "../$usernm/wall.php");
                $c7=copy("forprofile/storage.php", "../$usernm/storage.php");
-                  fopen("../$usernm/timeline.php", "w");
-                $c8=copy("forprofile/timeline.php", "../$usernm/timeline.php");
+                  fopen("../$usernm/timeLine.php", "w");
+                $c8=copy("forprofile/timeLine.php", "../$usernm/timeLine.php");
             
                 $myfile=fopen("../$usernm/home.php", "w");
 
@@ -25,7 +25,7 @@ $txt = '<?php session_start();
 $usename="'.$usernm.'";
  if(isset($_SESSION[\'user_id\']) || isset($_SESSION[\'user_name\']))
 {
-       $url=\'timeline.php?username=\'.urlencode($usename);
+       $url=\'timeLine.php?username=\'.urlencode($usename);
 }else
 {
        
