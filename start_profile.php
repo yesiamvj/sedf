@@ -141,7 +141,7 @@ $w_pic='../'.$user_id.'/wpic50.jpg';
        <!-- <meta http-equiv="Author" content="Vijayakumar for SedFed" /> -->  
     <title>Profile </title>
     <link rel="stylesheet" href="'.$_SESSION['css'].'editprofile_new.css"/>
-    <link rel="stylesheet" href="'.$_SESSION['css'].'startUpprofile.css"/>
+    <link rel="stylesheet" href="'.$_SESSION['css'].'startUpProfile.css"/>
    <script src="jquery.min.js"></script>
    <script src="jquery.min.js" type="text/javascript"></script>
    
