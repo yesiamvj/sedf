@@ -1,9 +1,9 @@
 <?php
             
-    DEFINE ('DB_USER', 'root');
-    DEFINE ('DB_PASSWORD', '');
-    DEFINE ('DB_HOST', 'localhost');
-    DEFINE ('DB_NAME', 'vijay');
+    DEFINE ('DB_USER', 'u423230104_root');
+    DEFINE ('DB_PASSWORD', 'vijiscnt7.');
+    DEFINE ('DB_HOST', 'mysql.hostinger.in');
+    DEFINE ('DB_NAME', 'u423230104_vijay');
         
        
         
